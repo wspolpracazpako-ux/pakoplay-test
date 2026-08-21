@@ -763,7 +763,7 @@ function updateStaticElements(){
     hr('creatorsDCLink',CONFIG.linkDiscord);hr('socialDCLink',CONFIG.linkDiscord);
     hr('footerDC',CONFIG.linkDiscord);hr('footerYT',CONFIG.linkYoutube);hr('footerTT',CONFIG.linkTiktok);
     var cv=document.getElementById('creatorsVis');if(cv){var tu=CONFIG.zdjecia.tworcy||'';if(tu){cv.style.backgroundImage='url(\u0022'+tu+'\u0022)';cv.style.color='transparent';cv.setAttribute('data-bg-url',tu);}else{cv.style.backgroundImage='';cv.style.color='';cv.removeAttribute('data-bg-url');}}
-    document.title=CONFIG.nazwaStrony+' — Twoj Serwer.';
+    document.title=CONFIG.nazwaStrony+' — Twoj Serwer';
 }
 function renderAll(){renderStats();renderAbout();renderOffer();renderModes();renderTeam();renderPeriodToggle();renderRanks();renderKeys();renderFAQ();updateStaticElements();if(window.lucide)lucide.createIcons();validatePageImages();}
 
