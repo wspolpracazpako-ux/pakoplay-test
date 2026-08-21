@@ -922,7 +922,7 @@ const App = {
         document.getElementById('teamMain').innerHTML = `
             <div class="team-main rv">
                 <div class="tm-glow"></div>
-                <div class="tm-av">${tm.initials}</div>
+                <div class="tm-av">${tm.image ? '<img src="' + tm.image + '" alt="' + tm.name + '" style="width:100%;height:100%;object-fit:cover; border-radius:50%;" />' : tm.initials}</div>
                 <div class="tm-role">${tm.name}</div>
                 <div class="tm-name">${tm.nickname}</div>
                 <div class="tm-rows"><div class="td-rows">${tm.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
@@ -932,7 +932,7 @@ const App = {
         document.getElementById('teamOwners').innerHTML = this.data.teamOwners.map(o => `
             <div class="to-card rv">
                 <div class="to-glow"></div>
-                <div class="to-av">${o.initials}</div>
+                <div class="tm-av">${tm.image ? '<img src="' + tm.image + '" alt="' + tm.name + '" style="width:100%;height:100%;object-fit:cover; border-radius:50%;" />' : tm.initials}</div>
                 <div class="to-role">${o.name}</div>
                 <div class="to-name">${o.nickname}</div>
                 <div class="to-rows"><div class="td-rows">${o.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
@@ -943,7 +943,7 @@ const App = {
         document.getElementById('teamGrid').innerHTML = this.data.teamGrid.map(m => `
             <div class="tc-card rv">
                 <div class="tc-glow"></div>
-                <div class="tc-av">${m.initials}</div>
+                <div class="tm-av">${tm.image ? '<img src="' + tm.image + '" alt="' + tm.name + '" style="width:100%;height:100%;object-fit:cover; border-radius:50%;" />' : tm.initials}</div>
                 <div class="tc-role">${m.name}</div>
                 <div class="tc-name">${m.nickname}</div>
                 <div class="tc-rows"><div class="td-rows">${m.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
@@ -1475,6 +1475,7 @@ const App = {
     bindTeamList(prefix, arr) {
         arr.forEach((m, i) => {
             const save = () => {
+                ${this.field('Zdjecie (URL lub wgrajzdjecia)', this.txtInput(`adm_to_img_${i}`, m.image))}
                 arr[i].name = document.getElementById(`adm_${prefix}_role_${i}`).value;
                 arr[i].nickname = document.getElementById(`adm_${prefix}_nick_${i}`).value;
                 arr[i].initials = document.getElementById(`adm_${prefix}_ini_${i}`).value;
