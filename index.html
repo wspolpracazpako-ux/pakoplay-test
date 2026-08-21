@@ -894,19 +894,21 @@ const App = {
         `).join('');
     },
 
-  renderModes() {
+ renderModes() {
         const c = document.getElementById('modesList');
         c.innerHTML = this.data.modes.map((m, i) => `
             <div class="mode rv">
                 <div class="mode-vis">
-                    ${m.image ? '<img src="" + m.image + '" alt="' + m.name + '" style="width:100%;height:100%;object-fit:cover;">' : '<div class="mode-vis-glow"></div><i data-lucide="' + (m.icon || 'gamepad-2') + '"></i>' + m.name + '</div>'}
+                    <div class="mode-vis-glow"></div>
+                    <i data-lucide="${m.icon}"></i>
+                    ${m.name}
                 </div>
                 <div>
                     <div class="mode-tag">${m.tag}</div>
                     <h3 class="mode-name">${m.name}</h3>
                     <p class="mode-desc">${m.desc}</p>
                     <div class="mode-meta">
-                        <div class="mode-meta-status ${m.status === 'online' ? 'active' : ''}">${m.status === 'online' ? 'Online' : 'Offline'}</div>
+                        <div class="mode-meta-status active">${m.status === 'online' ? 'Online' : 'Offline'}</div>
                         ${m.meta.map(t => `<span class="mode-meta-item">${t}</span>`).join('')}
                     </div>
                     <div class="mode-feats">${m.features.map(f => `<span class="mode-feat">${f}</span>`).join('')}</div>
