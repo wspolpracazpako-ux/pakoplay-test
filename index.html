@@ -150,7 +150,7 @@
         .td-row{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--text-s)}
         .td-row i{width:13px;height:13px;color:var(--text-t);flex-shrink:0}
         .td-rows{display:flex;flex-direction:column;gap:7px;margin-top:16px}
-        .ow-socials{display:flex;align-items:center;gap:8px;margin-top:18px}
+        .ow-socials{display:flex;align-items:center;gap:8px;margin-top:18px;flex-wrap:wrap}
         .ow-soc{display:flex;align-items:center;gap:6px;font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-s);padding:7px 14px;border:1px solid var(--border);border-radius:100px;text-decoration:none;transition:all var(--f)}
         .ow-soc:hover{border-color:var(--accent-dim);color:var(--accent);background:var(--glow)}
         .ow-soc i{width:12px;height:12px}
@@ -164,6 +164,7 @@
         .team-main:hover .tm-av{transform:scale(1.05);border-color:var(--accent)}
         .tm-role{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;position:relative;z-index:1}
         .tm-name{font-family:var(--fh);font-size:24px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px;position:relative;z-index:1}
+        .tm-desc,.to-desc,.tc-desc{font-size:12px;line-height:1.5;color:var(--text-s);margin-bottom:4px;position:relative;z-index:1}
         .tm-rows{position:relative;z-index:1}.tm-rows .td-rows{justify-content:center;align-items:center}.tm-rows .td-row{justify-content:center}
         .tm-socials{position:relative;z-index:1}.tm-socials .ow-socials{justify-content:center}
         .team-owners{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:660px;margin:0 auto 56px}
@@ -306,8 +307,6 @@
         @media(max-width:768px){:root{--pad:56px}.nlinks,.nplay{display:none}.ntog{display:block}.mmenu{display:flex}.about-grid{grid-template-columns:repeat(2,1fr)}.about-grid .acard:last-child{grid-column:span 2}.ogrid{grid-template-columns:1fr}.ocard.f1{grid-column:span 1}.team-owners{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.team-grid .tc-card:last-child{grid-column:span 2;max-width:50%;justify-self:center}.rgrid{grid-template-columns:repeat(2,1fr)}.kgrid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr;gap:28px}.fbot{flex-direction:column;text-align:center}.ranks-hdr{flex-direction:column;align-items:flex-start}.period-bar{flex-direction:column;align-items:flex-start}.ip-widget{bottom:14px;right:14px;font-size:10px;padding:7px 12px 7px 10px}.toast{bottom:58px;right:14px}}
         @media(max-width:480px){.about-grid{grid-template-columns:1fr}.about-grid .acard:last-child{grid-column:span 1}.about-stats{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:1fr}.team-grid .tc-card:last-child{grid-column:span 1;max-width:100%}.rgrid{grid-template-columns:1fr}.kgrid{grid-template-columns:1fr}.hacts{flex-direction:column;width:100%}.hacts .btn{width:100%;justify-content:center}.shop-acts{flex-direction:column;width:100%}.shop-acts .btn{width:100%;justify-content:center}.discord-cta{padding:48px 20px}.discord-cta .btn{width:100%;justify-content:center}.dc-stat-dot{display:none}.ow-socials{flex-wrap:wrap}}
 
-        .adm-trigger{position:fixed;bottom:20px;left:20px;z-index:400;width:40px;height:40px;border-radius:50%;background:var(--bg-tertiary);border:1px solid var(--border);color:var(--text-t);display:grid;place-items:center;cursor:pointer;opacity:.25;transition:all .3s ease}
-        .adm-trigger:hover{opacity:.8;border-color:var(--border-h);color:var(--accent)}
         .adm-overlay{position:fixed;inset:0;z-index:500;background:rgba(3,5,10,.92);backdrop-filter:blur(12px);display:none;opacity:0;transition:opacity .3s ease}
         .adm-overlay.open{display:flex;opacity:1}
         .adm-panel{width:100%;max-width:1100px;max-height:92vh;margin:auto;display:grid;grid-template-rows:auto 1fr auto;grid-template-columns:240px 1fr;background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.6)}
@@ -327,6 +326,8 @@
         .adm-nav-item i{width:15px;height:15px;flex-shrink:0}
         .adm-body{overflow-y:auto;padding:24px}
         .adm-section-title{font-family:var(--fh);font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+        .adm-subsection{font-family:var(--fh);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-t);margin:24px 0 14px;padding:8px 12px;background:var(--bg-card);border-radius:var(--rs);border-left:3px solid var(--accent-dim)}
+        .adm-subsection.purp{border-left-color:var(--purple-dim)}
         .adm-field{margin-bottom:16px}
         .adm-label{display:block;font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-t);margin-bottom:6px}
         .adm-input,.adm-textarea{width:100%;padding:10px 14px;background:var(--bg-primary);border:1px solid var(--border);border-radius:var(--rs);color:var(--text);font-family:var(--fb);font-size:13px;transition:border-color .15s ease;outline:none}
@@ -559,8 +560,6 @@
     <span><strong id="ipWidgetIP">pakoplay.pl</strong></span>
 </div>
 
-<button class="adm-trigger" id="admTrigger" aria-label="Panel konfiguracji"><i data-lucide="settings" style="width:18px;height:18px"></i></button>
-
 <div class="adm-overlay" id="admOverlay">
     <div class="adm-panel">
         <div class="adm-head">
@@ -588,7 +587,10 @@
 <script>
 function esc(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
 
-const DEFAULT_DATA={
+/* Blokada dostepu do panelu — zamknieta w closure, nie mozna obejsc z konsoli */
+var _admGate=(function(){var u=false;return{unlock:function(){u=true},check:function(){return u}}})();
+
+var DEFAULT_DATA={
     server:{ip:'pakoplay.pl',discord:'https://discord.gg/pakoplay',shop:'https://sklep.pakoplay.pl',online:true},
     hero:{badge:'Serwer online',slogan:'Twoj serwer Minecraft',desc:'Serwer Minecraft, ktory stawia na spolecznosc, jakosc i doswiadczenie — Dolacz i przekonaj sie sam.'},
     aboutTitle:'Poznaj PakoPlay.PL',
@@ -619,28 +621,30 @@ const DEFAULT_DATA={
         {icon:'calendar',title:'Eventy',desc:'Regularne wydarzenia z nagrodami — build battle, PvP, drop party i wiecej.',span:false,purp:true}
     ],
     modes:[
-        {name:'Survival',desc:'Klasyczny Survival z systemem dzialek, ekonomia i rankingami. Buduj, tworz i rywalizuj.',tag:'Popularny',status:'active',meta:['1.20+','Dzialki','Ekonomia'],feats:['Ranking','Aukcje','Eventy','Handel'],icon:'swords',bgImage:''},
-        {name:'SkyBlock',desc:'Zacznij na malej wyspie i rozbuduj ja w imperium. Wyzwania, zadania i ranking.',tag:'W budowie',status:'offline',meta:['1.20+','Wyzwania','Zadania'],feats:['Ranking','Wyzwania','Kooperacja'],icon:'cloud',bgImage:''},
-        {name:'Creative',desc:'Tryb kreatywny z dzialkami, WorldEditem i mozliwoscia prezentacji budownictwa.',tag:'Planowany',status:'offline',meta:['1.20+','Dzialki','WorldEdit'],feats:['Plotki','Wystawy','Konkursy'],icon:'palette',bgImage:''}
+        {name:'Survival',desc:'Klasyczny Survival z ekonomia, rankingami i eventami. Buduj, eksploruj i rywalizuj z innymi graczami.',tag:'Popularny',status:'active',meta:['1.20+','Ekonomia','Rankingi'],feats:['Ranking','Eventy','Handel','Aukcje'],icon:'swords',bgImage:''},
+        {name:'Survival + Dzialki',desc:'Survival z systemem dzialek — ochrona terenu, budowa w spokoju i wlasny kawalek swiata dla kazdego gracza.',tag:'Popularny',status:'active',meta:['1.20+','Dzialki','Ochrona'],feats:['Dzialki','Wspolpraca','Ochrona','Plotki'],icon:'map',bgImage:''}
     ],
-    teamMain:{name:'Wlasciciel',role:'Wlasciciel & Zalozyciel',initials:'WP',details:[{icon:'map-pin',text:'Polska'},{icon:'calendar',text:'Od 2024'}],discord:'#',tiktok:'#',photo:''},
+    teamMain:{name:'Wlasciciel',role:'Wlasciciel & Zalozyciel',initials:'WP',description:'Zalozyciel i glowny administrator serwera PakoPlay.PL.',details:[{icon:'map-pin',text:'Polska'},{icon:'calendar',text:'Od 2024'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
     teamOwners:[
-        {name:'Co-Owner',role:'Co-Owner',initials:'CO',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:'https://imgur.com/a/Ggd8L9F'},
-        {name:'Co-Owner 2',role:'Co-Owner',initials:'C2',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''}
+        {name:'Co-Owner',role:'Co-Owner',initials:'CO',description:'Wspolwlasciciel serwera, pomaga w zarzadzaniu i rozwoju.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
+        {name:'Co-Owner 2',role:'Co-Owner',initials:'C2',description:'Wspolwlasciciel serwera, dba o techniczna strone projektu.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''}
     ],
     teamMembers:[
-        {name:'Admin',role:'Administrator',initials:'AD',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''},
-        {name:'Moderator',role:'Moderator',initials:'MO',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''},
-        {name:'Helper',role:'Helper',initials:'HE',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''}
+        {name:'Administrator',role:'Administrator',initials:'AD',description:'Zarzadza serwerem i pilnuje porzadku.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
+        {name:'Moderator',role:'Moderator',initials:'MO',description:'Pomaga graczom i dba o przestrzeganie regulaminu.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
+        {name:'Helper',role:'Helper',initials:'HE',description:'Pomaga nowym graczom i odpowiada na pytania.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
+        {name:'Builder',role:'Builder',initials:'BU',description:'Tworzy budowlki i mapy na serwerze.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
+        {name:'Developer',role:'Developer',initials:'DV',description:'Programuje pluginy i rozwija techniczna strone serwera.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
+        {name:'Support',role:'Support',initials:'SU',description:'Obsluguje zgloszenia i pomaga w rozwiazywaniu problemow.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''}
     ],
     ranks:{
-        periods:['Miesiac','Zycie'],
+        periods:['7 dni','30 dni','3 miesiace'],
         items:[
-            {name:'VIP',prices:['9.99 PLN','49.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Kolorowy nick','Kit VIP co 24h','2 home','+1 dzialka','Priorytet wejscia']},
-            {name:'SVIP',prices:['19.99 PLN','99.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z VIP','Kit SVIP co 24h','5 home','+2 dzialki','Dostep do /fly w lobby','Specjalny prefix']},
-            {name:'MVP',prices:['29.99 PLN','149.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z SVIP','Kit MVP co 12h','10 home','+3 dzialki','Pet towarzysz','Wlasny sklep']},
-            {name:'Legend',prices:['49.99 PLN','249.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z MVP','Kit Legend co 6h','20 home','Nielimitowane dzialki','Wlasna czasteczka','Tag na Discord']},
-            {name:'God',prices:['79.99 PLN','399.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z Legend','Kit God co 1h','Nielimitowane home','Wlasna wyspa','Customowe komendy','Priorytetowe wsparcie']}
+            {name:'VIP',prices:['4.99 PLN','9.99 PLN','24.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Kolorowy nick','Kit VIP co 24h','2 home','+1 dzialka','Priorytet wejscia']},
+            {name:'SVIP',prices:['9.99 PLN','19.99 PLN','49.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z VIP','Kit SVIP co 24h','5 home','+2 dzialki','Dostep do /fly w lobby','Specjalny prefix']},
+            {name:'MVP',prices:['14.99 PLN','29.99 PLN','74.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z SVIP','Kit MVP co 12h','10 home','+3 dzialki','Pet towarzysz','Wlasny sklep']},
+            {name:'Legend',prices:['24.99 PLN','49.99 PLN','124.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z MVP','Kit Legend co 6h','20 home','Nielimitowane dzialki','Wlasna czasteczka','Tag na Discord']},
+            {name:'God',prices:['39.99 PLN','79.99 PLN','199.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z Legend','Kit God co 1h','Nielimitowane home','Wlasna wyspa','Customowe komendy','Priorytetowe wsparcie']}
         ]
     },
     keys:[
@@ -663,7 +667,7 @@ const DEFAULT_DATA={
     footerLinks2:[{text:'Zespol',href:'#team'},{text:'FAQ',href:'#faq'},{text:'Discord',href:'#'},{text:'Regulamin',href:'#'}]
 };
 
-const App={
+var App={
     data:null,
     dirty:false,
     currentPeriod:0,
@@ -671,7 +675,7 @@ const App={
     toastTimer:null,
     canvasAnim:null,
 
-    init(){
+    init:function(){
         this.loadData();
         this.render();
         this.initCanvas();
@@ -685,23 +689,23 @@ const App={
         if(typeof lucide!=='undefined')lucide.createIcons();
     },
 
-    loadData(){
+    loadData:function(){
         try{
-            const s=localStorage.getItem('pakoplay_data');
+            var s=localStorage.getItem('pakoplay_data');
             if(s){this.data=JSON.parse(s);this.mergeDefaults(this.data,DEFAULT_DATA)}
             else{this.data=JSON.parse(JSON.stringify(DEFAULT_DATA))}
         }catch(e){this.data=JSON.parse(JSON.stringify(DEFAULT_DATA))}
     },
 
-    mergeDefaults(target,def){
-        for(const k in def){
+    mergeDefaults:function(target,def){
+        for(var k in def){
             if(!(k in target))target[k]=JSON.parse(JSON.stringify(def[k]));
             else if(typeof def[k]==='object'&&def[k]!==null&&!Array.isArray(def[k])&&typeof target[k]==='object'&&target[k]!==null)
                 this.mergeDefaults(target[k],def[k]);
         }
     },
 
-    saveData(){
+    saveData:function(){
         this.collectAllData();
         try{
             localStorage.setItem('pakoplay_data',JSON.stringify(this.data));
@@ -714,7 +718,7 @@ const App={
         }catch(e){this.toast('Blad zapisu — dane zbyt duze (zmniejsz zdjecia)')}
     },
 
-    resetData(){
+    resetData:function(){
         if(!confirm('Czy na pewno chcesz zresetowac wszystkie dane do domyslnych?'))return;
         localStorage.removeItem('pakoplay_data');
         this.data=JSON.parse(JSON.stringify(DEFAULT_DATA));
@@ -727,32 +731,33 @@ const App={
         this.toast('Dane zostaly zresetowane');
     },
 
-    getVal(path){
-        return path.split('.').reduce((o,k)=>{
+    getVal:function(path){
+        return path.split('.').reduce(function(o,k){
             if(o===null||o===undefined)return '';
             return o[k];
         },this.data)||'';
     },
 
-    setVal(path,value){
-        const p=path.split('.');
-        let o=this.data;
-        for(let i=0;i<p.length-1;i++){
+    setVal:function(path,value){
+        var p=path.split('.');
+        var o=this.data;
+        for(var i=0;i<p.length-1;i++){
             if(o[p[i]]===undefined)o[p[i]]={};
             o=o[p[i]];
         }
         o[p[p.length-1]]=value;
     },
 
-    collectAllData(){
-        const inputs=document.querySelectorAll('#admBody [data-path]');
-        inputs.forEach(inp=>{
-            const p=inp.dataset.path;
-            this.setVal(p,inp.value);
+    collectAllData:function(){
+        var self=this;
+        var inputs=document.querySelectorAll('#admBody [data-path]');
+        inputs.forEach(function(inp){
+            var p=inp.dataset.path;
+            self.setVal(p,inp.value);
         });
     },
 
-    render(){
+    render:function(){
         this.renderHero();
         this.renderAbout();
         this.renderOffer();
@@ -764,183 +769,187 @@ const App={
         this.renderFooter();
     },
 
-    renderHero(){
-        const d=this.data;
-        const badgeText=d.hero.badge||(d.server.online?'Serwer online':'Serwer offline');
+    renderHero:function(){
+        var d=this.data;
+        var badgeText=d.hero.badge||(d.server.online?'Serwer online':'Serwer offline');
         document.getElementById('heroBadgeText').textContent=badgeText;
         document.getElementById('heroSlog').textContent=d.hero.slogan;
         document.getElementById('heroDesc').textContent=d.hero.desc;
         document.getElementById('heroIP').textContent=d.server.ip;
         document.getElementById('ipWidgetIP').textContent=d.server.ip;
-        const badge=document.getElementById('heroBadge');
+        var badge=document.getElementById('heroBadge');
         if(d.server.online){badge.style.borderColor='rgba(74,222,128,.2)';badge.style.color='#4ade80';badge.querySelector('.hbdot').style.background='#4ade80'}
         else{badge.style.borderColor='rgba(248,113,113,.2)';badge.style.color='#f87171';badge.querySelector('.hbdot').style.background='#f87171'}
     },
 
-    renderAbout(){
-        const d=this.data;
+    renderAbout:function(){
+        var d=this.data;
         document.getElementById('aboutTitle').textContent=d.aboutTitle;
-        let sh='';
-        d.stats.forEach(s=>{sh+='<div class="as"><div class="as-n">'+esc(s.value)+'</div><div class="as-l">'+esc(s.label)+'</div></div>'});
+        var sh='';
+        d.stats.forEach(function(s){sh+='<div class="as"><div class="as-n">'+esc(s.value)+'</div><div class="as-l">'+esc(s.label)+'</div></div>'});
         document.getElementById('aboutStats').innerHTML=sh;
-        let gh='';
-        d.aboutCards.forEach(c=>{gh+='<div class="acard rv"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="acard-t">'+esc(c.title)+'</div><div class="acard-d">'+esc(c.desc)+'</div></div>'});
+        var gh='';
+        d.aboutCards.forEach(function(c){gh+='<div class="acard rv"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="acard-t">'+esc(c.title)+'</div><div class="acard-d">'+esc(c.desc)+'</div></div>'});
         document.getElementById('aboutGrid').innerHTML=gh;
     },
 
-    renderOffer(){
-        const d=this.data;
+    renderOffer:function(){
+        var d=this.data;
         document.getElementById('offerTitle').textContent=d.offerTitle;
         document.getElementById('offerSub').textContent=d.offerSub;
-        let gh='';
-        d.offerCards.forEach((c,i)=>{
+        var gh='';
+        d.offerCards.forEach(function(c){
             gh+='<div class="ocard rv'+(c.span?' f1':'')+'"><div class="ocard-glow"></div>'+(c.purp?'<div class="ocard-pglow"></div>':'')+'<div class="acard-ic'+(c.purp?' purp':'')+'"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="ocard-t">'+esc(c.title)+'</div><div class="ocard-d">'+esc(c.desc)+'</div></div>';
         });
         document.getElementById('offerGrid').innerHTML=gh;
     },
 
-    renderModes(){
-        const d=this.data;
+    renderModes:function(){
+        var d=this.data;
         document.getElementById('modesSub').textContent=d.modesSub;
-        let mh='';
-        d.modes.forEach((m,i)=>{
-            const bgStyle=m.bgImage?'background-image:url(\''+esc(m.bgImage)+'\');background-size:cover;background-position:center;':'';
-            const showIcon=!m.bgImage;
+        var mh='';
+        d.modes.forEach(function(m){
+            var bgStyle=m.bgImage?'background-image:url(\''+esc(m.bgImage)+'\');background-size:cover;background-position:center;':'';
+            var showIcon=!m.bgImage;
             mh+='<div class="mode rv"><div class="mode-vis" style="'+bgStyle+'">'+(showIcon?'<i data-lucide="'+esc(m.icon||'gamepad-2')+'"></i>'+esc(m.name||'TRYB GRY'):'')+'<div class="mode-vis-glow"></div></div><div>';
             if(m.tag)mh+='<span class="mode-tag">'+esc(m.tag)+'</span>';
             mh+='<h3 class="mode-name">'+esc(m.name)+'</h3><p class="mode-desc">'+esc(m.desc)+'</p><div class="mode-meta">';
             if(m.status==='active')mh+='<span class="mode-meta-status active">Aktywny</span>';
             else mh+='<span class="mode-meta-status" style="color:var(--text-t);background:var(--bg-card);border:1px solid var(--border)">Offline</span>';
-            (m.meta||[]).forEach(mt=>{mh+='<span class="mode-meta-item">'+esc(mt)+'</span>'});
+            (m.meta||[]).forEach(function(mt){mh+='<span class="mode-meta-item">'+esc(mt)+'</span>'});
             mh+='</div><div class="mode-feats">';
-            (m.feats||[]).forEach(f=>{mh+='<span class="mode-feat">'+esc(f)+'</span>'});
+            (m.feats||[]).forEach(function(f){mh+='<span class="mode-feat">'+esc(f)+'</span>'});
             mh+='</div></div></div>';
         });
         document.getElementById('modesList').innerHTML=mh;
     },
 
-    renderTeamMember(m,avClass,showSocials){
-        let h='<div class="'+avClass+'"'+(m.photo?' style="background-image:url(\''+esc(m.photo)+'\')"':'')+'>'+(!m.photo?esc(m.initials):'')+'</div>';
+    renderTeamPerson:function(m,avClass,showSocials){
+        var h='<div class="'+avClass+'"'+(m.photo?' style="background-image:url(\''+esc(m.photo)+'\')"':'')+'>'+(!m.photo?esc(m.initials):'')+'</div>';
         h+='<div class="'+avClass.replace('av','role')+'">'+esc(m.role)+'</div>';
         h+='<div class="'+avClass.replace('av','name')+'">'+esc(m.name)+'</div>';
+        if(m.description)h+='<div class="'+avClass.replace('av','desc')+'">'+esc(m.description)+'</div>';
         if(m.details&&m.details.length){
-            const rowsClass=avClass.replace('av','rows');
+            var rowsClass=avClass.replace('av','rows');
             h+='<div class="'+rowsClass+'"><div class="td-rows">';
-            m.details.forEach(d=>{h+='<div class="td-row"><i data-lucide="'+esc(d.icon)+'"></i>'+esc(d.text)+'</div>'});
+            m.details.forEach(function(d){h+='<div class="td-row"><i data-lucide="'+esc(d.icon)+'"></i>'+esc(d.text)+'</div>'});
             h+='</div></div>';
         }
-        if(showSocials&&m.discord&&m.discord!=='#'){
-            const socClass=avClass.replace('av','socials');
-            h+='<div class="'+socClass+'"><div class="ow-socials">';
-            if(m.discord&&m.discord!=='#')h+='<a href="'+esc(m.discord)+'" target="_blank" rel="noopener" class="ow-soc"><i data-lucide="message-circle"></i>Discord</a>';
-            if(m.tiktok&&m.tiktok!=='#')h+='<a href="'+esc(m.tiktok)+'" target="_blank" rel="noopener" class="ow-soc tk"><i data-lucide="music-2"></i>TikTok</a>';
-            h+='</div></div>';
+        if(showSocials){
+            var socClass=avClass.replace('av','socials');
+            var hasAny=(m.youtube&&m.youtube!=='#')||(m.tiktok&&m.tiktok!=='#')||(m.discord&&m.discord!=='#');
+            if(hasAny){
+                h+='<div class="'+socClass+'"><div class="ow-socials">';
+                if(m.youtube&&m.youtube!=='#')h+='<a href="'+esc(m.youtube)+'" target="_blank" rel="noopener" class="ow-soc"><i data-lucide="youtube"></i>YouTube</a>';
+                if(m.tiktok&&m.tiktok!=='#')h+='<a href="'+esc(m.tiktok)+'" target="_blank" rel="noopener" class="ow-soc tk"><i data-lucide="music-2"></i>TikTok</a>';
+                if(m.discord&&m.discord!=='#')h+='<a href="'+esc(m.discord)+'" target="_blank" rel="noopener" class="ow-soc"><i data-lucide="message-circle"></i>Discord</a>';
+                h+='</div></div>';
+            }
         }
         return h;
     },
 
-    renderTeam(){
-        const d=this.data;
+    renderTeam:function(){
+        var d=this.data;
         document.getElementById('teamSub').textContent=d.teamSub;
-        const m=d.teamMain;
-        let mh='<div class="team-main rv"><div class="tm-glow"></div>';
-        mh+=this.renderTeamMember(m,'tm-av',true);
+        var m=d.teamMain;
+        var mh='<div class="team-main rv"><div class="tm-glow"></div>';
+        mh+=this.renderTeamPerson(m,'tm-av',true);
         mh+='</div>';
         document.getElementById('teamMain').innerHTML=mh;
-
-        let oh='';
-        d.teamOwners.forEach(o=>{
+        var oh='';
+        d.teamOwners.forEach(function(o){
             oh+='<div class="to-card rv"><div class="to-glow"></div>';
-            oh+=this.renderTeamMember(o,'to-av',true);
+            oh+=App.renderTeamPerson(o,'to-av',true);
             oh+='</div>';
         });
         document.getElementById('teamOwners').innerHTML=oh;
-
-        let th='';
-        d.teamMembers.forEach(m=>{
+        var th='';
+        d.teamMembers.forEach(function(m){
             th+='<div class="tc-card rv"><div class="tc-glow"></div>';
-            th+=this.renderTeamMember(m,'tc-av',true);
+            th+=App.renderTeamPerson(m,'tc-av',true);
             th+='</div>';
         });
         document.getElementById('teamGrid').innerHTML=th;
     },
 
-    renderRanks(){
-        const d=this.data.ranks;
-        let ph='';
-        d.periods.forEach((p,i)=>{ph+='<button class="ptab'+(i===this.currentPeriod?' on':'')+'" data-pi="'+i+'">'+esc(p)+'</button>'});
+    renderRanks:function(){
+        var self=this;
+        var d=this.data.ranks;
+        var ph='';
+        d.periods.forEach(function(p,i){ph+='<button class="ptab'+(i===self.currentPeriod?' on':'')+'" data-pi="'+i+'">'+esc(p)+'</button>'});
         document.getElementById('periodToggle').innerHTML=ph;
-        document.querySelectorAll('.ptab').forEach(btn=>{
-            btn.addEventListener('click',()=>{
-                const pi=parseInt(btn.dataset.pi);
-                if(pi===this.currentPeriod)return;
-                document.querySelectorAll('.rcard-price,.rcard-dur').forEach(el=>el.classList.add('switching'));
-                setTimeout(()=>{
-                    this.currentPeriod=pi;
-                    document.querySelectorAll('.ptab').forEach(b=>b.classList.toggle('on',parseInt(b.dataset.pi)===pi));
-                    this.updateRankPrices();
-                    document.querySelectorAll('.rcard-price,.rcard-dur').forEach(el=>el.classList.remove('switching'));
+        document.querySelectorAll('.ptab').forEach(function(btn){
+            btn.addEventListener('click',function(){
+                var pi=parseInt(btn.dataset.pi);
+                if(pi===self.currentPeriod)return;
+                document.querySelectorAll('.rcard-price,.rcard-dur').forEach(function(el){el.classList.add('switching')});
+                setTimeout(function(){
+                    self.currentPeriod=pi;
+                    document.querySelectorAll('.ptab').forEach(function(b){b.classList.toggle('on',parseInt(b.dataset.pi)===pi)});
+                    self.updateRankPrices();
+                    document.querySelectorAll('.rcard-price,.rcard-dur').forEach(function(el){el.classList.remove('switching')});
                 },200);
             });
         });
-
-        let rh='';
-        d.items.forEach((r,i)=>{
+        var rh='';
+        d.items.forEach(function(r,i){
             rh+='<div class="rcard rv"><div class="rcard-glow"></div><div class="rcard-name">'+esc(r.name)+'</div>';
-            rh+='<div class="rcard-dur" data-ri="'+i+'">'+esc(r.durs[this.currentPeriod]||'')+'</div>';
-            rh+='<div class="rcard-price" data-ri="'+i+'">'+esc(r.prices[this.currentPeriod]||'')+'</div>';
+            rh+='<div class="rcard-dur" data-ri="'+i+'">'+esc(r.durs[self.currentPeriod]||'')+'</div>';
+            rh+='<div class="rcard-price" data-ri="'+i+'">'+esc(r.prices[self.currentPeriod]||'')+'</div>';
             rh+='<ul class="rcard-bens">';
-            (r.benefits||[]).forEach(b=>{rh+='<li><i data-lucide="check"></i>'+esc(b)+'</li>'});
-            rh+='</ul><a href="'+esc(this.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bp">Kup teraz</a></div>';
+            (r.benefits||[]).forEach(function(b){rh+='<li><i data-lucide="check"></i>'+esc(b)+'</li>'});
+            rh+='</ul><a href="'+esc(self.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bp">Kup teraz</a></div>';
         });
         document.getElementById('ranksGrid').innerHTML=rh;
     },
 
-    updateRankPrices(){
-        const d=this.data.ranks;
-        document.querySelectorAll('.rcard-price[data-ri]').forEach(el=>{
-            const i=parseInt(el.dataset.ri);
-            if(d.items[i])el.textContent=d.items[i].prices[this.currentPeriod]||'';
+    updateRankPrices:function(){
+        var d=this.data.ranks;
+        document.querySelectorAll('.rcard-price[data-ri]').forEach(function(el){
+            var i=parseInt(el.dataset.ri);
+            if(d.items[i])el.textContent=d.items[i].prices[App.currentPeriod]||'';
         });
-        document.querySelectorAll('.rcard-dur[data-ri]').forEach(el=>{
-            const i=parseInt(el.dataset.ri);
-            if(d.items[i])el.textContent=d.items[i].durs[this.currentPeriod]||'';
+        document.querySelectorAll('.rcard-dur[data-ri]').forEach(function(el){
+            var i=parseInt(el.dataset.ri);
+            if(d.items[i])el.textContent=d.items[i].durs[App.currentPeriod]||'';
         });
     },
 
-    renderKeys(){
-        let kh='';
-        this.data.keys.forEach(k=>{
+    renderKeys:function(){
+        var self=this;
+        var kh='';
+        this.data.keys.forEach(function(k){
             kh+='<div class="kcard rv"><div class="kcard-glow"></div><div class="kcard-name">'+esc(k.name)+'</div>';
             kh+='<div class="kcard-desc">'+esc(k.desc)+'</div><div class="kcard-price">'+esc(k.price)+' <small></small></div>';
-            kh+='<a href="'+esc(this.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bpur">Kup teraz</a></div>';
+            kh+='<a href="'+esc(self.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bpur">Kup teraz</a></div>';
         });
         document.getElementById('keysGrid').innerHTML=kh;
     },
 
-    renderFAQ(){
-        let fh='';
-        this.data.faq.forEach((f,i)=>{
+    renderFAQ:function(){
+        var fh='';
+        this.data.faq.forEach(function(f,i){
             fh+='<div class="fitem" data-fi="'+i+'"><button class="fq"><span>'+esc(f.q)+'</span><span class="ft"></span></button>';
             fh+='<div class="fa"><div class="fa-in">'+esc(f.a)+'</div></div></div>';
         });
         document.getElementById('faqList').innerHTML=fh;
     },
 
-    renderFooter(){
+    renderFooter:function(){
         document.getElementById('footerDesc').textContent=this.data.footerDesc;
-        let l1='';
-        this.data.footerLinks1.forEach(l=>{l1+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
+        var l1='';
+        this.data.footerLinks1.forEach(function(l){l1+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
         document.getElementById('footerLinks1').innerHTML=l1;
-        let l2='';
-        this.data.footerLinks2.forEach(l=>{l2+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
+        var l2='';
+        this.data.footerLinks2.forEach(function(l){l2+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
         document.getElementById('footerLinks2').innerHTML=l2;
     },
 
-    updateLinks(){
-        const dc=this.data.server.discord;
-        const sh=this.data.server.shop;
-        const setH=(id,href)=>{const el=document.getElementById(id);if(el)el.href=href};
+    updateLinks:function(){
+        var dc=this.data.server.discord;
+        var sh=this.data.server.shop;
+        var setH=function(id,href){var el=document.getElementById(id);if(el)el.href=href};
         setH('heroDCLink',dc);
         setH('shopLink',sh);
         setH('shopDCLink',dc);
@@ -948,75 +957,73 @@ const App={
         setH('discordLink',dc);
     },
 
-    initCanvas(){
-        const c=document.getElementById('hcv');
+    initCanvas:function(){
+        var c=document.getElementById('hcv');
         if(!c)return;
-        const ctx=c.getContext('2d');
-        let w,h,particles=[];
-        const resize=()=>{w=c.width=c.offsetWidth;h=c.height=c.offsetHeight};
+        var ctx=c.getContext('2d');
+        var w,h,particles=[];
+        var self=this;
+        var resize=function(){w=c.width=c.offsetWidth;h=c.height=c.offsetHeight};
         resize();
         window.addEventListener('resize',resize);
-        const count=Math.min(60,Math.floor(w*h/18000));
-        for(let i=0;i<count;i++){
+        var count=Math.min(60,Math.floor(w*h/18000));
+        for(var i=0;i<count;i++){
             particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.5+.5,o:Math.random()*.4+.1});
         }
-        const draw=()=>{
+        var draw=function(){
             ctx.clearRect(0,0,w,h);
-            particles.forEach(p=>{
+            particles.forEach(function(p){
                 p.x+=p.vx;p.y+=p.vy;
                 if(p.x<0)p.x=w;if(p.x>w)p.x=0;
                 if(p.y<0)p.y=h;if(p.y>h)p.y=0;
                 ctx.beginPath();ctx.arc(p.x,p.y,Math.max(.5,p.r),0,Math.PI*2);
                 ctx.fillStyle='rgba(59,158,255,'+p.o+')';ctx.fill();
             });
-            for(let i=0;i<particles.length;i++){
-                for(let j=i+1;j<particles.length;j++){
-                    const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
-                    const dist=Math.sqrt(dx*dx+dy*dy);
+            for(var i=0;i<particles.length;i++){
+                for(var j=i+1;j<particles.length;j++){
+                    var dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
+                    var dist=Math.sqrt(dx*dx+dy*dy);
                     if(dist<120){
                         ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);
                         ctx.strokeStyle='rgba(59,158,255,'+((.12)*(1-dist/120))+')';ctx.lineWidth=.5;ctx.stroke();
                     }
                 }
             }
-            this.canvasAnim=requestAnimationFrame(draw);
+            self.canvasAnim=requestAnimationFrame(draw);
         };
         draw();
     },
 
-    initNav(){
-        let last=0;
-        window.addEventListener('scroll',()=>{
-            const y=window.scrollY;
-            document.getElementById('nav').classList.toggle('sc',y>60);
-            last=y;
+    initNav:function(){
+        window.addEventListener('scroll',function(){
+            document.getElementById('nav').classList.toggle('sc',window.scrollY>60);
         },{passive:true});
     },
 
-    initScrollReveal(){
-        const obs=new IntersectionObserver((entries)=>{
-            entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
+    initScrollReveal:function(){
+        var obs=new IntersectionObserver(function(entries){
+            entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
         },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-        document.querySelectorAll('.rv:not(.vis)').forEach(el=>obs.observe(el));
+        document.querySelectorAll('.rv:not(.vis)').forEach(function(el){obs.observe(el)});
     },
 
-    initMobileMenu(){
-        const menu=document.getElementById('mmenu');
-        document.getElementById('navTog').addEventListener('click',()=>menu.classList.add('open'));
-        document.getElementById('mcl').addEventListener('click',()=>menu.classList.remove('open'));
-        menu.querySelectorAll('.mlink').forEach(a=>{
-            a.addEventListener('click',()=>menu.classList.remove('open'));
+    initMobileMenu:function(){
+        var menu=document.getElementById('mmenu');
+        document.getElementById('navTog').addEventListener('click',function(){menu.classList.add('open')});
+        document.getElementById('mcl').addEventListener('click',function(){menu.classList.remove('open')});
+        menu.querySelectorAll('.mlink').forEach(function(a){
+            a.addEventListener('click',function(){menu.classList.remove('open')});
         });
     },
 
-    initFAQ(){
-        document.getElementById('faqList').addEventListener('click',(e)=>{
-            const btn=e.target.closest('.fq');
+    initFAQ:function(){
+        document.getElementById('faqList').addEventListener('click',function(e){
+            var btn=e.target.closest('.fq');
             if(!btn)return;
-            const item=btn.parentElement;
-            const fa=item.querySelector('.fa');
-            const isOpen=item.classList.contains('on');
-            document.querySelectorAll('.fitem.on').forEach(fi=>{
+            var item=btn.parentElement;
+            var fa=item.querySelector('.fa');
+            var isOpen=item.classList.contains('on');
+            document.querySelectorAll('.fitem.on').forEach(function(fi){
                 fi.classList.remove('on');
                 fi.querySelector('.fa').style.maxHeight='0';
             });
@@ -1027,40 +1034,45 @@ const App={
         });
     },
 
-    initPeriodToggle(){/* handled in renderRanks */},
+    initPeriodToggle:function(){},
 
-    copyIP(){
-        const ip=this.data.server.ip;
+    copyIP:function(){
+        var ip=this.data.server.ip;
+        var self=this;
         if(navigator.clipboard&&navigator.clipboard.writeText){
-            navigator.clipboard.writeText(ip).then(()=>this.showCopyFeedback()).catch(()=>this.fallbackCopy(ip));
+            navigator.clipboard.writeText(ip).then(function(){self.showCopyFeedback()}).catch(function(){self.fallbackCopy(ip)});
         }else{this.fallbackCopy(ip)}
     },
 
-    fallbackCopy(ip){
-        const ta=document.createElement('textarea');ta.value=ip;ta.style.position='fixed';ta.style.left='-9999px';
+    fallbackCopy:function(ip){
+        var ta=document.createElement('textarea');ta.value=ip;ta.style.position='fixed';ta.style.left='-9999px';
         document.body.appendChild(ta);ta.select();
         try{document.execCommand('copy');this.showCopyFeedback()}catch(e){}
         document.body.removeChild(ta);
     },
 
-    showCopyFeedback(){
+    showCopyFeedback:function(){
         this.toast('Skopiowano IP: '+this.data.server.ip);
-        const w=document.getElementById('ipWidget');
+        var w=document.getElementById('ipWidget');
         w.classList.add('ip-widget-copied');
-        setTimeout(()=>w.classList.remove('ip-widget-copied'),1500);
+        var self=this;
+        setTimeout(function(){w.classList.remove('ip-widget-copied')},1500);
     },
 
-    toast(msg){
-        const t=document.getElementById('toast');
+    toast:function(msg){
+        var t=document.getElementById('toast');
         document.getElementById('toastText').textContent=msg;
         t.classList.add('show');
         clearTimeout(this.toastTimer);
-        this.toastTimer=setTimeout(()=>t.classList.remove('show'),2500);
+        var self=this;
+        this.toastTimer=setTimeout(function(){t.classList.remove('show')},2500);
     },
 
     /* ===== ADMIN PANEL ===== */
     admSections:[
         {id:'texts',label:'Teksty',icon:'type'},
+        {id:'images',label:'Zdjecia',icon:'image'},
+        {id:'links',label:'Linki',icon:'link'},
         {id:'stats',label:'Statystyki',icon:'bar-chart-2'},
         {id:'about',label:'O serwerze',icon:'info'},
         {id:'offer',label:'Co oferujemy',icon:'star'},
@@ -1068,75 +1080,81 @@ const App={
         {id:'team',label:'Zespol',icon:'users'},
         {id:'ranks',label:'Rangi',icon:'crown'},
         {id:'keys',label:'Klucze',icon:'key'},
-        {id:'links',label:'Linki',icon:'link'},
         {id:'ip',label:'IP serwera',icon:'server'},
         {id:'faq',label:'FAQ',icon:'help-circle'}
     ],
 
-    initAdmin(){
-        document.getElementById('admTrigger').addEventListener('click',()=>this.openAdmin());
-        document.getElementById('admOverlay').addEventListener('click',(e)=>{if(e.target===e.currentTarget)this.closeAdmin()});
-        document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&document.getElementById('admOverlay').style.display==='flex')this.closeAdmin()});
-        let nh='';
-        this.admSections.forEach(s=>{nh+='<button class="adm-nav-item'+(s.id===this.admSection?' active':'')+'" data-sec="'+s.id+'"><i data-lucide="'+s.icon+'"></i>'+s.label+'</button>'});
-        document.getElementById('admNav').innerHTML=nh;
-        document.getElementById('admNav').addEventListener('click',(e)=>{
-            const btn=e.target.closest('.adm-nav-item');
-            if(!btn)return;
-            this.admSection=btn.dataset.sec;
-            document.querySelectorAll('.adm-nav-item').forEach(b=>b.classList.toggle('active',b.dataset.sec===this.admSection));
-            this.showAdminSection(this.admSection);
+    initAdmin:function(){
+        var self=this;
+        /* Brak przycisku na stronie — panel dostepny tylko przez skrot klawiszowy */
+        document.getElementById('admOverlay').addEventListener('click',function(e){if(e.target===e.currentTarget)self.closeAdmin()});
+        document.addEventListener('keydown',function(e){
+            if(e.key==='Escape'&&document.getElementById('admOverlay').style.display==='flex')self.closeAdmin();
         });
-        document.getElementById('admBody').addEventListener('input',()=>{this.dirty=true;this.updateStatus()});
+        var nh='';
+        this.admSections.forEach(function(s){nh+='<button class="adm-nav-item'+(s.id===self.admSection?' active':'')+'" data-sec="'+s.id+'"><i data-lucide="'+s.icon+'"></i>'+s.label+'</button>'});
+        document.getElementById('admNav').innerHTML=nh;
+        document.getElementById('admNav').addEventListener('click',function(e){
+            var btn=e.target.closest('.adm-nav-item');
+            if(!btn)return;
+            self.admSection=btn.dataset.sec;
+            document.querySelectorAll('.adm-nav-item').forEach(function(b){b.classList.toggle('active',b.dataset.sec===self.admSection)});
+            self.showAdminSection(self.admSection);
+        });
+        document.getElementById('admBody').addEventListener('input',function(){self.dirty=true;self.updateStatus()});
         this.showAdminSection(this.admSection);
     },
 
-    openAdmin(){
-        const o=document.getElementById('admOverlay');
+    openAdmin:function(){
+        /* Blokada — dziala tylko po odblokowaniu przez skrot klawiszowy */
+        if(!_admGate.check())return;
+        var o=document.getElementById('admOverlay');
         o.style.display='flex';
-        requestAnimationFrame(()=>{requestAnimationFrame(()=>{o.classList.add('open')})});
+        var self=this;
+        requestAnimationFrame(function(){requestAnimationFrame(function(){o.classList.add('open')})});
         this.showAdminSection(this.admSection);
         if(typeof lucide!=='undefined')lucide.createIcons();
     },
 
-    closeAdmin(){
-        const o=document.getElementById('admOverlay');
+    closeAdmin:function(){
+        var o=document.getElementById('admOverlay');
         o.classList.remove('open');
-        setTimeout(()=>{o.style.display='none'},300);
+        setTimeout(function(){o.style.display='none'},300);
     },
 
-    showAdminSection(sec){
-        const body=document.getElementById('admBody');
-        const fn={
-            texts:()=>this.admTexts(),
-            stats:()=>this.admStats(),
-            about:()=>this.admAbout(),
-            offer:()=>this.admOffer(),
-            modes:()=>this.admModes(),
-            team:()=>this.admTeam(),
-            ranks:()=>this.admRanks(),
-            keys:()=>this.admKeys(),
-            links:()=>this.admLinks(),
-            ip:()=>this.admIP(),
-            faq:()=>this.admFAQ()
+    showAdminSection:function(sec){
+        var body=document.getElementById('admBody');
+        var fn={
+            texts:function(){return App.admTexts()},
+            images:function(){return App.admImages()},
+            links:function(){return App.admLinks()},
+            stats:function(){return App.admStats()},
+            about:function(){return App.admAbout()},
+            offer:function(){return App.admOffer()},
+            modes:function(){return App.admModes()},
+            team:function(){return App.admTeam()},
+            ranks:function(){return App.admRanks()},
+            keys:function(){return App.admKeys()},
+            ip:function(){return App.admIP()},
+            faq:function(){return App.admFAQ()}
         };
         body.innerHTML=(fn[sec]||fn.texts)();
         if(typeof lucide!=='undefined')lucide.createIcons();
     },
 
-    field(label,path,type,placeholder){
+    field:function(label,path,type,placeholder){
         type=type||'text';placeholder=placeholder||'';
         return '<div class="adm-field"><label class="adm-label">'+label+'</label><input class="adm-input" type="'+type+'" data-path="'+path+'" placeholder="'+esc(placeholder)+'" value="'+esc(this.getVal(path))+'"></div>';
     },
 
-    areaField(label,path,placeholder){
+    areaField:function(label,path,placeholder){
         return '<div class="adm-field"><label class="adm-label">'+label+'</label><textarea class="adm-textarea" data-path="'+path+'" placeholder="'+esc(placeholder||'')+'">'+esc(this.getVal(path))+'</textarea></div>';
     },
 
-    imgField(label,path){
-        const v=this.getVal(path);
-        const uid='imgf-'+path.replace(/\./g,'-');
-        let h='<div class="adm-field"><label class="adm-label">'+label+'</label>';
+    imgField:function(label,path){
+        var v=this.getVal(path);
+        var uid='imgf-'+path.replace(/\./g,'-');
+        var h='<div class="adm-field"><label class="adm-label">'+label+'</label>';
         h+='<div class="adm-img-row"><input class="adm-input" type="text" data-path="'+path+'" placeholder="URL zdjecia lub wgraj ponizej" value="'+esc(v)+'">';
         h+='<button type="button" class="adm-btn" onclick="App.triggerImgUpload(\''+uid+'\')">Wgraj</button>';
         h+='<input type="file" id="'+uid+'" accept="image/*" style="display:none" onchange="App.handleImgUpload(\''+path+'\',this)"></div>';
@@ -1146,26 +1164,27 @@ const App={
         return h;
     },
 
-    triggerImgUpload(uid){document.getElementById(uid).click()},
+    triggerImgUpload:function(uid){document.getElementById(uid).click()},
 
-    handleImgUpload(path,input){
-        const file=input.files[0];
+    handleImgUpload:function(path,input){
+        var file=input.files[0];
         if(!file)return;
         if(file.size>500000){this.toast('Zdjecie zbyt duze (max 500KB)');return}
-        const r=new FileReader();
-        r.onload=(e)=>{
-            this.setVal(path,e.target.result);
-            const ti=document.querySelector('[data-path="'+path+'"]');
+        var self=this;
+        var r=new FileReader();
+        r.onload=function(e){
+            self.setVal(path,e.target.result);
+            var ti=document.querySelector('[data-path="'+path+'"]');
             if(ti)ti.value=e.target.result;
-            const prev=input.parentElement.parentElement.querySelector('.adm-img-preview');
+            var prev=input.parentElement.parentElement.querySelector('.adm-img-preview');
             if(prev){prev.src=e.target.result;prev.classList.add('visible')}
-            this.dirty=true;this.updateStatus();
+            self.dirty=true;self.updateStatus();
         };
         r.readAsDataURL(file);
     },
 
-    admTexts(){
-        let h='<div class="adm-section-title">Teksty — Hero</div>';
+    admTexts:function(){
+        var h='<div class="adm-section-title">Teksty — Hero</div>';
         h+=this.field('Badge (status)','hero.badge');
         h+=this.field('Slogan','hero.slogan');
         h+=this.areaField('Opis','hero.desc');
@@ -1182,32 +1201,92 @@ const App={
         return h;
     },
 
-    admStats(){
-        let h='<div class="adm-section-title">Statystyki (O serwerze)</div>';
-        h+='<div class="adm-list">';
-        this.data.stats.forEach((s,i)=>{
+    admImages:function(){
+        var h='<div class="adm-section-title">Zdjecia tla — Tryby gry</div>';
+        var self=this;
+        this.data.modes.forEach(function(m,i){
+            h+='<div class="adm-subsection">Tryb: '+esc(m.name)+'</div>';
+            h+=self.imgField('Zdjecie tla trybu','modes.'+i+'.bgImage');
+        });
+        h+='<div class="adm-section-title" style="margin-top:28px">Zdjecia — Wlasciciel</div>';
+        h+=this.imgField('Zdjecie wlasciciela','teamMain.photo');
+        h+='<div class="adm-section-title" style="margin-top:28px">Zdjecia — Co-Ownerzy</div>';
+        this.data.teamOwners.forEach(function(o,i){
+            h+='<div class="adm-subsection">Co-Owner: '+esc(o.name)+'</div>';
+            h+=self.imgField('Zdjecie','teamOwners.'+i+'.photo');
+        });
+        h+='<div class="adm-section-title" style="margin-top:28px">Zdjecia — Pozostala ekipa</div>';
+        this.data.teamMembers.forEach(function(m,i){
+            h+='<div class="adm-subsection'+(i%2===1?' purp':'')+'">'+esc(m.role)+': '+esc(m.name)+'</div>';
+            h+=self.imgField('Zdjecie','teamMembers.'+i+'.photo');
+        });
+        return h;
+    },
+
+    admLinks:function(){
+        var h='<div class="adm-section-title">Linki — Serwer</div>';
+        h+=this.field('Discord serwera','server.discord');
+        h+=this.field('Sklep','server.shop');
+        h+='<div class="adm-section-title" style="margin-top:28px">Linki — Wlasciciel ('+esc(this.data.teamMain.name)+')</div>';
+        h+=this.field('YouTube','teamMain.youtube');
+        h+=this.field('TikTok','teamMain.tiktok');
+        h+=this.field('Discord','teamMain.discord');
+        var self=this;
+        this.data.teamOwners.forEach(function(o,i){
+            h+='<div class="adm-section-title" style="margin-top:28px">Linki — Co-Owner: '+esc(o.name)+'</div>';
+            h+=self.field('YouTube','teamOwners.'+i+'.youtube');
+            h+=self.field('TikTok','teamOwners.'+i+'.tiktok');
+            h+=self.field('Discord','teamOwners.'+i+'.discord');
+        });
+        this.data.teamMembers.forEach(function(m,i){
+            h+='<div class="adm-section-title" style="margin-top:28px">Linki — '+esc(m.role)+': '+esc(m.name)+'</div>';
+            h+=self.field('YouTube','teamMembers.'+i+'.youtube');
+            h+=self.field('TikTok','teamMembers.'+i+'.tiktok');
+            h+=self.field('Discord','teamMembers.'+i+'.discord');
+        });
+        h+='<div class="adm-section-title" style="margin-top:28px">Linki — Footer: Nawigacja</div><div class="adm-list">';
+        this.data.footerLinks1.forEach(function(l,i){
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks1\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body"><div class="adm-row">'+self.field('Tekst','footerLinks1.'+i+'.text')+self.field('Link (href)','footerLinks1.'+i+'.href')+'</div></div></div>';
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks1\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
+        h+='<div class="adm-section-title" style="margin-top:28px">Linki — Footer: Przydatne</div><div class="adm-list">';
+        this.data.footerLinks2.forEach(function(l,i){
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks2\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body"><div class="adm-row">'+self.field('Tekst','footerLinks2.'+i+'.text')+self.field('Link (href)','footerLinks2.'+i+'.href')+'</div></div></div>';
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks2\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
+        return h;
+    },
+
+    admStats:function(){
+        var h='<div class="adm-section-title">Statystyki (O serwerze)</div><div class="adm-list">';
+        var self=this;
+        this.data.stats.forEach(function(s,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(s.value)+' — '+esc(s.label)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'stats\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body"><div class="adm-row">'+this.field('Wartosc','stats.'+i+'.value')+this.field('Etykieta','stats.'+i+'.label')+'</div></div></div>';
+            h+='<div class="adm-list-body"><div class="adm-row">'+self.field('Wartosc','stats.'+i+'.value')+self.field('Etykieta','stats.'+i+'.label')+'</div></div></div>';
         });
         h+='</div><button class="adm-add-btn" onclick="App.addItem(\'stats\',{value:\'0\',label:\'Nowe\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj statystyke</button>';
         return h;
     },
 
-    admAbout(){
-        let h='<div class="adm-section-title">Karty "O serwerze"</div><div class="adm-list">';
-        this.data.aboutCards.forEach((c,i)=>{
+    admAbout:function(){
+        var h='<div class="adm-section-title">Karty "O serwerze"</div><div class="adm-list">';
+        var self=this;
+        this.data.aboutCards.forEach(function(c,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(c.title)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'aboutCards\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+this.field('Ikona (lucide)','aboutCards.'+i+'.icon')+this.field('Tytul','aboutCards.'+i+'.title')+this.areaField('Opis','aboutCards.'+i+'.desc')+'</div></div>';
+            h+='<div class="adm-list-body">'+self.field('Ikona (lucide)','aboutCards.'+i+'.icon')+self.field('Tytul','aboutCards.'+i+'.title')+self.areaField('Opis','aboutCards.'+i+'.desc')+'</div></div>';
         });
         h+='</div><button class="adm-add-btn" onclick="App.addItem(\'aboutCards\',{icon:\'star\',title:\'Nowe\',desc:\'Opis...\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj karte</button>';
         return h;
     },
 
-    admOffer(){
-        let h='<div class="adm-section-title">Karty "Co oferujemy"</div><div class="adm-list">';
-        this.data.offerCards.forEach((c,i)=>{
+    admOffer:function(){
+        var h='<div class="adm-section-title">Karty "Co oferujemy"</div><div class="adm-list">';
+        var self=this;
+        this.data.offerCards.forEach(function(c,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(c.title)+(c.span?' (szeroka)':'')+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'offerCards\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+this.field('Ikona (lucide)','offerCards.'+i+'.icon')+this.field('Tytul','offerCards.'+i+'.title')+this.areaField('Opis','offerCards.'+i+'.desc');
+            h+='<div class="adm-list-body">'+self.field('Ikona (lucide)','offerCards.'+i+'.icon')+self.field('Tytul','offerCards.'+i+'.title')+self.areaField('Opis','offerCards.'+i+'.desc');
             h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Rozciagnij na 2 kolumny</label><select class="adm-input" data-path="offerCards.'+i+'.span"><option value="true"'+(c.span?' selected':'')+'>Tak</option><option value="false"'+(!c.span?' selected':'')+'>Nie</option></select></div>';
             h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Fioletowy styl</label><select class="adm-input" data-path="offerCards.'+i+'.purp"><option value="true"'+(c.purp?' selected':'')+'>Tak</option><option value="false"'+(!c.purp?' selected':'')+'>Nie</option></select></div>';
             h+='</div></div>';
@@ -1216,78 +1295,82 @@ const App={
         return h;
     },
 
-    admModes(){
-        let h='<div class="adm-section-title">Tryby gry</div><div class="adm-list">';
-        this.data.modes.forEach((m,i)=>{
+    admModes:function(){
+        var h='<div class="adm-section-title">Tryby gry</div><div class="adm-hint" style="margin-bottom:20px">Zdjecia tla trybow edytuj w sekcji <strong>Zdjecia</strong>.</div><div class="adm-list">';
+        var self=this;
+        this.data.modes.forEach(function(m,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'modes\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
             h+='<div class="adm-list-body">';
-            h+=this.imgField('Zdjecie tla','modes.'+i+'.bgImage');
-            h+=this.field('Nazwa','modes.'+i+'.name');
-            h+=this.areaField('Opis','modes.'+i+'.desc');
-            h+=this.field('Tag','modes.'+i+'.tag');
-            h+=this.field('Ikona (lucide, gdy brak zdjecia)','modes.'+i+'.icon');
+            h+=self.field('Nazwa','modes.'+i+'.name');
+            h+=self.areaField('Opis','modes.'+i+'.desc');
+            h+=self.field('Tag','modes.'+i+'.tag');
+            h+=self.field('Ikona (lucide, gdy brak zdjecia tla)','modes.'+i+'.icon');
             h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Status</label><select class="adm-input" data-path="modes.'+i+'.status"><option value="active"'+(m.status==='active'?' selected':'')+'>Aktywny</option><option value="offline"'+(m.status!=='active'?' selected':'')+'>Offline</option></select></div>';
-            h+='<div class="adm-field"><label class="adm-label">Meta (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.meta" value="'+esc((m.meta||[]).join(','))+'" placeholder="1.20+, Dzialki, Ekonomia"><div class="adm-hint">Wpisz wartosci oddzielone przecinkami</div></div>';
-            h+='<div class="adm-field"><label class="adm-label">Cechy (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.feats" value="'+esc((m.feats||[]).join(','))+'" placeholder="Ranking, Aukcje, Eventy"><div class="adm-hint">Wpisz wartosci oddzielone przecinkami</div></div>';
+            h+='<div class="adm-field"><label class="adm-label">Meta (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.meta" value="'+esc((m.meta||[]).join(','))+'" placeholder="1.20+, Dzialki, Ekonomia"><div class="adm-hint">Wartosci oddzielone przecinkami</div></div>';
+            h+='<div class="adm-field"><label class="adm-label">Cechy (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.feats" value="'+esc((m.feats||[]).join(','))+'" placeholder="Ranking, Aukcje, Eventy"><div class="adm-hint">Wartosci oddzielone przecinkami</div></div>';
             h+='</div></div>';
         });
         h+='</div><button class="adm-add-btn" onclick="App.addItem(\'modes\',{name:\'Nowy tryb\',desc:\'Opis trybu...\',tag:\'Nowy\',status:\'offline\',meta:[],feats:[],icon:\'gamepad-2\',bgImage:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj tryb</button>';
         return h;
     },
 
-    admTeamPerson(prefix,p,labelExtra){
-        const d=this.data;
-        const m=this.getVal(prefix);
-        if(!m)return '';
-        let h='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.name||'Osoba')+(labelExtra?' ('+labelExtra+')':'')+'</span><div class="adm-list-actions">';
-        if(prefix!=='teamMain')h+='<button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\''+p+'\','+this.getVal(prefix)._idx+')"><i data-lucide="trash-2"></i></button>';
-        h+='<button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-        h+='<div class="adm-list-body">';
-        h+=this.imgField('Zdjecie',prefix+'.photo');
-        h+=this.field('Imie / Nick',prefix+'.name');
-        h+=this.field('Rola',prefix+'.role');
+    admTeamPersonFields:function(prefix){
+        var h=this.field('Imie / Nick',prefix+'.name');
+        h+=this.field('Ranga / Stanowisko',prefix+'.role');
         h+=this.field('Inicjaly (gdy brak zdjecia)',prefix+'.initials');
-        h+=this.field('Link Discord',prefix+'.discord');
-        h+=this.field('Link TikTok',prefix+'.tiktok');
-        h+='</div></div>';
+        h+=this.areaField('Opis',prefix+'.description');
         return h;
     },
 
-    admTeam(){
-        let h='<div class="adm-section-title">Wlasciciel glowny</div><div class="adm-list">';
-        h+=this.admTeamPerson('teamMain','','Wlasciciel');
+    admTeam:function(){
+        var self=this;
+        var h='<div class="adm-section-title">Wlasciciel glowny</div><div class="adm-hint" style="margin-bottom:20px">Zdjecie edytuj w sekcji <strong>Zdjecia</strong>, linki w sekcji <strong>Linki</strong>.</div><div class="adm-list">';
+        h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(this.data.teamMain.name)+' (Wlasciciel)</span><div class="adm-list-actions"><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+        h+='<div class="adm-list-body">'+this.admTeamPersonFields('teamMain')+'</div></div>';
         h+='</div>';
-        h+='<div class="adm-section-title" style="margin-top:28px">Co-Ownerzy</div><div class="adm-list">';
-        this.data.teamOwners.forEach((o,i)=>{
-            const tmp=o;tmp._idx=i;
-            this.setVal('teamOwners.'+i+'._idx',i);
-            h+=this.admTeamPerson('teamOwners.'+i,'','Co-Owner');
+        h+='<div class="adm-section-title" style="margin-top:28px">Co-Ownerzy</div><div class="adm-hint" style="margin-bottom:20px">Zdjecia edytuj w sekcji <strong>Zdjecia</strong>, linki w sekcji <strong>Linki</strong>.</div><div class="adm-list">';
+        this.data.teamOwners.forEach(function(o,i){
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(o.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'teamOwners\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">'+self.admTeamPersonFields('teamOwners.'+i)+'</div></div>';
         });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamOwners\',{name:\'Nowy\',role:\'Co-Owner\',initials:\'?\',details:[],discord:\'#\',tiktok:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj co-ownera</button>';
-        h+='<div class="adm-section-title" style="margin-top:28px">Pozostala ekipa</div><div class="adm-list">';
-        this.data.teamMembers.forEach((m,i)=>{
-            this.setVal('teamMembers.'+i+'._idx',i);
-            h+=this.admTeamPerson('teamMembers.'+i,'','Ekipa');
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamOwners\',{name:\'Nowy\',role:\'Co-Owner\',initials:\'?\',description:\'\',details:[{icon:\'map-pin\',text:\'Polska\'}],youtube:\'#\',tiktok:\'#\',discord:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj co-ownera</button>';
+        h+='<div class="adm-section-title" style="margin-top:28px">Pozostala ekipa</div><div class="adm-hint" style="margin-bottom:20px">Zdjecia edytuj w sekcji <strong>Zdjecia</strong>, linki w sekcji <strong>Linki</strong>.</div><div class="adm-list">';
+        this.data.teamMembers.forEach(function(m,i){
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.role)+': '+esc(m.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'teamMembers\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">'+self.admTeamPersonFields('teamMembers.'+i)+'</div></div>';
         });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamMembers\',{name:\'Nowy\',role:\'Rola\',initials:\'?\',details:[],discord:\'#\',tiktok:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj czlonka ekipy</button>';
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamMembers\',{name:\'Nowy\',role:\'Rola\',initials:\'?\',description:\'\',details:[{icon:\'map-pin\',text:\'Polska\'}],youtube:\'#\',tiktok:\'#\',discord:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj czlonka ekipy</button>';
         return h;
     },
 
-    admRanks(){
-        let h='<div class="adm-section-title">Okresy rang</div>';
-        h+='<div class="adm-row">';
+    /* --- RANGI z 3 okresami --- */
+    admRanks:function(){
+        var self=this;
+        var p=this.data.ranks.periods;
+        var h='<div class="adm-section-title">Okresy dostepnosci</div>';
+        h+='<div class="adm-row-3">';
         h+=this.field('Okres 1','ranks.periods.0');
         h+=this.field('Okres 2','ranks.periods.1');
+        h+=this.field('Okres 3','ranks.periods.2');
         h+='</div>';
+
         h+='<div class="adm-section-title" style="margin-top:28px">Rangi</div><div class="adm-list">';
-        this.data.ranks.items.forEach((r,i)=>{
+        this.data.ranks.items.forEach(function(r,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(r.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'ranks.items\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
             h+='<div class="adm-list-body">';
-            h+=this.field('Nazwa','ranks.items.'+i+'.name');
-            h+='<div class="adm-row">'+this.field('Cena — '+esc(this.data.ranks.periods[0]||'Okres 1'),'ranks.items.'+i+'.prices.0')+this.field('Cena — '+esc(this.data.ranks.periods[1]||'Okres 2'),'ranks.items.'+i+'.prices.1')+'</div>';
-            h+='<div class="adm-row">'+this.field('Czas — Okres 1','ranks.items.'+i+'.durs.0')+this.field('Czas — Okres 2','ranks.items.'+i+'.durs.1')+'</div>';
+            h+=self.field('Nazwa rangi','ranks.items.'+i+'.name');
+            h+='<div class="adm-field"><label class="adm-label">Ceny (wg okresow: '+esc(p[0]||'1')+', '+esc(p[1]||'2')+', '+esc(p[2]||'3')+')</label><div class="adm-row-3">';
+            h+=self.field('Cena — '+esc(p[0]||'Okres 1'),'ranks.items.'+i+'.prices.0');
+            h+=self.field('Cena — '+esc(p[1]||'Okres 2'),'ranks.items.'+i+'.prices.1');
+            h+=self.field('Cena — '+esc(p[2]||'Okres 3'),'ranks.items.'+i+'.prices.2');
+            h+='</div></div>';
+            h+='<div class="adm-field"><label class="adm-label">Opisy czasow (wg okresow)</label><div class="adm-row-3">';
+            h+=self.field('Czas — Okres 1','ranks.items.'+i+'.durs.0');
+            h+=self.field('Czas — Okres 2','ranks.items.'+i+'.durs.1');
+            h+=self.field('Czas — Okres 3','ranks.items.'+i+'.durs.2');
+            h+='</div></div>';
             h+='<div class="adm-field"><label class="adm-label">Benefity</label>';
-            (r.benefits||[]).forEach((b,j)=>{
+            (r.benefits||[]).forEach(function(b,j){
                 h+='<div class="adm-ben-row"><input class="adm-input" data-path="ranks.items.'+i+'.benefits.'+j+'" value="'+esc(b)+'"><button class="adm-ben-del" onclick="App.removeBenefit(\'ranks.items.'+i+'.benefits\','+j+')"><i data-lucide="trash-2"></i></button></div>';
             });
             h+='<button class="adm-ben-add" onclick="App.addBenefit(\'ranks.items.'+i+'.benefits\')"><i data-lucide="plus"></i> Dodaj benefit</button>';
@@ -1297,100 +1380,80 @@ const App={
         return h;
     },
 
-    admKeys(){
-        let h='<div class="adm-section-title">Klucze</div><div class="adm-list">';
-        this.data.keys.forEach((k,i)=>{
+    addRank:function(){
+        this.collectAllData();
+        var pCount=this.data.ranks.periods.length;
+        var prices=[];var durs=[];
+        for(var i=0;i<pCount;i++){prices.push('0 PLN');durs.push('')}
+        this.data.ranks.items.push({name:'Nowa ranga',prices:prices,durs:durs,benefits:[]});
+        this.dirty=true;this.updateStatus();
+        this.showAdminSection(this.admSection);
+    },
+
+    admKeys:function(){
+        var h='<div class="adm-section-title">Klucze</div><div class="adm-list">';
+        var self=this;
+        this.data.keys.forEach(function(k,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(k.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'keys\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+this.field('Nazwa','keys.'+i+'.name')+this.areaField('Opis','keys.'+i+'.desc')+this.field('Cena','keys.'+i+'.price')+'</div></div>';
+            h+='<div class="adm-list-body">'+self.field('Nazwa','keys.'+i+'.name')+self.areaField('Opis','keys.'+i+'.desc')+self.field('Cena','keys.'+i+'.price')+'</div></div>';
         });
         h+='</div><button class="adm-add-btn" onclick="App.addItem(\'keys\',{name:\'Nowy klucz\',desc:\'Opis...\',price:\'0 PLN\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj klucz</button>';
         return h;
     },
 
-    admLinks(){
-        let h='<div class="adm-section-title">Linki</div>';
-        h+=this.field('Discord','server.discord');
-        h+=this.field('Sklep','server.shop');
-        h+='<div class="adm-section-title" style="margin-top:28px">Linki w footerze — Nawigacja</div><div class="adm-list">';
-        this.data.footerLinks1.forEach((l,i)=>{
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks1\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body"><div class="adm-row">'+this.field('Tekst','footerLinks1.'+i+'.text')+this.field('Link (href)','footerLinks1.'+i+'.href')+'</div></div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks1\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
-        h+='<div class="adm-section-title" style="margin-top:28px">Linki w footerze — Przydatne</div><div class="adm-list">';
-        this.data.footerLinks2.forEach((l,i)=>{
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks2\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body"><div class="adm-row">'+this.field('Tekst','footerLinks2.'+i+'.text')+this.field('Link (href)','footerLinks2.'+i+'.href')+'</div></div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks2\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
-        return h;
-    },
-
-    admIP(){
-        let h='<div class="adm-section-title">IP serwera</div>';
+    admIP:function(){
+        var h='<div class="adm-section-title">IP serwera</div>';
         h+=this.field('IP serwera','server.ip');
         h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Status serwera</label><select class="adm-input" data-path="server.online"><option value="true"'+(this.data.server.online?' selected':'')+'>Online</option><option value="false"'+(!this.data.server.online?' selected':'')+'>Offline</option></select></div>';
         h+='<div class="adm-hint">Zmiana statusu aktualizuje badge w sekcji hero po zapisaniu.</div>';
         return h;
     },
 
-    admFAQ(){
-        let h='<div class="adm-section-title">FAQ — Najczestsze pytania</div><div class="adm-list">';
-        this.data.faq.forEach((f,i)=>{
+    admFAQ:function(){
+        var h='<div class="adm-section-title">FAQ — Najczestsze pytania</div><div class="adm-list">';
+        var self=this;
+        this.data.faq.forEach(function(f,i){
             h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(f.q)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'faq\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+this.field('Pytanie','faq.'+i+'.q')+this.areaField('Odpowiedz','faq.'+i+'.a')+'</div></div>';
+            h+='<div class="adm-list-body">'+self.field('Pytanie','faq.'+i+'.q')+self.areaField('Odpowiedz','faq.'+i+'.a')+'</div></div>';
         });
         h+='</div><button class="adm-add-btn" onclick="App.addItem(\'faq\',{q:\'Nowe pytanie?\',a:\'Odpowiedz...\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj pytanie</button>';
         return h;
     },
 
-    toggleListItem(head){
-        const item=head.parentElement;
-        item.classList.toggle('open');
-    },
+    toggleListItem:function(head){head.parentElement.classList.toggle('open')},
 
-    addItem(arr,defaultItem){
+    addItem:function(arr,defaultItem){
         this.collectAllData();
         this.data[arr].push(JSON.parse(JSON.stringify(defaultItem)));
         this.dirty=true;this.updateStatus();
         this.showAdminSection(this.admSection);
     },
 
-    removeItem(arr,idx){
+    removeItem:function(arr,idx){
         this.collectAllData();
         this.data[arr].splice(idx,1);
         this.dirty=true;this.updateStatus();
         this.showAdminSection(this.admSection);
     },
 
-    addRank(){
+    addBenefit:function(path){
         this.collectAllData();
-        const pCount=this.data.ranks.periods.length;
-        const prices=[];const durs=[];
-        for(let i=0;i<pCount;i++){prices.push('0 PLN');durs.push('')}
-        this.data.ranks.items.push({name:'Nowa ranga',prices:prices,durs:durs,benefits:[]});
-        this.dirty=true;this.updateStatus();
-        this.showAdminSection(this.admSection);
-    },
-
-    addBenefit(path){
-        this.collectAllData();
-        const arr=path.split('.').reduce((o,k)=>o[k],this.data);
+        var arr=path.split('.').reduce(function(o,k){return o[k]},this.data);
         if(arr)arr.push('Nowy benefit');
         this.dirty=true;this.updateStatus();
         this.showAdminSection(this.admSection);
     },
 
-    removeBenefit(path,idx){
+    removeBenefit:function(path,idx){
         this.collectAllData();
-        const arr=path.split('.').reduce((o,k)=>o[k],this.data);
+        var arr=path.split('.').reduce(function(o,k){return o[k]},this.data);
         if(arr)arr.splice(idx,1);
         this.dirty=true;this.updateStatus();
         this.showAdminSection(this.admSection);
     },
 
-    updateStatus(){
-        const el=document.getElementById('admStatus');
+    updateStatus:function(){
+        var el=document.getElementById('admStatus');
         if(!el)return;
         el.textContent=this.dirty?'Masz niezapisane zmiany':'Wszystko zapisane';
         el.style.color=this.dirty?'var(--accent)':'var(--text-t)';
@@ -1398,24 +1461,33 @@ const App={
 };
 
 /* Parse comma-separated strings back to arrays on save */
-const _origCollect=App.collectAllData.bind(App);
+var _origCollect=App.collectAllData.bind(App);
 App.collectAllData=function(){
     _origCollect();
-    const d=this.data;
-    (d.modes||[]).forEach(m=>{
-        if(typeof m.meta==='string')m.meta=m.meta.split(',').map(s=>s.trim()).filter(Boolean);
-        if(typeof m.feats==='string')m.feats=m.feats.split(',').map(s=>s.trim()).filter(Boolean);
+    var d=this.data;
+    (d.modes||[]).forEach(function(m){
+        if(typeof m.meta==='string')m.meta=m.meta.split(',').map(function(s){return s.trim()}).filter(Boolean);
+        if(typeof m.feats==='string')m.feats=m.feats.split(',').map(function(s){return s.trim()}).filter(Boolean);
         if(!Array.isArray(m.meta))m.meta=[];
         if(!Array.isArray(m.feats))m.feats=[];
     });
-    (d.offerCards||[]).forEach(c=>{
+    (d.offerCards||[]).forEach(function(c){
         if(c.span==='true')c.span=true;else if(c.span==='false')c.span=false;
         if(c.purp==='true')c.purp=true;else if(c.purp==='false')c.purp=false;
     });
     if(d.server.online==='true')d.server.online=true;else if(d.server.online==='false')d.server.online=false;
 };
 
-document.addEventListener('DOMContentLoaded',()=>App.init());
+/* Skrot klawiszowy do otwarcia panelu — tylko dla administratora */
+document.addEventListener('keydown',function(e){
+    if(e.ctrlKey&&e.shiftKey&&e.key==='P'){
+        e.preventDefault();
+        _admGate.unlock();
+        App.openAdmin();
+    }
+});
+
+document.addEventListener('DOMContentLoaded',function(){App.init()});
 </script>
 </body>
 </html>
