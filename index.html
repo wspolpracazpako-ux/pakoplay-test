@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>g
     <style>
         :root{
             --bg-primary:#060a14;--bg-secondary:#0b1121;--bg-tertiary:#101828;
@@ -917,12 +917,12 @@ const App = {
         `).join('');
     },
 
-    renderTeam() {
+   renderTeam() {
         const tm = this.data.teamMain;
         document.getElementById('teamMain').innerHTML = `
             <div class="team-main rv">
                 <div class="tm-glow"></div>
-                <div class="tm-av">${tm.image ? '<img src="' + tm.image + '" alt="' + tm.name + '" style="width:100%;height:100%;object-fit:cover; border-radius:50%;" />' : tm.initials}</div>'
+                <div class="tm-av">${tm.initials}</div>
                 <div class="tm-role">${tm.name}</div>
                 <div class="tm-name">${tm.nickname}</div>
                 <div class="tm-rows"><div class="td-rows">${tm.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
@@ -932,7 +932,7 @@ const App = {
         document.getElementById('teamOwners').innerHTML = this.data.teamOwners.map(o => `
             <div class="to-card rv">
                 <div class="to-glow"></div>
-                <div class="to-av">${o.image ? '<img src="' + o.image + '" alt="' + o.name + '" style="width:100%;height:100%;object-fit:cover; border-radius:50%;" />' : o.initials}</div>'
+                <div class="to-av">${o.initials}</div>
                 <div class="to-role">${o.name}</div>
                 <div class="to-name">${o.nickname}</div>
                 <div class="to-rows"><div class="td-rows">${o.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
@@ -943,13 +943,13 @@ const App = {
         document.getElementById('teamGrid').innerHTML = this.data.teamGrid.map(m => `
             <div class="tc-card rv">
                 <div class="tc-glow"></div>
-                <div class="tc-av">${m.image ? '<img src="' + m.image + '" alt="' + m.name + '" style="width:100%;height:100%;object-fit:cover; border-radius:50%;" />' : m.initials}</div>'
+                <div class="tc-av">${m.initials}</div>
                 <div class="tc-role">${m.name}</div>
                 <div class="tc-name">${m.nickname}</div>
                 <div class="tc-rows"><div class="td-rows">${m.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
             </div>
         `).join('');
-    },
+    }, podmien mi na dobre
 
     renderPeriodToggle() {
         const c = document.getElementById('periodToggle');
