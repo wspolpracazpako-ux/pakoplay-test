@@ -723,7 +723,7 @@ App.copyIP = function() { var ip=CONFIG.ip||'pakoplay.pl'; if(navigator.clipboar
 App._fc = function(ip){var ta=document.createElement('textarea');ta.value=ip;ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');App.showToast('Skopiowano IP: '+ip);}catch(e){App.showToast('Nie udalo sie skopiowac');}document.body.removeChild(ta);};
 function esc(s){if(s===null||s===undefined)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function isValidImageUrl(u){if(!u||typeof u!=='string')return false;u=u.trim();try{new URL(u);}catch(e){return false;}return /\.(jpg|jpeg|png|webp|gif|bmp|svg|avif)$/i.test(u.split('?')[0].split('#')[0].toLowerCase());}
-function bgImgStyle(u){if(!u)return ''; return ' style="background-image:url(\u0022'+esc(u)+'\u0022)" data-bg-url="'+esc(u)+'"';}
+function bgImgStyle(u){if(!u)return ''; return " style='background-image:url("+esc(u)+")' data-bg-url='"+esc(u)+"'";}
 function validatePageImages(){var els=document.querySelectorAll('[data-bg-url]');for(var i=0;i<els.length;i++){(function(el){var r=el.getAttribute('data-bg-url');if(!r)return;var t=setTimeout(function(){el.style.backgroundImage='';el.style.color='';el.removeAttribute('data-bg-url');},8000);var img=new Image();img.onload=function(){clearTimeout(t);};img.onerror=function(){clearTimeout(t);el.style.backgroundImage='';el.style.color='';el.removeAttribute('data-bg-url');};img.src=r;})(els[i]);}}
 
 /* ================================================================
