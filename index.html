@@ -130,7 +130,7 @@
         .modes-list{display:flex;flex-direction:column;gap:48px}
         .mode{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
         .mode:nth-child(even){direction:rtl}.mode:nth-child(even)>*{direction:ltr}
-        .mode-vis{aspect-ratio:16/10;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;gap:8px;background-size:cover;background-position:center}
+        .mode-vis{aspect-ratio:16/10;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;gap:8px;background-size:cover;background-position:center;transition:color .3s ease}
         .mode-vis i{width:28px;height:28px;opacity:.25}
         .mode-vis-glow{position:absolute;top:-1px;right:-1px;width:50%;height:50%;background:radial-gradient(ellipse at top right,var(--glow),transparent 70%);pointer-events:none}
         .mode-tag{display:inline-block;font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.1em;color:var(--accent);padding:5px 14px;background:var(--glow);border:1px solid var(--border-a);border-radius:100px;text-transform:uppercase;margin-bottom:18px}
@@ -160,7 +160,7 @@
         .team-main::before{content:'';position:absolute;inset:-1px;border-radius:var(--rl);padding:1px;background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
         .tm-glow{position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:90%;height:70%;background:radial-gradient(ellipse,var(--glow),transparent 70%);pointer-events:none;opacity:0;transition:opacity var(--b)}
         .team-main:hover .tm-glow{opacity:1}
-        .tm-av{width:92px;height:92px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border-a);margin:0 auto 18px;display:grid;place-items:center;font-family:var(--fh);font-size:32px;font-weight:700;color:var(--accent);position:relative;z-index:1;transition:transform var(--b),border-color var(--b);overflow:hidden;background-size:cover;background-position:center}
+        .tm-av{width:92px;height:92px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border-a);margin:0 auto 18px;display:grid;place-items:center;font-family:var(--fh);font-size:32px;font-weight:700;color:var(--accent);position:relative;z-index:1;transition:transform var(--b),border-color var(--b),color .3s ease;overflow:hidden;background-size:cover;background-position:center}
         .team-main:hover .tm-av{transform:scale(1.05);border-color:var(--accent)}
         .tm-role{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;position:relative;z-index:1}
         .tm-name{font-family:var(--fh);font-size:24px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px;position:relative;z-index:1}
@@ -172,7 +172,7 @@
         .to-card:hover{border-color:var(--border-h);transform:translateY(-3px)}
         .to-glow{position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:80%;height:60%;background:radial-gradient(ellipse,var(--glow),transparent 70%);pointer-events:none;opacity:0;transition:opacity var(--b)}
         .to-card:hover .to-glow{opacity:1}
-        .to-av{width:72px;height:72px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border);margin:0 auto 16px;display:grid;place-items:center;font-family:var(--fh);font-size:24px;font-weight:700;color:var(--accent-light);transition:transform var(--b),border-color var(--b);background-size:cover;background-position:center}
+        .to-av{width:72px;height:72px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border);margin:0 auto 16px;display:grid;place-items:center;font-family:var(--fh);font-size:24px;font-weight:700;color:var(--accent-light);transition:transform var(--b),border-color var(--b),color .3s ease;background-size:cover;background-position:center}
         .to-card:hover .to-av{transform:scale(1.05);border-color:var(--accent-dim)}
         .to-role{font-family:var(--fh);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
         .to-name{font-family:var(--fh);font-size:19px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px}
@@ -186,7 +186,7 @@
         .tc-card:hover{border-color:var(--border-h);transform:translateY(-3px)}
         .tc-glow{position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:70%;height:50%;background:radial-gradient(ellipse,var(--glow),transparent 70%);pointer-events:none;opacity:0;transition:opacity var(--b)}
         .tc-card:hover .tc-glow{opacity:1}
-        .tc-av{width:64px;height:64px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);margin:0 auto 14px;display:grid;place-items:center;font-family:var(--fh);font-size:20px;font-weight:700;color:var(--text-s);transition:transform var(--b),border-color var(--b);background-size:cover;background-position:center}
+        .tc-av{width:64px;height:64px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);margin:0 auto 14px;display:grid;place-items:center;font-family:var(--fh);font-size:20px;font-weight:700;color:var(--text-s);transition:transform var(--b),border-color var(--b),color .3s ease;background-size:cover;background-position:center}
         .tc-card:hover .tc-av{transform:scale(1.05);border-color:var(--border-h)}
         .tc-role{font-family:var(--fh);font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin-bottom:5px}
         .tc-name{font-family:var(--fh);font-size:16px;font-weight:600;margin-bottom:4px}
@@ -237,7 +237,7 @@
 
         .creators{padding:var(--pad) 0;background:var(--bg-secondary);position:relative}
         .creators-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-        .creators-vis{aspect-ratio:4/3;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;position:relative;overflow:hidden;gap:8px}
+        .creators-vis{aspect-ratio:4/3;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;position:relative;overflow:hidden;gap:8px;background-size:cover;background-position:center;transition:color .3s ease}
         .creators-vis i{width:32px;height:32px;opacity:.2}
         .creators-vis-glow{position:absolute;bottom:-1px;left:-1px;width:50%;height:50%;background:radial-gradient(ellipse at bottom left,var(--pglow-s),transparent 70%);pointer-events:none}
         .creators-content .sl{justify-content:flex-start}
@@ -303,9 +303,6 @@
         .ip-widget-copied{color:#4ade80 !important}
         .ip-widget-copied strong{color:#4ade80 !important}
 
-        .adm-trigger{position:fixed;bottom:20px;left:20px;z-index:150;width:36px;height:36px;border-radius:50%;background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-t);cursor:pointer;display:grid;place-items:center;transition:all .2s ease}
-        .adm-trigger:hover{border-color:var(--accent-dim);color:var(--accent);transform:scale(1.05)}
-
         .adm-overlay{position:fixed;inset:0;z-index:500;background:rgba(3,5,10,.92);backdrop-filter:blur(12px);display:none;opacity:0;transition:opacity .3s ease}
         .adm-overlay.open{display:flex;opacity:1}
         .adm-panel{width:100%;max-width:1100px;max-height:92vh;margin:auto;display:grid;grid-template-rows:auto 1fr auto;grid-template-columns:240px 1fr;background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.6)}
@@ -353,8 +350,13 @@
         .adm-ben-add{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border:1px dashed var(--border);border-radius:var(--rs);background:transparent;color:var(--text-t);cursor:pointer;transition:all .15s ease;display:inline-flex;align-items:center;gap:6px;margin-top:4px}
         .adm-ben-add:hover{border-color:var(--accent-dim);color:var(--accent)}
         .adm-ben-add i{width:12px;height:12px}
-        .adm-img-preview{margin-top:8px;max-width:140px;max-height:90px;border-radius:var(--rs);border:1px solid var(--border);object-fit:cover;display:none}
+        .adm-img-preview-wrap{margin-top:8px}
+        .adm-img-preview{max-width:140px;max-height:90px;border-radius:var(--rs);border:1px solid var(--border);object-fit:cover;display:none}
         .adm-img-preview.visible{display:block}
+        .adm-img-status{font-size:11px;margin-top:4px;font-family:var(--fh);letter-spacing:.02em;line-height:1.4}
+        .adm-img-status.loading{color:var(--text-t)}
+        .adm-img-status.success{color:#4ade80}
+        .adm-img-status.error{color:#f87171}
         .adm-img-row{display:flex;gap:8px;align-items:flex-start}
         .adm-img-row .adm-input{flex:1}
         .adm-footer{grid-column:1/-1;padding:14px 24px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -362,7 +364,7 @@
         .adm-hint{font-size:11px;color:var(--text-t);margin-top:6px;line-height:1.5}
 
         @media(max-width:1024px){:root{--pad:72px}.about-stats{grid-template-columns:repeat(2,1fr)}.about-stats .as:nth-child(2)::after{display:none}.about-grid{grid-template-columns:repeat(3,1fr)}.ogrid{grid-template-columns:repeat(2,1fr)}.ocard.f1{grid-column:span 2}.mode{grid-template-columns:1fr;gap:32px}.mode:nth-child(even){direction:ltr}.rgrid{grid-template-columns:repeat(3,1fr)}.kgrid{grid-template-columns:repeat(3,1fr)}.creators-inner{grid-template-columns:1fr;gap:40px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}}
-        @media(max-width:768px){:root{--pad:56px}.nlinks,.nplay{display:none}.ntog{display:block}.mmenu{display:flex}.about-grid{grid-template-columns:repeat(2,1fr)}.about-grid .acard:last-child{grid-column:span 2}.ogrid{grid-template-columns:1fr}.ocard.f1{grid-column:span 1}.team-owners{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.team-grid .tc-card:nth-last-child(-n+2){grid-column:span 1}.rgrid{grid-template-columns:repeat(2,1fr)}.kgrid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr;gap:28px}.fbot{flex-direction:column;text-align:center}.ranks-hdr{flex-direction:column;align-items:flex-start}.period-bar{flex-direction:column;align-items:flex-start}.ip-widget{bottom:14px;right:14px;font-size:10px;padding:7px 12px 7px 10px}.toast{bottom:58px;right:14px}.adm-trigger{bottom:14px;left:14px}}
+        @media(max-width:768px){:root{--pad:56px}.nlinks,.nplay{display:none}.ntog{display:block}.mmenu{display:flex}.about-grid{grid-template-columns:repeat(2,1fr)}.about-grid .acard:last-child{grid-column:span 2}.ogrid{grid-template-columns:1fr}.ocard.f1{grid-column:span 1}.team-owners{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.team-grid .tc-card:nth-last-child(-n+2){grid-column:span 1}.rgrid{grid-template-columns:repeat(2,1fr)}.kgrid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr;gap:28px}.fbot{flex-direction:column;text-align:center}.ranks-hdr{flex-direction:column;align-items:flex-start}.period-bar{flex-direction:column;align-items:flex-start}.ip-widget{bottom:14px;right:14px;font-size:10px;padding:7px 12px 7px 10px}.toast{bottom:58px;right:14px}}
         @media(max-width:480px){.about-grid{grid-template-columns:1fr}.about-grid .acard:last-child{grid-column:span 1}.about-stats{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr}.kgrid{grid-template-columns:1fr}.hacts{flex-direction:column;width:100%}.hacts .btn{width:100%;justify-content:center}.shop-acts{flex-direction:column;width:100%}.shop-acts .btn{width:100%;justify-content:center}.discord-cta{padding:48px 20px}.discord-cta .btn{width:100%;justify-content:center}.dc-stat-dot{display:none}.ow-socials{flex-wrap:wrap}}
         @media(max-width:768px){.adm-panel{grid-template-columns:1fr;max-height:100vh;border-radius:0}.adm-side{border-right:none;border-bottom:1px solid var(--border);max-height:180px}.adm-nav{flex-direction:row;overflow-x:auto;padding:8px}.adm-nav-item{white-space:nowrap;font-size:10.5px;padding:8px 10px}.adm-row,.adm-row-3{grid-template-columns:1fr}}
     </style>
@@ -482,7 +484,7 @@
             <div class="creators-vis" id="creatorsVis">
                 <div class="creators-vis-glow"></div>
                 <i data-lucide="video"></i>
-                PROGRAM TWORCOW
+                <span>PROGRAM TWORCOW</span>
             </div>
             <div class="creators-content">
                 <div class="sl purp">Dla tworcow</div>
@@ -559,7 +561,7 @@
         </div>
         <div class="fbot">
             <span class="fcopy" id="footerCopy">&copy; 2025 PakoPlay.PL — Wszelkie prawa zastrzezone.</span>
-            <span class="fcopy" id="adminTriggerFooter" style="cursor:pointer;opacity:0.3">Panel edycji</span>
+            <span class="fcopy">&copy; 2025 PakoPlay.PL</span>
         </div>
     </div>
 </footer>
@@ -574,10 +576,7 @@
     <strong id="ipWidgetText">pakoplay.pl</strong>
 </div>
 
-<button class="adm-trigger" id="admTrigger" title="Panel edycji">
-    <i data-lucide="settings" style="width:16px;height:16px"></i>
-</button>
-
+<!-- PANEL ADMINA — ukryty, brak widocznego przycisku na stronie -->
 <div class="adm-overlay" id="admOverlay">
     <div class="adm-panel">
         <div class="adm-head">
@@ -594,7 +593,7 @@
         <div class="adm-body" id="admBody"></div>
         <div class="adm-footer">
             <span class="adm-status" id="admStatus">Gotowy</span>
-            <span class="adm-status">Zmiany zapisuja sie automatycznie w przegladarce</span>
+            <span class="adm-status">Zmiany zapisuja sie w przegladarce (localStorage)</span>
         </div>
     </div>
 </div>
@@ -602,15 +601,10 @@
 <script>
 /* ================================================================
    KONFIGURACJA — TUTAJ EDYTUJESZ WSZYSTKO
-   Jedno miejsce, wszystkie dane strony.
-   Szukaj komentarzy typu ===== SEKCJA — TUTAJ EDYTUJ =====
    ================================================================ */
 function getDefaultConfig() {
     return {
-
-        /* ===== TEKSTY — TUTAJ EDYTUJ =====
-           Nazwa strony, naglowki, opisy, slogan, badge, teksty sekcji.
-           Kazde pole odpowiada jednemu tekstowi na stronie. */
+        /* ===== TEKSTY — TUTAJ EDYTUJ ===== */
         nazwaStrony: "PakoPlay.PL",
         naglowek: "PakoPlay",
         slogan: "Twoj serwer Minecraft",
@@ -624,59 +618,29 @@ function getDefaultConfig() {
         shopTytul: "SKLEP PakoPlay.PL",
         shopOpis: "Rangi i klucze. Wszystko uczciwe, bez pay-to-win.",
         footerOpis: "Serwer Minecraft z unikalnym Survival, systemem dzialek, sklepem i aktywna spolecznoscia.",
-
-        /* ===== IP SERWERA — TUTAJ EDYTUJ =====
-           To IP pojawia sie w hero, w widgetie w rogu ekranu
-           i jest kopiowane przyciskiem "Graj teraz". */
+        /* ===== IP SERWERA — TUTAJ EDYTUJ ===== */
         ip: "pakoplay.pl",
-
-        /* ===== LINKI — TUTAJ EDYTUJ =====
-           Wklej pelne URL-e (np. https://discord.gg/xxxx).
-           Sa uzywane w przyciskach na calej stronie. */
-        linkDiscord: "https://discord.gg/AcFff9hgay",
+        /* ===== LINKI — TUTAJ EDYTUJ ===== */
+        linkDiscord: "#",
         linkYoutube: "#",
         linkTiktok: "#",
         linkSklep: "#",
         linkInne: "#",
-
-        /* ===== ZDJECIA — TUTAJ EDYTUJ =====
-           Wklej URL obrazka (np. https://i.imgur.com/xxx.png).
-           Jesli pole jest puste, wyswietla sie inicjaly/placeholder. */
+        /* ===== ZDJECIA — TUTAJ EDYTUJ ===== */
         zdjecia: {
-
-            /* ===== ZDJECIA ZESPOLU — TUTAJ EDYTUJ =====
-               1 glowny wlasciciel + 2 wspolwlascicieli + 6 czlonkow = 9 zdjec */
-            zespolGlowny: "https://i.postimg.cc/k4h8KtMM/12132112.png",          /* Zdjecie glownego wlasciciela */
-            zespolWlasciciel1: "",     /* Zdjecie wspolwlasciciela 1 */
-            zespolWlasciciel2: "",     /* Zdjecie wspolwlasciciela 2 */
-            zespolCzlonek1: "",       /* Zdjecie czlonka 1 */
-            zespolCzlonek2: "",       /* Zdjecie czlonka 2 */
-            zespolCzlonek3: "",       /* Zdjecie czlonka 3 */
-            zespolCzlonek4: "",       /* Zdjecie czlonka 4 */
-            zespolCzlonek5: "",       /* Zdjecie czlonka 5 */
-            zespolCzlonek6: "",       /* Zdjecie czlonka 6 */
-
-            /* ===== ZDJECIA TRYBOW GRY — TUTAJ EDYTUJ =====
-               Pojawiaja sie w sekcji "Tryby gry" jako tlo wizualizacji. */
-            survival: "",              /* Zdjecie trybu Survival */
-            survivalDzialki: "",       /* Zdjecie trybu Survival + Dzialki */
-
-            /* ===== POZOSTALE ZDJECIA — TUTAJ EDYTUJ ===== */
-            "twórcy": ""              /* Zdjecie w sekcji "Program tworcow" */
+            zespolGlowny: "", zespolWlasciciel1: "", zespolWlasciciel2: "",
+            zespolCzlonek1: "", zespolCzlonek2: "", zespolCzlonek3: "",
+            zespolCzlonek4: "", zespolCzlonek5: "", zespolCzlonek6: "",
+            survival: "", survivalDzialki: "", tworcy: ""
         },
-
-        /* ===== STATYSTYKI — TUTAJ EDYTUJ =====
-           Cztery liczby w gornym pasku sekcji "O serwerze". */
+        /* ===== STATYSTYKI — TUTAJ EDYTUJ ===== */
         statystyki: [
             { liczba: "100+", etykieta: "Graczy" },
             { liczba: "2", etykieta: "Tryby gry" },
             { liczba: "99.9%", etykieta: "Uptime" },
             { liczba: "24/7", etykieta: "Online" }
         ],
-
-        /* ===== O SERWERZE (KARTY) — TUTAJ EDYTUJ =====
-           Piec malych kart w sekcji "O serwerze".
-           ikona — nazwa ikony z Lucide (np. shield-check, zap, users). */
+        /* ===== O SERWERZE (KARTY) — TUTAJ EDYTUJ ===== */
         oSerwerze: [
             { ikona: "shield-check", tytul: "Bezpieczenstwo", opis: "Anty-cheat, backupy co 6h, ochrona przed atakami DDoS." },
             { ikona: "zap", tytul: "Wydajnosc", opis: "Dedykowany serwer z niskim pingiem dla graczy z PL." },
@@ -684,606 +648,148 @@ function getDefaultConfig() {
             { ikona: "settings", tytul: "Konfiguracja", opis: "Przemyslany balans — nie za latwo, nie za trudno." },
             { ikona: "headphones", tytul: "Wsparcie", opis: "Szybka pomoc na Discordzie — administracja zawsze blisko." }
         ],
-
-        /* ===== OFERTA "DLACZEGO MY" — TUTAJ EDYTUJ =====
-           5 paneli: 1 duzy (duzy:true) + 4 mniejsze.
-           Uklad: rzad 1 = [DUZY span 2] [maly], rzad 2 = [maly] [maly] [maly].
-           purp:true zamienia kolor ikony na fioletowy. */
+        /* ===== OFERTA "DLACZEGO MY" — TUTAJ EDYTUJ ===== */
         oferta: [
-            { ikona: "sword", tytul: "Unikalny Gameplay", opis: "Nasze tryby nie sa kopia innych serwerow. Kazdy mechanik jest dopracowany od zera i testowany przez spolecznosc.", duzy: true, purp: false },
+            { ikona: "sword", tytul: "Unikalny Gameplay", opis: "Nasze tryby nie sa kopia innych serwerow. Kazdy mechanik jest dopracowany od zera.", duzy: true, purp: false },
             { ikona: "coins", tytul: "Uczciwy Sklep", opis: "Zadnych pay-to-win. Rangi to kosmetyki i udogodnienia, nie przewaga.", duzy: false, purp: false },
-            { ikona: "headset", tytul: "Szybkie Wsparcie", opis: "Administracja odpowiada w ciagu minut na Discordzie. Zadnego czekania dniami.", duzy: false, purp: false },
-            { ikona: "refresh-cw", tytul: "Ciwkle Aktualizacje", opis: "Regularne aktualizacje, nowe funkcje i poprawki na bazie opinii graczy.", duzy: false, purp: false },
-            { ikona: "calendar", tytul: "Eventy", opis: "Regularne eventy z nagrodami — PvP, budowanie, wyzwania i wiecej.", duzy: false, purp: true }
+            { ikona: "headset", tytul: "Szybkie Wsparcie", opis: "Administracja odpowiada w ciagu minut na Discordzie.", duzy: false, purp: false },
+            { ikona: "refresh-cw", tytul: "Ciwkle Aktualizacje", opis: "Regularne aktualizacje i poprawki na bazie opinii graczy.", duzy: false, purp: false },
+            { ikona: "calendar", tytul: "Eventy", opis: "Regularne eventy z nagrodami — PvP, budowanie, wyzwania.", duzy: false, purp: true }
         ],
-
-        /* ===== TRYBY GRY — TUTAJ EDYTUJ =====
-           Kazdy tryb ma: nazwe, opis, tag, status, meta tagi, cechy.
-           meta i cechy oddzielaj przecinkami (w panelu) lub jako tablice (w kodzie). */
+        /* ===== TRYBY GRY — TUTAJ EDYTUJ ===== */
         trybyGry: [
-            {
-                nazwa: "Survival",
-                opis: "Klasyczny survival Minecraft z dodatkami, ktore go uatrakcyjniaja. System ekonomii, handel miedzy graczami, klany i wojny. Wszystko na dedykowanym swiecie z wlaczonym PvP w wyznaczonych strefach.",
-                tag: "Tryb glowny",
-                status: "Aktywny",
-                meta: ["1.21.4", "PvP Areny", "Ekonomia", "Klany"],
-                cechy: ["Handel graczy", "Custom enchanty", "Ranking PvP", "Wypadki"]
-            },
-            {
-                nazwa: "Survival + Dzialki",
-                opis: "Wszystko co w Survival, ale z systemem dzialek ochronnych. Idealny dla graczy, ktorzy chca budowac w spokoju bez obawy o zniszczenie. Prosty system claimowania, zaprzyjaznieni i zarzadzanie terenem.",
-                tag: "Tryb glowny",
-                status: "Aktywny",
-                meta: ["1.21.4", "Dzialki", "Bezpieczne budowanie", "Grupy"],
-                cechy: ["Claimowanie terenu", "Zaprzyjaznieni", "Brak griefingu", "Proste zasady"]
-            }
+            { nazwa: "Survival", opis: "Klasyczny survival Minecraft z dodatkami. System ekonomii, klany i wojny.", tag: "Tryb glowny", status: "Aktywny", meta: ["1.21.4", "PvP Areny", "Ekonomia", "Klany"], cechy: ["Handel graczy", "Custom enchanty", "Ranking PvP", "Wypadki"] },
+            { nazwa: "Survival + Dzialki", opis: "Wszystko co w Survival, ale z systemem dzialek ochronnych. Idealny do budowania.", tag: "Tryb glowny", status: "Aktywny", meta: ["1.21.4", "Dzialki", "Bezpieczne budowanie", "Grupy"], cechy: ["Claimowanie terenu", "Zaprzyjaznieni", "Brak griefingu", "Proste zasady"] }
         ],
-
-        /* ===== ZESPOL — TUTAJ EDYTUJ =====
-           Hierarchia: 1 glowny wlasciciel -> 2 wspolwlascicieli -> 6 czlonkow.
-           Lacznie 9 osob.
-           szczegoly: tablica { ikona: "nazwa-z-lucide", tekst: "opis" }
-           social: tablica { platforma: "Nazwa", link: "URL", ikona: "nazwa-z-lucide" }
-           "tk":true w klasie ow-soc zamienia kolor na fioletowy (TikTok). */
-
-        /* --- GLOWNY WLASCICIEL (1 osoba) --- */
-        glowny: {
-            imie: "Wlasciciel",
-            rola: "Glowny wlasciciel",
-            opis: "Koordynuje caly projekt od A do Z.",
-            inicjaly: "W",
-            szczegoly: [
-                { ikona: "calendar", tekst: "Na serwerze od: 2025" },
-                { ikona: "map-pin", tekst: "Polska" }
-            ],
-            social: [
-                { platforma: "Discord", link: "#", ikona: "message-circle" }
-            ]
-        },
-
-        /* --- WSPOLWLASCICIELE (2 osoby) --- */
+        /* ===== ZESPOL — TUTAJ EDYTUJ ===== */
+        glowny: { imie: "Wlasciciel", rola: "Glowny wlasciciel", opis: "Koordynuje caly projekt od A do Z.", inicjaly: "W", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [{ platforma: "Discord", link: "#", ikona: "message-circle" }] },
         wlasciciele: [
-            {
-                imie: "Wspolwlasciciel 1",
-                rola: "Wspolwlasciciel",
-                opis: "Prawa reka wlasciciela, zarzada techniczna strona projektu.",
-                inicjaly: "W1",
-                szczegoly: [
-                    { ikona: "calendar", tekst: "Na serwerze od: 2025" },
-                    { ikona: "map-pin", tekst: "Polska" }
-                ],
-                social: []
-            },
-            {
-                imie: "Wspolwlasciciel 2",
-                rola: "Wspolwlasciciel",
-                opis: "Zarzada spolecznoscia i eventami na serwerze.",
-                inicjaly: "W2",
-                szczegoly: [
-                    { ikona: "calendar", tekst: "Na serwerze od: 2025" },
-                    { ikona: "map-pin", tekst: "Polska" }
-                ],
-                social: []
-            }
+            { imie: "Wspolwlasciciel 1", rola: "Wspolwlasciciel", opis: "Zarzada techniczna strona projektu.", inicjaly: "W1", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] },
+            { imie: "Wspolwlasciciel 2", rola: "Wspolwlasciciel", opis: "Zarzada spolecznoscia i eventami.", inicjaly: "W2", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] }
         ],
-
-        /* --- CZLONKOWIE (6 osob) --- */
         czlonkowie: [
-            {
-                imie: "Admin",
-                rola: "Administrator",
-                opis: "Zarzadza serwerem i pomaga graczom.",
-                inicjaly: "A",
-                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
-                social: []
-            },
-            {
-                imie: "Moderator",
-                rola: "Moderator",
-                opis: "Utrzymuje porzadek na serwerze i Discordzie.",
-                inicjaly: "M",
-                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
-                social: []
-            },
-            {
-                imie: "Builder",
-                rola: "Builder",
-                opis: "Tworzy mapy i budowle na serwerze.",
-                inicjaly: "B",
-                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
-                social: []
-            },
-            {
-                imie: "Helper",
-                rola: "Helper",
-                opis: "Pomoca dla nowych graczy, odpowiada na pytania.",
-                inicjaly: "H",
-                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
-                social: []
-            },
-            {
-                imie: "Developer",
-                rola: "Developer",
-                opis: "Pisze pluginy i rozwiazuje problemy techniczne.",
-                inicjaly: "D",
-                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
-                social: []
-            },
-            {
-                imie: "Grafik",
-                rola: "Grafik",
-                opis: "Tworzy grafiki, logo i materialy promocyjne.",
-                inicjaly: "G",
-                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
-                social: []
-            }
+            { imie: "Admin", rola: "Administrator", opis: "Zarzadza serwerem i pomaga graczom.", inicjaly: "A", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] },
+            { imie: "Moderator", rola: "Moderator", opis: "Utrzymuje porzadek na serwerze i Discordzie.", inicjaly: "M", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] },
+            { imie: "Builder", rola: "Builder", opis: "Tworzy mapy i budowle na serwerze.", inicjaly: "B", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] },
+            { imie: "Helper", rola: "Helper", opis: "Pomoca dla nowych graczy.", inicjaly: "H", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] },
+            { imie: "Developer", rola: "Developer", opis: "Pisze pluginy i rozwiazuje problemy techniczne.", inicjaly: "D", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] },
+            { imie: "Grafik", rola: "Grafik", opis: "Tworzy grafiki i materialy promocyjne.", inicjaly: "G", szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }], social: [] }
         ],
-
-        /* ===== RANGI — TUTAJ EDYTUJ =====
-           5 rang. Kazda ma nazwe, 3 ceny (okresy) i liste benefitow.
-           Okresy sa przełączane przyciskami na stronie (7 dni / 30 dni / 3 miesiace). */
+        /* ===== RANGI — TUTAJ EDYTUJ ===== */
         rangi: [
-            {
-                nazwa: "VIP",
-                cena7d: "4.99",      /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
-                cena30d: "14.99",     /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
-                cena3m: "39.99",      /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
-                benefity: ["Kolorowy nick", "Kit VIP co 24h", "/fly na spawnie", "2x home", "Priorytet wejscia"]
-            },
-            {
-                nazwa: "SVIP",
-                cena7d: "9.99",
-                cena30d: "29.99",
-                cena3m: "79.99",
-                benefity: ["Wszystko z VIP", "Kit SVIP co 24h", "/heal co 30min", "5x home", "Efekty czasteczkowe"]
-            },
-            {
-                nazwa: "MVP",
-                cena7d: "19.99",
-                cena30d: "54.99",
-                cena3m: "149.99",
-                benefity: ["Wszystko z SVIP", "Kit MVP co 24h", "/enderchest", "10x home", "Wlasna particle"]
-            },
-            {
-                nazwa: "MVP+",
-                cena7d: "29.99",
-                cena30d: "79.99",
-                cena3m: "199.99",
-                benefity: ["Wszystko z MVP", "Kit MVP+ co 12h", "/nick", "20x home", "Tag na Discordzie"]
-            },
-            {
-                nazwa: "MVP++",
-                cena7d: "49.99",
-                cena30d: "129.99",
-                cena3m: "349.99",
-                benefity: ["Wszystko z MVP+", "Kit MVP++ co 6h", "/ptime", "Nieskonczone home", "Prywatny kanal"]
-            }
+            { nazwa: "VIP", cena7d: "4.99", cena30d: "14.99", cena3m: "39.99", benefity: ["Kolorowy nick", "Kit VIP co 24h", "/fly na spawnie", "2x home", "Priorytet wejscia"] },
+            { nazwa: "SVIP", cena7d: "9.99", cena30d: "29.99", cena3m: "79.99", benefity: ["Wszystko z VIP", "Kit SVIP co 24h", "/heal co 30min", "5x home", "Efekty czasteczkowe"] },
+            { nazwa: "MVP", cena7d: "19.99", cena30d: "54.99", cena3m: "149.99", benefity: ["Wszystko z SVIP", "Kit MVP co 24h", "/enderchest", "10x home", "Wlasna particle"] },
+            { nazwa: "MVP+", cena7d: "29.99", cena30d: "79.99", cena3m: "199.99", benefity: ["Wszystko z MVP", "Kit MVP+ co 12h", "/nick", "20x home", "Tag na Discordzie"] },
+            { nazwa: "MVP++", cena7d: "49.99", cena30d: "129.99", cena3m: "349.99", benefity: ["Wszystko z MVP+", "Kit MVP++ co 6h", "/ptime", "Nieskonczone home", "Prywatny kanal"] }
         ],
-
-        /* ===== OKRESY RANG — TUTAJ EDYTUJ =====
-           Etykiety przyciskow wyboru okresu (nie zmieniaj kluczy: 7d, 30d, 3m). */
         okresyRang: { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" },
-
-        /* ===== KLUCZE — TUTAJ EDYTUJ =====
-           5 kluczy lootboxow z nazwa, opisem i cena. */
+        /* ===== KLUCZE — TUTAJ EDYTUJ ===== */
         klucze: [
-            { nazwa: "Klucz zwykly", opis: "Otwiera zwykly lootbox z losowymi przedmiotami.", cena: "2.99" },
-            { nazwa: "Klucz rzadki", opis: "Szansa na lepsze przedmioty niz w zwyklym.", cena: "4.99" },
-            { nazwa: "Klucz epicki", opis: "Gwarantowane epickie przedmioty w kazdym otwarciu.", cena: "9.99" },
-            { nazwa: "Klucz legendarny", opis: "Najlepsze przedmioty, rzadkie dropy i unikaty.", cena: "19.99" },
-            { nazwa: "Klucz mityczny", opis: "Ekstremalnie rzadki klucz z ekskluzywna zawartoscia.", cena: "39.99" }
+            { nazwa: "Klucz zwykly", opis: "Otwiera zwykly lootbox.", cena: "2.99" },
+            { nazwa: "Klucz rzadki", opis: "Szansa na lepsze przedmioty.", cena: "4.99" },
+            { nazwa: "Klucz epicki", opis: "Gwarantowane epickie przedmioty.", cena: "9.99" },
+            { nazwa: "Klucz legendarny", opis: "Najlepsze przedmioty i unikaty.", cena: "19.99" },
+            { nazwa: "Klucz mityczny", opis: "Ekstremalnie rzadki klucz.", cena: "39.99" }
         ],
-
-        /* ===== FAQ — TUTAJ EDYTUJ =====
-           Dodawaj/usuwaj pytania i odpowiedzi. Pojawiaja sie w sekcji FAQ. */
+        /* ===== FAQ — TUTAJ EDYTUJ ===== */
         faq: [
-            { pytanie: "Jak dolaczyc do serwera?", odpowiedz: "Wpisz IP pakoplay.pl w Minecraft Java Edition (wersja 1.21.4) i dolacz. Pamietaj o wlaczeniu wersji zgodnej z serwerem." },
-            { pytanie: "Czy serwer jest darmowy?", odpowiedz: "Tak, serwer jest calkowicie darmowy. Sklep zawiera opcjonalne kosmetyki i udogodnienia — zadnego pay-to-win." },
+            { pytanie: "Jak dolaczyc do serwera?", odpowiedz: "Wpisz IP pakoplay.pl w Minecraft Java Edition (1.21.4) i dolacz." },
+            { pytanie: "Czy serwer jest darmowy?", odpowiedz: "Tak, serwer jest calkowicie darmowy." },
             { pytanie: "Na jakiej wersji dziala serwer?", odpowiedz: "Serwer dziala na wersji 1.21.4 Minecraft Java Edition." },
-            { pytanie: "Jak zglosic problem lub gracza?", odpowiedz: "Najlepiej przez nasz Discord w kanale #zgloszenia. Administracja odpowiada najszybciej tam." },
-            { pytanie: "Czy moge zaprosic znajomych?", odpowiedz: "Oczywiscie! Im wiecej graczy, tym lepsza spolecznosc. Podaj im IP: pakoplay.pl" },
-            { pytanie: "Jak dzialaja dzialki?", odpowiedz: "W trybie Survival + Dzialki mozesz claimowac teren komenda /claim. Nikt poza toba i twoimi zaprzyjaznionymi nie moze tam budowac." }
+            { pytanie: "Jak zglosic problem?", odpowiedz: "Najlepiej przez nasz Discord w kanale #zgloszenia." },
+            { pytanie: "Czy moge zaprosic znajomych?", odpowiedz: "Oczywiscie! Podaj im IP: pakoplay.pl" },
+            { pytanie: "Jak dzialaja dzialki?", odpowiedz: "W trybie Survival + Dzialki mozesz claimowac teren komenda /claim." }
         ]
     };
 }
 
-/* Wczytaj zapisane zmiany lub uzyj domyslnych */
 var CONFIG = getDefaultConfig();
-try {
-    var saved = localStorage.getItem('pakoplay_config');
-    if (saved) {
-        var parsed = JSON.parse(saved);
-        function deepMerge(target, source) {
-            for (var key in source) {
-                if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key]) && target[key]) {
-                    deepMerge(target[key], source[key]);
-                } else {
-                    target[key] = source[key];
-                }
-            }
-            return target;
-        }
-        CONFIG = deepMerge(getDefaultConfig(), parsed);
-    }
-} catch(e) {}
+try { var saved = localStorage.getItem('pakoplay_config'); if (saved) { var parsed = JSON.parse(saved); function deepMerge(t,s){for(var k in s){if(s[k]&&typeof s[k]==='object'&&!Array.isArray(s[k])&&t[k])deepMerge(t[k],s[k]);else t[k]=s[k];}return t;} CONFIG = deepMerge(getDefaultConfig(), parsed); } } catch(e) {}
 
 /* ================================================================
    FUNKCJE POMOCNICZE
    ================================================================ */
 var App = {};
-
-App.showToast = function(msg) {
-    var t = document.getElementById('toast');
-    var m = document.getElementById('toastMsg');
-    if (!t || !m) return;
-    m.textContent = msg || 'Skopiowano!';
-    t.classList.add('show');
-    clearTimeout(App._toastTimer);
-    App._toastTimer = setTimeout(function() { t.classList.remove('show'); }, 2500);
-};
-
-App.copyIP = function() {
-    var ip = CONFIG.ip || 'pakoplay.pl';
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(ip).then(function() {
-            App.showToast('Skopiowano IP: ' + ip);
-            var w = document.getElementById('ipWidget');
-            if (w) { w.classList.add('ip-widget-copied'); setTimeout(function(){ w.classList.remove('ip-widget-copied'); }, 1500); }
-        }).catch(function() { App._fallbackCopy(ip); });
-    } else {
-        App._fallbackCopy(ip);
-    }
-};
-
-App._fallbackCopy = function(ip) {
-    var ta = document.createElement('textarea');
-    ta.value = ip; ta.style.position = 'fixed'; ta.style.left = '-9999px';
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand('copy'); App.showToast('Skopiowano IP: ' + ip); } catch(e) { App.showToast('Nie udalo sie skopiowac'); }
-    document.body.removeChild(ta);
-};
-
-function esc(str) {
-    if (str === null || str === undefined) return '';
-    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+App.showToast = function(msg) { var t=document.getElementById('toast'),m=document.getElementById('toastMsg'); if(!t||!m)return; m.textContent=msg||'Skopiowano!'; t.classList.add('show'); clearTimeout(App._tt); App._tt=setTimeout(function(){t.classList.remove('show');},2500); };
+App.copyIP = function() { var ip=CONFIG.ip||'pakoplay.pl'; if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(ip).then(function(){App.showToast('Skopiowano IP: '+ip);var w=document.getElementById('ipWidget');if(w){w.classList.add('ip-widget-copied');setTimeout(function(){w.classList.remove('ip-widget-copied');},1500);}}).catch(function(){App._fc(ip);});}else{App._fc(ip);} };
+App._fc = function(ip){var ta=document.createElement('textarea');ta.value=ip;ta.style.position='fixed';ta.style.left='-9999px';document.body.appendChild(ta);ta.select();try{document.execCommand('copy');App.showToast('Skopiowano IP: '+ip);}catch(e){App.showToast('Nie udalo sie skopiowac');}document.body.removeChild(ta);};
+function esc(s){if(s===null||s===undefined)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function isValidImageUrl(u){if(!u||typeof u!=='string')return false;u=u.trim();try{new URL(u);}catch(e){return false;}return /\.(jpg|jpeg|png|webp|gif|bmp|svg|avif)$/i.test(u.split('?')[0].split('#')[0].toLowerCase());}
+function bgImgStyle(u){if(!u)return ''; return ' style="background-image:url(\u0022'+esc(u)+'\u0022)" data-bg-url="'+esc(u)+'"';}
+function validatePageImages(){var els=document.querySelectorAll('[data-bg-url]');for(var i=0;i<els.length;i++){(function(el){var r=el.getAttribute('data-bg-url');if(!r)return;var t=setTimeout(function(){el.style.backgroundImage='';el.style.color='';el.removeAttribute('data-bg-url');},8000);var img=new Image();img.onload=function(){clearTimeout(t);};img.onerror=function(){clearTimeout(t);el.style.backgroundImage='';el.style.color='';el.removeAttribute('data-bg-url');};img.src=r;})(els[i]);}}
 
 /* ================================================================
-   RENDEROWANIE SEKCJI
+   RENDEROWANIE
    ================================================================ */
+function renderStats(){var el=document.getElementById('aboutStats');if(!el)return;var h='';CONFIG.statystyki.forEach(function(s){h+='<div class="as"><div class="as-n">'+esc(s.liczba)+'</div><div class="as-l">'+esc(s.etykieta)+'</div></div>';});el.innerHTML=h;}
+function renderAbout(){var el=document.getElementById('aboutGrid');if(!el)return;var h='';CONFIG.oSerwerze.forEach(function(c,i){h+='<div class="acard rv d'+(i+1)+'"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="'+esc(c.ikona)+'"></i></div><div class="acard-t">'+esc(c.tytul)+'</div><div class="acard-d">'+esc(c.opis)+'</div></div>';});el.innerHTML=h;}
+function renderOffer(){var el=document.getElementById('offerGrid');if(!el)return;var h='';CONFIG.oferta.forEach(function(c,i){var cls='ocard rv d'+(i+1);if(c.duzy)cls+=' f1';var ic='ocard-ic';if(c.purp)ic+=' purp';var g=c.purp?'<div class="ocard-pglow"></div>':'<div class="ocard-glow"></div>';h+='<div class="'+cls+'">'+g+'<div class="'+ic+'"><i data-lucide="'+esc(c.ikona)+'"></i></div><div class="ocard-t">'+esc(c.tytul)+'</div><div class="ocard-d">'+esc(c.opis)+'</div></div>';});el.innerHTML=h;}
+function renderModes(){var el=document.getElementById('modesList');if(!el)return;var imgs=CONFIG.zdjecia,h='';CONFIG.trybyGry.forEach(function(m,i){var ik=i===0?'survival':'survivalDzialki',url=imgs[ik]||'',es=url?'color:transparent;':'',ba=url?bgImgStyle(url):'';if(ba)ba=ba.replace('style="','style="'+es);else if(es)ba=' style="'+es+'"';var fb='<i data-lucide="image"></i><span>ZDJECIE TRYBU</span>',mh='<span class="mode-meta-status active">'+esc(m.status)+'</span>';m.meta.forEach(function(t){mh+='<span class="mode-meta-item">'+esc(t)+'</span>';});var fh='';m.cechy.forEach(function(f){fh+='<span class="mode-feat">'+esc(f)+'</span>';});h+='<div class="mode rv"><div class="mode-vis"'+ba+'><div class="mode-vis-glow"></div>'+fb+'</div><div><span class="mode-tag">'+esc(m.tag)+'</span><h3 class="mode-name">'+esc(m.nazwa)+'</h3><p class="mode-desc">'+esc(m.opis)+'</p><div class="mode-meta">'+mh+'</div><div class="mode-feats">'+fh+'</div></div></div>';});el.innerHTML=h;}
 
-function renderStats() {
-    var el = document.getElementById('aboutStats');
-    if (!el) return;
-    var html = '';
-    CONFIG.statystyki.forEach(function(s) {
-        html += '<div class="as"><div class="as-n">' + esc(s.liczba) + '</div><div class="as-l">' + esc(s.etykieta) + '</div></div>';
-    });
-    el.innerHTML = html;
+function renderTeam(){
+    var imgs=CONFIG.zdjecia, me=document.getElementById('teamMain');
+    if(me&&CONFIG.glowny){var g=CONFIG.glowny,u=imgs.zespolGlowny||'',es=u?'color:transparent;':'',ba=u?bgImgStyle(u):'';if(ba)ba=ba.replace('style="','style="'+es);else if(es)ba=' style="'+es+'"';var gr='';g.szczegoly.forEach(function(d){gr+='<div class="td-row"><i data-lucide="'+esc(d.ikona)+'"></i>'+esc(d.tekst)+'</div>';});var gs='';g.social.forEach(function(s){gs+='<a href="'+esc(s.link)+'" class="ow-soc"><i data-lucide="'+esc(s.ikona)+'"></i>'+esc(s.platforma)+'</a>';});me.innerHTML='<div class="team-main rv"><div class="tm-glow"></div><div class="tm-av"'+ba+'>'+esc(g.inicjaly)+'</div><div class="tm-role">'+esc(g.rola)+'</div><div class="tm-name">'+esc(g.imie)+'</div><div class="tm-desc">'+esc(g.opis)+'</div><div class="tm-rows"><div class="td-rows">'+gr+'</div></div><div class="tm-socials"><div class="ow-socials">'+gs+'</div></div></div>';}
+    var oe=document.getElementById('teamOwners');
+    if(oe){var h='';CONFIG.wlasciciele.forEach(function(o,i){var k='zespolWlasciciel'+(i+1),u=imgs[k]||'',es=u?'color:transparent;':'',ba=u?bgImgStyle(u):'';if(ba)ba=ba.replace('style="','style="'+es);else if(es)ba=' style="'+es+'"';var or='';o.szczegoly.forEach(function(d){or+='<div class="td-row"><i data-lucide="'+esc(d.ikona)+'"></i>'+esc(d.tekst)+'</div>';});var os='';o.social.forEach(function(s){os+='<a href="'+esc(s.link)+'" class="ow-soc"><i data-lucide="'+esc(s.ikona)+'"></i>'+esc(s.platforma)+'</a>';});h+='<div class="to-card rv d'+(i+1)+'"><div class="to-glow"></div><div class="to-av"'+ba+'>'+esc(o.inicjaly)+'</div><div class="to-role">'+esc(o.rola)+'</div><div class="to-name">'+esc(o.imie)+'</div><div class="to-desc">'+esc(o.opis)+'</div><div class="to-rows"><div class="td-rows">'+or+'</div></div><div class="to-socials"><div class="ow-socials">'+os+'</div></div></div>';});oe.innerHTML=h;}
+    var ge=document.getElementById('teamGrid');
+    if(ge){var h='';CONFIG.czlonkowie.forEach(function(c,i){var k='zespolCzlonek'+(i+1),u=imgs[k]||'',es=u?'color:transparent;':'',ba=u?bgImgStyle(u):'';if(ba)ba=ba.replace('style="','style="'+es);else if(es)ba=' style="'+es+'"';var cr='';c.szczegoly.forEach(function(d){cr+='<div class="td-row"><i data-lucide="'+esc(d.ikona)+'"></i>'+esc(d.tekst)+'</div>';});h+='<div class="tc-card rv d'+((i%3)+1)+'"><div class="tc-glow"></div><div class="tc-av"'+ba+'>'+esc(c.inicjaly)+'</div><div class="tc-role">'+esc(c.rola)+'</div><div class="tc-name">'+esc(c.imie)+'</div><div class="tc-desc">'+esc(c.opis)+'</div><div class="tc-rows"><div class="td-rows">'+cr+'</div></div></div>';});ge.innerHTML=h;}
 }
 
-function renderAbout() {
-    var el = document.getElementById('aboutGrid');
-    if (!el) return;
-    var html = '';
-    CONFIG.oSerwerze.forEach(function(c, i) {
-        html += '<div class="acard rv d' + (i+1) + '"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="' + esc(c.ikona) + '"></i></div><div class="acard-t">' + esc(c.tytul) + '</div><div class="acard-d">' + esc(c.opis) + '</div></div>';
-    });
-    el.innerHTML = html;
+var currentPeriod='30d',periodPriceKeys={'7d':'cena7d','30d':'cena30d','3m':'cena3m'};
+function renderPeriodToggle(){var el=document.getElementById('periodToggle');if(!el)return;var l=CONFIG.okresyRang||{"7d":"7 dni","30d":"30 dni","3m":"3 miesiace"},h='';['7d','30d','3m'].forEach(function(p){h+='<button class="ptab'+(p===currentPeriod?' on':'')+'" data-period="'+p+'">'+(l[p]||p)+'</button>';});el.innerHTML=h;el.querySelectorAll('.ptab').forEach(function(b){b.addEventListener('click',function(){currentPeriod=this.getAttribute('data-period');el.querySelectorAll('.ptab').forEach(function(x){x.classList.remove('on');});this.classList.add('on');updateRankPrices();});});}
+function renderRanks(){var el=document.getElementById('ranksGrid');if(!el)return;var l=CONFIG.okresyRang||{"7d":"7 dni","30d":"30 dni","3m":"3 miesiace"},h='';CONFIG.rangi.forEach(function(r){var b='';r.benefity.forEach(function(x){b+='<li><i data-lucide="check"></i>'+esc(x)+'</li>';});h+='<div class="rcard"><div class="rcard-glow"></div><div class="rcard-name">'+esc(r.nazwa)+'</div><div class="rcard-dur">'+esc(l[currentPeriod]||currentPeriod)+'</div><div class="rcard-price" data-rank="'+esc(r.nazwa)+'">'+esc(r[periodPriceKeys[currentPeriod]])+' <small>PLN</small></div><ul class="rcard-bens">'+b+'</ul><a href="'+esc(CONFIG.linkSklep)+'" class="btn btn-sm bp">Kup teraz</a></div>';});el.innerHTML=h;}
+function updateRankPrices(){var l=CONFIG.okresyRang||{"7d":"7 dni","30d":"30 dni","3m":"3 miesiace"},pk=periodPriceKeys[currentPeriod];document.querySelectorAll('.rcard-price').forEach(function(el){var rn=el.getAttribute('data-rank'),r=CONFIG.rangi.find(function(x){return x.nazwa===rn;});if(r){el.classList.add('switching');setTimeout(function(){el.innerHTML=esc(r[pk])+' <small>PLN</small>';el.classList.remove('switching');},200);}});document.querySelectorAll('.rcard-dur').forEach(function(el){el.textContent=l[currentPeriod]||currentPeriod;});}
+function renderKeys(){var el=document.getElementById('keysGrid');if(!el)return;var h='';CONFIG.klucze.forEach(function(k){h+='<div class="kcard"><div class="kcard-glow"></div><div class="kcard-name">'+esc(k.nazwa)+'</div><div class="kcard-desc">'+esc(k.opis)+'</div><div class="kcard-price">'+esc(k.cena)+' <small>PLN</small></div><a href="'+esc(CONFIG.linkSklep)+'" class="btn btn-sm bpur">Kup teraz</a></div>';});el.innerHTML=h;}
+function renderFAQ(){var el=document.getElementById('faqList');if(!el)return;var h='';CONFIG.faq.forEach(function(f,i){h+='<div class="fitem" data-faq="'+i+'"><button class="fq"><span>'+esc(f.pytanie)+'</span><span class="ft"></span></button><div class="fa"><div class="fa-in">'+esc(f.odpowiedz)+'</div></div></div>';});el.innerHTML=h;}
+
+function updateStaticElements(){
+    var s=function(i,v){var e=document.getElementById(i);if(e)e.textContent=v;},hr=function(i,v){var e=document.getElementById(i);if(e)e.href=v;};
+    s('heroBadgeText',CONFIG.badgeTekst);s('heroSlog',CONFIG.slogan);s('heroDesc',CONFIG.opis);s('heroIP',CONFIG.ip);s('ipWidgetText',CONFIG.ip);
+    s('aboutTitle',CONFIG.aboutTytul);s('offerTitle',CONFIG.offerTytul);s('offerSub',CONFIG.offerPodtytul);
+    s('modesSub',CONFIG.modesPodtytul);s('teamSub',CONFIG.teamPodtytul);s('shopTytul',CONFIG.shopTytul);
+    s('shopBannerDesc',CONFIG.shopOpis);s('footerDesc',CONFIG.footerOpis);
+    var ht=document.getElementById('heroTitle');if(ht)ht.innerHTML=esc(CONFIG.naglowek)+'<span class="dot">.PL</span>';
+    hr('heroDCLink',CONFIG.linkDiscord);hr('shopLink',CONFIG.linkSklep);hr('shopDCLink',CONFIG.linkDiscord);
+    hr('creatorsDCLink',CONFIG.linkDiscord);hr('socialDCLink',CONFIG.linkDiscord);
+    hr('footerDC',CONFIG.linkDiscord);hr('footerYT',CONFIG.linkYoutube);hr('footerTT',CONFIG.linkTiktok);
+    var cv=document.getElementById('creatorsVis');if(cv){var tu=CONFIG.zdjecia.tworcy||'';if(tu){cv.style.backgroundImage='url(\u0022'+tu+'\u0022)';cv.style.color='transparent';cv.setAttribute('data-bg-url',tu);}else{cv.style.backgroundImage='';cv.style.color='';cv.removeAttribute('data-bg-url');}}
+    document.title=CONFIG.nazwaStrony+' — Twoj Serwer.';
 }
-
-function renderOffer() {
-    var el = document.getElementById('offerGrid');
-    if (!el) return;
-    var html = '';
-    CONFIG.oferta.forEach(function(c, i) {
-        var cls = 'ocard rv d' + (i+1);
-        if (c.duzy) cls += ' f1';
-        var icCls = 'ocard-ic';
-        if (c.purp) icCls += ' purp';
-        var glow = c.purp ? '<div class="ocard-pglow"></div>' : '<div class="ocard-glow"></div>';
-        html += '<div class="' + cls + '">' + glow + '<div class="' + icCls + '"><i data-lucide="' + esc(c.ikona) + '"></i></div><div class="ocard-t">' + esc(c.tytul) + '</div><div class="ocard-d">' + esc(c.opis) + '</div></div>';
-    });
-    el.innerHTML = html;
-}
-
-function renderModes() {
-    var el = document.getElementById('modesList');
-    if (!el) return;
-    var imgs = CONFIG.zdjecia;
-    var html = '';
-    CONFIG.trybyGry.forEach(function(m, i) {
-        var bgStyle = '';
-        var imgKey = i === 0 ? 'survival' : 'survivalDzialki';
-        if (imgs[imgKey]) bgStyle = ' style="background-image:url(' + esc(imgs[imgKey]) + ')"';
-        var metaHtml = '<span class="mode-meta-status active">' + esc(m.status) + '</span>';
-        m.meta.forEach(function(t) { metaHtml += '<span class="mode-meta-item">' + esc(t) + '</span>'; });
-        var featsHtml = '';
-        m.cechy.forEach(function(f) { featsHtml += '<span class="mode-feat">' + esc(f) + '</span>'; });
-        html += '<div class="mode rv"><div class="mode-vis"' + bgStyle + '><div class="mode-vis-glow"></div>' + (!imgs[imgKey] ? '<i data-lucide="image"></i>ZDJECIE TRYBU' : '') + '</div><div><span class="mode-tag">' + esc(m.tag) + '</span><h3 class="mode-name">' + esc(m.nazwa) + '</h3><p class="mode-desc">' + esc(m.opis) + '</p><div class="mode-meta">' + metaHtml + '</div><div class="mode-feats">' + featsHtml + '</div></div></div>';
-    });
-    el.innerHTML = html;
-}
-
-/* ===== ZESPOL — TUTAJ EDYTUJ (w CONFIG powyzej) ===== */
-function renderTeam() {
-    var imgs = CONFIG.zdjecia;
-
-    /* Glowny wlasciciel (1 karta na srodku) */
-    var mainEl = document.getElementById('teamMain');
-    if (mainEl && CONFIG.glowny) {
-        var g = CONFIG.glowny;
-        var gAvStyle = imgs.zespolGlowny ? ' style="background-image:url(' + esc(imgs.zespolGlowny) + ')"' : '';
-        var gAvContent = imgs.zespolGlowny ? '' : esc(g.inicjaly);
-        var gRows = '';
-        g.szczegoly.forEach(function(d) { gRows += '<div class="td-row"><i data-lucide="' + esc(d.ikona) + '"></i>' + esc(d.tekst) + '</div>'; });
-        var gSocial = '';
-        g.social.forEach(function(s) { gSocial += '<a href="' + esc(s.link) + '" class="ow-soc"><i data-lucide="' + esc(s.ikona) + '"></i>' + esc(s.platforma) + '</a>'; });
-        mainEl.innerHTML = '<div class="team-main rv"><div class="tm-glow"></div><div class="tm-av"' + gAvStyle + '>' + gAvContent + '</div><div class="tm-role">' + esc(g.rola) + '</div><div class="tm-name">' + esc(g.imie) + '</div><div class="tm-desc">' + esc(g.opis) + '</div><div class="tm-rows"><div class="td-rows">' + gRows + '</div></div><div class="tm-socials"><div class="ow-socials">' + gSocial + '</div></div></div>';
-    }
-
-    /* Wspolwlasciciele (2 karty obok siebie) */
-    var ownEl = document.getElementById('teamOwners');
-    if (ownEl) {
-        var html = '';
-        CONFIG.wlasciciele.forEach(function(o, i) {
-            var oKey = 'zespolWlasciciel' + (i+1);
-            var oAvStyle = imgs[oKey] ? ' style="background-image:url(' + esc(imgs[oKey]) + ')"' : '';
-            var oAvContent = imgs[oKey] ? '' : esc(o.inicjaly);
-            var oRows = '';
-            o.szczegoly.forEach(function(d) { oRows += '<div class="td-row"><i data-lucide="' + esc(d.ikona) + '"></i>' + esc(d.tekst) + '</div>'; });
-            var oSocial = '';
-            o.social.forEach(function(s) { oSocial += '<a href="' + esc(s.link) + '" class="ow-soc"><i data-lucide="' + esc(s.ikona) + '"></i>' + esc(s.platforma) + '</a>'; });
-            html += '<div class="to-card rv d' + (i+1) + '"><div class="to-glow"></div><div class="to-av"' + oAvStyle + '>' + oAvContent + '</div><div class="to-role">' + esc(o.rola) + '</div><div class="to-name">' + esc(o.imie) + '</div><div class="to-desc">' + esc(o.opis) + '</div><div class="to-rows"><div class="td-rows">' + oRows + '</div></div><div class="to-socials"><div class="ow-socials">' + oSocial + '</div></div></div>';
-        });
-        ownEl.innerHTML = html;
-    }
-
-    /* Czlonkowie (6 kart, 3 kolumny = 2 rzedy) */
-    var gridEl = document.getElementById('teamGrid');
-    if (gridEl) {
-        var html = '';
-        CONFIG.czlonkowie.forEach(function(c, i) {
-            var cKey = 'zespolCzlonek' + (i+1);
-            var cAvStyle = imgs[cKey] ? ' style="background-image:url(' + esc(imgs[cKey]) + ')"' : '';
-            var cAvContent = imgs[cKey] ? '' : esc(c.inicjaly);
-            var cRows = '';
-            c.szczegoly.forEach(function(d) { cRows += '<div class="td-row"><i data-lucide="' + esc(d.ikona) + '"></i>' + esc(d.tekst) + '</div>'; });
-            html += '<div class="tc-card rv d' + ((i%3)+1) + '"><div class="tc-glow"></div><div class="tc-av"' + cAvStyle + '>' + cAvContent + '</div><div class="tc-role">' + esc(c.rola) + '</div><div class="tc-name">' + esc(c.imie) + '</div><div class="tc-desc">' + esc(c.opis) + '</div><div class="tc-rows"><div class="td-rows">' + cRows + '</div></div></div>';
-        });
-        gridEl.innerHTML = html;
-    }
-}
-
-/* ===== RANGI — TUTAJ EDYTUJ (w CONFIG powyzej) ===== */
-var currentPeriod = '30d';
-var periodPriceKeys = { '7d': 'cena7d', '30d': 'cena30d', '3m': 'cena3m' };
-
-function renderPeriodToggle() {
-    var el = document.getElementById('periodToggle');
-    if (!el) return;
-    var labels = CONFIG.okresyRang || { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" };
-    var html = '';
-    ['7d','30d','3m'].forEach(function(p) {
-        html += '<button class="ptab' + (p === currentPeriod ? ' on' : '') + '" data-period="' + p + '">' + (labels[p] || p) + '</button>';
-    });
-    el.innerHTML = html;
-    el.querySelectorAll('.ptab').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            currentPeriod = this.getAttribute('data-period');
-            el.querySelectorAll('.ptab').forEach(function(b) { b.classList.remove('on'); });
-            this.classList.add('on');
-            updateRankPrices();
-        });
-    });
-}
-
-function renderRanks() {
-    var el = document.getElementById('ranksGrid');
-    if (!el) return;
-    var labels = CONFIG.okresyRang || { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" };
-    var html = '';
-    CONFIG.rangi.forEach(function(r) {
-        var priceKey = periodPriceKeys[currentPeriod];
-        var benHtml = '';
-        r.benefity.forEach(function(b) { benHtml += '<li><i data-lucide="check"></i>' + esc(b) + '</li>'; });
-        html += '<div class="rcard"><div class="rcard-glow"></div><div class="rcard-name">' + esc(r.nazwa) + '</div><div class="rcard-dur">' + esc(labels[currentPeriod] || currentPeriod) + '</div><div class="rcard-price" data-rank="' + esc(r.nazwa) + '">' + esc(r[priceKey]) + ' <small>PLN</small></div><ul class="rcard-bens">' + benHtml + '</ul><a href="' + esc(CONFIG.linkSklep) + '" class="btn btn-sm bp">Kup teraz</a></div>';
-    });
-    el.innerHTML = html;
-}
-
-function updateRankPrices() {
-    var labels = CONFIG.okresyRang || { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" };
-    var priceKey = periodPriceKeys[currentPeriod];
-    document.querySelectorAll('.rcard-price').forEach(function(el) {
-        var rankName = el.getAttribute('data-rank');
-        var rank = CONFIG.rangi.find(function(r) { return r.nazwa === rankName; });
-        if (rank) {
-            el.classList.add('switching');
-            setTimeout(function() {
-                el.innerHTML = esc(rank[priceKey]) + ' <small>PLN</small>';
-                el.classList.remove('switching');
-            }, 200);
-        }
-    });
-    document.querySelectorAll('.rcard-dur').forEach(function(el) {
-        el.textContent = labels[currentPeriod] || currentPeriod;
-    });
-}
-
-function renderKeys() {
-    var el = document.getElementById('keysGrid');
-    if (!el) return;
-    var html = '';
-    CONFIG.klucze.forEach(function(k) {
-        html += '<div class="kcard"><div class="kcard-glow"></div><div class="kcard-name">' + esc(k.nazwa) + '</div><div class="kcard-desc">' + esc(k.opis) + '</div><div class="kcard-price">' + esc(k.cena) + ' <small>PLN</small></div><a href="' + esc(CONFIG.linkSklep) + '" class="btn btn-sm bpur">Kup teraz</a></div>';
-    });
-    el.innerHTML = html;
-}
-
-/* ===== FAQ — TUTAJ EDYTUJ (w CONFIG powyzej) ===== */
-function renderFAQ() {
-    var el = document.getElementById('faqList');
-    if (!el) return;
-    var html = '';
-    CONFIG.faq.forEach(function(f, i) {
-        html += '<div class="fitem" data-faq="' + i + '"><button class="fq"><span>' + esc(f.pytanie) + '</span><span class="ft"></span></button><div class="fa"><div class="fa-in">' + esc(f.odpowiedz) + '</div></div></div>';
-    });
-    el.innerHTML = html;
-}
-
-/* ===== LINKI — aktualizowane automatycznie z CONFIG ===== */
-function updateStaticElements() {
-    var setTxt = function(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; };
-    var setHref = function(id, val) { var el = document.getElementById(id); if (el) el.href = val; };
-
-    setTxt('heroBadgeText', CONFIG.badgeTekst);
-    setTxt('heroSlog', CONFIG.slogan);
-    setTxt('heroDesc', CONFIG.opis);
-    setTxt('heroIP', CONFIG.ip);
-    setTxt('ipWidgetText', CONFIG.ip);
-    setTxt('aboutTitle', CONFIG.aboutTytul);
-    setTxt('offerTitle', CONFIG.offerTytul);
-    setTxt('offerSub', CONFIG.offerPodtytul);
-    setTxt('modesSub', CONFIG.modesPodtytul);
-    setTxt('teamSub', CONFIG.teamPodtytul);
-    setTxt('shopBannerTitle', CONFIG.shopTytul);
-    setTxt('shopBannerDesc', CONFIG.shopOpis);
-    setTxt('footerDesc', CONFIG.footerOpis);
-
-    var ht = document.getElementById('heroTitle');
-    if (ht) ht.innerHTML = esc(CONFIG.naglowek) + '<span class="dot">.PL</span>';
-
-    setHref('heroDCLink', CONFIG.linkDiscord);
-    setHref('shopLink', CONFIG.linkSklep);
-    setHref('shopDCLink', CONFIG.linkDiscord);
-    setHref('creatorsDCLink', CONFIG.linkDiscord);
-    setHref('socialDCLink', CONFIG.linkDiscord);
-    setHref('footerDC', CONFIG.linkDiscord);
-    setHref('footerYT', CONFIG.linkYoutube);
-    setHref('footerTT', CONFIG.linkTiktok);
-
-    var cv = document.getElementById('creatorsVis');
-    if (cv && CONFIG.zdjecia['twórcy']) {
-        cv.style.backgroundImage = 'url(' + esc(CONFIG.zdjecia['twórcy']) + ')';
-    }
-
-    document.title = CONFIG.nazwaStrony + ' — Twoj Serwer.';
-}
-
-function renderAll() {
-    renderStats();
-    renderAbout();
-    renderOffer();
-    renderModes();
-    renderTeam();
-    renderPeriodToggle();
-    renderRanks();
-    renderKeys();
-    renderFAQ();
-    updateStaticElements();
-    if (window.lucide) lucide.createIcons();
-}
+function renderAll(){renderStats();renderAbout();renderOffer();renderModes();renderTeam();renderPeriodToggle();renderRanks();renderKeys();renderFAQ();updateStaticElements();if(window.lucide)lucide.createIcons();validatePageImages();}
 
 /* ================================================================
-   INTERAKCJE (nie edytuj, chyba ze wiesz co robisz)
+   INTERAKCJE
    ================================================================ */
-
-function initCanvas() {
-    var canvas = document.getElementById('hcv');
-    if (!canvas) return;
-    var ctx = canvas.getContext('2d');
-    if (!ctx) return;
-    var particles = [];
-    var count = 50;
-    function resize() {
-        canvas.width = canvas.offsetWidth * (window.devicePixelRatio || 1);
-        canvas.height = canvas.offsetHeight * (window.devicePixelRatio || 1);
-        ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
-    }
-    resize();
-    window.addEventListener('resize', function() { ctx.setTransform(1,0,0,1,0,0); resize(); });
-    var w = function() { return canvas.offsetWidth; };
-    var h = function() { return canvas.offsetHeight; };
-    for (var i = 0; i < count; i++) {
-        particles.push({ x: Math.random()*w(), y: Math.random()*h(), vx: (Math.random()-.5)*.25, vy: (Math.random()-.5)*.25, r: Math.random()*1.2+.4, a: Math.random()*.25+.05 });
-    }
-    function draw() {
-        ctx.clearRect(0, 0, w(), h());
-        for (var i = 0; i < particles.length; i++) {
-            var p = particles[i];
-            p.x += p.vx; p.y += p.vy;
-            if (p.x < 0) p.x = w(); if (p.x > w()) p.x = 0;
-            if (p.y < 0) p.y = h(); if (p.y > h()) p.y = 0;
-            ctx.beginPath();
-            ctx.arc(p.x, p.y, Math.max(0.1, p.r), 0, Math.PI * 2);
-            ctx.fillStyle = 'rgba(59,158,255,' + p.a + ')';
-            ctx.fill();
-            for (var j = i + 1; j < particles.length; j++) {
-                var p2 = particles[j];
-                var dx = p.x - p2.x, dy = p.y - p2.y;
-                var dist = Math.sqrt(dx*dx + dy*dy);
-                if (dist < 100) {
-                    ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y);
-                    ctx.strokeStyle = 'rgba(59,158,255,' + (0.05*(1-dist/100)) + ')';
-                    ctx.lineWidth = 0.5; ctx.stroke();
-                }
-            }
-        }
-        requestAnimationFrame(draw);
-    }
-    draw();
-}
-
-function initScrollReveal() {
-    var obs = new IntersectionObserver(function(entries) {
-        entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('vis'); });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.rv').forEach(function(el) { obs.observe(el); });
-}
-
-function initFAQ() {
-    document.addEventListener('click', function(e) {
-        var btn = e.target.closest('.fq');
-        if (!btn) return;
-        var item = btn.closest('.fitem');
-        if (!item) return;
-        var fa = item.querySelector('.fa');
-        var wasOpen = item.classList.contains('on');
-        document.querySelectorAll('.fitem.on').forEach(function(fi) {
-            fi.classList.remove('on'); var f = fi.querySelector('.fa'); if (f) f.style.maxHeight = '0';
-        });
-        if (!wasOpen && fa) { item.classList.add('on'); fa.style.maxHeight = fa.scrollHeight + 'px'; }
-    });
-}
-
-function initMobileMenu() {
-    var tog = document.getElementById('navTog');
-    var menu = document.getElementById('mmenu');
-    var close = document.getElementById('mcl');
-    if (!tog || !menu) return;
-    function openMenu() { menu.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closeMenu() { menu.classList.remove('open'); document.body.style.overflow = ''; }
-    tog.addEventListener('click', openMenu);
-    if (close) close.addEventListener('click', closeMenu);
-    menu.querySelectorAll('.mlink').forEach(function(a) { a.addEventListener('click', closeMenu); });
-}
-
-function initNavScroll() {
-    var nav = document.getElementById('nav');
-    if (!nav) return;
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) nav.classList.add('sc'); else nav.classList.remove('sc');
-    }, { passive: true });
-}
+function initCanvas(){var c=document.getElementById('hcv');if(!c)return;var x=c.getContext('2d');if(!x)return;var p=[],n=50;function r(){c.width=c.offsetWidth*(devicePixelRatio||1);c.height=c.offsetHeight*(devicePixelRatio||1);x.scale(devicePixelRatio||1,devicePixelRatio||1);}r();window.addEventListener('resize',function(){x.setTransform(1,0,0,1,0,0);r();});var w=function(){return c.offsetWidth;},h=function(){return c.offsetHeight;};for(var i=0;i<n;i++)p.push({x:Math.random()*w(),y:Math.random()*h(),vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*1.2+.4,a:Math.random()*.25+.05});function d(){x.clearRect(0,0,w(),h());for(var i=0;i<p.length;i++){var q=p[i];q.x+=q.vx;q.y+=q.vy;if(q.x<0)q.x=w();if(q.x>w())q.x=0;if(q.y<0)q.y=h();if(q.y>h())q.y=0;x.beginPath();x.arc(q.x,q.y,Math.max(.1,q.r),0,Math.PI*2);x.fillStyle='rgba(59,158,255,'+q.a+')';x.fill();for(var j=i+1;j<p.length;j++){var s=p[j],dx=q.x-s.x,dy=q.y-s.y,di=Math.sqrt(dx*dx+dy*dy);if(di<100){x.beginPath();x.moveTo(q.x,q.y);x.lineTo(s.x,s.y);x.strokeStyle='rgba(59,158,255,'+(0.05*(1-di/100))+')';x.lineWidth=.5;x.stroke();}}}requestAnimationFrame(d);}d();}
+function initScrollReveal(){var o=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.rv').forEach(function(e){o.observe(e);});}
+function initFAQ(){document.addEventListener('click',function(e){var b=e.target.closest('.fq');if(!b)return;var i=b.closest('.fitem');if(!i)return;var f=i.querySelector('.fa'),wo=i.classList.contains('on');document.querySelectorAll('.fitem.on').forEach(function(x){x.classList.remove('on');var y=x.querySelector('.fa');if(y)y.style.maxHeight='0';});if(!wo&&f){i.classList.add('on');f.style.maxHeight=f.scrollHeight+'px';}});}
+function initMobileMenu(){var t=document.getElementById('navTog'),m=document.getElementById('mmenu'),c=document.getElementById('mcl');if(!t||!m)return;function o(){m.classList.add('open');document.body.style.overflow='hidden';}function cl(){m.classList.remove('open');document.body.style.overflow='';}t.addEventListener('click',o);if(c)c.addEventListener('click',cl);m.querySelectorAll('.mlink').forEach(function(a){a.addEventListener('click',cl);});}
+function initNavScroll(){var n=document.getElementById('nav');if(!n)return;window.addEventListener('scroll',function(){if(window.scrollY>50)n.classList.add('sc');else n.classList.remove('sc');},{passive:true});}
 
 /* ================================================================
-   PANEL EDYCJI (ADMIN)
+   PANEL ADMINA — ukryty, dostep tylko przez sekretny skrot klawiszowy
+   ================================================================
+
+   JAK WEJSC DO PANELU (tylko jako wlasciciel):
+   -------------------------------------------------
+   1. Otworz strone w przegladarce
+   2. Nacisnij jednoczesnie:  Ctrl + Shift + P
+   3. Panel edycji sie otworzy
+   4. Ten sam skrot zamyka panel
+
+   Zeby wylaczyc panel na zawsze:
+   - W kodzie ponizej znajdz linie:  var ADM_ENABLED = true;
+   - Zmien na:                  var ADM_ENABLED = false;
+   - Zapisz plik — panel bedzie calkowicie niedostepny
+
+   Zeby wlaczyc ponownie:
+   - Zmien z powrotem na:       var ADM_ENABLED = true;
    ================================================================ */
+var ADM_ENABLED = true;
+
 function initAdminPanel() {
     var overlay = document.getElementById('admOverlay');
-    var trigger = document.getElementById('admTrigger');
-    var footerTrigger = document.getElementById('adminTriggerFooter');
     var closeBtn = document.getElementById('admClose');
     var saveBtn = document.getElementById('admSave');
     var resetBtn = document.getElementById('admReset');
@@ -1293,368 +799,63 @@ function initAdminPanel() {
     if (!overlay || !nav || !body) return;
 
     var tabs = [
-        { id: 'teksty', label: 'Teksty', ikona: 'type' },
-        { id: 'zdjecia', label: 'Zdjecia', ikona: 'image' },
-        { id: 'linki', label: 'Linki', ikona: 'link' },
-        { id: 'tryby', label: 'Tryby gry', ikona: 'gamepad-2' },
-        { id: 'rangi', label: 'Rangi', ikona: 'crown' },
-        { id: 'zespol', label: 'Zespol', ikona: 'users' },
-        { id: 'ip', label: 'IP serwera', ikona: 'server' }
+        { id:'teksty', label:'Teksty', ikona:'type' },
+        { id:'zdjecia', label:'Zdjecia', ikona:'image' },
+        { id:'linki', label:'Linki', ikona:'link' },
+        { id:'tryby', label:'Tryby gry', ikona:'gamepad-2' },
+        { id:'rangi', label:'Rangi', ikona:'crown' },
+        { id:'zespol', label:'Zespol', ikona:'users' },
+        { id:'ip', label:'IP serwera', ikona:'server' }
     ];
-
-    var navHtml = '';
-    tabs.forEach(function(t, i) {
-        navHtml += '<button class="adm-nav-item' + (i === 0 ? ' active' : '') + '" data-tab="' + t.id + '"><i data-lucide="' + t.ikona + '"></i>' + t.label + '</button>';
-    });
-    nav.innerHTML = navHtml;
-
-    var bodyHtml = '';
-    tabs.forEach(function(t, i) {
-        bodyHtml += '<div class="adm-tab' + (i === 0 ? ' active' : '') + '" data-tab="' + t.id + '">' + getTabContent(t.id) + '</div>';
-    });
-    body.innerHTML = bodyHtml;
-    if (window.lucide) lucide.createIcons();
-
-    nav.addEventListener('click', function(e) {
-        var btn = e.target.closest('.adm-nav-item');
-        if (!btn) return;
-        var tabId = btn.getAttribute('data-tab');
-        nav.querySelectorAll('.adm-nav-item').forEach(function(b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-        body.querySelectorAll('.adm-tab').forEach(function(t) { t.classList.remove('active'); });
-        var target = body.querySelector('.adm-tab[data-tab="' + tabId + '"]');
-        if (target) target.classList.add('active');
-    });
-
-    function openPanel() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
-    function closePanel() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
-    if (trigger) trigger.addEventListener('click', openPanel);
-    if (footerTrigger) footerTrigger.addEventListener('click', openPanel);
-    if (closeBtn) closeBtn.addEventListener('click', closePanel);
-    overlay.addEventListener('click', function(e) { if (e.target === overlay) closePanel(); });
-    document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closePanel(); });
-
-    if (saveBtn) saveBtn.addEventListener('click', function() {
-        readAllFields();
-        try { localStorage.setItem('pakoplay_config', JSON.stringify(CONFIG)); } catch(e) {}
-        renderAll(); initScrollReveal();
-        if (status) status.textContent = 'Zapisano! ' + new Date().toLocaleTimeString();
-        App.showToast('Zmiany zostaly zapisane');
-    });
-
-    if (resetBtn) resetBtn.addEventListener('click', function() {
-        if (!confirm('Czy na pewno chcesz przywrocic wszystkie domyslne ustawienia?')) return;
-        try { localStorage.removeItem('pakoplay_config'); } catch(e) {}
-        CONFIG = getDefaultConfig();
-        var bh = '';
-        tabs.forEach(function(t, i) {
-            bh += '<div class="adm-tab' + (i === 0 ? ' active' : '') + '" data-tab="' + t.id + '">' + getTabContent(t.id) + '</div>';
-        });
-        body.innerHTML = bh;
-        nav.querySelectorAll('.adm-nav-item').forEach(function(b, i) { b.classList.toggle('active', i === 0); });
-        if (window.lucide) lucide.createIcons();
-        initAdminDynamicEvents();
-        renderAll(); initScrollReveal();
-        if (status) status.textContent = 'Przywrocono domyslne';
-        App.showToast('Przywrocono domyslne ustawienia');
-    });
-
+    var nh='';tabs.forEach(function(t,i){nh+='<button class="adm-nav-item'+(i===0?' active':'')+'" data-tab="'+t.id+'"><i data-lucide="'+t.ikona+'"></i>'+t.label+'</button>';});nav.innerHTML=nh;
+    var bh='';tabs.forEach(function(t,i){bh+='<div class="adm-tab'+(i===0?' active':'')+'" data-tab="'+t.id+'">'+getTabContent(t.id)+'</div>';});body.innerHTML=bh;
+    if(window.lucide)lucide.createIcons();
+    nav.addEventListener('click',function(e){var b=e.target.closest('.adm-nav-item');if(!b)return;var id=b.getAttribute('data-tab');nav.querySelectorAll('.adm-nav-item').forEach(function(x){x.classList.remove('active');});b.classList.add('active');body.querySelectorAll('.adm-tab').forEach(function(t){t.classList.remove('active');});var tg=body.querySelector('.adm-tab[data-tab="'+id+'"]');if(tg)tg.classList.add('active');});
+    function openP(){if(!ADM_ENABLED)return;overlay.classList.add('open');document.body.style.overflow='hidden';}
+    function closeP(){overlay.classList.remove('open');document.body.style.overflow='';}
+    if(closeBtn)closeBtn.addEventListener('click',closeP);
+    overlay.addEventListener('click',function(e){if(e.target===overlay)closeP();});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&overlay.classList.contains('open'))closeP();});
+    if(saveBtn)saveBtn.addEventListener('click',function(){readAllFields();try{localStorage.setItem('pakoplay_config',JSON.stringify(CONFIG));}catch(e){}renderAll();initScrollReveal();if(status)status.textContent='Zapisano! '+new Date().toLocaleTimeString();App.showToast('Zmiany zostaly zapisane');});
+    if(resetBtn)resetBtn.addEventListener('click',function(){if(!confirm('Przywrocic domyslne ustawienia?'))return;try{localStorage.removeItem('pakoplay_config');}catch(e){}CONFIG=getDefaultConfig();var bh2='';tabs.forEach(function(t,i){bh2+='<div class="adm-tab'+(i===0?' active':'')+'" data-tab="'+t.id+'">'+getTabContent(t.id)+'</div>';});body.innerHTML=bh2;nav.querySelectorAll('.adm-nav-item').forEach(function(b,i){b.classList.toggle('active',i===0);});if(window.lucide)lucide.createIcons();initAdminDynamicEvents();renderAll();initScrollReveal();if(status)status.textContent='Przywrocono domyslne';App.showToast('Przywrocono domyslne ustawienia');});
     initAdminDynamicEvents();
 }
 
-/* ===== POMOCNIK PANELU: pola tekstowe ===== */
-function field(id, label, value, type) {
-    type = type || 'text';
-    if (type === 'textarea') {
-        return '<div class="adm-field"><label class="adm-label" for="adm-' + id + '">' + label + ' — TU EDYTUJ</label><textarea class="adm-textarea" id="adm-' + id + '">' + esc(value || '') + '</textarea></div>';
-    }
-    return '<div class="adm-field"><label class="adm-label" for="adm-' + id + '">' + label + ' — TU EDYTUJ</label><input class="adm-input" type="' + type + '" id="adm-' + id + '" value="' + esc(value || '') + '"></div>';
-}
-
-/* ===== POMOCNIK PANELU: pola zdjec z podgladem ===== */
-function imgField(id, label, value) {
-    var preview = value ? '<img class="adm-img-preview visible" id="adm-prev-' + id + '" src="' + esc(value) + '" alt="preview">' : '<img class="adm-img-preview" id="adm-prev-' + id + '" src="" alt="preview">';
-    return '<div class="adm-field"><label class="adm-label" for="adm-' + id + '">' + label + ' — TU WKLEJ ZDJECIE</label><div class="adm-img-row"><input class="adm-input" type="text" id="adm-' + id + '" value="' + esc(value || '') + '" placeholder="https://example.com/zdjecie.jpg"></div>' + preview + '</div>';
-}
-
-/* ===== TAB: TEKSTY ===== */
-function getTabTeksty() {
-    return '<div class="adm-section-title">TEKSTY</div>' +
-        /* ===== NAZWY I NAGLOWKI — TUTAJ EDYTUJ ===== */
-        field('nazwa', 'Nazwa strony', CONFIG.nazwaStrony) +
-        field('naglowek', 'Naglowek (hero)', CONFIG.naglowek) +
-        field('slogan', 'Slogan (pod naglowkiem)', CONFIG.slogan) +
-        /* ===== OPISY — TUTAJ EDYTUJ ===== */
-        field('opis', 'Opis (pod sloganem)', CONFIG.opis, 'textarea') +
-        field('badge', 'Tekst odznaki (np. Serwer online)', CONFIG.badgeTekst) +
-        '<div class="adm-subsection">Naglowki sekcji</div>' +
-        field('aboutTytul', 'Tytul "O serwerze"', CONFIG.aboutTytul) +
-        field('offerTytul', 'Tytul "Dlaczego my"', CONFIG.offerTytul) +
-        field('offerPodtytul', 'Podtytul "Dlaczego my"', CONFIG.offerPodtytul, 'textarea') +
-        field('modesPodtytul', 'Podtytul "Tryby gry"', CONFIG.modesPodtytul, 'textarea') +
-        field('teamPodtytul', 'Podtytul "Zespol"', CONFIG.teamPodtytul, 'textarea') +
-        field('shopTytul', 'Tytul baneru sklepu', CONFIG.shopTytul) +
-        field('shopOpis', 'Opis baneru sklepu', CONFIG.shopOpis, 'textarea') +
-        field('footerOpis', 'Opis w footerze', CONFIG.footerOpis, 'textarea');
-}
-
-/* ===== TAB: ZDJECIA ===== */
-function getTabZdjecia() {
-    var z = CONFIG.zdjecia;
-    return '<div class="adm-section-title">ZDJECIA</div>' +
-        '<div class="adm-subsection">Zespol — Glowny wlasciciel</div>' +
-        imgField('img-zespolGlowny', 'Zdjecie glownego wlasciciela', z.zespolGlowny) +
-        '<div class="adm-subsection">Zespol — Wspolwlasciciele</div>' +
-        imgField('img-zespolWlasciciel1', 'Zdjecie wspolwlasciciela 1', z.zespolWlasciciel1) +
-        imgField('img-zespolWlasciciel2', 'Zdjecie wspolwlasciciela 2', z.zespolWlasciciel2) +
-        '<div class="adm-subsection">Zespol — Pozostali czlonkowie</div>' +
-        imgField('img-zespolCzlonek1', 'Zdjecie czlonka 1', z.zespolCzlonek1) +
-        imgField('img-zespolCzlonek2', 'Zdjecie czlonka 2', z.zespolCzlonek2) +
-        imgField('img-zespolCzlonek3', 'Zdjecie czlonka 3', z.zespolCzlonek3) +
-        imgField('img-zespolCzlonek4', 'Zdjecie czlonka 4', z.zespolCzlonek4) +
-        imgField('img-zespolCzlonek5', 'Zdjecie czlonka 5', z.zespolCzlonek5) +
-        imgField('img-zespolCzlonek6', 'Zdjecie czlonka 6', z.zespolCzlonek6) +
-        '<div class="adm-subsection">Tryby gry</div>' +
-        imgField('img-survival', 'Survival — Zdjecie', z.survival) +
-        imgField('img-survivalDzialki', 'Survival + Dzialki — Zdjecie', z.survivalDzialki) +
-        '<div class="adm-subsection">Pozostale zdjecia</div>' +
-        imgField('img-twórcy', 'Program tworcow — Zdjecie', z['twórcy']) +
-        '<p class="adm-hint">Wklej pelny URL obrazka (np. https://i.imgur.com/xxx.png). Podglad pojawi sie automatycznie.</p>';
-}
-
-/* ===== TAB: LINKI ===== */
-function getTabLinki() {
-    return '<div class="adm-section-title">LINKI</div>' +
-        field('linkDiscord', 'Discord — TU WKLEJ LINK', CONFIG.linkDiscord) +
-        field('linkYoutube', 'YouTube — TU WKLEJ LINK', CONFIG.linkYoutube) +
-        field('linkTiktok', 'TikTok — TU WKLEJ LINK', CONFIG.linkTiktok) +
-        field('linkSklep', 'Sklep — TU WKLEJ LINK', CONFIG.linkSklep) +
-        field('linkInne', 'Inne linki — TU WKLEJ LINK', CONFIG.linkInne) +
-        '<p class="adm-hint">Wklej pelny URL (np. https://discord.gg/xxxx). Linki sa uzywane w przyciskach na calej stronie.</p>';
-}
-
-/* ===== TAB: TRYBY GRY ===== */
-function getTabTryby() {
-    var html = '<div class="adm-section-title">TRYBY GRY</div>';
-    CONFIG.trybyGry.forEach(function(m, i) {
-        html += '<div class="adm-subsection">Tryb ' + (i+1) + ' — TU EDYTUJ</div>';
-        html += field('tryb-' + i + '-nazwa', 'Nazwa trybu', m.nazwa);
-        html += field('tryb-' + i + '-opis', 'Opis trybu', m.opis, 'textarea');
-        html += field('tryb-' + i + '-tag', 'Tag (np. Tryb glowny)', m.tag);
-        html += field('tryb-' + i + '-status', 'Status (np. Aktywny)', m.status);
-        html += field('tryb-' + i + '-meta', 'Meta tagi (przecinkami)', m.meta.join(', '));
-        html += field('tryb-' + i + '-cechy', 'Cechy (przecinkami)', m.cechy.join(', '));
-    });
-    return html;
-}
-
-/* ===== TAB: RANGI ===== */
-function getTabRangi() {
-    var html = '<div class="adm-section-title">RANGI</div>';
-    CONFIG.rangi.forEach(function(r, i) {
-        html += '<div class="adm-list-item" data-rank-item="' + i + '">';
-        html += '<div class="adm-list-head"><span class="adm-list-name">' + esc(r.nazwa || 'Ranga ' + (i+1)) + '</span><i data-lucide="chevron-down" class="adm-list-arrow"></i></div>';
-        html += '<div class="adm-list-body">';
-        /* ===== NAZWA RANGI — TUTAJ EDYTUJ ===== */
-        html += field('rank-' + i + '-nazwa', 'Nazwa rangi — TU EDYTUJ', r.nazwa);
-        /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
-        html += '<div class="adm-row-3">';
-        html += '<div class="adm-field"><label class="adm-label" for="adm-rank-' + i + '-c7d">Cena 7 dni — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-' + i + '-c7d" value="' + esc(r.cena7d) + '"></div>';
-        html += '<div class="adm-field"><label class="adm-label" for="adm-rank-' + i + '-c30d">Cena 30 dni — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-' + i + '-c30d" value="' + esc(r.cena30d) + '"></div>';
-        html += '<div class="adm-field"><label class="adm-label" for="adm-rank-' + i + '-c3m">Cena 3 miesiace — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-' + i + '-c3m" value="' + esc(r.cena3m) + '"></div>';
-        html += '</div>';
-        html += '<div class="adm-field"><label class="adm-label">Benefity rangi</label>';
-        r.benefity.forEach(function(b, j) {
-            html += '<div class="adm-ben-row"><input class="adm-input" type="text" id="adm-rank-' + i + '-ben-' + j + '" value="' + esc(b) + '"><button class="adm-ben-del" data-del-ben="' + i + '-' + j + '"><i data-lucide="x"></i></button></div>';
-        });
-        html += '<button class="adm-ben-add" data-add-ben="' + i + '"><i data-lucide="plus"></i>Dodaj benefit</button>';
-        html += '</div></div></div>';
-    });
-    return html;
-}
-
-/* ===== TAB: ZESPOL ===== */
-function getTabZespol() {
-    var html = '<div class="adm-section-title">ZESPOL (1 glowny + 2 wspolwlascicieli + 6 czlonkow)</div>';
-
-    /* ===== OSOBY W ZESPOLIE — TUTAJ EDYTUJ ===== */
-    /* --- Glowny wlasciciel --- */
-    html += '<div class="adm-subsection">Glowny wlasciciel — TU EDYTUJ</div>';
-    html += field('team-g-imie', 'Imie / Nick', CONFIG.glowny.imie);
-    html += field('team-g-rola', 'Stanowisko / Rola', CONFIG.glowny.rola);
-    html += field('team-g-opis', 'Opis', CONFIG.glowny.opis, 'textarea');
-    html += field('team-g-inicjaly', 'Inicjaly (na awatarze)', CONFIG.glowny.inicjaly);
-
-    /* --- Wspolwlasciciele --- */
-    CONFIG.wlasciciele.forEach(function(o, i) {
-        html += '<div class="adm-subsection">Wspolwlasciciel ' + (i+1) + ' — TU EDYTUJ</div>';
-        html += field('team-w' + i + '-imie', 'Imie / Nick', o.imie);
-        html += field('team-w' + i + '-rola', 'Stanowisko / Rola', o.rola);
-        html += field('team-w' + i + '-opis', 'Opis', o.opis, 'textarea');
-        html += field('team-w' + i + '-inicjaly', 'Inicjaly', o.inicjaly);
-    });
-
-    /* --- Czlonkowie --- */
-    CONFIG.czlonkowie.forEach(function(c, i) {
-        html += '<div class="adm-subsection">Czlonek ' + (i+1) + ' — TU EDYTUJ</div>';
-        html += field('team-c' + i + '-imie', 'Imie / Nick', c.imie);
-        html += field('team-c' + i + '-rola', 'Stanowisko / Rola', c.rola);
-        html += field('team-c' + i + '-opis', 'Opis', c.opis, 'textarea');
-        html += field('team-c' + i + '-inicjaly', 'Inicjaly', c.inicjaly);
-    });
-
-    return html;
-}
-
-/* ===== TAB: IP SERWERA ===== */
-function getTabIP() {
-    return '<div class="adm-section-title">IP SERWERA</div>' +
-        field('ip', 'IP serwera — TU WKLEJ IP', CONFIG.ip) +
-        '<p class="adm-hint">To IP bedzie wyswietlane na stronie i kopiowane po kliknieciu przycisku "Graj teraz" lub widgetu IP w rogu ekranu.</p>';
-}
-
-/* ===== CZYTANIE POL Z PANELU DO CONFIG ===== */
-function readAllFields() {
-    var gval = function(id) { var el = document.getElementById('adm-' + id); return el ? el.value : ''; };
-
-    /* Teksty */
-    CONFIG.nazwaStrony = gval('nazwa');
-    CONFIG.naglowek = gval('naglowek');
-    CONFIG.slogan = gval('slogan');
-    CONFIG.opis = gval('opis');
-    CONFIG.badgeTekst = gval('badge');
-    CONFIG.aboutTytul = gval('aboutTytul');
-    CONFIG.offerTytul = gval('offerTytul');
-    CONFIG.offerPodtytul = gval('offerPodtytul');
-    CONFIG.modesPodtytul = gval('modesPodtytul');
-    CONFIG.teamPodtytul = gval('teamPodtytul');
-    CONFIG.shopTytul = gval('shopTytul');
-    CONFIG.shopOpis = gval('shopOpis');
-    CONFIG.footerOpis = gval('footerOpis');
-
-    /* Zdjecia */
-    CONFIG.zdjecia.zespolGlowny = gval('img-zespolGlowny');
-    CONFIG.zdjecia.zespolWlasciciel1 = gval('img-zespolWlasciciel1');
-    CONFIG.zdjecia.zespolWlasciciel2 = gval('img-zespolWlasciciel2');
-    CONFIG.zdjecia.zespolCzlonek1 = gval('img-zespolCzlonek1');
-    CONFIG.zdjecia.zespolCzlonek2 = gval('img-zespolCzlonek2');
-    CONFIG.zdjecia.zespolCzlonek3 = gval('img-zespolCzlonek3');
-    CONFIG.zdjecia.zespolCzlonek4 = gval('img-zespolCzlonek4');
-    CONFIG.zdjecia.zespolCzlonek5 = gval('img-zespolCzlonek5');
-    CONFIG.zdjecia.zespolCzlonek6 = gval('img-zespolCzlonek6');
-    CONFIG.zdjecia.survival = gval('img-survival');
-    CONFIG.zdjecia.survivalDzialki = gval('img-survivalDzialki');
-    CONFIG.zdjecia['twórcy'] = gval('img-twórcy');
-
-    /* Linki */
-    CONFIG.linkDiscord = gval('linkDiscord');
-    CONFIG.linkYoutube = gval('linkYoutube');
-    CONFIG.linkTiktok = gval('linkTiktok');
-    CONFIG.linkSklep = gval('linkSklep');
-    CONFIG.linkInne = gval('linkInne');
-
-    /* Tryby */
-    CONFIG.trybyGry.forEach(function(m, i) {
-        m.nazwa = gval('tryb-' + i + '-nazwa');
-        m.opis = gval('tryb-' + i + '-opis');
-        m.tag = gval('tryb-' + i + '-tag');
-        m.status = gval('tryb-' + i + '-status');
-        var metaRaw = gval('tryb-' + i + '-meta');
-        m.meta = metaRaw ? metaRaw.split(',').map(function(s){return s.trim();}).filter(Boolean) : [];
-        var cechyRaw = gval('tryb-' + i + '-cechy');
-        m.cechy = cechyRaw ? cechyRaw.split(',').map(function(s){return s.trim();}).filter(Boolean) : [];
-    });
-
-    /* Rangi */
-    CONFIG.rangi.forEach(function(r, i) {
-        r.nazwa = gval('rank-' + i + '-nazwa');
-        r.cena7d = gval('rank-' + i + '-c7d');
-        r.cena30d = gval('rank-' + i + '-c30d');
-        r.cena3m = gval('rank-' + i + '-c3m');
-        var newBens = [];
-        var j = 0;
-        while (true) {
-            var bEl = document.getElementById('adm-rank-' + i + '-ben-' + j);
-            if (!bEl) break;
-            if (bEl.value.trim()) newBens.push(bEl.value.trim());
-            j++;
-        }
-        r.benefity = newBens;
-    });
-
-    /* Zespol */
-    CONFIG.glowny.imie = gval('team-g-imie');
-    CONFIG.glowny.rola = gval('team-g-rola');
-    CONFIG.glowny.opis = gval('team-g-opis');
-    CONFIG.glowny.inicjaly = gval('team-g-inicjaly');
-    CONFIG.wlasciciele.forEach(function(o, i) {
-        o.imie = gval('team-w' + i + '-imie');
-        o.rola = gval('team-w' + i + '-rola');
-        o.opis = gval('team-w' + i + '-opis');
-        o.inicjaly = gval('team-w' + i + '-inicjaly');
-    });
-    CONFIG.czlonkowie.forEach(function(c, i) {
-        c.imie = gval('team-c' + i + '-imie');
-        c.rola = gval('team-c' + i + '-rola');
-        c.opis = gval('team-c' + i + '-opis');
-        c.inicjaly = gval('team-c' + i + '-inicjaly');
-    });
-
-    /* IP */
-    CONFIG.ip = gval('ip');
-}
-
-/* Dynamiczne eventy panelu */
-function initAdminDynamicEvents() {
-    var body = document.getElementById('admBody');
-    if (!body) return;
-
-    body.querySelectorAll('.adm-list-head').forEach(function(head) {
-        head.addEventListener('click', function() {
-            var item = this.closest('.adm-list-item');
-            if (item) item.classList.toggle('open');
-        });
-    });
-
-    body.querySelectorAll('input[id^="adm-img-"]').forEach(function(input) {
-        input.addEventListener('input', function() {
-            var id = this.id.replace('adm-', '');
-            var prev = document.getElementById('adm-prev-' + id);
-            if (!prev) return;
-            if (this.value.trim()) {
-                prev.src = this.value.trim();
-                prev.classList.add('visible');
-                prev.onerror = function() { this.classList.remove('visible'); };
+/* Sekretny skrot klawiszowy do otwierania panelu */
+document.addEventListener('keydown', function(e) {
+    if (!ADM_ENABLED) return;
+    if (e.ctrlKey && e.shiftKey && (e.key === 'P' || e.key === 'p')) {
+        e.preventDefault();
+        var overlay = document.getElementById('admOverlay');
+        if (overlay) {
+            if (overlay.classList.contains('open')) {
+                overlay.classList.remove('open');
+                document.body.style.overflow = '';
             } else {
-                prev.classList.remove('visible');
+                overlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
             }
-        });
-    });
+        }
+    }
+});
 
-    body.querySelectorAll('.adm-ben-add').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-            var rankIdx = this.getAttribute('data-add-ben');
-            var container = this.parentElement;
-            var existing = container.querySelectorAll('.adm-ben-row');
-            var newIdx = existing.length;
-            var row = document.createElement('div');
-            row.className = 'adm-ben-row';
-            row.innerHTML = '<input class="adm-input" type="text" id="adm-rank-' + rankIdx + '-ben-' + newIdx + '" value="" placeholder="Nowy benefit"><button class="adm-ben-del" data-del-ben="' + rankIdx + '-' + newIdx + '"><i data-lucide="x"></i></button>';
-            container.insertBefore(row, this);
-            if (window.lucide) lucide.createIcons();
-            row.querySelector('.adm-ben-del').addEventListener('click', handleBenDel);
-        });
-    });
+/* Pomocniki panelu */
+function field(id,label,value,type){type=type||'text';if(type==='textarea')return '<div class="adm-field"><label class="adm-label" for="adm-'+id+'">'+label+' — TU EDYTUJ</label><textarea class="adm-textarea" id="adm-'+id+'">'+esc(value||'')+'</textarea></div>';return '<div class="adm-field"><label class="adm-label" for="adm-'+id+'">'+label+' — TU EDYTUJ</label><input class="adm-input" type="'+type+'" id="adm-'+id+'" value="'+esc(value||'')+'"></div>';}
+function imgField(id,label,value){var pi='adm-prev-'+id,si='adm-status-'+id,hv=value&&isValidImageUrl(value);return '<div class="adm-field"><label class="adm-label" for="adm-'+id+'">'+label+' — TU WKLEJ LINK DO ZDJECIA</label><div class="adm-img-row"><input class="adm-input" type="text" id="adm-'+id+'" value="'+esc(value||'')+'" placeholder="https://example.com/zdjecie.jpg"></div><div class="adm-img-preview-wrap" id="'+pi+'-wrap"'+(hv?'':' style="display:none"')+'><img class="adm-img-preview'+(hv?' visible':'')+'" id="'+pi+'" src="'+(hv?esc(value):'')+'" alt="preview"><div class="adm-img-status'+(hv?' success':'')+'" id="'+si+'">'+(hv?'Zdjecie zaladowane poprawnie':'')+'</div></div></div>';}
 
-    body.querySelectorAll('.adm-ben-del').forEach(function(btn) {
-        btn.addEventListener('click', handleBenDel);
-    });
-}
+function getTabTeksty(){return '<div class="adm-section-title">TEKSTY</div>'+field('nazwa','Nazwa strony',CONFIG.nazwaStrony)+field('naglowek','Naglowek (hero)',CONFIG.naglowek)+field('slogan','Slogan',CONFIG.slogan)+field('opis','Opis (pod sloganem)',CONFIG.opis,'textarea')+field('badge','Tekst odznaki',CONFIG.badgeTekst)+'<div class="adm-subsection">Naglowki sekcji</div>'+field('aboutTytul','Tytul "O serwerze"',CONFIG.aboutTytul)+field('offerTytul','Tytul "Dlaczego my"',CONFIG.offerTytul)+field('offerPodtytul','Podtytul "Dlaczego my"',CONFIG.offerPodtytul,'textarea')+field('modesPodtytul','Podtytul "Tryby gry"',CONFIG.modesPodtytul,'textarea')+field('teamPodtytul','Podtytul "Zespol"',CONFIG.teamPodtytul,'textarea')+field('shopTytul','Tytul sklepu',CONFIG.shopTytul)+field('shopOpis','Opis sklepu',CONFIG.shopOpis,'textarea')+field('footerOpis','Opis w footerze',CONFIG.footerOpis,'textarea');}
+function getTabZdjecia(){var z=CONFIG.zdjecia;return '<div class="adm-section-title">ZDJECIA</div><p class="adm-hint" style="margin-bottom:16px">Wklej bezposredni link do obrazka. Formaty: .jpg .jpeg .png .webp .gif .bmp .svg .avif</p><div class="adm-subsection">Zespol — Glowny wlasciciel</div>'+imgField('img-zespolGlowny','Zdjecie glownego wlasciciela',z.zespolGlowny)+'<div class="adm-subsection">Zespol — Wspolwlasciciele</div>'+imgField('img-zespolWlasciciel1','Zdjecie wspolwlasciciela 1',z.zespolWlasciciel1)+imgField('img-zespolWlasciciel2','Zdjecie wspolwlasciciela 2',z.zespolWlasciciel2)+'<div class="adm-subsection">Zespol — Pozostali czlonkowie</div>'+imgField('img-zespolCzlonek1','Zdjecie czlonka 1',z.zespolCzlonek1)+imgField('img-zespolCzlonek2','Zdjecie czlonka 2',z.zespolCzlonek2)+imgField('img-zespolCzlonek3','Zdjecie czlonka 3',z.zespolCzlonek3)+imgField('img-zespolCzlonek4','Zdjecie czlonka 4',z.zespolCzlonek4)+imgField('img-zespolCzlonek5','Zdjecie czlonka 5',z.zespolCzlonek5)+imgField('img-zespolCzlonek6','Zdjecie czlonka 6',z.zespolCzlonek6)+'<div class="adm-subsection">Tryby gry</div>'+imgField('img-survival','Survival — Zdjecie',z.survival)+imgField('img-survivalDzialki','Survival + Dzialki — Zdjecie',z.survivalDzialki)+'<div class="adm-subsection">Pozostale zdjecia</div>'+imgField('img-tworcy','Program tworcow — Zdjecie',z.tworcy);}
+function getTabLinki(){return '<div class="adm-section-title">LINKI</div>'+field('linkDiscord','Discord — TU WKLEJ LINK',CONFIG.linkDiscord)+field('linkYoutube','YouTube — TU WKLEJ LINK',CONFIG.linkYoutube)+field('linkTiktok','TikTok — TU WKLEJ LINK',CONFIG.linkTiktok)+field('linkSklep','Sklep — TU WKLEJ LINK',CONFIG.linkSklep)+field('linkInne','Inne linki — TU WKLEJ LINK',CONFIG.linkInne);}
+function getTabTryby(){var h='<div class="adm-section-title">TRYBY GRY</div>';CONFIG.trybyGry.forEach(function(m,i){h+='<div class="adm-subsection">Tryb '+(i+1)+' — TU EDYTUJ</div>'+field('tryb-'+i+'-nazwa','Nazwa trybu',m.nazwa)+field('tryb-'+i+'-opis','Opis trybu',m.opis,'textarea')+field('tryb-'+i+'-tag','Tag',m.tag)+field('tryb-'+i+'-status','Status',m.status)+field('tryb-'+i+'-meta','Meta tagi (przecinkami)',m.meta.join(', '))+field('tryb-'+i+'-cechy','Cechy (przecinkami)',m.cechy.join(', '));});return h;}
+function getTabRangi(){var h='<div class="adm-section-title">RANGI</div>';CONFIG.rangi.forEach(function(r,i){h+='<div class="adm-list-item" data-rank-item="'+i+'"><div class="adm-list-head"><span class="adm-list-name">'+esc(r.nazwa||'Ranga '+(i+1))+'</span><i data-lucide="chevron-down" class="adm-list-arrow"></i></div><div class="adm-list-body">'+field('rank-'+i+'-nazwa','Nazwa rangi — TU EDYTUJ',r.nazwa)+'<div class="adm-row-3"><div class="adm-field"><label class="adm-label">Cena 7 dni — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-'+i+'-c7d" value="'+esc(r.cena7d)+'"></div><div class="adm-field"><label class="adm-label">Cena 30 dni — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-'+i+'-c30d" value="'+esc(r.cena30d)+'"></div><div class="adm-field"><label class="adm-label">Cena 3 miesiace — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-'+i+'-c3m" value="'+esc(r.cena3m)+'"></div></div><div class="adm-field"><label class="adm-label">Benefity rangi</label>';r.benefity.forEach(function(b,j){h+='<div class="adm-ben-row"><input class="adm-input" type="text" id="adm-rank-'+i+'-ben-'+j+'" value="'+esc(b)+'"><button class="adm-ben-del" data-del-ben="'+i+'-'+j+'"><i data-lucide="x"></i></button></div>';});h+='<button class="adm-ben-add" data-add-ben="'+i+'"><i data-lucide="plus"></i>Dodaj benefit</button></div></div></div></div>';});return h;}
+function getTabZespol(){var h='<div class="adm-section-title">ZESPOL (1 glowny + 2 wspolwlascicieli + 6 czlonkow)</div><div class="adm-subsection">Glowny wlasciciel — TU EDYTUJ</div>'+field('team-g-imie','Imie / Nick',CONFIG.glowny.imie)+field('team-g-rola','Stanowisko',CONFIG.glowny.rola)+field('team-g-opis','Opis',CONFIG.glowny.opis,'textarea')+field('team-g-inicjaly','Inicjaly',CONFIG.glowny.inicjaly);CONFIG.wlasciciele.forEach(function(o,i){h+='<div class="adm-subsection">Wspolwlasciciel '+(i+1)+' — TU EDYTUJ</div>'+field('team-w'+i+'-imie','Imie / Nick',o.imie)+field('team-w'+i+'-rola','Stanowisko',o.rola)+field('team-w'+i+'-opis','Opis',o.opis,'textarea')+field('team-w'+i+'-inicjaly','Inicjaly',o.inicjaly);});CONFIG.czlonkowie.forEach(function(c,i){h+='<div class="adm-subsection">Czlonek '+(i+1)+' — TU EDYTUJ</div>'+field('team-c'+i+'-imie','Imie / Nick',c.imie)+field('team-c'+i+'-rola','Stanowisko',c.rola)+field('team-c'+i+'-opis','Opis',c.opis,'textarea')+field('team-c'+i+'-inicjaly','Inicjaly',c.inicjaly);});return h;}
+function getTabIP(){return '<div class="adm-section-title">IP SERWERA</div>'+field('ip','IP serwera — TU WKLEJ IP',CONFIG.ip)+'<p class="adm-hint">To IP pojawia sie w hero, w widgetu w rogu ekranu i jest kopiowane przyciskiem "Graj teraz".</p>';}
+function getTabContent(id){switch(id){case'teksty':return getTabTeksty();case'zdjecia':return getTabZdjecia();case'linki':return getTabLinki();case'tryby':return getTabTryby();case'rangi':return getTabRangi();case'zespol':return getTabZespol();case'ip':return getTabIP();default:return'';}}
 
-function handleBenDel() {
-    var row = this.closest('.adm-ben-row');
-    if (row) row.remove();
-}
+function readAllFields(){var g=function(id){var e=document.getElementById('adm-'+id);return e?e.value:'';};CONFIG.nazwaStrony=g('nazwa');CONFIG.naglowek=g('naglowek');CONFIG.slogan=g('slogan');CONFIG.opis=g('opis');CONFIG.badgeTekst=g('badge');CONFIG.aboutTytul=g('aboutTytul');CONFIG.offerTytul=g('offerTytul');CONFIG.offerPodtytul=g('offerPodtytul');CONFIG.modesPodtytul=g('modesPodtytul');CONFIG.teamPodtytul=g('teamPodtytul');CONFIG.shopTytul=g('shopTytul');CONFIG.shopOpis=g('shopOpis');CONFIG.footerOpis=g('footerOpis');CONFIG.zdjecia.zespolGlowny=g('img-zespolGlowny');CONFIG.zdjecia.zespolWlasciciel1=g('img-zespolWlasciciel1');CONFIG.zdjecia.zespolWlasciciel2=g('img-zespolWlasciciel2');CONFIG.zdjecia.zespolCzlonek1=g('img-zespolCzlonek1');CONFIG.zdjecia.zespolCzlonek2=g('img-zespolCzlonek2');CONFIG.zdjecia.zespolCzlonek3=g('img-zespolCzlonek3');CONFIG.zdjecia.zespolCzlonek4=g('img-zespolCzlonek4');CONFIG.zdjecia.zespolCzlonek5=g('img-zespolCzlonek5');CONFIG.zdjecia.zespolCzlonek6=g('img-zespolCzlonek6');CONFIG.zdjecia.survival=g('img-survival');CONFIG.zdjecia.survivalDzialki=g('img-survivalDzialki');CONFIG.zdjecia.tworcy=g('img-tworcy');CONFIG.linkDiscord=g('linkDiscord');CONFIG.linkYoutube=g('linkYoutube');CONFIG.linkTiktok=g('linkTiktok');CONFIG.linkSklep=g('linkSklep');CONFIG.linkInne=g('linkInne');CONFIG.trybyGry.forEach(function(m,i){m.nazwa=g('tryb-'+i+'-nazwa');m.opis=g('tryb-'+i+'-opis');m.tag=g('tryb-'+i+'-tag');m.status=g('tryb-'+i+'-status');var mr=g('tryb-'+i+'-meta');m.meta=mr?mr.split(',').map(function(s){return s.trim();}).filter(Boolean):[];var cr=g('tryb-'+i+'-cechy');m.cechy=cr?cr.split(',').map(function(s){return s.trim();}).filter(Boolean):[];});CONFIG.rangi.forEach(function(r,i){r.nazwa=g('rank-'+i+'-nazwa');r.cena7d=g('rank-'+i+'-c7d');r.cena30d=g('rank-'+i+'-c30d');r.cena3m=g('rank-'+i+'-c3m');var nb=[];var j=0;while(true){var bE=document.getElementById('adm-rank-'+i+'-ben-'+j);if(!bE)break;if(bE.value.trim())nb.push(bE.value.trim());j++;}r.benefity=nb;});CONFIG.glowny.imie=g('team-g-imie');CONFIG.glowny.rola=g('team-g-rola');CONFIG.glowny.opis=g('team-g-opis');CONFIG.glowny.inicjaly=g('team-g-inicjaly');CONFIG.wlasciciele.forEach(function(o,i){o.imie=g('team-w'+i+'-imie');o.rola=g('team-w'+i+'-rola');o.opis=g('team-w'+i+'-opis');o.inicjaly=g('team-w'+i+'-inicjaly');});CONFIG.czlonkowie.forEach(function(c,i){c.imie=g('team-c'+i+'-imie');c.rola=g('team-c'+i+'-rola');c.opis=g('team-c'+i+'-opis');c.inicjaly=g('team-c'+i+'-inicjaly');});CONFIG.ip=g('ip');}
+
+function initAdminDynamicEvents(){var body=document.getElementById('admBody');if(!body)return;body.querySelectorAll('.adm-list-head').forEach(function(h){h.addEventListener('click',function(){var it=this.closest('.adm-list-item');if(it)it.classList.toggle('open');});});body.querySelectorAll('input[id^="adm-img-"]').forEach(function(inp){inp.addEventListener('input',function(){var id=this.id.replace('adm-',''),wrap=document.getElementById('adm-prev-'+id+'-wrap'),img=document.getElementById('adm-prev-'+id),st=document.getElementById('adm-status-'+id);if(!wrap||!img)return;var url=this.value.trim();if(!url){wrap.style.display='none';return;}if(!isValidImageUrl(url)){wrap.style.display='';img.classList.remove('visible');img.src='';st.textContent='Nie mozna zaladowac zdjecia — sprawdz czy to bezposredni link (.jpg .png .webp .gif)';st.className='adm-img-status error';return;}wrap.style.display='';img.classList.remove('visible');img.src='';st.textContent='Ladowanie...';st.className='adm-img-status loading';var ti=new Image();ti.onload=function(){img.src=url;img.classList.add('visible');st.textContent='Zdjecie zaladowane poprawnie';st.className='adm-img-status success';};ti.onerror=function(){img.classList.remove('visible');img.src='';st.textContent='Nie mozna zaladowac zdjecia — sprawdz link';st.className='adm-img-status error';};ti.src=url;});});body.querySelectorAll('.adm-ben-add').forEach(function(btn){btn.addEventListener('click',function(){var ri=this.getAttribute('data-add-ben'),c=this.parentElement,ex=c.querySelectorAll('.adm-ben-row'),ni=ex.length,r=document.createElement('div');r.className='adm-ben-row';r.innerHTML='<input class="adm-input" type="text" id="adm-rank-'+ri+'-ben-'+ni+'" value="" placeholder="Nowy benefit"><button class="adm-ben-del" data-del-ben="'+ri+'-'+ni+'"><i data-lucide="x"></i></button>';c.insertBefore(r,this);if(window.lucide)lucide.createIcons();r.querySelector('.adm-ben-del').addEventListener('click',handleBenDel);});});body.querySelectorAll('.adm-ben-del').forEach(function(btn){btn.addEventListener('click',handleBenDel);});}
+function handleBenDel(){var r=this.closest('.adm-ben-row');if(r)r.remove();}
 
 /* ================================================================
    START
