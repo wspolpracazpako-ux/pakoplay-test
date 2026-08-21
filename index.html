@@ -1126,7 +1126,8 @@ const App = {
     },
 
     initAdmin() {
-        document.getElementById('admTrigger').addEventListener('click', () => this.openAdmin());
+        const _trig = document.getElementById('admTrigger');
+        if (_trig) _trig.addEventListener('click', () => this.openAdmin());
         document.getElementById('admOverlay').addEventListener('click', (e) => {
             if (e.target === e.currentTarget) this.closeAdmin();
         });
