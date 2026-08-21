@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>g
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         :root{
             --bg-primary:#060a14;--bg-secondary:#0b1121;--bg-tertiary:#101828;
@@ -130,7 +130,7 @@
         .modes-list{display:flex;flex-direction:column;gap:48px}
         .mode{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
         .mode:nth-child(even){direction:rtl}.mode:nth-child(even)>*{direction:ltr}
-        .mode-vis{aspect-ratio:16/10;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;position:relative;display:grid;place-items:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;flex-direction:column;gap:8px}
+        .mode-vis{aspect-ratio:16/10;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;position:relative;display:grid;place-items:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;flex-direction:column;gap:8px;background-size:cover;background-position:center}
         .mode-vis i{width:28px;height:28px;opacity:.25}
         .mode-vis-glow{position:absolute;top:-1px;right:-1px;width:50%;height:50%;background:radial-gradient(ellipse at top right,var(--glow),transparent 70%);pointer-events:none}
         .mode-tag{display:inline-block;font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.1em;color:var(--accent);padding:5px 14px;background:var(--glow);border:1px solid var(--border-a);border-radius:100px;text-transform:uppercase;margin-bottom:18px}
@@ -160,7 +160,7 @@
         .team-main::before{content:'';position:absolute;inset:-1px;border-radius:var(--rl);padding:1px;background:linear-gradient(135deg,var(--accent),var(--purple));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
         .tm-glow{position:absolute;top:-40%;left:50%;transform:translateX(-50%);width:90%;height:70%;background:radial-gradient(ellipse,var(--glow),transparent 70%);pointer-events:none;opacity:0;transition:opacity var(--b)}
         .team-main:hover .tm-glow{opacity:1}
-        .tm-av{width:92px;height:92px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border-a);margin:0 auto 18px;display:grid;place-items:center;font-family:var(--fh);font-size:32px;font-weight:700;color:var(--accent);position:relative;z-index:1;transition:transform var(--b),border-color var(--b);overflow:hidden}
+        .tm-av{width:92px;height:92px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border-a);margin:0 auto 18px;display:grid;place-items:center;font-family:var(--fh);font-size:32px;font-weight:700;color:var(--accent);position:relative;z-index:1;transition:transform var(--b),border-color var(--b);overflow:hidden;background-size:cover;background-position:center}
         .team-main:hover .tm-av{transform:scale(1.05);border-color:var(--accent)}
         .tm-role{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;position:relative;z-index:1}
         .tm-name{font-family:var(--fh);font-size:24px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px;position:relative;z-index:1}
@@ -171,7 +171,7 @@
         .to-card:hover{border-color:var(--border-h);transform:translateY(-3px)}
         .to-glow{position:absolute;top:-30%;left:50%;transform:translateX(-50%);width:80%;height:60%;background:radial-gradient(ellipse,var(--glow),transparent 70%);pointer-events:none;opacity:0;transition:opacity var(--b)}
         .to-card:hover .to-glow{opacity:1}
-        .to-av{width:72px;height:72px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border);margin:0 auto 16px;display:grid;place-items:center;font-family:var(--fh);font-size:24px;font-weight:700;color:var(--accent-light);transition:transform var(--b),border-color var(--b)}
+        .to-av{width:72px;height:72px;border-radius:50%;background:var(--bg-card);border:2px solid var(--border);margin:0 auto 16px;display:grid;place-items:center;font-family:var(--fh);font-size:24px;font-weight:700;color:var(--accent-light);transition:transform var(--b),border-color var(--b);background-size:cover;background-position:center}
         .to-card:hover .to-av{transform:scale(1.05);border-color:var(--accent-dim)}
         .to-role{font-family:var(--fh);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
         .to-name{font-family:var(--fh);font-size:19px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px}
@@ -185,7 +185,7 @@
         .tc-card:hover{border-color:var(--border-h);transform:translateY(-3px)}
         .tc-glow{position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:70%;height:50%;background:radial-gradient(ellipse,var(--glow),transparent 70%);pointer-events:none;opacity:0;transition:opacity var(--b)}
         .tc-card:hover .tc-glow{opacity:1}
-        .tc-av{width:64px;height:64px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);margin:0 auto 14px;display:grid;place-items:center;font-family:var(--fh);font-size:20px;font-weight:700;color:var(--text-s);transition:transform var(--b),border-color var(--b)}
+        .tc-av{width:64px;height:64px;border-radius:50%;background:var(--bg-card);border:1px solid var(--border);margin:0 auto 14px;display:grid;place-items:center;font-family:var(--fh);font-size:20px;font-weight:700;color:var(--text-s);transition:transform var(--b),border-color var(--b);background-size:cover;background-position:center}
         .tc-card:hover .tc-av{transform:scale(1.05);border-color:var(--border-h)}
         .tc-role{font-family:var(--fh);font-size:9px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--purple);margin-bottom:5px}
         .tc-name{font-family:var(--fh);font-size:16px;font-weight:600;margin-bottom:4px}
@@ -360,6 +360,10 @@
         .adm-ben-add{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border:1px dashed var(--border);border-radius:var(--rs);background:transparent;color:var(--text-t);cursor:pointer;transition:all .15s ease;display:inline-flex;align-items:center;gap:6px}
         .adm-ben-add:hover{border-color:var(--accent-dim);color:var(--accent)}
         .adm-ben-add i{width:12px;height:12px}
+        .adm-img-preview{margin-top:8px;max-width:140px;max-height:90px;border-radius:var(--rs);border:1px solid var(--border);object-fit:cover;display:none}
+        .adm-img-preview.visible{display:block}
+        .adm-img-row{display:flex;gap:8px;align-items:center}
+        .adm-img-row .adm-input{flex:1}
         @media(max-width:768px){.adm-panel{grid-template-columns:1fr;max-height:100vh;border-radius:0}.adm-side{border-right:none;border-bottom:1px solid var(--border);max-height:180px}.adm-nav{flex-direction:row;overflow-x:auto;padding:8px}.adm-nav-item{white-space:nowrap;font-size:10.5px;padding:8px 10px}.adm-row,.adm-row-3{grid-template-columns:1fr}.ip-widget{bottom:60px}}
     </style>
 </head>
@@ -398,7 +402,7 @@
         <div class="hbadge" id="heroBadge"><span class="hbdot"></span><span id="heroBadgeText">Serwer offline</span></div>
         <h1 class="htitle" id="heroTitle">PakoPlay<span class="dot">.PL</span></h1>
         <p class="hslog" id="heroSlog">Twoj serwer Minecraft</p>
-        <p class="hdsc" id="heroDesc">Serwer Minecraft, ktory stawia na społecznosc, jakosc i doswiadczenie — Dolacz i przekonaj sie sam.</p>
+        <p class="hdsc" id="heroDesc">Serwer Minecraft, ktory stawia na spolecznosc, jakosc i doswiadczenie — Dolacz i przekonaj sie sam.</p>
         <div class="hip-wrap">
             <div class="hip-box"><i data-lucide="gamepad-2" style="width:14px;height:14px"></i>IP SERWERA: <strong id="heroIP">pakoplay.pl</strong></div>
             <button class="btn btn-xs bp" onclick="App.copyIP()">SKOPIUJ IP</button>
@@ -414,28 +418,28 @@
 <section class="about" id="about">
     <div class="ctn">
         <div class="about-stats rv" id="aboutStats"></div>
-        <div class="about-hdr"><div class="sl rv">O serwerze</div><h2 class="sh rv d1">Poznaj PakoPlay.PL</h2></div>
+        <div class="about-hdr"><div class="sl rv">O serwerze</div><h2 class="sh rv d1" id="aboutTitle">Poznaj PakoPlay.PL</h2></div>
         <div class="about-grid" id="aboutGrid"></div>
     </div>
 </section>
 
 <section class="offer" id="offer">
     <div class="ctn">
-        <div class="offer-hdr"><div class="sl c rv">Dlaczego my</div><h2 class="sh rv d1">Dlaczego PakoPlay.PL?</h2><p class="st c rv d2">Nie jestesmy kolejnym serwerem z listy. Oto co nas wyroznia.</p></div>
+        <div class="offer-hdr"><div class="sl c rv">Dlaczego my</div><h2 class="sh rv d1" id="offerTitle">Dlaczego PakoPlay.PL?</h2><p class="st c rv d2" id="offerSub">Nie jestesmy kolejnym serwerem z listy. Oto co nas wyroznia.</p></div>
         <div class="ogrid" id="offerGrid"></div>
     </div>
 </section>
 
 <section class="modes" id="modes">
     <div class="ctn">
-        <div class="modes-hdr"><div class="sl c rv">NASZEy</div><h2 class="sh rv d1">Tryby gry</h2><p class="st c rv d2">Kazdy tryb to przemyslany system, nie skopiowany szablon.</p></div>
+        <div class="modes-hdr"><div class="sl c rv">NASZE</div><h2 class="sh rv d1">Tryby gry</h2><p class="st c rv d2" id="modesSub">Kazdy tryb to przemyslany system, nie skopiowany szablon.</p></div>
         <div class="modes-list" id="modesList"></div>
     </div>
 </section>
 
 <section class="team" id="team">
     <div class="ctn">
-        <div class="team-hdr"><div class="sl c rv">Zespol</div><h2 class="sh rv d1">Poznaj nasz zespol</h2><p class="st c rv d2">Ludzie, ktorzy buduja PakoPlay.PL — kazdego dnia.</p></div>
+        <div class="team-hdr"><div class="sl c rv">Zespol</div><h2 class="sh rv d1">Poznaj nasz zespol</h2><p class="st c rv d2" id="teamSub">Ludzie, ktorzy buduja PakoPlay.PL — kazdego dnia.</p></div>
         <div id="teamMain"></div>
         <div class="team-owners" id="teamOwners"></div>
         <div class="team-sep rv"><span>Pozostala ekipa</span></div>
@@ -448,8 +452,8 @@
         <div class="shop-banner rv">
             <div class="shop-banner-glow"></div>
             <div class="sl c">Sklep</div>
-            <h2 class="sh">SKLEP PakoPlay.PL</h2>
-            <p class="st c">Rangi i klucze. Wszystko uczciwe, bez pay-to-win.</p>
+            <h2 class="sh" id="shopBannerTitle">SKLEP PakoPlay.PL</h2>
+            <p class="st c" id="shopBannerDesc">Rangi i klucze. Wszystko uczciwe, bez pay-to-win.</p>
             <div class="shop-acts">
                 <a href="#" class="btn bp" id="shopLink">Przejdz do sklepu <i data-lucide="shopping-bag" style="width:14px;height:14px"></i></a>
                 <a href="#" class="btn bg" id="shopDCLink">Masz pytanie odnosnie sklepu? Zapytaj na Discord <i data-lucide="message-circle" style="width:14px;height:14px"></i></a>
@@ -483,14 +487,14 @@
             <div class="creators-content">
                 <div class="sl purp">Dla tworcow</div>
                 <h2 class="sh">Wspolpracuj z nami</h2>
-                <p class="st">Jestes YouTuberem, TikTokerem lub streamerem? Mamy program, ktory się oplaca — realne bonusy, specjalna ranga i wsparcie.</p>
+                <p class="st">Jestes YouTuberem, TikTokerem lub streamerem? Mamy program, ktory sie oplaca — realne bonusy, specjalna ranga i wsparcie.</p>
                 <div class="cbens">
                     <div class="cben"><div class="cben-ic"><i data-lucide="crown"></i></div>Ekskluzywna ranga na serwerze</div>
                     <div class="cben"><div class="cben-ic"><i data-lucide="gift"></i></div>Dostep do kitu VIP lub SVIP</div>
                     <div class="cben"><div class="cben-ic"><i data-lucide="megaphone"></i></div>Promocja na serwerze discord (filmy wylacznie z serwera PakoPlay)</div>
                     <div class="cben"><div class="cben-ic"><i data-lucide="handshake"></i></div>Mozliwosc posiadania swojego kodu promocyjnego dla widzow do sklepu PakoPlay</div>
                 </div>
-                <a href="#" class="btn bpur" id="creatorsDCLink">Zglos się na Discord <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
+                <a href="#" class="btn bpur" id="creatorsDCLink">Zglos sie na Discord <i data-lucide="arrow-right" style="width:14px;height:14px"></i></a>
             </div>
         </div>
     </div>
@@ -502,7 +506,7 @@
             <div class="discord-cta-glow"></div>
             <div class="dc-label">Dolacz do nas</div>
             <h2 class="sh">Znajdz nas na Discord</h2>
-            <p class="st">To tutaj dzieje się wszystko — rozmowy, pomoc, eventy i ogloszenia. Dolacz juz teraz!</p>
+            <p class="st">To tutaj dzieje sie wszystko — rozmowy, pomoc, eventy i ogloszenia. Dolacz juz teraz!</p>
             <div class="dc-info">
                 <div class="dc-stat"><div class="dc-stat-n">20+</div><div class="dc-stat-l">Czlonkow</div></div>
                 <div class="dc-stat-dot"></div>
@@ -518,7 +522,7 @@
 
 <section class="faq" id="faq">
     <div class="ctn">
-        <div class="faq-hdr"><div class="sl c rv">FAQ</div><h2 class="sh rv d1">Najczestsze pytania</h2><p class="st c rv d2">Odpowiedzi na to, co spolecznosc PakoPlay pytaja najczesciej.</p></div>
+        <div class="faq-hdr"><div class="sl c rv">FAQ</div><h2 class="sh rv d1">Najczestsze pytania</h2><p class="st c rv d2">Odpowiedzi na to, co spolecznosc PakoPlay pytaja najczesciej</p></div>
         <div class="flist" id="faqList"></div>
     </div>
 </section>
@@ -528,45 +532,42 @@
         <div class="fgrid">
             <div>
                 <a href="#" class="nl">PakoPlay<span>.PL</span></a>
-                <p class="fdesc" id="footerDesc">Serwer Minecraft budowany z pasja - Serwer budowany dla graczy!</p>
+                <p class="fdesc" id="footerDesc"></p>
             </div>
             <div>
                 <div class="fh">Nawigacja</div>
-                <ul class="flinks" id="footerNav"></ul>
+                <ul class="flinks" id="footerLinks1"></ul>
             </div>
             <div>
-                <div class="fh">Social</div>
-                <ul class="flinks" id="footerSocial"></ul>
+                <div class="fh">Przydatne</div>
+                <ul class="flinks" id="footerLinks2"></ul>
             </div>
         </div>
         <div class="fbot">
-            <span class="fcopy">&copy; 2026 PakoPlay.PL — Wszelkie prawa zastrzezone.</span>
+            <span class="fcopy">&copy; 2024 PakoPlay.PL — Wszelkie prawa zastrzezone.</span>
         </div>
     </div>
 </footer>
-
-<div class="ip-widget" id="ipWidget" onclick="App.copyIP()" title="Kliknij, aby skopiować IP">
-    <i data-lucide="copy" style="width:13px;height:13px"></i>
-    <strong id="ipWidgetText">pakoplay.pl</strong>
-</div>
 
 <div class="toast" id="toast">
     <span class="toast-ic"><i data-lucide="check-circle"></i></span>
     <span id="toastText">Skopiowano!</span>
 </div>
 
-    <i data-lucide="settings" style="width:18px;height:18px"></i>
-</button>
+<div class="ip-widget" id="ipWidget" onclick="App.copyIP()">
+    <i data-lucide="copy"></i>
+    <span><strong id="ipWidgetIP">pakoplay.pl</strong></span>
+</div>
+
+<button class="adm-trigger" id="admTrigger" aria-label="Panel konfiguracji"><i data-lucide="settings" style="width:18px;height:18px"></i></button>
 
 <div class="adm-overlay" id="admOverlay">
     <div class="adm-panel">
         <div class="adm-head">
-            <span class="adm-head-title">Panel edycji — PakoPlay.PL</span>
+            <span class="adm-head-title">Panel konfiguracji</span>
             <div class="adm-head-actions">
-                <button class="adm-btn danger" onclick="App.resetData()">Resetuj dane</button>
-                <button class="adm-btn" onclick="App.exportData()">Eksportuj</button>
-                <button class="adm-btn" onclick="document.getElementById('admImportFile').click()">Importuj</button>
-                <input type="file" id="admImportFile" style="display:none" accept=".json" onchange="App.importData(event)">
+                <button class="adm-btn danger" onclick="App.resetData()">Resetuj</button>
+                <button class="adm-btn primary" onclick="App.saveData()">Zapisz</button>
                 <button class="adm-btn close" onclick="App.closeAdmin()">&times;</button>
             </div>
         </div>
@@ -575,1158 +576,846 @@
         </div>
         <div class="adm-body" id="admBody"></div>
         <div class="adm-footer">
-            <span class="adm-status" id="admStatus">Wszystkie zmiany zapisywane automatycznie</span>
-            <span class="adm-status" id="admSaved"></span>
+            <span class="adm-status" id="admStatus">Wszystko zapisane</span>
+            <div style="display:flex;gap:8px">
+                <button class="adm-btn danger" onclick="App.resetData()">Resetuj dane</button>
+                <button class="adm-btn primary" onclick="App.saveData()">Zapisz zmiany</button>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-const App = {
-    data: null,
-    currentPeriod: '30d',
-    currentTab: 'general',
-    toastTimer: null,
+function esc(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
 
-    DEFAULTS: {
-        serverIP: 'pakoplay.pl',
-        discordLink: '#https://discord.gg/AcFff9hgay',
-        shopLink: '#https://vishop.pl/shop/25748/server/24433',
-        hero: {
-            badge: 'Serwer offline',
-            slogan: 'Twoj serwer Minecraft',
-            description: 'Serwer Minecraft, ktory patrzy na jakosc i zadowolenie graczy!'
-        },
-        aboutStats: [
-            { value: "0", suffix: '', label: 'Rekord graczy online', isCustom: false, customText: 'Brak danych' },
-            { value: 0, suffix: '+', label: 'Wydarzen', isCustom: false, customText: '' },
-            { value: 1, suffix: '+', label: 'Ilosc trybow', isCustom: false, customText: '' },
-            { value: 0, suffix: '', label: 'Data startu Serwera MC', isCustom: true, customText: '__.__.2026r.' }
-        ],
-        aboutCards: [
-            { icon: 'globe', title: 'O serwerze', desc: 'PakoPlay.PL to projekt budowany z pasja — nie dla zysku, ale dla spolecznosci, ktora chce czegos wiecej.' },
-            { icon: 'users', title: 'Spolecznosc', desc: 'Garstka osob, ktore traktuja to miejsce powaznie. Zero toksycznosci, zero chaosu — po prostu dobra atmosfera.' },
-            { icon: 'gamepad-2', title: 'Tryby gry', desc: 'Survival + Dzialki — glowny tryb naszego serwera mc - kolejne tryby w drodze.' },
-            { icon: 'shield-check', title: 'Administracja', desc: 'Zespol, ktory faktycznie reaguje. Online codziennie, odpowiada szybko (no prawie), rozwiazuje problemy.' },
-            { icon: 'rocket', title: 'Rozwoj', desc: '100% dochodu z sprzedazy idzie na rozwoj serwera MC!' }
-        ],
-        offerCards: [
-            { icon: 'users', purp: false, wide: true, title: 'Funkcja IA', desc: 'Posiadamy bota IA, ktory znajduje sie na serwerze discord. Bot IA moze pomoc na podstawowe problemy i takze odpowie na niektore pytanie!' },
-            { icon: 'refresh-cw', purp: false, wide: false, title: 'Regularne aktualizacje', desc: 'Nowe funkcje co kilka tygodni. Nie czekamy miesiacami — serwer ciagle się rozwija.' },
-            { icon: 'gamepad-2', purp: false, wide: false, title: 'Drugi tryb juz wkrotce', desc: 'Drugi tryb jest juz przygotowywany!' },
-            { icon: 'shopping-bag', purp: true, wide: false, title: 'Sklep serwerowy', desc: 'Rangi i klucze. Bez pay-to-win — wszystko uczciwe. Caly zysk idzie na serwer minecraft!' },
-            { icon: 'trophy', purp: false, wide: false, title: 'Eventy i konkursy', desc: 'Regularne wydarzenia z nagrodami.' },
-            { icon: 'heart-handshake', purp: false, wide: false, title: 'Chat z serwera minecraft na discord', desc: 'Jest to dosyc ciekaw rozwiazanie poniewaz administracja widzi caly chat na zywo na poziomie serwera discord - daje to wieksze bezpieczenstwo!' },
-            { icon: 'gift', purp: true, wide: false, title: 'Trzech wlascicieli', desc: 'Na serwerze sa 3 wlascicieli co daje lepsze opanowanie nad serwerem PakoPlay.' },
-            { icon: 'video', purp: true, wide: false, title: 'Wspolpraca z tworcami', desc: 'YouTuberzy, TikTokerzy — mamy program dla tworcow. Specjalna ranga, bonusy i realna wspolpraca, a nie puste obietnice.' }
-        ],
-        modes: [
-            {
-                name: 'Survival + Dzialki',
-                tag: 'Pierwszy tryb',
-                desc: 'Wszystko to, co w klasycznym Survival, plus system dzialek — zabezpieczone tereny, gdzie mozesz budowac bez obaw o zniszczenia. Idealne dla budowniczych.',
-                icon: 'layout-grid',
-                status: 'offline',
-                meta: ['Wersja zostanie podana', 'Dzialki', 'Budowanie'],
-                features: ['System dzialek z GUI', 'Zabezpieczone tereny', 'Wspoldzielenie dzialek', 'Rozszerzone limity']
-            },
-            {
-                name: 'Drugi tryb',
-                tag: '',
-                desc: 'Informacja odnosnie tego jaki tryb bedzie znajdziesz na naszym serwerze discord!',
-                icon: 'layout-grid',
-                status: 'offline',
-                meta: [''],
-                features: ['']
-            }
-        ],
-        teamMain: {
-            name: 'Wlasciciel - CEO', nickname: 'Pako', initials: '', image: 'https://imgur.com/a/Ggd8L9F',
-            details: [{ icon: 'map-pin', text: 'nick discord: pakoyoutube' },{ icon: 'calendar', text: 'Wlasciciel Od 17.08.2026r.' }],
-            socials: [{ type: 'YT', label: 'YouTube Wlasciciela', link: '#https://www.youtube.com/@PakoYouTube' }]
-        },
-        teamOwners: [
-            {
-                name: 'Wspolwlasciciel - COO', nickname: 'Oskar', initials: '',
-                details: [{ icon: 'map-pin', text: 'nick discord: oskar9d_yt' }, { icon: 'shield', text: 'WspolWlasciciel Od 17.08.2026r.' }],
-                socials: [{ type: 'YT', label: 'YouTube WspolWlasciciela', link: '#https://www.youtube.com/@Oskar9d' }]
-            },
-            {
-                name: 'Wspolwlasciciel - COO', nickname: 'SKapi', initials: '',
-                details: [{ icon: 'map-pin', text: 'nick discord: _skapi_' }, { icon: 'palette', text: 'WspolWlasciciel Od 17.08.2026r.' }],
-                socials: [{ type: 'YT', label: 'YouTube WspolWlasciciela', link: '#https://www.youtube.com/@SKapiYouTube' }]
-            }
-        ],
-        teamGrid: [
-            {
-                name: 'Brak', nickname: 'Brak', initials: '',
-                details: [{ icon: 'map-pin', text: 'Narazie nie jest zaktulizowane!' }],
-                socials: [{ type: 'dc', label: 'Discord', link: '#' }]
-            },
-            {
-                name: 'Brak', nickname: 'Brak', initials: '',
-                details: [{ icon: 'map-pin', text: 'Narazie nie jest zaktulizowane!' }],
-                socials: [{ type: 'dc', label: 'Discord', link: '#' }]
-            },
-            {
-                name: 'Brak', nickname: 'Brak', initials: '',
-                details: [{ icon: 'map-pin', text: 'Narazie nie jest zaktulizowane!' }],
-                socials: [{ type: 'dc', label: 'Discord', link: '#' }]
-            },
-            {
-                name: 'Brak', nickname: 'Brak', initials: '',
-                details: [{ icon: 'map-pin', text: 'Narazie nie jest zaktulizowane!' }],
-                socials: [{ type: 'dc', label: 'Discord', link: '#' }]
-            },
-            {
-                name: 'Brak', nickname: 'Brak', initials: '',
-                details: [{ icon: 'map-pin', text: 'Narazie nie jest zaktulizowane!' }],
-                socials: [{ type: 'dc', label: 'Discord', link: '#' }]
-            },
-            {
-                name: 'Brak', nickname: 'Brak', initials: '',
-                details: [{ icon: 'map-pin', text: 'Narazie nie jest zaktulizowane!' }],
-                socials: [{ type: 'dc', label: 'Discord', link: '#' }]
-            }
-        ],
-        ranks: [
-            { name: 'VIP', prices: { '7d': 'cena nie jest narazie znana', '30d': 'cena nie jest narazie znana', '3m': 'cena nie jest narazie znana' }, benefits: ['Info pojawi sie wkrotce'] },
-            { name: 'SVIP', prices: { '7d': 'cena nie jest narazie znana', '30d': 'cena nie jest narazie znana', '3m': 'cena nie jest narazie znana' }, benefits: ['Info pojawi sie wkrotce'] },
-            { name: 'SPONSOR', prices: { '7d': 'cena nie jest narazie znana', '30d': 'cena nie jest narazie znana', '3m': 'cena nie jest narazie znana' }, benefits: ['Info pojawi sie wkrotce'] },
-            { name: 'ELITA', prices: { '7d': 'cena nie jest narazie znana', '30d': 'cena nie jest narazie znana', '3m': 'cena nie jest narazie znana' }, benefits: ['Info pojawi sie wkrotce'] },
-            { name: 'FAN', prices: { '7d': 'cena nie jest narazie znana', '30d': 'cena nie jest narazie znana', '3m': 'cena nie jest narazie znana' }, benefits: ['Info pojawi sie wkrotce'] }
-        ],
-        keys: [
-            { name: 'Klucz Pospolity', desc: 'Info pojawi sie wkrotce', price: 'cena nie jest narazie znana' },
-            { name: 'Klucz Pospolity+', desc: 'Info pojawi sie wkrotce', price: 'cena nie jest narazie znana' },
-            { name: 'Klucz Mityczny', desc: 'Info pojawi sie wkrotce', price: 'cena nie jest narazie znana' },
-            { name: 'Klucz Legendarny', desc: 'Info pojawi sie wkrotce', price: 'cena nie jest narazie znana' },
-            { name: 'Klucz Pako', desc: 'Info pojawi sie wkrotce', price: 'cena nie jest narazie znana' }
-        ],
-        faq: [
-            { q: 'Jak dolaczyc do serwera?', a: 'Narazie sie nie da poniewaz sa prowadzone prace techniczne.' },
-            { q: 'Czy serwer jest darmowy?', a: 'Tak, gra na PakoPlay.PL jest w 100% darmowa. Sklep serwerowy zawiera opcjonalne rangi i klucze, ale nie sa pay-to-win.' },
-            { q: 'Jak kupic range?', a: 'Wejdz w zakladke „Sklep" na naszej stronie lub napisz na Discord. Platnosci obslugujemy bezpiecznie przez system sklepowy.' },
-            { q: 'Czy rangi daja przewage w grze?', a: 'Nie, poniewaz wszytskie itemy jakie sa da zdobyc po przez odbior kita da sie zdobyc.' },
-            { q: 'Jak zglosic gracza lub blad?', a: 'Najlepiej przez Discord na kanale tickety. Administracja reaguje zwykle w ciagu kilku godzin.' },
-            { q: 'Na jakiej wersji Minecrafta dziala serwer?', a: 'Serwer obsluguje wersje od ------ do ------ Zalecamy natomias najbardziej wersje: ------' }
-        ],
-        footer: {
-            description: 'Serwer Minecraft budowany z pasja i takze dla graczy!',
-            navLinks: [
-                { label: 'O serwerze', href: '#about' },
-                { label: 'Tryby', href: '#modes' },
-                { label: 'Sklep', href: '#shop' },
-                { label: 'Ekipa', href: '#team' },
-                { label: 'FAQ', href: '#faq' }
-            ],
-            socialLinks: [
-                { label: 'Discord', href: '#https://discord.gg/AcFff9hgay' },
-                { label: 'TikTok', href: '#https://www.tiktok.com/@pakoplay.pl?_r=1&_t=ZN-99411ltAN78' },
-                { label: 'YouTube', href: '#https://www.youtube.com/' }
-            ]
-        }
+const DEFAULT_DATA={
+    server:{ip:'pakoplay.pl',discord:'https://discord.gg/pakoplay',shop:'https://sklep.pakoplay.pl',online:true},
+    hero:{badge:'Serwer online',slogan:'Twoj serwer Minecraft',desc:'Serwer Minecraft, ktory stawia na spolecznosc, jakosc i doswiadczenie — Dolacz i przekonaj sie sam.'},
+    aboutTitle:'Poznaj PakoPlay.PL',
+    offerTitle:'Dlaczego PakoPlay.PL?',
+    offerSub:'Nie jestesmy kolejnym serwerem z listy. Oto co nas wyroznia.',
+    modesSub:'Kazdy tryb to przemyslany system, nie skopiowany szablon.',
+    teamSub:'Ludzie, ktorzy buduja PakoPlay.PL — kazdego dnia.',
+    shopBannerTitle:'SKLEP PakoPlay.PL',
+    shopBannerDesc:'Rangi i klucze. Wszystko uczciwe, bez pay-to-win.',
+    stats:[
+        {value:'100+',label:'Graczy'},
+        {value:'5+',label:'Trybow gry'},
+        {value:'99.9%',label:'Uptime'},
+        {value:'24/7',label:'Wsparcie'}
+    ],
+    aboutCards:[
+        {icon:'shield',title:'Bezpieczenstwo',desc:'Zaawansowane zabezpieczenia anty-cheat i ochrona danych graczy.'},
+        {icon:'zap',title:'Wysoka wydajnosc',desc:'Dedykowany serwer z niskim pingiem i brakiem lagow.'},
+        {icon:'users',title:'Spolecznosc',desc:'Aktywna i przyjazna spolecznosc, ktora zawsze pomoze.'},
+        {icon:'settings',title:'Ciagly rozwój',desc:'Regularne aktualizacje, nowe funkcje i poprawki.'},
+        {icon:'headphones',title:'Wsparcie 24/7',desc:'Zespol administracji zawsze gotowy do pomocy.'}
+    ],
+    offerCards:[
+        {icon:'swords',title:'Unikalny Survival',desc:'Nasze Survival to nie zwykly tryb — system dzialek, ekonomia, rankingi i wydarzenia.',span:true,purp:false},
+        {icon:'shield-check',title:'Anty-cheat',desc:'Zaawansowany system wykrywania cheaterow. Grywalnosc bez oszustw.',span:false,purp:false},
+        {icon:'trending-up',title:'System ekonomii',desc:'Wlasna waluta, sklep gracza, handel miedzy graczami i aukcje.',span:false,purp:false},
+        {icon:'trophy',title:'Rankingi',desc:'Konkurencja w wielu kategoriach — od czasu gry po osiagniecia.',span:false,purp:true},
+        {icon:'calendar',title:'Eventy',desc:'Regularne wydarzenia z nagrodami — build battle, PvP, drop party i wiecej.',span:false,purp:true}
+    ],
+    modes:[
+        {name:'Survival',desc:'Klasyczny Survival z systemem dzialek, ekonomia i rankingami. Buduj, tworz i rywalizuj.',tag:'Popularny',status:'active',meta:['1.20+','Dzialki','Ekonomia'],feats:['Ranking','Aukcje','Eventy','Handel'],icon:'swords',bgImage:''},
+        {name:'SkyBlock',desc:'Zacznij na malej wyspie i rozbuduj ja w imperium. Wyzwania, zadania i ranking.',tag:'W budowie',status:'offline',meta:['1.20+','Wyzwania','Zadania'],feats:['Ranking','Wyzwania','Kooperacja'],icon:'cloud',bgImage:''},
+        {name:'Creative',desc:'Tryb kreatywny z dzialkami, WorldEditem i mozliwoscia prezentacji budownictwa.',tag:'Planowany',status:'offline',meta:['1.20+','Dzialki','WorldEdit'],feats:['Plotki','Wystawy','Konkursy'],icon:'palette',bgImage:''}
+    ],
+    teamMain:{name:'Wlasciciel',role:'Wlasciciel & Zalozyciel',initials:'WP',details:[{icon:'map-pin',text:'Polska'},{icon:'calendar',text:'Od 2024'}],discord:'#',tiktok:'#',photo:''},
+    teamOwners:[
+        {name:'Co-Owner',role:'Co-Owner',initials:'CO',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:'https://imgur.com/a/Ggd8L9F'},
+        {name:'Co-Owner 2',role:'Co-Owner',initials:'C2',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''}
+    ],
+    teamMembers:[
+        {name:'Admin',role:'Administrator',initials:'AD',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''},
+        {name:'Moderator',role:'Moderator',initials:'MO',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''},
+        {name:'Helper',role:'Helper',initials:'HE',details:[{icon:'map-pin',text:'Polska'}],discord:'#',tiktok:'#',photo:''}
+    ],
+    ranks:{
+        periods:['Miesiac','Zycie'],
+        items:[
+            {name:'VIP',prices:['9.99 PLN','49.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Kolorowy nick','Kit VIP co 24h','2 home','+1 dzialka','Priorytet wejscia']},
+            {name:'SVIP',prices:['19.99 PLN','99.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z VIP','Kit SVIP co 24h','5 home','+2 dzialki','Dostep do /fly w lobby','Specjalny prefix']},
+            {name:'MVP',prices:['29.99 PLN','149.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z SVIP','Kit MVP co 12h','10 home','+3 dzialki','Pet towarzysz','Wlasny sklep']},
+            {name:'Legend',prices:['49.99 PLN','249.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z MVP','Kit Legend co 6h','20 home','Nielimitowane dzialki','Wlasna czasteczka','Tag na Discord']},
+            {name:'God',prices:['79.99 PLN','399.99 PLN'],durs:['Na miesiac','Na zycie'],benefits:['Wszystko z Legend','Kit God co 1h','Nielimitowane home','Wlasna wyspa','Customowe komendy','Priorytetowe wsparcie']}
+        ]
     },
-
-    PERIODS: [
-        { key: '7d', label: '7 dni' },
-        { key: '30d', label: '30 dni' },
-        { key: '3m', label: '3 miesiace' }
+    keys:[
+        {name:'Klucz 1',desc:'Podstawowy klucz z losowymi nagrodami.',price:'4.99 PLN'},
+        {name:'Klucz 2',desc:'Sredni klucz z lepszymi szansami.',price:'9.99 PLN'},
+        {name:'Klucz 3',desc:'Premium klucz z gwarantowanymi dropami.',price:'19.99 PLN'},
+        {name:'Klucz 4',desc:'Legendarny klucz z ekskluzywnymi nagrodami.',price:'29.99 PLN'},
+        {name:'Klucz 5',desc:'Mityczny klucz z najrzadszymi itemami.',price:'49.99 PLN'}
     ],
-
-    ADM_TABS: [
-        { key: 'general', label: 'Ogolne', icon: 'settings' },
-        { key: 'hero', label: 'Hero', icon: 'sparkles' },
-        { key: 'about', label: 'O serwerze', icon: 'info' },
-        { key: 'offer', label: 'Dlaczego my', icon: 'star' },
-        { key: 'modes', label: 'Tryby', icon: 'gamepad-2' },
-        { key: 'team', label: 'Ekipa', icon: 'users' },
-        { key: 'ranks', label: 'Rangi', icon: 'crown' },
-        { key: 'keys', label: 'Klucze', icon: 'key' },
-        { key: 'faq', label: 'FAQ', icon: 'help-circle' },
-        { key: 'footer', label: 'Stopka', icon: 'footprints' }
+    faq:[
+        {q:'Jak dolaczyc do serwera?',a:'Wpisz IP pakoplay.pl w Minecraft (Java Edition, wersja 1.20+). Jesli masz problemy, zglos sie na naszego Discorda.'},
+        {q:'Czy serwer jest darmowy?',a:'Tak, podstawowa gra na serwerze jest calkowicie darmowa. Sklep zawiera opcjonalne rangi i klucze.'},
+        {q:'Jak zglosic gracza?',a:'Uzyj komendy /report w grze lub napisz na kanale #zgloszenia na Discordzie.'},
+        {q:'Czy moge odzyskac przedmioty po smierci?',a:'W trybie Survival przedmioty z gracza wypadaja po smierci, ale mozna je podniesc. W niektorych strefach dziala keepInventory.'},
+        {q:'Jak zdobyc range?',a:'Range mozna kupic w sklepie na stronie. Kazda ranga daje unikalne przywileje.'},
+        {q:'Czy serwer ma anty-cheat?',a:'Tak, uzywamy zaawansowanego systemu anty-cheat, ktory stale sie rozwija.'}
     ],
+    footerDesc:'PakoPlay.PL — serwer Minecraft dla spolecznosci. Budujemy cos wlasnego.',
+    footerLinks1:[{text:'O serwerze',href:'#about'},{text:'Co oferujemy',href:'#offer'},{text:'Tryby gry',href:'#modes'},{text:'Sklep',href:'#shop'}],
+    footerLinks2:[{text:'Zespol',href:'#team'},{text:'FAQ',href:'#faq'},{text:'Discord',href:'#'},{text:'Regulamin',href:'#'}]
+};
 
-    init() {
+const App={
+    data:null,
+    dirty:false,
+    currentPeriod:0,
+    admSection:'texts',
+    toastTimer:null,
+    canvasAnim:null,
+
+    init(){
         this.loadData();
-        this.renderAll();
+        this.render();
         this.initCanvas();
-        this.initScrollReveal();
         this.initNav();
+        this.initScrollReveal();
+        this.initMobileMenu();
+        this.initFAQ();
+        this.initPeriodToggle();
         this.initAdmin();
-        lucide.createIcons();
+        this.updateLinks();
+        if(typeof lucide!=='undefined')lucide.createIcons();
     },
 
-    loadData() {
-        try {
-            const saved = localStorage.getItem('pakoplay_data');
-            if (saved) {
-                this.data = JSON.parse(saved);
-                this.mergeDefaults(this.data, this.DEFAULTS);
-            } else {
-                this.data = JSON.parse(JSON.stringify(this.DEFAULTS));
-            }
-        } catch(e) {
-            this.data = JSON.parse(JSON.stringify(this.DEFAULTS));
+    loadData(){
+        try{
+            const s=localStorage.getItem('pakoplay_data');
+            if(s){this.data=JSON.parse(s);this.mergeDefaults(this.data,DEFAULT_DATA)}
+            else{this.data=JSON.parse(JSON.stringify(DEFAULT_DATA))}
+        }catch(e){this.data=JSON.parse(JSON.stringify(DEFAULT_DATA))}
+    },
+
+    mergeDefaults(target,def){
+        for(const k in def){
+            if(!(k in target))target[k]=JSON.parse(JSON.stringify(def[k]));
+            else if(typeof def[k]==='object'&&def[k]!==null&&!Array.isArray(def[k])&&typeof target[k]==='object'&&target[k]!==null)
+                this.mergeDefaults(target[k],def[k]);
         }
     },
 
-    mergeDefaults(target, defaults) {
-        for (const key in defaults) {
-            if (target[key] === undefined) {
-                target[key] = JSON.parse(JSON.stringify(defaults[key]));
-            } else if (typeof defaults[key] === 'object' && !Array.isArray(defaults[key]) && defaults[key] !== null) {
-                this.mergeDefaults(target[key], defaults[key]);
-            }
-        }
+    saveData(){
+        this.collectAllData();
+        try{
+            localStorage.setItem('pakoplay_data',JSON.stringify(this.data));
+            this.dirty=false;
+            this.updateStatus();
+            this.toast('Zapisano pomyslnie');
+            this.render();
+            if(typeof lucide!=='undefined')lucide.createIcons();
+            this.initScrollReveal();
+        }catch(e){this.toast('Blad zapisu — dane zbyt duze (zmniejsz zdjecia)')}
     },
 
-    saveData() {
-        try {
-            localStorage.setItem('pakoplay_data', JSON.stringify(this.data));
-            const el = document.getElementById('admSaved');
-            if (el) { el.textContent = 'Zapisano ✓'; setTimeout(() => el.textContent = '', 1500); }
-        } catch(e) { console.error('Save error', e); }
-    },
-
-    resetData() {
-        if (!confirm('Czy na pewno chcesz zresetować wszystkie dane do wartosci domyslnych? Tej operacji nie można cofnać.')) return;
+    resetData(){
+        if(!confirm('Czy na pewno chcesz zresetowac wszystkie dane do domyslnych?'))return;
         localStorage.removeItem('pakoplay_data');
-        this.data = JSON.parse(JSON.stringify(this.DEFAULTS));
-        this.renderAll();
-        this.renderAdminTab(this.currentTab);
-        lucide.createIcons();
+        this.data=JSON.parse(JSON.stringify(DEFAULT_DATA));
+        this.dirty=false;
+        this.updateStatus();
+        this.showAdminSection(this.admSection);
+        this.render();
+        if(typeof lucide!=='undefined')lucide.createIcons();
+        this.initScrollReveal();
+        this.toast('Dane zostaly zresetowane');
     },
 
-    exportData() {
-        const blob = new Blob([JSON.stringify(this.data, null, 2)], { type: 'application/json' });
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = 'pakoplay_data_' + Date.now() + '.json';
-        a.click();
+    getVal(path){
+        return path.split('.').reduce((o,k)=>{
+            if(o===null||o===undefined)return '';
+            return o[k];
+        },this.data)||'';
     },
 
-    importData(event) {
-        const file = event.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = (e) => {
-            try {
-                const imported = JSON.parse(e.target.result);
-                this.data = imported;
-                this.mergeDefaults(this.data, this.DEFAULTS);
-                this.saveData();
-                this.renderAll();
-                this.renderAdminTab(this.currentTab);
-                lucide.createIcons();
-                this.showToast('Dane zaimportowane pomyślnie');
-            } catch(err) {
-                alert('Błąd importu: nieprawidłowy plik JSON.');
-            }
-        };
-        reader.readAsText(file);
-        event.target.value = '';
+    setVal(path,value){
+        const p=path.split('.');
+        let o=this.data;
+        for(let i=0;i<p.length-1;i++){
+            if(o[p[i]]===undefined)o[p[i]]={};
+            o=o[p[i]];
+        }
+        o[p[p.length-1]]=value;
     },
 
-    renderAll() {
+    collectAllData(){
+        const inputs=document.querySelectorAll('#admBody [data-path]');
+        inputs.forEach(inp=>{
+            const p=inp.dataset.path;
+            this.setVal(p,inp.value);
+        });
+    },
+
+    render(){
         this.renderHero();
         this.renderAbout();
         this.renderOffer();
         this.renderModes();
         this.renderTeam();
-        this.renderPeriodToggle();
         this.renderRanks();
         this.renderKeys();
         this.renderFAQ();
         this.renderFooter();
-        this.renderIPWidget();
-        this.renderLinks();
     },
 
-    renderIPWidget() {
-        document.getElementById('heroIP').textContent = this.data.serverIP;
-        document.getElementById('ipWidgetText').textContent = this.data.serverIP;
+    renderHero(){
+        const d=this.data;
+        const badgeText=d.hero.badge||(d.server.online?'Serwer online':'Serwer offline');
+        document.getElementById('heroBadgeText').textContent=badgeText;
+        document.getElementById('heroSlog').textContent=d.hero.slogan;
+        document.getElementById('heroDesc').textContent=d.hero.desc;
+        document.getElementById('heroIP').textContent=d.server.ip;
+        document.getElementById('ipWidgetIP').textContent=d.server.ip;
+        const badge=document.getElementById('heroBadge');
+        if(d.server.online){badge.style.borderColor='rgba(74,222,128,.2)';badge.style.color='#4ade80';badge.querySelector('.hbdot').style.background='#4ade80'}
+        else{badge.style.borderColor='rgba(248,113,113,.2)';badge.style.color='#f87171';badge.querySelector('.hbdot').style.background='#f87171'}
     },
 
-    renderLinks() {
-        const dl = this.data.discordLink;
-        const sl = this.data.shopLink;
-        document.getElementById('heroDCLink').href = dl;
-        document.getElementById('shopLink').href = sl;
-        document.getElementById('shopDCLink').href = dl;
-        document.getElementById('creatorsDCLink').href = dl;
-        document.getElementById('discordLink').href = dl;
+    renderAbout(){
+        const d=this.data;
+        document.getElementById('aboutTitle').textContent=d.aboutTitle;
+        let sh='';
+        d.stats.forEach(s=>{sh+='<div class="as"><div class="as-n">'+esc(s.value)+'</div><div class="as-l">'+esc(s.label)+'</div></div>'});
+        document.getElementById('aboutStats').innerHTML=sh;
+        let gh='';
+        d.aboutCards.forEach(c=>{gh+='<div class="acard rv"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="acard-t">'+esc(c.title)+'</div><div class="acard-d">'+esc(c.desc)+'</div></div>'});
+        document.getElementById('aboutGrid').innerHTML=gh;
     },
 
-    renderHero() {
-        document.getElementById('heroBadgeText').textContent = this.data.hero.badge;
-        document.getElementById('heroSlog').textContent = this.data.hero.slogan;
-        document.getElementById('heroDesc').textContent = this.data.hero.description;
-    },
-
-    renderAbout() {
-        const c = document.getElementById('aboutStats');
-        c.innerHTML = this.data.aboutStats.map((s, i) => {
-            if (s.isCustom) return `<div class="as"><div class="as-n">${s.customText}</div><div class="as-l">${s.label}</div></div>`;
-            return `<div class="as"><div class="as-n" data-target="${s.value}" data-suffix="${s.suffix}">0</div><div class="as-l">${s.label}</div></div>`;
-        }).join('');
-        const g = document.getElementById('aboutGrid');
-        g.innerHTML = this.data.aboutCards.map((card, i) => `
-            <div class="acard rv ${i>0?'d'+i:''}">
-                <div class="acard-glow"></div>
-                <div class="acard-ic"><i data-lucide="${card.icon}"></i></div>
-                <div class="acard-t">${card.title}</div>
-                <div class="acard-d">${card.desc}</div>
-            </div>
-        `).join('');
-        this.initCounters();
-    },
-
-    renderOffer() {
-        const g = document.getElementById('offerGrid');
-        g.innerHTML = this.data.offerCards.map((card, i) => `
-            <div class="ocard ${card.wide?'f1':''} rv ${i>0?'d'+Math.min(i,4):''}">
-                ${!card.purp ? '<div class="ocard-glow"></div>' : '<div class="ocard-pglow"></div>'}
-                <div class="ocard-ic ${card.purp?'purp':''}"><i data-lucide="${card.icon}"></i></div>
-                <div class="ocard-t">${card.title}</div>
-                <div class="ocard-d">${card.desc}</div>
-            </div>
-        `).join('');
-    },
-
- renderModes() {
-        const c = document.getElementById('modesList');
-        c.innerHTML = this.data.modes.map((m, i) => `
-            <div class="mode rv">
-                <div class="mode-vis">
-                    <div class="mode-vis-glow"></div>
-                    <i data-lucide="${m.icon}"></i>
-                    ${m.name}
-                </div>
-                <div>
-                    <div class="mode-tag">${m.tag}</div>
-                    <h3 class="mode-name">${m.name}</h3>
-                    <p class="mode-desc">${m.desc}</p>
-                    <div class="mode-meta">
-                        <div class="mode-meta-status active">${m.status === 'online' ? 'Online' : 'Offline'}</div>
-                        ${m.meta.map(t => `<span class="mode-meta-item">${t}</span>`).join('')}
-                    </div>
-                    <div class="mode-feats">${m.features.map(f => `<span class="mode-feat">${f}</span>`).join('')}</div>
-                </div>
-            </div>
-        `).join('');
-    },
-
-   renderTeam() {
-        const tm = this.data.teamMain;
-        document.getElementById('teamMain').innerHTML = `
-            <div class="team-main rv">
-                <div class="tm-glow"></div>
-                <div class="tm-av">${tm.initials}</div>
-                <div class="tm-role">${tm.name}</div>
-                <div class="tm-name">${tm.nickname}</div>
-                <div class="tm-rows"><div class="td-rows">${tm.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
-                <div class="tm-socials"><div class="ow-socials">${tm.socials.map(s => `<a href="${s.link}" class="ow-soc ${s.type==='tk'?'tk':''}" target="_blank"><i data-lucide="${s.type==='dc'?'message-circle':'share-2'}"></i>${s.label}</a>`).join('')}</div></div>
-            </div>`;
-
-        document.getElementById('teamOwners').innerHTML = this.data.teamOwners.map(o => `
-            <div class="to-card rv">
-                <div class="to-glow"></div>
-                <div class="to-av">${o.initials}</div>
-                <div class="to-role">${o.name}</div>
-                <div class="to-name">${o.nickname}</div>
-                <div class="to-rows"><div class="td-rows">${o.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
-                <div class="to-socials"><div class="ow-socials">${o.socials.map(s => `<a href="${s.link}" class="ow-soc ${s.type==='tk'?'tk':''}" target="_blank"><i data-lucide="${s.type==='dc'?'message-circle':'share-2'}"></i>${s.label}</a>`).join('')}</div></div>
-            </div>
-        `).join('');
-
-        document.getElementById('teamGrid').innerHTML = this.data.teamGrid.map(m => `
-            <div class="tc-card rv">
-                <div class="tc-glow"></div>
-                <div class="tc-av">${m.initials}</div>
-                <div class="tc-role">${m.name}</div>
-                <div class="tc-name">${m.nickname}</div>
-                <div class="tc-rows"><div class="td-rows">${m.details.map(d => `<div class="td-row"><i data-lucide="${d.icon}"></i>${d.text}</div>`).join('')}</div></div>
-            </div>
-        `).join('');
-    }, podmien mi na dobre
-
-    renderPeriodToggle() {
-        const c = document.getElementById('periodToggle');
-        c.innerHTML = this.PERIODS.map(p => `<button class="ptab ${p.key===this.currentPeriod?'on':''}" data-period="${p.key}">${p.label}</button>`).join('');
-        c.querySelectorAll('.ptab').forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.currentPeriod = btn.dataset.period;
-                c.querySelectorAll('.ptab').forEach(b => b.classList.remove('on'));
-                btn.classList.add('on');
-                this.switchPeriodPrices();
-            });
+    renderOffer(){
+        const d=this.data;
+        document.getElementById('offerTitle').textContent=d.offerTitle;
+        document.getElementById('offerSub').textContent=d.offerSub;
+        let gh='';
+        d.offerCards.forEach((c,i)=>{
+            gh+='<div class="ocard rv'+(c.span?' f1':'')+'"><div class="ocard-glow"></div>'+(c.purp?'<div class="ocard-pglow"></div>':'')+'<div class="acard-ic'+(c.purp?' purp':'')+'"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="ocard-t">'+esc(c.title)+'</div><div class="ocard-d">'+esc(c.desc)+'</div></div>';
         });
+        document.getElementById('offerGrid').innerHTML=gh;
     },
 
-    switchPeriodPrices() {
-        document.querySelectorAll('.rcard-price').forEach(el => el.classList.add('switching'));
-        document.querySelectorAll('.rcard-dur').forEach(el => el.classList.add('switching'));
-        setTimeout(() => {
-            this.renderRanks();
-            lucide.createIcons();
-        }, 200);
-    },
-
-    renderRanks() {
-        const durLabels = { '7d': 'na 7 dni', '30d': 'na 30 dni', '3m': 'na 3 miesiące' };
-        const p = this.currentPeriod;
-        document.getElementById('ranksGrid').innerHTML = this.data.ranks.map(r => `
-            <div class="rcard">
-                <div class="rcard-glow"></div>
-                <div class="rcard-name">${r.name}</div>
-                <div class="rcard-dur">${durLabels[p]}</div>
-                <div class="rcard-price">${r.prices[p]}<small> PLN</small></div>
-                <ul class="rcard-bens">${r.benefits.map(b => `<li><i data-lucide="check"></i>${b}</li>`).join('')}</ul>
-                <a href="${this.data.shopLink}" class="btn btn-sm bp">Kup teraz</a>
-            </div>
-        `).join('');
-    },
-
-    renderKeys() {
-        document.getElementById('keysGrid').innerHTML = this.data.keys.map(k => `
-            <div class="kcard">
-                <div class="kcard-glow"></div>
-                <div class="kcard-name">${k.name}</div>
-                <div class="kcard-desc">${k.desc}</div>
-                <div class="kcard-price">${k.price}<small> PLN</small></div>
-                <a href="${this.data.shopLink}" class="btn btn-sm bpur">Kup klucz</a>
-            </div>
-        `).join('');
-    },
-
-    renderFAQ() {
-        document.getElementById('faqList').innerHTML = this.data.faq.map((item, i) => `
-            <div class="fitem" data-faq="${i}">
-                <button class="fq" onclick="App.toggleFAQ(${i})">${item.q}<span class="ft"></span></button>
-                <div class="fa"><div class="fa-in">${item.a}</div></div>
-            </div>
-        `).join('');
-    },
-
-    toggleFAQ(i) {
-        const item = document.querySelector(`[data-faq="${i}"]`);
-        const wasOn = item.classList.contains('on');
-        document.querySelectorAll('.fitem').forEach(el => { el.classList.remove('on'); el.querySelector('.fa').style.maxHeight = '0'; });
-        if (!wasOn) { item.classList.add('on'); item.querySelector('.fa').style.maxHeight = item.querySelector('.fa-in').scrollHeight + 20 + 'px'; }
-    },
-
-    renderFooter() {
-        document.getElementById('footerDesc').textContent = this.data.footer.description;
-        document.getElementById('footerNav').innerHTML = this.data.footer.navLinks.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('');
-        document.getElementById('footerSocial').innerHTML = this.data.footer.socialLinks.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('');
-    },
-
-    copyIP() {
-        const ip = this.data.serverIP;
-        navigator.clipboard.writeText(ip).then(() => {
-            this.showToast('IP skopiowano: ' + ip);
-            const w = document.getElementById('ipWidget');
-            w.classList.add('ip-widget-copied');
-            setTimeout(() => w.classList.remove('ip-widget-copied'), 1200);
-        }).catch(() => {
-            const ta = document.createElement('textarea');
-            ta.value = ip; ta.style.position = 'fixed'; ta.style.opacity = '0';
-            document.body.appendChild(ta); ta.select();
-            try { document.execCommand('copy'); this.showToast('IP skopiowano: ' + ip); }
-            catch(e) { this.showToast('Nie udało się skopiować'); }
-            document.body.removeChild(ta);
+    renderModes(){
+        const d=this.data;
+        document.getElementById('modesSub').textContent=d.modesSub;
+        let mh='';
+        d.modes.forEach((m,i)=>{
+            const bgStyle=m.bgImage?'background-image:url(\''+esc(m.bgImage)+'\');background-size:cover;background-position:center;':'';
+            const showIcon=!m.bgImage;
+            mh+='<div class="mode rv"><div class="mode-vis" style="'+bgStyle+'">'+(showIcon?'<i data-lucide="'+esc(m.icon||'gamepad-2')+'"></i>'+esc(m.name||'TRYB GRY'):'')+'<div class="mode-vis-glow"></div></div><div>';
+            if(m.tag)mh+='<span class="mode-tag">'+esc(m.tag)+'</span>';
+            mh+='<h3 class="mode-name">'+esc(m.name)+'</h3><p class="mode-desc">'+esc(m.desc)+'</p><div class="mode-meta">';
+            if(m.status==='active')mh+='<span class="mode-meta-status active">Aktywny</span>';
+            else mh+='<span class="mode-meta-status" style="color:var(--text-t);background:var(--bg-card);border:1px solid var(--border)">Offline</span>';
+            (m.meta||[]).forEach(mt=>{mh+='<span class="mode-meta-item">'+esc(mt)+'</span>'});
+            mh+='</div><div class="mode-feats">';
+            (m.feats||[]).forEach(f=>{mh+='<span class="mode-feat">'+esc(f)+'</span>'});
+            mh+='</div></div></div>';
         });
+        document.getElementById('modesList').innerHTML=mh;
     },
 
-    showToast(msg) {
-        const t = document.getElementById('toast');
-        document.getElementById('toastText').textContent = msg;
-        t.classList.add('show');
-        clearTimeout(this.toastTimer);
-        this.toastTimer = setTimeout(() => t.classList.remove('show'), 2500);
-    },
-
-    initCounters() {
-        const obs = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.querySelectorAll('.as-n[data-target]').forEach(el => {
-                        const target = parseInt(el.dataset.target);
-                        const suffix = el.dataset.suffix || '';
-                        let current = 0;
-                        const step = Math.max(1, Math.floor(target / 60));
-                        const timer = setInterval(() => {
-                            current += step;
-                            if (current >= target) { current = target; clearInterval(timer); }
-                            el.textContent = current.toLocaleString('pl-PL') + suffix;
-                        }, 20);
-                    });
-                    obs.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-        const statsEl = document.getElementById('aboutStats');
-        if (statsEl) obs.observe(statsEl);
-    },
-
-    initScrollReveal() {
-        const obs = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); } });
-        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        document.querySelectorAll('.rv').forEach(el => obs.observe(el));
-    },
-
-    initNav() {
-        const nav = document.getElementById('nav');
-        window.addEventListener('scroll', () => nav.classList.toggle('sc', window.scrollY > 40));
-        document.getElementById('navTog').addEventListener('click', () => document.getElementById('mmenu').classList.add('open'));
-        document.getElementById('mcl').addEventListener('click', () => document.getElementById('mmenu').classList.remove('open'));
-        document.querySelectorAll('.mlink').forEach(a => a.addEventListener('click', () => document.getElementById('mmenu').classList.remove('open')));
-    },
-
-    initCanvas() {
-        const canvas = document.getElementById('hcv');
-        const ctx = canvas.getContext('2d');
-        let particles = [];
-        const resize = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
-        resize(); window.addEventListener('resize', resize);
-        for (let i = 0; i < 80; i++) {
-            particles.push({
-                x: Math.random() * canvas.width, y: Math.random() * canvas.height,
-                vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3,
-                r: Math.random() * 1.5 + 0.5, a: Math.random() * 0.3 + 0.05
-            });
+    renderTeamMember(m,avClass,showSocials){
+        let h='<div class="'+avClass+'"'+(m.photo?' style="background-image:url(\''+esc(m.photo)+'\')"':'')+'>'+(!m.photo?esc(m.initials):'')+'</div>';
+        h+='<div class="'+avClass.replace('av','role')+'">'+esc(m.role)+'</div>';
+        h+='<div class="'+avClass.replace('av','name')+'">'+esc(m.name)+'</div>';
+        if(m.details&&m.details.length){
+            const rowsClass=avClass.replace('av','rows');
+            h+='<div class="'+rowsClass+'"><div class="td-rows">';
+            m.details.forEach(d=>{h+='<div class="td-row"><i data-lucide="'+esc(d.icon)+'"></i>'+esc(d.text)+'</div>'});
+            h+='</div></div>';
         }
-        const draw = () => {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.x += p.vx; p.y += p.vy;
-                if (p.x < 0) p.x = canvas.width; if (p.x > canvas.width) p.x = 0;
-                if (p.y < 0) p.y = canvas.height; if (p.y > canvas.height) p.y = 0;
-                ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(59,158,255,${p.a})`; ctx.fill();
+        if(showSocials&&m.discord&&m.discord!=='#'){
+            const socClass=avClass.replace('av','socials');
+            h+='<div class="'+socClass+'"><div class="ow-socials">';
+            if(m.discord&&m.discord!=='#')h+='<a href="'+esc(m.discord)+'" target="_blank" rel="noopener" class="ow-soc"><i data-lucide="message-circle"></i>Discord</a>';
+            if(m.tiktok&&m.tiktok!=='#')h+='<a href="'+esc(m.tiktok)+'" target="_blank" rel="noopener" class="ow-soc tk"><i data-lucide="music-2"></i>TikTok</a>';
+            h+='</div></div>';
+        }
+        return h;
+    },
+
+    renderTeam(){
+        const d=this.data;
+        document.getElementById('teamSub').textContent=d.teamSub;
+        const m=d.teamMain;
+        let mh='<div class="team-main rv"><div class="tm-glow"></div>';
+        mh+=this.renderTeamMember(m,'tm-av',true);
+        mh+='</div>';
+        document.getElementById('teamMain').innerHTML=mh;
+
+        let oh='';
+        d.teamOwners.forEach(o=>{
+            oh+='<div class="to-card rv"><div class="to-glow"></div>';
+            oh+=this.renderTeamMember(o,'to-av',true);
+            oh+='</div>';
+        });
+        document.getElementById('teamOwners').innerHTML=oh;
+
+        let th='';
+        d.teamMembers.forEach(m=>{
+            th+='<div class="tc-card rv"><div class="tc-glow"></div>';
+            th+=this.renderTeamMember(m,'tc-av',true);
+            th+='</div>';
+        });
+        document.getElementById('teamGrid').innerHTML=th;
+    },
+
+    renderRanks(){
+        const d=this.data.ranks;
+        let ph='';
+        d.periods.forEach((p,i)=>{ph+='<button class="ptab'+(i===this.currentPeriod?' on':'')+'" data-pi="'+i+'">'+esc(p)+'</button>'});
+        document.getElementById('periodToggle').innerHTML=ph;
+        document.querySelectorAll('.ptab').forEach(btn=>{
+            btn.addEventListener('click',()=>{
+                const pi=parseInt(btn.dataset.pi);
+                if(pi===this.currentPeriod)return;
+                document.querySelectorAll('.rcard-price,.rcard-dur').forEach(el=>el.classList.add('switching'));
+                setTimeout(()=>{
+                    this.currentPeriod=pi;
+                    document.querySelectorAll('.ptab').forEach(b=>b.classList.toggle('on',parseInt(b.dataset.pi)===pi));
+                    this.updateRankPrices();
+                    document.querySelectorAll('.rcard-price,.rcard-dur').forEach(el=>el.classList.remove('switching'));
+                },200);
             });
-            for (let i = 0; i < particles.length; i++) {
-                for (let j = i + 1; j < particles.length; j++) {
-                    const dx = particles[i].x - particles[j].x;
-                    const dy = particles[i].y - particles[j].y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < 120) {
-                        ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y);
-                        ctx.lineTo(particles[j].x, particles[j].y);
-                        ctx.strokeStyle = `rgba(59,158,255,${0.04 * (1 - dist / 120)})`;
-                        ctx.lineWidth = 0.5; ctx.stroke();
+        });
+
+        let rh='';
+        d.items.forEach((r,i)=>{
+            rh+='<div class="rcard rv"><div class="rcard-glow"></div><div class="rcard-name">'+esc(r.name)+'</div>';
+            rh+='<div class="rcard-dur" data-ri="'+i+'">'+esc(r.durs[this.currentPeriod]||'')+'</div>';
+            rh+='<div class="rcard-price" data-ri="'+i+'">'+esc(r.prices[this.currentPeriod]||'')+'</div>';
+            rh+='<ul class="rcard-bens">';
+            (r.benefits||[]).forEach(b=>{rh+='<li><i data-lucide="check"></i>'+esc(b)+'</li>'});
+            rh+='</ul><a href="'+esc(this.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bp">Kup teraz</a></div>';
+        });
+        document.getElementById('ranksGrid').innerHTML=rh;
+    },
+
+    updateRankPrices(){
+        const d=this.data.ranks;
+        document.querySelectorAll('.rcard-price[data-ri]').forEach(el=>{
+            const i=parseInt(el.dataset.ri);
+            if(d.items[i])el.textContent=d.items[i].prices[this.currentPeriod]||'';
+        });
+        document.querySelectorAll('.rcard-dur[data-ri]').forEach(el=>{
+            const i=parseInt(el.dataset.ri);
+            if(d.items[i])el.textContent=d.items[i].durs[this.currentPeriod]||'';
+        });
+    },
+
+    renderKeys(){
+        let kh='';
+        this.data.keys.forEach(k=>{
+            kh+='<div class="kcard rv"><div class="kcard-glow"></div><div class="kcard-name">'+esc(k.name)+'</div>';
+            kh+='<div class="kcard-desc">'+esc(k.desc)+'</div><div class="kcard-price">'+esc(k.price)+' <small></small></div>';
+            kh+='<a href="'+esc(this.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bpur">Kup teraz</a></div>';
+        });
+        document.getElementById('keysGrid').innerHTML=kh;
+    },
+
+    renderFAQ(){
+        let fh='';
+        this.data.faq.forEach((f,i)=>{
+            fh+='<div class="fitem" data-fi="'+i+'"><button class="fq"><span>'+esc(f.q)+'</span><span class="ft"></span></button>';
+            fh+='<div class="fa"><div class="fa-in">'+esc(f.a)+'</div></div></div>';
+        });
+        document.getElementById('faqList').innerHTML=fh;
+    },
+
+    renderFooter(){
+        document.getElementById('footerDesc').textContent=this.data.footerDesc;
+        let l1='';
+        this.data.footerLinks1.forEach(l=>{l1+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
+        document.getElementById('footerLinks1').innerHTML=l1;
+        let l2='';
+        this.data.footerLinks2.forEach(l=>{l2+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
+        document.getElementById('footerLinks2').innerHTML=l2;
+    },
+
+    updateLinks(){
+        const dc=this.data.server.discord;
+        const sh=this.data.server.shop;
+        const setH=(id,href)=>{const el=document.getElementById(id);if(el)el.href=href};
+        setH('heroDCLink',dc);
+        setH('shopLink',sh);
+        setH('shopDCLink',dc);
+        setH('creatorsDCLink',dc);
+        setH('discordLink',dc);
+    },
+
+    initCanvas(){
+        const c=document.getElementById('hcv');
+        if(!c)return;
+        const ctx=c.getContext('2d');
+        let w,h,particles=[];
+        const resize=()=>{w=c.width=c.offsetWidth;h=c.height=c.offsetHeight};
+        resize();
+        window.addEventListener('resize',resize);
+        const count=Math.min(60,Math.floor(w*h/18000));
+        for(let i=0;i<count;i++){
+            particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.5+.5,o:Math.random()*.4+.1});
+        }
+        const draw=()=>{
+            ctx.clearRect(0,0,w,h);
+            particles.forEach(p=>{
+                p.x+=p.vx;p.y+=p.vy;
+                if(p.x<0)p.x=w;if(p.x>w)p.x=0;
+                if(p.y<0)p.y=h;if(p.y>h)p.y=0;
+                ctx.beginPath();ctx.arc(p.x,p.y,Math.max(.5,p.r),0,Math.PI*2);
+                ctx.fillStyle='rgba(59,158,255,'+p.o+')';ctx.fill();
+            });
+            for(let i=0;i<particles.length;i++){
+                for(let j=i+1;j<particles.length;j++){
+                    const dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
+                    const dist=Math.sqrt(dx*dx+dy*dy);
+                    if(dist<120){
+                        ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);
+                        ctx.strokeStyle='rgba(59,158,255,'+((.12)*(1-dist/120))+')';ctx.lineWidth=.5;ctx.stroke();
                     }
                 }
             }
-            requestAnimationFrame(draw);
+            this.canvasAnim=requestAnimationFrame(draw);
         };
         draw();
     },
 
-    initAdmin() {
-        const _trig = document.getElementById('admTrigger');
-        if (_trig) _trig.addEventListener('click', () => this.openAdmin());
-        document.getElementById('admOverlay').addEventListener('click', (e) => {
-            if (e.target === e.currentTarget) this.closeAdmin();
-        });
-        const nav = document.getElementById('admNav');
-        nav.innerHTML = this.ADM_TABS.map(t => `<button class="adm-nav-item ${t.key===this.currentTab?'active':''}" data-tab="${t.key}"><i data-lucide="${t.icon}"></i>${t.label}</button>`).join('');
-        nav.querySelectorAll('.adm-nav-item').forEach(btn => {
-            btn.addEventListener('click', () => {
-                this.currentTab = btn.dataset.tab;
-                nav.querySelectorAll('.adm-nav-item').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                this.renderAdminTab(this.currentTab);
-            });
-        });
-        this.renderAdminTab(this.currentTab);
+    initNav(){
+        let last=0;
+        window.addEventListener('scroll',()=>{
+            const y=window.scrollY;
+            document.getElementById('nav').classList.toggle('sc',y>60);
+            last=y;
+        },{passive:true});
     },
 
-    openAdmin() { document.getElementById('admOverlay').classList.add('open'); document.body.style.overflow = 'hidden'; },
-    closeAdmin() { document.getElementById('admOverlay').classList.remove('open'); document.body.style.overflow = ''; },
+    initScrollReveal(){
+        const obs=new IntersectionObserver((entries)=>{
+            entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
+        },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+        document.querySelectorAll('.rv:not(.vis)').forEach(el=>obs.observe(el));
+    },
 
-    renderAdminTab(tab) {
-        const body = document.getElementById('admBody');
-        const renderers = {
-            general: () => this.admGeneral(body),
-            hero: () => this.admHero(body),
-            about: () => this.admAbout(body),
-            offer: () => this.admOffer(body),
-            modes: () => this.admModes(body),
-            team: () => this.admTeam(body),
-            ranks: () => this.admRanks(body),
-            keys: () => this.admKeys(body),
-            faq: () => this.admFAQ(body),
-            footer: () => this.admFooter(body)
+    initMobileMenu(){
+        const menu=document.getElementById('mmenu');
+        document.getElementById('navTog').addEventListener('click',()=>menu.classList.add('open'));
+        document.getElementById('mcl').addEventListener('click',()=>menu.classList.remove('open'));
+        menu.querySelectorAll('.mlink').forEach(a=>{
+            a.addEventListener('click',()=>menu.classList.remove('open'));
+        });
+    },
+
+    initFAQ(){
+        document.getElementById('faqList').addEventListener('click',(e)=>{
+            const btn=e.target.closest('.fq');
+            if(!btn)return;
+            const item=btn.parentElement;
+            const fa=item.querySelector('.fa');
+            const isOpen=item.classList.contains('on');
+            document.querySelectorAll('.fitem.on').forEach(fi=>{
+                fi.classList.remove('on');
+                fi.querySelector('.fa').style.maxHeight='0';
+            });
+            if(!isOpen){
+                item.classList.add('on');
+                fa.style.maxHeight=fa.scrollHeight+'px';
+            }
+        });
+    },
+
+    initPeriodToggle(){/* handled in renderRanks */},
+
+    copyIP(){
+        const ip=this.data.server.ip;
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+            navigator.clipboard.writeText(ip).then(()=>this.showCopyFeedback()).catch(()=>this.fallbackCopy(ip));
+        }else{this.fallbackCopy(ip)}
+    },
+
+    fallbackCopy(ip){
+        const ta=document.createElement('textarea');ta.value=ip;ta.style.position='fixed';ta.style.left='-9999px';
+        document.body.appendChild(ta);ta.select();
+        try{document.execCommand('copy');this.showCopyFeedback()}catch(e){}
+        document.body.removeChild(ta);
+    },
+
+    showCopyFeedback(){
+        this.toast('Skopiowano IP: '+this.data.server.ip);
+        const w=document.getElementById('ipWidget');
+        w.classList.add('ip-widget-copied');
+        setTimeout(()=>w.classList.remove('ip-widget-copied'),1500);
+    },
+
+    toast(msg){
+        const t=document.getElementById('toast');
+        document.getElementById('toastText').textContent=msg;
+        t.classList.add('show');
+        clearTimeout(this.toastTimer);
+        this.toastTimer=setTimeout(()=>t.classList.remove('show'),2500);
+    },
+
+    /* ===== ADMIN PANEL ===== */
+    admSections:[
+        {id:'texts',label:'Teksty',icon:'type'},
+        {id:'stats',label:'Statystyki',icon:'bar-chart-2'},
+        {id:'about',label:'O serwerze',icon:'info'},
+        {id:'offer',label:'Co oferujemy',icon:'star'},
+        {id:'modes',label:'Tryby gry',icon:'gamepad-2'},
+        {id:'team',label:'Zespol',icon:'users'},
+        {id:'ranks',label:'Rangi',icon:'crown'},
+        {id:'keys',label:'Klucze',icon:'key'},
+        {id:'links',label:'Linki',icon:'link'},
+        {id:'ip',label:'IP serwera',icon:'server'},
+        {id:'faq',label:'FAQ',icon:'help-circle'}
+    ],
+
+    initAdmin(){
+        document.getElementById('admTrigger').addEventListener('click',()=>this.openAdmin());
+        document.getElementById('admOverlay').addEventListener('click',(e)=>{if(e.target===e.currentTarget)this.closeAdmin()});
+        document.addEventListener('keydown',(e)=>{if(e.key==='Escape'&&document.getElementById('admOverlay').style.display==='flex')this.closeAdmin()});
+        let nh='';
+        this.admSections.forEach(s=>{nh+='<button class="adm-nav-item'+(s.id===this.admSection?' active':'')+'" data-sec="'+s.id+'"><i data-lucide="'+s.icon+'"></i>'+s.label+'</button>'});
+        document.getElementById('admNav').innerHTML=nh;
+        document.getElementById('admNav').addEventListener('click',(e)=>{
+            const btn=e.target.closest('.adm-nav-item');
+            if(!btn)return;
+            this.admSection=btn.dataset.sec;
+            document.querySelectorAll('.adm-nav-item').forEach(b=>b.classList.toggle('active',b.dataset.sec===this.admSection));
+            this.showAdminSection(this.admSection);
+        });
+        document.getElementById('admBody').addEventListener('input',()=>{this.dirty=true;this.updateStatus()});
+        this.showAdminSection(this.admSection);
+    },
+
+    openAdmin(){
+        const o=document.getElementById('admOverlay');
+        o.style.display='flex';
+        requestAnimationFrame(()=>{requestAnimationFrame(()=>{o.classList.add('open')})});
+        this.showAdminSection(this.admSection);
+        if(typeof lucide!=='undefined')lucide.createIcons();
+    },
+
+    closeAdmin(){
+        const o=document.getElementById('admOverlay');
+        o.classList.remove('open');
+        setTimeout(()=>{o.style.display='none'},300);
+    },
+
+    showAdminSection(sec){
+        const body=document.getElementById('admBody');
+        const fn={
+            texts:()=>this.admTexts(),
+            stats:()=>this.admStats(),
+            about:()=>this.admAbout(),
+            offer:()=>this.admOffer(),
+            modes:()=>this.admModes(),
+            team:()=>this.admTeam(),
+            ranks:()=>this.admRanks(),
+            keys:()=>this.admKeys(),
+            links:()=>this.admLinks(),
+            ip:()=>this.admIP(),
+            faq:()=>this.admFAQ()
         };
-        (renderers[tab] || renderers.general)();
-        lucide.createIcons();
+        body.innerHTML=(fn[sec]||fn.texts)();
+        if(typeof lucide!=='undefined')lucide.createIcons();
     },
 
-    field(label, input) { return `<div class="adm-field"><label class="adm-label">${label}</label>${input}</div>`; },
-    txtInput(id, val, ph) { return `<input class="adm-input" id="${id}" value="${this.esc(val)}" placeholder="${ph||''}">`; },
-    txtArea(id, val, ph) { return `<textarea class="adm-textarea" id="${id}" placeholder="${ph||''}">${this.esc(val)}</textarea>`; },
+    field(label,path,type,placeholder){
+        type=type||'text';placeholder=placeholder||'';
+        return '<div class="adm-field"><label class="adm-label">'+label+'</label><input class="adm-input" type="'+type+'" data-path="'+path+'" placeholder="'+esc(placeholder)+'" value="'+esc(this.getVal(path))+'"></div>';
+    },
 
-    esc(s) { if (!s) return ''; return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); },
+    areaField(label,path,placeholder){
+        return '<div class="adm-field"><label class="adm-label">'+label+'</label><textarea class="adm-textarea" data-path="'+path+'" placeholder="'+esc(placeholder||'')+'">'+esc(this.getVal(path))+'</textarea></div>';
+    },
 
-    admGeneral(body) {
-        body.innerHTML = `<div class="adm-section-title">Ustawienia ogólne</div>
-            ${this.field('IP serwera', this.txtInput('adm_ip', this.data.serverIP, 'np. pakoplay.pl'))}
-            ${this.field('Link Discord', this.txtInput('adm_dc', this.data.discordLink, 'https://discord.gg/...'))}
-            ${this.field('Link sklepu', this.txtInput('adm_shop', this.data.shopLink, 'https://sklep.pakoplay.pl'))}
-            <p class="adm-hint">IP serwera jest używane w hero, widgetie i przyciskach „Graj teraz". Linki Discord i sklepu są przypisane do odpowiednich przycisków na całej stronie.</p>`;
-        const save = () => {
-            this.data.serverIP = document.getElementById('adm_ip').value.trim() || this.DEFAULTS.serverIP;
-            this.data.discordLink = document.getElementById('adm_dc').value.trim() || '#';
-            this.data.shopLink = document.getElementById('adm_shop').value.trim() || '#';
-            this.saveData(); this.renderIPWidget(); this.renderLinks();
+    imgField(label,path){
+        const v=this.getVal(path);
+        const uid='imgf-'+path.replace(/\./g,'-');
+        let h='<div class="adm-field"><label class="adm-label">'+label+'</label>';
+        h+='<div class="adm-img-row"><input class="adm-input" type="text" data-path="'+path+'" placeholder="URL zdjecia lub wgraj ponizej" value="'+esc(v)+'">';
+        h+='<button type="button" class="adm-btn" onclick="App.triggerImgUpload(\''+uid+'\')">Wgraj</button>';
+        h+='<input type="file" id="'+uid+'" accept="image/*" style="display:none" onchange="App.handleImgUpload(\''+path+'\',this)"></div>';
+        if(v)h+='<img src="'+esc(v)+'" class="adm-img-preview visible" onerror="this.classList.remove(\'visible\')">';
+        else h+='<img src="" class="adm-img-preview" onerror="this.classList.remove(\'visible\')">';
+        h+='</div>';
+        return h;
+    },
+
+    triggerImgUpload(uid){document.getElementById(uid).click()},
+
+    handleImgUpload(path,input){
+        const file=input.files[0];
+        if(!file)return;
+        if(file.size>500000){this.toast('Zdjecie zbyt duze (max 500KB)');return}
+        const r=new FileReader();
+        r.onload=(e)=>{
+            this.setVal(path,e.target.result);
+            const ti=document.querySelector('[data-path="'+path+'"]');
+            if(ti)ti.value=e.target.result;
+            const prev=input.parentElement.parentElement.querySelector('.adm-img-preview');
+            if(prev){prev.src=e.target.result;prev.classList.add('visible')}
+            this.dirty=true;this.updateStatus();
         };
-        body.querySelectorAll('.adm-input').forEach(el => el.addEventListener('input', save));
+        r.readAsDataURL(file);
     },
 
-    admHero(body) {
-        const h = this.data.hero;
-        body.innerHTML = `<div class="adm-section-title">Sekcja hero</div>
-            ${this.field('Tekst odznaki', this.txtInput('adm_hbadge', h.badge))}
-            ${this.field('Slogan', this.txtInput('adm_hslog', h.slogan))}
-            ${this.field('Opis', this.txtArea('adm_hdesc', h.description))}
-            <p class="adm-hint">Tytuł główny („PakoPlay.PL") jest stały i nie wymaga edycji. Powyższe pola kontrolują teksty pod tytułem.</p>`;
-        const save = () => {
-            this.data.hero.badge = document.getElementById('adm_hbadge').value;
-            this.data.hero.slogan = document.getElementById('adm_hslog').value;
-            this.data.hero.description = document.getElementById('adm_hdesc').value;
-            this.saveData(); this.renderHero();
-        };
-        body.querySelectorAll('.adm-input,.adm-textarea').forEach(el => el.addEventListener('input', save));
+    admTexts(){
+        let h='<div class="adm-section-title">Teksty — Hero</div>';
+        h+=this.field('Badge (status)','hero.badge');
+        h+=this.field('Slogan','hero.slogan');
+        h+=this.areaField('Opis','hero.desc');
+        h+='<div class="adm-section-title" style="margin-top:28px">Teksty — Sekcje</div>';
+        h+=this.field('Tytul "O serwerze"','aboutTitle');
+        h+=this.field('Tytul "Dlaczego my"','offerTitle');
+        h+=this.field('Podtytul "Dlaczego my"','offerSub');
+        h+=this.field('Podtytul "Tryby gry"','modesSub');
+        h+=this.field('Podtytul "Zespol"','teamSub');
+        h+=this.field('Tytul sklepu','shopBannerTitle');
+        h+=this.field('Opis sklepu','shopBannerDesc');
+        h+='<div class="adm-section-title" style="margin-top:28px">Teksty — Footer</div>';
+        h+=this.areaField('Opis w footerze','footerDesc');
+        return h;
     },
 
-    admAbout(body) {
-        let html = `<div class="adm-section-title">Statystyki</div><div class="adm-list">`;
-        this.data.aboutStats.forEach((s, i) => {
-            html += `<div class="adm-list-item open">
-                <div class="adm-list-head"><span class="adm-list-name">${s.label}</span></div>
-                <div class="adm-list-body">
-                    ${this.field('Etykieta', this.txtInput(`adm_as_l_${i}`, s.label))}
-                    <div class="adm-row">
-                        ${this.field('Wartość (liczba)', this.txtInput(`adm_as_v_${i}`, s.isCustom ? '' : s.value))}
-                        ${this.field('Sufiks', this.txtInput(`adm_as_s_${i}`, s.suffix))}
-                    </div>
-                    ${this.field('Tekst niestandardowy (zastępuje liczbę)', this.txtInput(`adm_as_c_${i}`, s.customText))}
-                    <label style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-s);cursor:pointer">
-                        <input type="checkbox" id="adm_as_custom_${i}" ${s.isCustom?'checked':''}> Użyj tekstu niestandardowego zamiast liczby
-                    </label>
-                </div>
-            </div>`;
+    admStats(){
+        let h='<div class="adm-section-title">Statystyki (O serwerze)</div>';
+        h+='<div class="adm-list">';
+        this.data.stats.forEach((s,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(s.value)+' — '+esc(s.label)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'stats\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body"><div class="adm-row">'+this.field('Wartosc','stats.'+i+'.value')+this.field('Etykieta','stats.'+i+'.label')+'</div></div></div>';
         });
-        html += `</div><div class="adm-section-title" style="margin-top:32px">Karty „O serwerze"</div><div class="adm-list">`;
-        this.data.aboutCards.forEach((c, i) => {
-            html += `<div class="adm-list-item">
-                <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                    <span class="adm-list-name">${c.title}</span>
-                    <div class="adm-list-actions">
-                        <button class="adm-list-btn del" onclick="event.stopPropagation();App.delAboutCard(${i})"><i data-lucide="trash-2"></i></button>
-                        <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="adm-list-body">
-                    ${this.field('Ikona (nazwa Lucide)', this.txtInput(`adm_ac_i_${i}`, c.icon, 'np. globe'))}
-                    ${this.field('Tytuł', this.txtInput(`adm_ac_t_${i}`, c.title))}
-                    ${this.field('Opis', this.txtArea(`adm_ac_d_${i}`, c.desc))}
-                </div>
-            </div>`;
-        });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addAboutCard()"><i data-lucide="plus"></i> Dodaj kartę</button>`;
-        body.innerHTML = html;
-        this.bindAboutStats();
-        this.bindAboutCards();
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'stats\',{value:\'0\',label:\'Nowe\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj statystyke</button>';
+        return h;
     },
 
-    bindAboutStats() {
-        this.data.aboutStats.forEach((s, i) => {
-            const save = () => {
-                this.data.aboutStats[i].label = document.getElementById(`adm_as_l_${i}`).value;
-                this.data.aboutStats[i].value = parseInt(document.getElementById(`adm_as_v_${i}`).value) || 0;
-                this.data.aboutStats[i].suffix = document.getElementById(`adm_as_s_${i}`).value;
-                this.data.aboutStats[i].customText = document.getElementById(`adm_as_c_${i}`).value;
-                this.data.aboutStats[i].isCustom = document.getElementById(`adm_as_custom_${i}`).checked;
-                this.saveData(); this.renderAbout(); this.initScrollReveal();
-            };
-            [`adm_as_l_${i}`,`adm_as_v_${i}`,`adm_as_s_${i}`,`adm_as_c_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
+    admAbout(){
+        let h='<div class="adm-section-title">Karty "O serwerze"</div><div class="adm-list">';
+        this.data.aboutCards.forEach((c,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(c.title)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'aboutCards\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">'+this.field('Ikona (lucide)','aboutCards.'+i+'.icon')+this.field('Tytul','aboutCards.'+i+'.title')+this.areaField('Opis','aboutCards.'+i+'.desc')+'</div></div>';
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'aboutCards\',{icon:\'star\',title:\'Nowe\',desc:\'Opis...\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj karte</button>';
+        return h;
+    },
+
+    admOffer(){
+        let h='<div class="adm-section-title">Karty "Co oferujemy"</div><div class="adm-list">';
+        this.data.offerCards.forEach((c,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(c.title)+(c.span?' (szeroka)':'')+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'offerCards\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">'+this.field('Ikona (lucide)','offerCards.'+i+'.icon')+this.field('Tytul','offerCards.'+i+'.title')+this.areaField('Opis','offerCards.'+i+'.desc');
+            h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Rozciagnij na 2 kolumny</label><select class="adm-input" data-path="offerCards.'+i+'.span"><option value="true"'+(c.span?' selected':'')+'>Tak</option><option value="false"'+(!c.span?' selected':'')+'>Nie</option></select></div>';
+            h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Fioletowy styl</label><select class="adm-input" data-path="offerCards.'+i+'.purp"><option value="true"'+(c.purp?' selected':'')+'>Tak</option><option value="false"'+(!c.purp?' selected':'')+'>Nie</option></select></div>';
+            h+='</div></div>';
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'offerCards\',{icon:\'star\',title:\'Nowe\',desc:\'Opis...\',span:false,purp:false})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj karte</button>';
+        return h;
+    },
+
+    admModes(){
+        let h='<div class="adm-section-title">Tryby gry</div><div class="adm-list">';
+        this.data.modes.forEach((m,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'modes\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">';
+            h+=this.imgField('Zdjecie tla','modes.'+i+'.bgImage');
+            h+=this.field('Nazwa','modes.'+i+'.name');
+            h+=this.areaField('Opis','modes.'+i+'.desc');
+            h+=this.field('Tag','modes.'+i+'.tag');
+            h+=this.field('Ikona (lucide, gdy brak zdjecia)','modes.'+i+'.icon');
+            h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Status</label><select class="adm-input" data-path="modes.'+i+'.status"><option value="active"'+(m.status==='active'?' selected':'')+'>Aktywny</option><option value="offline"'+(m.status!=='active'?' selected':'')+'>Offline</option></select></div>';
+            h+='<div class="adm-field"><label class="adm-label">Meta (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.meta" value="'+esc((m.meta||[]).join(','))+'" placeholder="1.20+, Dzialki, Ekonomia"><div class="adm-hint">Wpisz wartosci oddzielone przecinkami</div></div>';
+            h+='<div class="adm-field"><label class="adm-label">Cechy (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.feats" value="'+esc((m.feats||[]).join(','))+'" placeholder="Ranking, Aukcje, Eventy"><div class="adm-hint">Wpisz wartosci oddzielone przecinkami</div></div>';
+            h+='</div></div>';
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'modes\',{name:\'Nowy tryb\',desc:\'Opis trybu...\',tag:\'Nowy\',status:\'offline\',meta:[],feats:[],icon:\'gamepad-2\',bgImage:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj tryb</button>';
+        return h;
+    },
+
+    admTeamPerson(prefix,p,labelExtra){
+        const d=this.data;
+        const m=this.getVal(prefix);
+        if(!m)return '';
+        let h='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.name||'Osoba')+(labelExtra?' ('+labelExtra+')':'')+'</span><div class="adm-list-actions">';
+        if(prefix!=='teamMain')h+='<button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\''+p+'\','+this.getVal(prefix)._idx+')"><i data-lucide="trash-2"></i></button>';
+        h+='<button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+        h+='<div class="adm-list-body">';
+        h+=this.imgField('Zdjecie',prefix+'.photo');
+        h+=this.field('Imie / Nick',prefix+'.name');
+        h+=this.field('Rola',prefix+'.role');
+        h+=this.field('Inicjaly (gdy brak zdjecia)',prefix+'.initials');
+        h+=this.field('Link Discord',prefix+'.discord');
+        h+=this.field('Link TikTok',prefix+'.tiktok');
+        h+='</div></div>';
+        return h;
+    },
+
+    admTeam(){
+        let h='<div class="adm-section-title">Wlasciciel glowny</div><div class="adm-list">';
+        h+=this.admTeamPerson('teamMain','','Wlasciciel');
+        h+='</div>';
+        h+='<div class="adm-section-title" style="margin-top:28px">Co-Ownerzy</div><div class="adm-list">';
+        this.data.teamOwners.forEach((o,i)=>{
+            const tmp=o;tmp._idx=i;
+            this.setVal('teamOwners.'+i+'._idx',i);
+            h+=this.admTeamPerson('teamOwners.'+i,'','Co-Owner');
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamOwners\',{name:\'Nowy\',role:\'Co-Owner\',initials:\'?\',details:[],discord:\'#\',tiktok:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj co-ownera</button>';
+        h+='<div class="adm-section-title" style="margin-top:28px">Pozostala ekipa</div><div class="adm-list">';
+        this.data.teamMembers.forEach((m,i)=>{
+            this.setVal('teamMembers.'+i+'._idx',i);
+            h+=this.admTeamPerson('teamMembers.'+i,'','Ekipa');
+        });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamMembers\',{name:\'Nowy\',role:\'Rola\',initials:\'?\',details:[],discord:\'#\',tiktok:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj czlonka ekipy</button>';
+        return h;
+    },
+
+    admRanks(){
+        let h='<div class="adm-section-title">Okresy rang</div>';
+        h+='<div class="adm-row">';
+        h+=this.field('Okres 1','ranks.periods.0');
+        h+=this.field('Okres 2','ranks.periods.1');
+        h+='</div>';
+        h+='<div class="adm-section-title" style="margin-top:28px">Rangi</div><div class="adm-list">';
+        this.data.ranks.items.forEach((r,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(r.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'ranks.items\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">';
+            h+=this.field('Nazwa','ranks.items.'+i+'.name');
+            h+='<div class="adm-row">'+this.field('Cena — '+esc(this.data.ranks.periods[0]||'Okres 1'),'ranks.items.'+i+'.prices.0')+this.field('Cena — '+esc(this.data.ranks.periods[1]||'Okres 2'),'ranks.items.'+i+'.prices.1')+'</div>';
+            h+='<div class="adm-row">'+this.field('Czas — Okres 1','ranks.items.'+i+'.durs.0')+this.field('Czas — Okres 2','ranks.items.'+i+'.durs.1')+'</div>';
+            h+='<div class="adm-field"><label class="adm-label">Benefity</label>';
+            (r.benefits||[]).forEach((b,j)=>{
+                h+='<div class="adm-ben-row"><input class="adm-input" data-path="ranks.items.'+i+'.benefits.'+j+'" value="'+esc(b)+'"><button class="adm-ben-del" onclick="App.removeBenefit(\'ranks.items.'+i+'.benefits\','+j+')"><i data-lucide="trash-2"></i></button></div>';
             });
-            const cb = document.getElementById(`adm_as_custom_${i}`);
-            if (cb) cb.addEventListener('change', save);
+            h+='<button class="adm-ben-add" onclick="App.addBenefit(\'ranks.items.'+i+'.benefits\')"><i data-lucide="plus"></i> Dodaj benefit</button>';
+            h+='</div></div></div>';
         });
+        h+='</div><button class="adm-add-btn" onclick="App.addRank()" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj range</button>';
+        return h;
     },
 
-    bindAboutCards() {
-        this.data.aboutCards.forEach((c, i) => {
-            const save = () => {
-                this.data.aboutCards[i].icon = document.getElementById(`adm_ac_i_${i}`).value;
-                this.data.aboutCards[i].title = document.getElementById(`adm_ac_t_${i}`).value;
-                this.data.aboutCards[i].desc = document.getElementById(`adm_ac_d_${i}`).value;
-                this.saveData(); this.renderAbout(); this.initScrollReveal();
-            };
-            [`adm_ac_i_${i}`,`adm_ac_t_${i}`,`adm_ac_d_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
+    admKeys(){
+        let h='<div class="adm-section-title">Klucze</div><div class="adm-list">';
+        this.data.keys.forEach((k,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(k.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'keys\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">'+this.field('Nazwa','keys.'+i+'.name')+this.areaField('Opis','keys.'+i+'.desc')+this.field('Cena','keys.'+i+'.price')+'</div></div>';
         });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'keys\',{name:\'Nowy klucz\',desc:\'Opis...\',price:\'0 PLN\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj klucz</button>';
+        return h;
     },
 
-    addAboutCard() {
-        this.data.aboutCards.push({ icon: 'star', title: 'Nowa karta', desc: 'Opis nowej karty.' });
-        this.saveData(); this.admAbout(document.getElementById('admBody'));
-    },
-
-    delAboutCard(i) {
-        if (!confirm('Usunąć tę kartę?')) return;
-        this.data.aboutCards.splice(i, 1);
-        this.saveData(); this.renderAbout(); this.admAbout(document.getElementById('admBody'));
-    },
-
-    admOffer(body) {
-        let html = `<div class="adm-section-title">Karty „Dlaczego PakoPlay.PL"</div><div class="adm-list">`;
-        this.data.offerCards.forEach((c, i) => {
-            html += `<div class="adm-list-item">
-                <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                    <span class="adm-list-name">${c.title}</span>
-                    <div class="adm-list-actions">
-                        <button class="adm-list-btn del" onclick="event.stopPropagation();App.delOfferCard(${i})"><i data-lucide="trash-2"></i></button>
-                        <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="adm-list-body">
-                    ${this.field('Ikona (nazwa Lucide)', this.txtInput(`adm_oc_i_${i}`, c.icon))}
-                    <div class="adm-row">
-                        ${this.field('Tytuł', this.txtInput(`adm_oc_t_${i}`, c.title))}
-                        ${this.field('Szeroka karta (2 kolumny)', `<select class="adm-input" id="adm_oc_w_${i}"><option value="true" ${c.wide?'selected':''}>Tak</option><option value="false" ${!c.wide?'selected':''}>Nie</option></select>`)}
-                    </div>
-                    <label style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--text-s);cursor:pointer;margin-bottom:12px">
-                        <input type="checkbox" id="adm_oc_p_${i}" ${c.purp?'checked':''}> Styl fioletowy (zamiast niebieskiego)
-                    </label>
-                    ${this.field('Opis', this.txtArea(`adm_oc_d_${i}`, c.desc))}
-                </div>
-            </div>`;
+    admLinks(){
+        let h='<div class="adm-section-title">Linki</div>';
+        h+=this.field('Discord','server.discord');
+        h+=this.field('Sklep','server.shop');
+        h+='<div class="adm-section-title" style="margin-top:28px">Linki w footerze — Nawigacja</div><div class="adm-list">';
+        this.data.footerLinks1.forEach((l,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks1\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body"><div class="adm-row">'+this.field('Tekst','footerLinks1.'+i+'.text')+this.field('Link (href)','footerLinks1.'+i+'.href')+'</div></div></div>';
         });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addOfferCard()"><i data-lucide="plus"></i> Dodaj kartę</button>`;
-        body.innerHTML = html;
-        this.bindOfferCards();
-    },
-
-    bindOfferCards() {
-        this.data.offerCards.forEach((c, i) => {
-            const save = () => {
-                this.data.offerCards[i].icon = document.getElementById(`adm_oc_i_${i}`).value;
-                this.data.offerCards[i].title = document.getElementById(`adm_oc_t_${i}`).value;
-                this.data.offerCards[i].wide = document.getElementById(`adm_oc_w_${i}`).value === 'true';
-                this.data.offerCards[i].purp = document.getElementById(`adm_oc_p_${i}`).checked;
-                this.data.offerCards[i].desc = document.getElementById(`adm_oc_d_${i}`).value;
-                this.saveData(); this.renderOffer(); this.initScrollReveal();
-            };
-            [`adm_oc_i_${i}`,`adm_oc_t_${i}`,`adm_oc_d_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
-            const w = document.getElementById(`adm_oc_w_${i}`);
-            if (w) w.addEventListener('change', save);
-            const p = document.getElementById(`adm_oc_p_${i}`);
-            if (p) p.addEventListener('change', save);
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks1\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
+        h+='<div class="adm-section-title" style="margin-top:28px">Linki w footerze — Przydatne</div><div class="adm-list">';
+        this.data.footerLinks2.forEach((l,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks2\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body"><div class="adm-row">'+this.field('Tekst','footerLinks2.'+i+'.text')+this.field('Link (href)','footerLinks2.'+i+'.href')+'</div></div></div>';
         });
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks2\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
+        return h;
     },
 
-    addOfferCard() {
-        this.data.offerCards.push({ icon: 'star', purp: false, wide: false, title: 'Nowa karta', desc: 'Opis.' });
-        this.saveData(); this.admOffer(document.getElementById('admBody'));
+    admIP(){
+        let h='<div class="adm-section-title">IP serwera</div>';
+        h+=this.field('IP serwera','server.ip');
+        h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Status serwera</label><select class="adm-input" data-path="server.online"><option value="true"'+(this.data.server.online?' selected':'')+'>Online</option><option value="false"'+(!this.data.server.online?' selected':'')+'>Offline</option></select></div>';
+        h+='<div class="adm-hint">Zmiana statusu aktualizuje badge w sekcji hero po zapisaniu.</div>';
+        return h;
     },
 
-    delOfferCard(i) {
-        if (!confirm('Usunąć tę kartę?')) return;
-        this.data.offerCards.splice(i, 1);
-        this.saveData(); this.renderOffer(); this.admOffer(document.getElementById('admBody'));
-    },
-
-    admModes(body) {
-        let html = `<div class="adm-section-title">Tryby gry</div><div class="adm-list">`;
-        this.data.modes.forEach((m, i) => {
-            html += `<div class="adm-list-item">
-                <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                    <span class="adm-list-name">${m.name}</span>
-                    <div class="adm-list-actions">
-                        <button class="adm-list-btn del" onclick="event.stopPropagation();App.delMode(${i})"><i data-lucide="trash-2"></i></button>
-                        <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="adm-list-body">
-                    ${this.field('Nazwa trybu', this.txtInput(`adm_m_n_${i}`, m.name))}
-                    ${this.field('Tag', this.txtInput(`adm_m_tag_${i}`, m.tag))}
-                    ${this.field('Ikona (Lucide)', this.txtInput(`adm_m_ic_${i}`, m.icon))}
-                    <div class="adm-row">
-                        ${this.field('Status', `<select class="adm-input" id="adm_m_st_${i}"><option value="online" ${m.status==='online'?'selected':''}>Online</option><option value="offline" ${m.status==='offline'?'selected':''}>Offline</option></select>`)}
-                        ${this.field('Meta (po przecinku)', this.txtInput(`adm_m_meta_${i}`, m.meta.join(', ')))}
-                    </div>
-                    ${this.field('Opis', this.txtArea(`adm_m_desc_${i}`, m.desc))}
-                    ${this.field('Cechy (po przecinku)', this.txtInput(`adm_m_feats_${i}`, m.features.join(', ')))}
-                </div>
-            </div>`;
+    admFAQ(){
+        let h='<div class="adm-section-title">FAQ — Najczestsze pytania</div><div class="adm-list">';
+        this.data.faq.forEach((f,i)=>{
+            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(f.q)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'faq\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
+            h+='<div class="adm-list-body">'+this.field('Pytanie','faq.'+i+'.q')+this.areaField('Odpowiedz','faq.'+i+'.a')+'</div></div>';
         });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addMode()"><i data-lucide="plus"></i> Dodaj tryb</button>`;
-        body.innerHTML = html;
-        this.bindModes();
+        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'faq\',{q:\'Nowe pytanie?\',a:\'Odpowiedz...\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj pytanie</button>';
+        return h;
     },
 
-    bindModes() {
-        this.data.modes.forEach((m, i) => {
-            const save = () => {
-                this.data.modes[i].name = document.getElementById(`adm_m_n_${i}`).value;
-                this.data.modes[i].tag = document.getElementById(`adm_m_tag_${i}`).value;
-                this.data.modes[i].icon = document.getElementById(`adm_m_ic_${i}`).value;
-                this.data.modes[i].status = document.getElementById(`adm_m_st_${i}`).value;
-                this.data.modes[i].meta = document.getElementById(`adm_m_meta_${i}`).value.split(',').map(s => s.trim()).filter(Boolean);
-                this.data.modes[i].desc = document.getElementById(`adm_m_desc_${i}`).value;
-                this.data.modes[i].features = document.getElementById(`adm_m_feats_${i}`).value.split(',').map(s => s.trim()).filter(Boolean);
-                this.saveData(); this.renderModes(); this.initScrollReveal();
-            };
-            [`adm_m_n_${i}`,`adm_m_tag_${i}`,`adm_m_ic_${i}`,`adm_m_meta_${i}`,`adm_m_desc_${i}`,`adm_m_feats_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
-            const st = document.getElementById(`adm_m_st_${i}`);
-            if (st) st.addEventListener('change', save);
-        });
+    toggleListItem(head){
+        const item=head.parentElement;
+        item.classList.toggle('open');
     },
 
-    addMode() {
-        this.data.modes.push({ name: 'Nowy tryb', tag: 'Tag', desc: 'Opis trybu.', icon: 'gamepad-2', status: 'online', meta: [], features: [] });
-        this.saveData(); this.admModes(document.getElementById('admBody'));
+    addItem(arr,defaultItem){
+        this.collectAllData();
+        this.data[arr].push(JSON.parse(JSON.stringify(defaultItem)));
+        this.dirty=true;this.updateStatus();
+        this.showAdminSection(this.admSection);
     },
 
-    delMode(i) {
-        if (!confirm('Usunąć ten tryb?')) return;
-        this.data.modes.splice(i, 1);
-        this.saveData(); this.renderModes(); this.admModes(document.getElementById('admBody'));
+    removeItem(arr,idx){
+        this.collectAllData();
+        this.data[arr].splice(idx,1);
+        this.dirty=true;this.updateStatus();
+        this.showAdminSection(this.admSection);
     },
 
-    admTeam(body) {
-        let html = `<div class="adm-section-title">Właściciel</div>`;
-        const tm = this.data.teamMain;
-        html += `<div class="adm-list-item open"><div class="adm-list-body">
-            <div class="adm-row">
-                ${this.field('Rola', this.txtInput('adm_tm_role', tm.name))}
-                ${this.field('Nickname', this.txtInput('adm_tm_nick', tm.nickname))}
-            </div>
-            ${this.field('Inicjały (avatar)', this.txtInput('adm_tm_ini', tm.initials))}
-        </div></div>`;
-
-        html += `<div class="adm-section-title" style="margin-top:24px">Współwłaściciele</div><div class="adm-list">`;
-        this.data.teamOwners.forEach((o, i) => {
-            html += this.teamCardHTML('to', i, o);
-        });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addTeamMember('owners')"><i data-lucide="plus"></i> Dodaj współwłaściciela</button>`;
-
-        html += `<div class="adm-section-title" style="margin-top:24px">Pozostała ekipa</div><div class="adm-list">`;
-        this.data.teamGrid.forEach((m, i) => {
-            html += this.teamCardHTML('tg', i, m);
-        });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addTeamMember('grid')"><i data-lucide="plus"></i> Dodaj członka ekipy</button>`;
-        body.innerHTML = html;
-        this.bindTeamMain();
-        this.bindTeamList('to', this.data.teamOwners);
-        this.bindTeamList('tg', this.data.teamGrid);
-        ${this.field('Zdjecie (URL obrazka)', this.txtInput(`adm_to_img_${i}`, m.image))}
+    addRank(){
+        this.collectAllData();
+        const pCount=this.data.ranks.periods.length;
+        const prices=[];const durs=[];
+        for(let i=0;i<pCount;i++){prices.push('0 PLN');durs.push('')}
+        this.data.ranks.items.push({name:'Nowa ranga',prices:prices,durs:durs,benefits:[]});
+        this.dirty=true;this.updateStatus();
+        this.showAdminSection(this.admSection);
     },
 
-    teamCardHTML(prefix, i, m) {
-        return `<div class="adm-list-item">
-            <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                <span class="adm-list-name">${m.nickname} — ${m.name}</span>
-                <div class="adm-list-actions">
-                    <button class="adm-list-btn del" onclick="event.stopPropagation();App.delTeamMember('${prefix}',${i})"><i data-lucide="trash-2"></i></button>
-                    <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                </div>
-            </div>
-            <div class="adm-list-body">
-                <div class="adm-row">
-                    ${this.field('Rola', this.txtInput(`adm_${prefix}_role_${i}`, m.name))}
-                    ${this.field('Nickname', this.txtInput(`adm_${prefix}_nick_${i}`, m.nickname))}
-                </div>
-                ${this.field('Inicjały', this.txtInput(`adm_${prefix}_ini_${i}`, m.initials))}
-                ${this.field('Szczegóły (jeden na linię, format: ikona|tekst)', this.txtArea(`adm_${prefix}_det_${i}`, m.details.map(d => d.icon + '|' + d.text).join('\n')))}
-                ${this.field('Social (jeden na linię, format: dc|Discord|link)', this.txtArea(`adm_${prefix}_soc_${i}`, m.socials.map(s => s.type + '|' + s.label + '|' + s.link).join('\n')))}
-            </div>
-        </div>`;
+    addBenefit(path){
+        this.collectAllData();
+        const arr=path.split('.').reduce((o,k)=>o[k],this.data);
+        if(arr)arr.push('Nowy benefit');
+        this.dirty=true;this.updateStatus();
+        this.showAdminSection(this.admSection);
     },
 
-    bindTeamMain() {
-        const save = () => {
-            this.data.teamMain.name = document.getElementById('adm_tm_role').value;
-            this.data.teamMain.nickname = document.getElementById('adm_tm_nick').value;
-            this.data.teamMain.initials = document.getElementById('adm_tm_ini').value;
-            this.saveData(); this.renderTeam();
-        };
-        ['adm_tm_role','adm_tm_nick','adm_tm_ini'].forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.addEventListener('input', save);
-        });
+    removeBenefit(path,idx){
+        this.collectAllData();
+        const arr=path.split('.').reduce((o,k)=>o[k],this.data);
+        if(arr)arr.splice(idx,1);
+        this.dirty=true;this.updateStatus();
+        this.showAdminSection(this.admSection);
     },
 
-    bindTeamList(prefix, arr) {
-        arr.forEach((m, i) => {
-            const save = () => {
-                arr[i].name = document.getElementById(`adm_${prefix}_role_${i}`).value;
-                arr[i].nickname = document.getElementById(`adm_${prefix}_nick_${i}`).value;
-                arr[i].initials = document.getElementById(`adm_${prefix}_ini_${i}`).value;
-                const detText = document.getElementById(`adm_${prefix}_det_${i}`).value;
-                arr[i].details = detText.split('\n').filter(Boolean).map(line => {
-                    const parts = line.split('|');
-                    return { icon: (parts[0]||'').trim(), text: (parts[1]||'').trim() };
-                });
-                const socText = document.getElementById(`adm_${prefix}_soc_${i}`).value;
-                arr[i].socials = socText.split('\n').filter(Boolean).map(line => {
-                    const parts = line.split('|');
-                    return { type: (parts[0]||'dc').trim(), label: (parts[1]||'').trim(), link: (parts[2]||'#').trim() };
-                });
-                this.saveData(); this.renderTeam();
-            };
-            [`adm_${prefix}_role_${i}`,`adm_${prefix}_nick_${i}`,`adm_${prefix}_ini_${i}`,`adm_${prefix}_det_${i}`,`adm_${prefix}_soc_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
-        });
-    },
-
-    addTeamMember(group) {
-        const newMember = { name: 'Nowa rola', nickname: 'Nick', initials: 'NN', details: [], socials: [] };
-        if (group === 'owners') this.data.teamOwners.push(newMember);
-        else this.data.teamGrid.push(newMember);
-        this.saveData(); this.admTeam(document.getElementById('admBody'));
-    },
-
-    delTeamMember(prefix, i) {
-        if (!confirm('Usunąć tego członka?')) return;
-        if (prefix === 'to') this.data.teamOwners.splice(i, 1);
-        else this.data.teamGrid.splice(i, 1);
-        this.saveData(); this.renderTeam(); this.admTeam(document.getElementById('admBody'));
-    },
-
-    admRanks(body) {
-        let html = `<div class="adm-section-title">Rangi</div><p class="adm-hint" style="margin-bottom:20px">Każda ranga ma osobne ceny dla 3 okresów: 7 dni, 30 dni, 3 miesiące. Benefity można dowolnie edytować.</p><div class="adm-list">`;
-        this.data.ranks.forEach((r, i) => {
-            html += `<div class="adm-list-item">
-                <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                    <span class="adm-list-name">${r.name} — ${r.prices['30d']} PLN / 30dni</span>
-                    <div class="adm-list-actions">
-                        <button class="adm-list-btn del" onclick="event.stopPropagation();App.delRank(${i})"><i data-lucide="trash-2"></i></button>
-                        <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="adm-list-body">
-                    ${this.field('Nazwa rangi', this.txtInput(`adm_r_n_${i}`, r.name))}
-                    <div class="adm-row-3">
-                        ${this.field('Cena 7 dni (PLN)', this.txtInput(`adm_r_7d_${i}`, r.prices['7d']))}
-                        ${this.field('Cena 30 dni (PLN)', this.txtInput(`adm_r_30d_${i}`, r.prices['30d']))}
-                        ${this.field('Cena 3 miesiące (PLN)', this.txtInput(`adm_r_3m_${i}`, r.prices['3m']))}
-                    </div>
-                    ${this.field('Benefity', `<div id="adm_r_bens_${i}">${r.benefits.map((b, bi) => `
-                        <div class="adm-ben-row">
-                            <input class="adm-input" value="${this.esc(b)}" data-ben-idx="${bi}" data-rank-idx="${i}">
-                            <button class="adm-ben-del" onclick="App.delRankBen(${i},${bi})"><i data-lucide="x"></i></button>
-                        </div>
-                    `).join('')}</div>
-                    <button class="adm-ben-add" style="margin-top:8px" onclick="App.addRankBen(${i})"><i data-lucide="plus"></i> Dodaj benefit</button>`)}
-                </div>
-            </div>`;
-        });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addRank()"><i data-lucide="plus"></i> Dodaj rangę</button>`;
-        body.innerHTML = html;
-        this.bindRanks();
-    },
-
-    bindRanks() {
-        this.data.ranks.forEach((r, i) => {
-            const save = () => {
-                this.data.ranks[i].name = document.getElementById(`adm_r_n_${i}`).value;
-                this.data.ranks[i].prices['7d'] = document.getElementById(`adm_r_7d_${i}`).value;
-                this.data.ranks[i].prices['30d'] = document.getElementById(`adm_r_30d_${i}`).value;
-                this.data.ranks[i].prices['3m'] = document.getElementById(`adm_r_3m_${i}`).value;
-                this.saveData(); this.renderRanks();
-            };
-            [`adm_r_n_${i}`,`adm_r_7d_${i}`,`adm_r_30d_${i}`,`adm_r_3m_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
-            document.querySelectorAll(`#adm_r_bens_${i} .adm-input`).forEach(inp => {
-                inp.addEventListener('input', () => {
-                    const ri = parseInt(inp.dataset.rankIdx);
-                    const bi = parseInt(inp.dataset.benIdx);
-                    this.data.ranks[ri].benefits[bi] = inp.value;
-                    this.saveData(); this.renderRanks();
-                });
-            });
-        });
-    },
-
-    addRankBen(ri) {
-        this.data.ranks[ri].benefits.push('Nowy benefit');
-        this.saveData(); this.admRanks(document.getElementById('admBody'));
-    },
-
-    delRankBen(ri, bi) {
-        this.data.ranks[ri].benefits.splice(bi, 1);
-        this.saveData(); this.admRanks(document.getElementById('admBody'));
-    },
-
-    addRank() {
-        this.data.ranks.push({ name: 'Nowa ranga', prices: { '7d': '0.00', '30d': '0.00', '3m': '0.00' }, benefits: ['Benefit 1'] });
-        this.saveData(); this.admRanks(document.getElementById('admBody'));
-    },
-
-    delRank(i) {
-        if (!confirm('Usunąć tę rangę?')) return;
-        this.data.ranks.splice(i, 1);
-        this.saveData(); this.renderRanks(); this.admRanks(document.getElementById('admBody'));
-    },
-
-    admKeys(body) {
-        let html = `<div class="adm-section-title">Klucze</div><div class="adm-list">`;
-        this.data.keys.forEach((k, i) => {
-            html += `<div class="adm-list-item">
-                <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                    <span class="adm-list-name">${k.name} — ${k.price} PLN</span>
-                    <div class="adm-list-actions">
-                        <button class="adm-list-btn del" onclick="event.stopPropagation();App.delKey(${i})"><i data-lucide="trash-2"></i></button>
-                        <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="adm-list-body">
-                    ${this.field('Nazwa', this.txtInput(`adm_k_n_${i}`, k.name))}
-                    ${this.field('Cena (PLN)', this.txtInput(`adm_k_p_${i}`, k.price))}
-                    ${this.field('Opis', this.txtArea(`adm_k_d_${i}`, k.desc))}
-                </div>
-            </div>`;
-        });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addKey()"><i data-lucide="plus"></i> Dodaj klucz</button>`;
-        body.innerHTML = html;
-        this.bindKeys();
-    },
-
-    bindKeys() {
-        this.data.keys.forEach((k, i) => {
-            const save = () => {
-                this.data.keys[i].name = document.getElementById(`adm_k_n_${i}`).value;
-                this.data.keys[i].price = document.getElementById(`adm_k_p_${i}`).value;
-                this.data.keys[i].desc = document.getElementById(`adm_k_d_${i}`).value;
-                this.saveData(); this.renderKeys();
-            };
-            [`adm_k_n_${i}`,`adm_k_p_${i}`,`adm_k_d_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
-        });
-    },
-
-    addKey() {
-        this.data.keys.push({ name: 'Nowy klucz', desc: 'Opis klucza.', price: '0.00' });
-        this.saveData(); this.admKeys(document.getElementById('admBody'));
-    },
-
-    delKey(i) {
-        if (!confirm('Usunąć ten klucz?')) return;
-        this.data.keys.splice(i, 1);
-        this.saveData(); this.renderKeys(); this.admKeys(document.getElementById('admBody'));
-    },
-
-    admFAQ(body) {
-        let html = `<div class="adm-section-title">Pytania i odpowiedzi</div><div class="adm-list">`;
-        this.data.faq.forEach((item, i) => {
-            html += `<div class="adm-list-item">
-                <div class="adm-list-head" onclick="this.parentElement.classList.toggle('open')">
-                    <span class="adm-list-name">${item.q.substring(0, 50)}${item.q.length > 50 ? '...' : ''}</span>
-                    <div class="adm-list-actions">
-                        <button class="adm-list-btn del" onclick="event.stopPropagation();App.delFAQ(${i})"><i data-lucide="trash-2"></i></button>
-                        <button class="adm-list-btn"><i data-lucide="chevron-down"></i></button>
-                    </div>
-                </div>
-                <div class="adm-list-body">
-                    ${this.field('Pytanie', this.txtInput(`adm_faq_q_${i}`, item.q))}
-                    ${this.field('Odpowiedź', this.txtArea(`adm_faq_a_${i}`, item.a))}
-                </div>
-            </div>`;
-        });
-        html += `</div><button class="adm-add-btn" style="margin-top:12px" onclick="App.addFAQ()"><i data-lucide="plus"></i> Dodaj pytanie</button>`;
-        body.innerHTML = html;
-        this.bindFAQ();
-    },
-
-    bindFAQ() {
-        this.data.faq.forEach((item, i) => {
-            const save = () => {
-                this.data.faq[i].q = document.getElementById(`adm_faq_q_${i}`).value;
-                this.data.faq[i].a = document.getElementById(`adm_faq_a_${i}`).value;
-                this.saveData(); this.renderFAQ();
-            };
-            [`adm_faq_q_${i}`,`adm_faq_a_${i}`].forEach(id => {
-                const el = document.getElementById(id);
-                if (el) el.addEventListener('input', save);
-            });
-        });
-    },
-
-    addFAQ() {
-        this.data.faq.push({ q: 'Nowe pytanie?', a: 'Odpowiedź...' });
-        this.saveData(); this.admFAQ(document.getElementById('admBody'));
-    },
-
-    delFAQ(i) {
-        if (!confirm('Usunąć to pytanie?')) return;
-        this.data.faq.splice(i, 1);
-        this.saveData(); this.renderFAQ(); this.admFAQ(document.getElementById('admBody'));
-    },
-
-    admFooter(body) {
-        const f = this.data.footer;
-        let html = `<div class="adm-section-title">Stopka</div>
-            ${this.field('Opis', this.txtArea('adm_f_desc', f.description))}
-            <div class="adm-section-title" style="margin-top:24px">Linki nawigacyjne</div><div class="adm-list">`;
-        f.navLinks.forEach((l, i) => {
-            html += `<div class="adm-list-item open"><div class="adm-list-body">
-                <div class="adm-row">
-                    ${this.field('Etykieta', this.txtInput(`adm_fn_l_${i}`, l.label))}
-                    ${this.field('Link (href)', this.txtInput(`adm_fn_h_${i}`, l.href))}
-                </div>
-            </div></div>`;
-        });
-        html += `</div><div class="adm-section-title" style="margin-top:24px">Linki social</div><div class="adm-list">`;
-        f.socialLinks.forEach((l, i) => {
-            html += `<div class="adm-list-item open"><div class="adm-list-body">
-                <div class="adm-row">
-                    ${this.field('Etykieta', this.txtInput(`adm_fs_l_${i}`, l.label))}
-                    ${this.field('Link (href)', this.txtInput(`adm_fs_h_${i}`, l.href))}
-                </div>
-            </div></div>`;
-        });
-        html += `</div>`;
-        body.innerHTML = html;
-        const save = () => {
-            this.data.footer.description = document.getElementById('adm_f_desc').value;
-            this.data.footer.navLinks.forEach((l, i) => {
-                l.label = document.getElementById(`adm_fn_l_${i}`).value;
-                l.href = document.getElementById(`adm_fn_h_${i}`).value;
-            });
-            this.data.footer.socialLinks.forEach((l, i) => {
-                l.label = document.getElementById(`adm_fs_l_${i}`).value;
-                l.href = document.getElementById(`adm_fs_h_${i}`).value;
-            });
-            this.saveData(); this.renderFooter();
-        };
-        body.querySelectorAll('.adm-input,.adm-textarea').forEach(el => el.addEventListener('input', save));
+    updateStatus(){
+        const el=document.getElementById('admStatus');
+        if(!el)return;
+        el.textContent=this.dirty?'Masz niezapisane zmiany':'Wszystko zapisane';
+        el.style.color=this.dirty?'var(--accent)':'var(--text-t)';
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => App.init());
+/* Parse comma-separated strings back to arrays on save */
+const _origCollect=App.collectAllData.bind(App);
+App.collectAllData=function(){
+    _origCollect();
+    const d=this.data;
+    (d.modes||[]).forEach(m=>{
+        if(typeof m.meta==='string')m.meta=m.meta.split(',').map(s=>s.trim()).filter(Boolean);
+        if(typeof m.feats==='string')m.feats=m.feats.split(',').map(s=>s.trim()).filter(Boolean);
+        if(!Array.isArray(m.meta))m.meta=[];
+        if(!Array.isArray(m.feats))m.feats=[];
+    });
+    (d.offerCards||[]).forEach(c=>{
+        if(c.span==='true')c.span=true;else if(c.span==='false')c.span=false;
+        if(c.purp==='true')c.purp=true;else if(c.purp==='false')c.purp=false;
+    });
+    if(d.server.online==='true')d.server.online=true;else if(d.server.online==='false')d.server.online=false;
+};
+
+document.addEventListener('DOMContentLoaded',()=>App.init());
 </script>
 </body>
 </html>
