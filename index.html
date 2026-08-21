@@ -130,7 +130,7 @@
         .modes-list{display:flex;flex-direction:column;gap:48px}
         .mode{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
         .mode:nth-child(even){direction:rtl}.mode:nth-child(even)>*{direction:ltr}
-        .mode-vis{aspect-ratio:16/10;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;position:relative;display:grid;place-items:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;flex-direction:column;gap:8px;background-size:cover;background-position:center}
+        .mode-vis{aspect-ratio:16/10;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;gap:8px;background-size:cover;background-position:center}
         .mode-vis i{width:28px;height:28px;opacity:.25}
         .mode-vis-glow{position:absolute;top:-1px;right:-1px;width:50%;height:50%;background:radial-gradient(ellipse at top right,var(--glow),transparent 70%);pointer-events:none}
         .mode-tag{display:inline-block;font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.1em;color:var(--accent);padding:5px 14px;background:var(--glow);border:1px solid var(--border-a);border-radius:100px;text-transform:uppercase;margin-bottom:18px}
@@ -178,7 +178,7 @@
         .to-name{font-family:var(--fh);font-size:19px;font-weight:600;letter-spacing:-.01em;margin-bottom:4px}
         .to-rows .td-rows{align-items:center}.to-rows .td-row{justify-content:center}
         .to-socials .ow-socials{justify-content:center}
-        .team-sep{display:flex;align-items:center;gap:16px;max-width:660px;margin:0 auto 40px}
+        .team-sep{display:flex;align-items:center;gap:16px;max-width:780px;margin:0 auto 40px}
         .team-sep::before,.team-sep::after{content:'';flex:1;height:1px;background:var(--border)}
         .team-sep span{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--text-t);white-space:nowrap}
         .team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:780px;margin:0 auto}
@@ -237,7 +237,7 @@
 
         .creators{padding:var(--pad) 0;background:var(--bg-secondary);position:relative}
         .creators-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-        .creators-vis{aspect-ratio:4/3;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);display:grid;place-items:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;position:relative;overflow:hidden;flex-direction:column;gap:8px}
+        .creators-vis{aspect-ratio:4/3;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--rm);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-t);font-size:11px;font-family:var(--fh);letter-spacing:.12em;text-transform:uppercase;position:relative;overflow:hidden;gap:8px}
         .creators-vis i{width:32px;height:32px;opacity:.2}
         .creators-vis-glow{position:absolute;bottom:-1px;left:-1px;width:50%;height:50%;background:radial-gradient(ellipse at bottom left,var(--pglow-s),transparent 70%);pointer-events:none}
         .creators-content .sl{justify-content:flex-start}
@@ -283,7 +283,7 @@
         .footer{padding:64px 0 32px;border-top:1px solid var(--border)}
         .fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:44px}
         .fdesc{font-size:12.5px;line-height:1.7;color:var(--text-t);margin-top:12px;max-width:260px}
-        .fh{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-t);margin-bottom:16px}
+        .fh4{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-t);margin-bottom:16px}
         .flinks{list-style:none;display:flex;flex-direction:column;gap:9px}
         .flinks a{font-size:12.5px;color:var(--text-s);text-decoration:none;transition:color var(--f)}
         .flinks a:hover{color:var(--accent-light)}
@@ -303,9 +303,8 @@
         .ip-widget-copied{color:#4ade80 !important}
         .ip-widget-copied strong{color:#4ade80 !important}
 
-        @media(max-width:1024px){:root{--pad:72px}.about-stats{grid-template-columns:repeat(2,1fr)}.about-stats .as:nth-child(2)::after{display:none}.about-grid{grid-template-columns:repeat(3,1fr)}.ogrid{grid-template-columns:repeat(2,1fr)}.ocard.f1{grid-column:span 2}.mode{grid-template-columns:1fr;gap:32px}.mode:nth-child(even){direction:ltr}.rgrid{grid-template-columns:repeat(3,1fr)}.kgrid{grid-template-columns:repeat(3,1fr)}.creators-inner{grid-template-columns:1fr;gap:40px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}}
-        @media(max-width:768px){:root{--pad:56px}.nlinks,.nplay{display:none}.ntog{display:block}.mmenu{display:flex}.about-grid{grid-template-columns:repeat(2,1fr)}.about-grid .acard:last-child{grid-column:span 2}.ogrid{grid-template-columns:1fr}.ocard.f1{grid-column:span 1}.team-owners{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.team-grid .tc-card:last-child{grid-column:span 2;max-width:50%;justify-self:center}.rgrid{grid-template-columns:repeat(2,1fr)}.kgrid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr;gap:28px}.fbot{flex-direction:column;text-align:center}.ranks-hdr{flex-direction:column;align-items:flex-start}.period-bar{flex-direction:column;align-items:flex-start}.ip-widget{bottom:14px;right:14px;font-size:10px;padding:7px 12px 7px 10px}.toast{bottom:58px;right:14px}}
-        @media(max-width:480px){.about-grid{grid-template-columns:1fr}.about-grid .acard:last-child{grid-column:span 1}.about-stats{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:1fr}.team-grid .tc-card:last-child{grid-column:span 1;max-width:100%}.rgrid{grid-template-columns:1fr}.kgrid{grid-template-columns:1fr}.hacts{flex-direction:column;width:100%}.hacts .btn{width:100%;justify-content:center}.shop-acts{flex-direction:column;width:100%}.shop-acts .btn{width:100%;justify-content:center}.discord-cta{padding:48px 20px}.discord-cta .btn{width:100%;justify-content:center}.dc-stat-dot{display:none}.ow-socials{flex-wrap:wrap}}
+        .adm-trigger{position:fixed;bottom:20px;left:20px;z-index:150;width:36px;height:36px;border-radius:50%;background:var(--bg-secondary);border:1px solid var(--border);color:var(--text-t);cursor:pointer;display:grid;place-items:center;transition:all .2s ease}
+        .adm-trigger:hover{border-color:var(--accent-dim);color:var(--accent);transform:scale(1.05)}
 
         .adm-overlay{position:fixed;inset:0;z-index:500;background:rgba(3,5,10,.92);backdrop-filter:blur(12px);display:none;opacity:0;transition:opacity .3s ease}
         .adm-overlay.open{display:flex;opacity:1}
@@ -325,6 +324,8 @@
         .adm-nav-item.active{color:var(--accent);background:var(--glow)}
         .adm-nav-item i{width:15px;height:15px;flex-shrink:0}
         .adm-body{overflow-y:auto;padding:24px}
+        .adm-tab{display:none}
+        .adm-tab.active{display:block}
         .adm-section-title{font-family:var(--fh);font-size:13px;font-weight:600;letter-spacing:.04em;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border)}
         .adm-subsection{font-family:var(--fh);font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-t);margin:24px 0 14px;padding:8px 12px;background:var(--bg-card);border-radius:var(--rs);border-left:3px solid var(--accent-dim)}
         .adm-subsection.purp{border-left-color:var(--purple-dim)}
@@ -338,19 +339,10 @@
         .adm-list-head{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;cursor:pointer;transition:background .15s ease}
         .adm-list-head:hover{background:var(--bg-card)}
         .adm-list-name{font-family:var(--fh);font-size:13px;font-weight:600}
-        .adm-list-actions{display:flex;gap:6px}
-        .adm-list-btn{width:28px;height:28px;border-radius:var(--rs);border:1px solid var(--border);background:transparent;color:var(--text-t);cursor:pointer;display:grid;place-items:center;transition:all .15s ease}
-        .adm-list-btn:hover{border-color:var(--border-h);color:var(--text)}
-        .adm-list-btn.del:hover{border-color:rgba(248,113,113,.3);color:#f87171}
-        .adm-list-btn i{width:13px;height:13px}
+        .adm-list-arrow{width:14px;height:14px;color:var(--text-t);transition:transform .2s ease}
+        .adm-list-item.open .adm-list-arrow{transform:rotate(180deg)}
         .adm-list-body{display:none;padding:0 16px 16px}
         .adm-list-item.open .adm-list-body{display:block}
-        .adm-add-btn{width:100%;padding:12px;border:1px dashed var(--border);border-radius:var(--rm);background:transparent;color:var(--text-t);font-family:var(--fh);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:all .15s ease;display:flex;align-items:center;justify-content:center;gap:8px}
-        .adm-add-btn:hover{border-color:var(--accent-dim);color:var(--accent);background:var(--glow)}
-        .adm-add-btn i{width:14px;height:14px}
-        .adm-footer{grid-column:1/-1;padding:14px 24px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px}
-        .adm-status{font-size:11px;color:var(--text-t);font-family:var(--fh)}
-        .adm-hint{font-size:11px;color:var(--text-t);margin-top:6px;line-height:1.5}
         .adm-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
         .adm-row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
         .adm-ben-row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
@@ -358,14 +350,21 @@
         .adm-ben-del{width:32px;height:32px;border-radius:var(--rs);border:1px solid var(--border);background:transparent;color:var(--text-t);cursor:pointer;display:grid;place-items:center;flex-shrink:0;transition:all .15s ease}
         .adm-ben-del:hover{border-color:rgba(248,113,113,.3);color:#f87171}
         .adm-ben-del i{width:13px;height:13px}
-        .adm-ben-add{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border:1px dashed var(--border);border-radius:var(--rs);background:transparent;color:var(--text-t);cursor:pointer;transition:all .15s ease;display:inline-flex;align-items:center;gap:6px}
+        .adm-ben-add{font-family:var(--fh);font-size:10px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:7px 14px;border:1px dashed var(--border);border-radius:var(--rs);background:transparent;color:var(--text-t);cursor:pointer;transition:all .15s ease;display:inline-flex;align-items:center;gap:6px;margin-top:4px}
         .adm-ben-add:hover{border-color:var(--accent-dim);color:var(--accent)}
         .adm-ben-add i{width:12px;height:12px}
         .adm-img-preview{margin-top:8px;max-width:140px;max-height:90px;border-radius:var(--rs);border:1px solid var(--border);object-fit:cover;display:none}
         .adm-img-preview.visible{display:block}
-        .adm-img-row{display:flex;gap:8px;align-items:center}
+        .adm-img-row{display:flex;gap:8px;align-items:flex-start}
         .adm-img-row .adm-input{flex:1}
-        @media(max-width:768px){.adm-panel{grid-template-columns:1fr;max-height:100vh;border-radius:0}.adm-side{border-right:none;border-bottom:1px solid var(--border);max-height:180px}.adm-nav{flex-direction:row;overflow-x:auto;padding:8px}.adm-nav-item{white-space:nowrap;font-size:10.5px;padding:8px 10px}.adm-row,.adm-row-3{grid-template-columns:1fr}.ip-widget{bottom:60px}}
+        .adm-footer{grid-column:1/-1;padding:14px 24px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px}
+        .adm-status{font-size:11px;color:var(--text-t);font-family:var(--fh)}
+        .adm-hint{font-size:11px;color:var(--text-t);margin-top:6px;line-height:1.5}
+
+        @media(max-width:1024px){:root{--pad:72px}.about-stats{grid-template-columns:repeat(2,1fr)}.about-stats .as:nth-child(2)::after{display:none}.about-grid{grid-template-columns:repeat(3,1fr)}.ogrid{grid-template-columns:repeat(2,1fr)}.ocard.f1{grid-column:span 2}.mode{grid-template-columns:1fr;gap:32px}.mode:nth-child(even){direction:ltr}.rgrid{grid-template-columns:repeat(3,1fr)}.kgrid{grid-template-columns:repeat(3,1fr)}.creators-inner{grid-template-columns:1fr;gap:40px}.fgrid{grid-template-columns:1fr 1fr;gap:36px}}
+        @media(max-width:768px){:root{--pad:56px}.nlinks,.nplay{display:none}.ntog{display:block}.mmenu{display:flex}.about-grid{grid-template-columns:repeat(2,1fr)}.about-grid .acard:last-child{grid-column:span 2}.ogrid{grid-template-columns:1fr}.ocard.f1{grid-column:span 1}.team-owners{grid-template-columns:1fr}.team-grid{grid-template-columns:repeat(2,1fr)}.team-grid .tc-card:nth-last-child(-n+2){grid-column:span 1}.rgrid{grid-template-columns:repeat(2,1fr)}.kgrid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr;gap:28px}.fbot{flex-direction:column;text-align:center}.ranks-hdr{flex-direction:column;align-items:flex-start}.period-bar{flex-direction:column;align-items:flex-start}.ip-widget{bottom:14px;right:14px;font-size:10px;padding:7px 12px 7px 10px}.toast{bottom:58px;right:14px}.adm-trigger{bottom:14px;left:14px}}
+        @media(max-width:480px){.about-grid{grid-template-columns:1fr}.about-grid .acard:last-child{grid-column:span 1}.about-stats{grid-template-columns:1fr 1fr}.team-grid{grid-template-columns:1fr}.rgrid{grid-template-columns:1fr}.kgrid{grid-template-columns:1fr}.hacts{flex-direction:column;width:100%}.hacts .btn{width:100%;justify-content:center}.shop-acts{flex-direction:column;width:100%}.shop-acts .btn{width:100%;justify-content:center}.discord-cta{padding:48px 20px}.discord-cta .btn{width:100%;justify-content:center}.dc-stat-dot{display:none}.ow-socials{flex-wrap:wrap}}
+        @media(max-width:768px){.adm-panel{grid-template-columns:1fr;max-height:100vh;border-radius:0}.adm-side{border-right:none;border-bottom:1px solid var(--border);max-height:180px}.adm-nav{flex-direction:row;overflow-x:auto;padding:8px}.adm-nav-item{white-space:nowrap;font-size:10.5px;padding:8px 10px}.adm-row,.adm-row-3{grid-template-columns:1fr}}
     </style>
 </head>
 <body>
@@ -480,7 +479,7 @@
 <section class="creators" id="creators">
     <div class="ctn">
         <div class="creators-inner rv">
-            <div class="creators-vis">
+            <div class="creators-vis" id="creatorsVis">
                 <div class="creators-vis-glow"></div>
                 <i data-lucide="video"></i>
                 PROGRAM TWORCOW
@@ -509,21 +508,25 @@
             <h2 class="sh">Znajdz nas na Discord</h2>
             <p class="st">To tutaj dzieje sie wszystko — rozmowy, pomoc, eventy i ogloszenia. Dolacz juz teraz!</p>
             <div class="dc-info">
-                <div class="dc-stat"><div class="dc-stat-n">20+</div><div class="dc-stat-l">Czlonkow</div></div>
+                <div class="dc-stat"><div class="dc-stat-n" id="dcMembers">20+</div><div class="dc-stat-l">Czlonkow</div></div>
                 <div class="dc-stat-dot"></div>
-                <div class="dc-stat"><div class="dc-stat-n">Discord dostepny od:</div><div class="dc-stat-l">21.08.2026r!</div></div>
+                <div class="dc-stat"><div class="dc-stat-n" id="dcSince">21.08.2026r!</div><div class="dc-stat-l">Discord dostepny od:</div></div>
                 <div class="dc-stat-dot"></div>
-                <div class="dc-stat"><div class="dc-stat-n">24/7</div><div class="dc-stat-l">Aktywnosc i Wsparcie</div></div>
+                <div class="dc-stat"><div class="dc-stat-n" id="dcOnline">5+</div><div class="dc-stat-l">Online teraz</div></div>
             </div>
-            <a href="#" class="btn bd" id="discordLink">Dolacz na Discord <i data-lucide="external-link" style="width:14px;height:14px"></i></a>
-            <div class="dc-online"><span class="dc-online-dot"></span>Discord jest aktywny i szybko sie rozwija — dolacz teraz</div>
+            <a href="#" class="btn bd" id="socialDCLink">Dolacz na Discord <i data-lucide="message-circle" style="width:14px;height:14px"></i></a>
+            <div class="dc-online"><span class="dc-online-dot"></span><span id="dcOnlineText">5+ osob online teraz</span></div>
         </div>
     </div>
 </section>
 
 <section class="faq" id="faq">
     <div class="ctn">
-        <div class="faq-hdr"><div class="sl c rv">FAQ</div><h2 class="sh rv d1">Najczestsze pytania</h2><p class="st c rv d2">Odpowiedzi na to, co spolecznosc PakoPlay pytaja najczesciej</p></div>
+        <div class="faq-hdr">
+            <div class="sl c rv">FAQ</div>
+            <h2 class="sh rv d1">Czesto zadawane pytania</h2>
+            <p class="st c rv d2">Odpowiedzi na najczestsze pytania o PakoPlay.PL.</p>
+        </div>
         <div class="flist" id="faqList"></div>
     </div>
 </section>
@@ -533,41 +536,56 @@
         <div class="fgrid">
             <div>
                 <a href="#" class="nl">PakoPlay<span>.PL</span></a>
-                <p class="fdesc" id="footerDesc"></p>
+                <p class="fdesc" id="footerDesc">Serwer Minecraft z unikalnym Survival, systemem dzialek, sklepem i aktywna spolecznoscia.</p>
             </div>
             <div>
-                <div class="fh">Nawigacja</div>
-                <ul class="flinks" id="footerLinks1"></ul>
+                <h4 class="fh4">Nawigacja</h4>
+                <ul class="flinks">
+                    <li><a href="#about">O serwerze</a></li>
+                    <li><a href="#offer">Co oferujemy</a></li>
+                    <li><a href="#modes">Tryby</a></li>
+                    <li><a href="#shop">Sklep</a></li>
+                    <li><a href="#team">Ekipa</a></li>
+                </ul>
             </div>
             <div>
-                <div class="fh">Przydatne</div>
-                <ul class="flinks" id="footerLinks2"></ul>
+                <h4 class="fh4">Social</h4>
+                <ul class="flinks">
+                    <li><a href="#" id="footerDC">Discord</a></li>
+                    <li><a href="#" id="footerYT">YouTube</a></li>
+                    <li><a href="#" id="footerTT">TikTok</a></li>
+                </ul>
             </div>
         </div>
         <div class="fbot">
-            <span class="fcopy">&copy; 2024 PakoPlay.PL — Wszelkie prawa zastrzezone.</span>
+            <span class="fcopy" id="footerCopy">&copy; 2025 PakoPlay.PL — Wszelkie prawa zastrzezone.</span>
+            <span class="fcopy" id="adminTriggerFooter" style="cursor:pointer;opacity:0.3">Panel edycji</span>
         </div>
     </div>
 </footer>
 
 <div class="toast" id="toast">
-    <span class="toast-ic"><i data-lucide="check-circle"></i></span>
-    <span id="toastText">Skopiowano!</span>
+    <span class="toast-ic"><i data-lucide="check-circle" style="width:15px;height:15px"></i></span>
+    <span id="toastMsg">Skopiowano!</span>
 </div>
 
 <div class="ip-widget" id="ipWidget" onclick="App.copyIP()">
-    <i data-lucide="copy"></i>
-    <span><strong id="ipWidgetIP">pakoplay.pl</strong></span>
+    <i data-lucide="copy" style="width:13px;height:13px"></i>
+    <strong id="ipWidgetText">pakoplay.pl</strong>
 </div>
+
+<button class="adm-trigger" id="admTrigger" title="Panel edycji">
+    <i data-lucide="settings" style="width:16px;height:16px"></i>
+</button>
 
 <div class="adm-overlay" id="admOverlay">
     <div class="adm-panel">
         <div class="adm-head">
-            <span class="adm-head-title">Panel konfiguracji</span>
+            <span class="adm-head-title">Panel edycji — PakoPlay.PL</span>
             <div class="adm-head-actions">
-                <button class="adm-btn danger" onclick="App.resetData()">Resetuj</button>
-                <button class="adm-btn primary" onclick="App.saveData()">Zapisz</button>
-                <button class="adm-btn close" onclick="App.closeAdmin()">&times;</button>
+                <button class="adm-btn danger" id="admReset">Przywroc domyslne</button>
+                <button class="adm-btn primary" id="admSave">Zapisz zmiany</button>
+                <button class="adm-btn close" id="admClose">&times;</button>
             </div>
         </div>
         <div class="adm-side">
@@ -575,919 +593,1081 @@
         </div>
         <div class="adm-body" id="admBody"></div>
         <div class="adm-footer">
-            <span class="adm-status" id="admStatus">Wszystko zapisane</span>
-            <div style="display:flex;gap:8px">
-                <button class="adm-btn danger" onclick="App.resetData()">Resetuj dane</button>
-                <button class="adm-btn primary" onclick="App.saveData()">Zapisz zmiany</button>
-            </div>
+            <span class="adm-status" id="admStatus">Gotowy</span>
+            <span class="adm-status">Zmiany zapisuja sie automatycznie w przegladarce</span>
         </div>
     </div>
 </div>
 
 <script>
-function esc(s){if(!s)return '';return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;')}
+/* ================================================================
+   KONFIGURACJA — TUTAJ EDYTUJESZ WSZYSTKO
+   Jedno miejsce, wszystkie dane strony.
+   Szukaj komentarzy typu ===== SEKCJA — TUTAJ EDYTUJ =====
+   ================================================================ */
+function getDefaultConfig() {
+    return {
 
-/* Blokada dostepu do panelu — zamknieta w closure, nie mozna obejsc z konsoli */
-var _admGate=(function(){var u=false;return{unlock:function(){u=true},check:function(){return u}}})();
+        /* ===== TEKSTY — TUTAJ EDYTUJ =====
+           Nazwa strony, naglowki, opisy, slogan, badge, teksty sekcji.
+           Kazde pole odpowiada jednemu tekstowi na stronie. */
+        nazwaStrony: "PakoPlay.PL",
+        naglowek: "PakoPlay",
+        slogan: "Twoj serwer Minecraft",
+        opis: "Serwer Minecraft, ktory stawia na spolecznosc, jakosc i doswiadczenie — Dolacz i przekonaj sie sam.",
+        badgeTekst: "Serwer offline",
+        aboutTytul: "Poznaj PakoPlay.PL",
+        offerTytul: "Dlaczego PakoPlay.PL?",
+        offerPodtytul: "Nie jestesmy kolejnym serwerem z listy. Oto co nas wyroznia.",
+        modesPodtytul: "Kazdy tryb to przemyslany system, nie skopiowany szablon.",
+        teamPodtytul: "Ludzie, ktorzy buduja PakoPlay.PL — kazdego dnia.",
+        shopTytul: "SKLEP PakoPlay.PL",
+        shopOpis: "Rangi i klucze. Wszystko uczciwe, bez pay-to-win.",
+        footerOpis: "Serwer Minecraft z unikalnym Survival, systemem dzialek, sklepem i aktywna spolecznoscia.",
 
-var DEFAULT_DATA={
-    server:{ip:'pakoplay.pl',discord:'https://discord.gg/pakoplay',shop:'https://sklep.pakoplay.pl',online:true},
-    hero:{badge:'Serwer online',slogan:'Twoj serwer Minecraft',desc:'Serwer Minecraft, ktory stawia na spolecznosc, jakosc i doswiadczenie — Dolacz i przekonaj sie sam.'},
-    aboutTitle:'Poznaj PakoPlay.PL',
-    offerTitle:'Dlaczego PakoPlay.PL?',
-    offerSub:'Nie jestesmy kolejnym serwerem z listy. Oto co nas wyroznia.',
-    modesSub:'Kazdy tryb to przemyslany system, nie skopiowany szablon.',
-    teamSub:'Ludzie, ktorzy buduja PakoPlay.PL — kazdego dnia.',
-    shopBannerTitle:'SKLEP PakoPlay.PL',
-    shopBannerDesc:'Rangi i klucze. Wszystko uczciwe, bez pay-to-win.',
-    stats:[
-        {value:'100+',label:'Graczy'},
-        {value:'5+',label:'Trybow gry'},
-        {value:'99.9%',label:'Uptime'},
-        {value:'24/7',label:'Wsparcie'}
-    ],
-    aboutCards:[
-        {icon:'shield',title:'Bezpieczenstwo',desc:'Zaawansowane zabezpieczenia anty-cheat i ochrona danych graczy.'},
-        {icon:'zap',title:'Wysoka wydajnosc',desc:'Dedykowany serwer z niskim pingiem i brakiem lagow.'},
-        {icon:'users',title:'Spolecznosc',desc:'Aktywna i przyjazna spolecznosc, ktora zawsze pomoze.'},
-        {icon:'settings',title:'Ciagly rozwój',desc:'Regularne aktualizacje, nowe funkcje i poprawki.'},
-        {icon:'headphones',title:'Wsparcie 24/7',desc:'Zespol administracji zawsze gotowy do pomocy.'}
-    ],
-    offerCards:[
-        {icon:'swords',title:'Unikalny Survival',desc:'Nasze Survival to nie zwykly tryb — system dzialek, ekonomia, rankingi i wydarzenia.',span:true,purp:false},
-        {icon:'shield-check',title:'Anty-cheat',desc:'Zaawansowany system wykrywania cheaterow. Grywalnosc bez oszustw.',span:false,purp:false},
-        {icon:'trending-up',title:'System ekonomii',desc:'Wlasna waluta, sklep gracza, handel miedzy graczami i aukcje.',span:false,purp:false},
-        {icon:'trophy',title:'Rankingi',desc:'Konkurencja w wielu kategoriach — od czasu gry po osiagniecia.',span:false,purp:true},
-        {icon:'calendar',title:'Eventy',desc:'Regularne wydarzenia z nagrodami — build battle, PvP, drop party i wiecej.',span:false,purp:true}
-    ],
-    modes:[
-        {name:'Survival',desc:'Klasyczny Survival z ekonomia, rankingami i eventami. Buduj, eksploruj i rywalizuj z innymi graczami.',tag:'Popularny',status:'active',meta:['1.20+','Ekonomia','Rankingi'],feats:['Ranking','Eventy','Handel','Aukcje'],icon:'swords',bgImage:''},
-        {name:'Survival + Dzialki',desc:'Survival z systemem dzialek — ochrona terenu, budowa w spokoju i wlasny kawalek swiata dla kazdego gracza.',tag:'Popularny',status:'active',meta:['1.20+','Dzialki','Ochrona'],feats:['Dzialki','Wspolpraca','Ochrona','Plotki'],icon:'map',bgImage:''}
-    ],
-    teamMain:{name:'Wlasciciel',role:'Wlasciciel & Zalozyciel',initials:'WP',description:'Zalozyciel i glowny administrator serwera PakoPlay.PL.',details:[{icon:'map-pin',text:'Polska'},{icon:'calendar',text:'Od 2024'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-    teamOwners:[
-        {name:'Co-Owner',role:'Co-Owner',initials:'CO',description:'Wspolwlasciciel serwera, pomaga w zarzadzaniu i rozwoju.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-        {name:'Co-Owner 2',role:'Co-Owner',initials:'C2',description:'Wspolwlasciciel serwera, dba o techniczna strone projektu.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''}
-    ],
-    teamMembers:[
-        {name:'Administrator',role:'Administrator',initials:'AD',description:'Zarzadza serwerem i pilnuje porzadku.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-        {name:'Moderator',role:'Moderator',initials:'MO',description:'Pomaga graczom i dba o przestrzeganie regulaminu.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-        {name:'Helper',role:'Helper',initials:'HE',description:'Pomaga nowym graczom i odpowiada na pytania.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-        {name:'Builder',role:'Builder',initials:'BU',description:'Tworzy budowlki i mapy na serwerze.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-        {name:'Developer',role:'Developer',initials:'DV',description:'Programuje pluginy i rozwija techniczna strone serwera.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''},
-        {name:'Support',role:'Support',initials:'SU',description:'Obsluguje zgloszenia i pomaga w rozwiazywaniu problemow.',details:[{icon:'map-pin',text:'Polska'}],youtube:'#',tiktok:'#',discord:'#',photo:''}
-    ],
-    ranks:{
-        periods:['7 dni','30 dni','3 miesiace'],
-        items:[
-            {name:'VIP',prices:['4.99 PLN','9.99 PLN','24.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Kolorowy nick','Kit VIP co 24h','2 home','+1 dzialka','Priorytet wejscia']},
-            {name:'SVIP',prices:['9.99 PLN','19.99 PLN','49.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z VIP','Kit SVIP co 24h','5 home','+2 dzialki','Dostep do /fly w lobby','Specjalny prefix']},
-            {name:'MVP',prices:['14.99 PLN','29.99 PLN','74.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z SVIP','Kit MVP co 12h','10 home','+3 dzialki','Pet towarzysz','Wlasny sklep']},
-            {name:'Legend',prices:['24.99 PLN','49.99 PLN','124.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z MVP','Kit Legend co 6h','20 home','Nielimitowane dzialki','Wlasna czasteczka','Tag na Discord']},
-            {name:'God',prices:['39.99 PLN','79.99 PLN','199.99 PLN'],durs:['Na 7 dni','Na 30 dni','Na 3 miesiace'],benefits:['Wszystko z Legend','Kit God co 1h','Nielimitowane home','Wlasna wyspa','Customowe komendy','Priorytetowe wsparcie']}
-        ]
-    },
-    keys:[
-        {name:'Klucz 1',desc:'Podstawowy klucz z losowymi nagrodami.',price:'4.99 PLN'},
-        {name:'Klucz 2',desc:'Sredni klucz z lepszymi szansami.',price:'9.99 PLN'},
-        {name:'Klucz 3',desc:'Premium klucz z gwarantowanymi dropami.',price:'19.99 PLN'},
-        {name:'Klucz 4',desc:'Legendarny klucz z ekskluzywnymi nagrodami.',price:'29.99 PLN'},
-        {name:'Klucz 5',desc:'Mityczny klucz z najrzadszymi itemami.',price:'49.99 PLN'}
-    ],
-    faq:[
-        {q:'Jak dolaczyc do serwera?',a:'Wpisz IP pakoplay.pl w Minecraft (Java Edition, wersja 1.20+). Jesli masz problemy, zglos sie na naszego Discorda.'},
-        {q:'Czy serwer jest darmowy?',a:'Tak, podstawowa gra na serwerze jest calkowicie darmowa. Sklep zawiera opcjonalne rangi i klucze.'},
-        {q:'Jak zglosic gracza?',a:'Uzyj komendy /report w grze lub napisz na kanale #zgloszenia na Discordzie.'},
-        {q:'Czy moge odzyskac przedmioty po smierci?',a:'W trybie Survival przedmioty z gracza wypadaja po smierci, ale mozna je podniesc. W niektorych strefach dziala keepInventory.'},
-        {q:'Jak zdobyc range?',a:'Range mozna kupic w sklepie na stronie. Kazda ranga daje unikalne przywileje.'},
-        {q:'Czy serwer ma anty-cheat?',a:'Tak, uzywamy zaawansowanego systemu anty-cheat, ktory stale sie rozwija.'}
-    ],
-    footerDesc:'PakoPlay.PL — serwer Minecraft dla spolecznosci. Budujemy cos wlasnego.',
-    footerLinks1:[{text:'O serwerze',href:'#about'},{text:'Co oferujemy',href:'#offer'},{text:'Tryby gry',href:'#modes'},{text:'Sklep',href:'#shop'}],
-    footerLinks2:[{text:'Zespol',href:'#team'},{text:'FAQ',href:'#faq'},{text:'Discord',href:'#'},{text:'Regulamin',href:'#'}]
-};
+        /* ===== IP SERWERA — TUTAJ EDYTUJ =====
+           To IP pojawia sie w hero, w widgetie w rogu ekranu
+           i jest kopiowane przyciskiem "Graj teraz". */
+        ip: "pakoplay.pl",
 
-var App={
-    data:null,
-    dirty:false,
-    currentPeriod:0,
-    admSection:'texts',
-    toastTimer:null,
-    canvasAnim:null,
+        /* ===== LINKI — TUTAJ EDYTUJ =====
+           Wklej pelne URL-e (np. https://discord.gg/xxxx).
+           Sa uzywane w przyciskach na calej stronie. */
+        linkDiscord: "#",
+        linkYoutube: "#",
+        linkTiktok: "#",
+        linkSklep: "#",
+        linkInne: "#",
 
-    init:function(){
-        this.loadData();
-        this.render();
-        this.initCanvas();
-        this.initNav();
-        this.initScrollReveal();
-        this.initMobileMenu();
-        this.initFAQ();
-        this.initPeriodToggle();
-        this.initAdmin();
-        this.updateLinks();
-        if(typeof lucide!=='undefined')lucide.createIcons();
-    },
+        /* ===== ZDJECIA — TUTAJ EDYTUJ =====
+           Wklej URL obrazka (np. https://i.imgur.com/xxx.png).
+           Jesli pole jest puste, wyswietla sie inicjaly/placeholder. */
+        zdjecia: {
 
-    loadData:function(){
-        try{
-            var s=localStorage.getItem('pakoplay_data');
-            if(s){this.data=JSON.parse(s);this.mergeDefaults(this.data,DEFAULT_DATA)}
-            else{this.data=JSON.parse(JSON.stringify(DEFAULT_DATA))}
-        }catch(e){this.data=JSON.parse(JSON.stringify(DEFAULT_DATA))}
-    },
+            /* ===== ZDJECIA ZESPOLU — TUTAJ EDYTUJ =====
+               1 glowny wlasciciel + 2 wspolwlascicieli + 6 czlonkow = 9 zdjec */
+            zespolGlowny: "https://imgur.com/a/Ggd8L9F",          /* Zdjecie glownego wlasciciela */
+            zespolWlasciciel1: "",     /* Zdjecie wspolwlasciciela 1 */
+            zespolWlasciciel2: "",     /* Zdjecie wspolwlasciciela 2 */
+            zespolCzlonek1: "",       /* Zdjecie czlonka 1 */
+            zespolCzlonek2: "",       /* Zdjecie czlonka 2 */
+            zespolCzlonek3: "",       /* Zdjecie czlonka 3 */
+            zespolCzlonek4: "",       /* Zdjecie czlonka 4 */
+            zespolCzlonek5: "",       /* Zdjecie czlonka 5 */
+            zespolCzlonek6: "",       /* Zdjecie czlonka 6 */
 
-    mergeDefaults:function(target,def){
-        for(var k in def){
-            if(!(k in target))target[k]=JSON.parse(JSON.stringify(def[k]));
-            else if(typeof def[k]==='object'&&def[k]!==null&&!Array.isArray(def[k])&&typeof target[k]==='object'&&target[k]!==null)
-                this.mergeDefaults(target[k],def[k]);
-        }
-    },
+            /* ===== ZDJECIA TRYBOW GRY — TUTAJ EDYTUJ =====
+               Pojawiaja sie w sekcji "Tryby gry" jako tlo wizualizacji. */
+            survival: "",              /* Zdjecie trybu Survival */
+            survivalDzialki: "",       /* Zdjecie trybu Survival + Dzialki */
 
-    saveData:function(){
-        this.collectAllData();
-        try{
-            localStorage.setItem('pakoplay_data',JSON.stringify(this.data));
-            this.dirty=false;
-            this.updateStatus();
-            this.toast('Zapisano pomyslnie');
-            this.render();
-            if(typeof lucide!=='undefined')lucide.createIcons();
-            this.initScrollReveal();
-        }catch(e){this.toast('Blad zapisu — dane zbyt duze (zmniejsz zdjecia)')}
-    },
+            /* ===== POZOSTALE ZDJECIA — TUTAJ EDYTUJ ===== */
+            "twórcy": ""              /* Zdjecie w sekcji "Program tworcow" */
+        },
 
-    resetData:function(){
-        if(!confirm('Czy na pewno chcesz zresetowac wszystkie dane do domyslnych?'))return;
-        localStorage.removeItem('pakoplay_data');
-        this.data=JSON.parse(JSON.stringify(DEFAULT_DATA));
-        this.dirty=false;
-        this.updateStatus();
-        this.showAdminSection(this.admSection);
-        this.render();
-        if(typeof lucide!=='undefined')lucide.createIcons();
-        this.initScrollReveal();
-        this.toast('Dane zostaly zresetowane');
-    },
+        /* ===== STATYSTYKI — TUTAJ EDYTUJ =====
+           Cztery liczby w gornym pasku sekcji "O serwerze". */
+        statystyki: [
+            { liczba: "100+", etykieta: "Graczy" },
+            { liczba: "2", etykieta: "Tryby gry" },
+            { liczba: "99.9%", etykieta: "Uptime" },
+            { liczba: "24/7", etykieta: "Online" }
+        ],
 
-    getVal:function(path){
-        return path.split('.').reduce(function(o,k){
-            if(o===null||o===undefined)return '';
-            return o[k];
-        },this.data)||'';
-    },
+        /* ===== O SERWERZE (KARTY) — TUTAJ EDYTUJ =====
+           Piec malych kart w sekcji "O serwerze".
+           ikona — nazwa ikony z Lucide (np. shield-check, zap, users). */
+        oSerwerze: [
+            { ikona: "shield-check", tytul: "Bezpieczenstwo", opis: "Anty-cheat, backupy co 6h, ochrona przed atakami DDoS." },
+            { ikona: "zap", tytul: "Wydajnosc", opis: "Dedykowany serwer z niskim pingiem dla graczy z PL." },
+            { ikona: "users", tytul: "Spolecznosc", opis: "Aktywny Discord, eventy, konkursy i pomoc administracji." },
+            { ikona: "settings", tytul: "Konfiguracja", opis: "Przemyslany balans — nie za latwo, nie za trudno." },
+            { ikona: "headphones", tytul: "Wsparcie", opis: "Szybka pomoc na Discordzie — administracja zawsze blisko." }
+        ],
 
-    setVal:function(path,value){
-        var p=path.split('.');
-        var o=this.data;
-        for(var i=0;i<p.length-1;i++){
-            if(o[p[i]]===undefined)o[p[i]]={};
-            o=o[p[i]];
-        }
-        o[p[p.length-1]]=value;
-    },
+        /* ===== OFERTA "DLACZEGO MY" — TUTAJ EDYTUJ =====
+           5 paneli: 1 duzy (duzy:true) + 4 mniejsze.
+           Uklad: rzad 1 = [DUZY span 2] [maly], rzad 2 = [maly] [maly] [maly].
+           purp:true zamienia kolor ikony na fioletowy. */
+        oferta: [
+            { ikona: "sword", tytul: "Unikalny Gameplay", opis: "Nasze tryby nie sa kopia innych serwerow. Kazdy mechanik jest dopracowany od zera i testowany przez spolecznosc.", duzy: true, purp: false },
+            { ikona: "coins", tytul: "Uczciwy Sklep", opis: "Zadnych pay-to-win. Rangi to kosmetyki i udogodnienia, nie przewaga.", duzy: false, purp: false },
+            { ikona: "headset", tytul: "Szybkie Wsparcie", opis: "Administracja odpowiada w ciagu minut na Discordzie. Zadnego czekania dniami.", duzy: false, purp: false },
+            { ikona: "refresh-cw", tytul: "Ciwkle Aktualizacje", opis: "Regularne aktualizacje, nowe funkcje i poprawki na bazie opinii graczy.", duzy: false, purp: false },
+            { ikona: "calendar", tytul: "Eventy", opis: "Regularne eventy z nagrodami — PvP, budowanie, wyzwania i wiecej.", duzy: false, purp: true }
+        ],
 
-    collectAllData:function(){
-        var self=this;
-        var inputs=document.querySelectorAll('#admBody [data-path]');
-        inputs.forEach(function(inp){
-            var p=inp.dataset.path;
-            self.setVal(p,inp.value);
-        });
-    },
-
-    render:function(){
-        this.renderHero();
-        this.renderAbout();
-        this.renderOffer();
-        this.renderModes();
-        this.renderTeam();
-        this.renderRanks();
-        this.renderKeys();
-        this.renderFAQ();
-        this.renderFooter();
-    },
-
-    renderHero:function(){
-        var d=this.data;
-        var badgeText=d.hero.badge||(d.server.online?'Serwer online':'Serwer offline');
-        document.getElementById('heroBadgeText').textContent=badgeText;
-        document.getElementById('heroSlog').textContent=d.hero.slogan;
-        document.getElementById('heroDesc').textContent=d.hero.desc;
-        document.getElementById('heroIP').textContent=d.server.ip;
-        document.getElementById('ipWidgetIP').textContent=d.server.ip;
-        var badge=document.getElementById('heroBadge');
-        if(d.server.online){badge.style.borderColor='rgba(74,222,128,.2)';badge.style.color='#4ade80';badge.querySelector('.hbdot').style.background='#4ade80'}
-        else{badge.style.borderColor='rgba(248,113,113,.2)';badge.style.color='#f87171';badge.querySelector('.hbdot').style.background='#f87171'}
-    },
-
-    renderAbout:function(){
-        var d=this.data;
-        document.getElementById('aboutTitle').textContent=d.aboutTitle;
-        var sh='';
-        d.stats.forEach(function(s){sh+='<div class="as"><div class="as-n">'+esc(s.value)+'</div><div class="as-l">'+esc(s.label)+'</div></div>'});
-        document.getElementById('aboutStats').innerHTML=sh;
-        var gh='';
-        d.aboutCards.forEach(function(c){gh+='<div class="acard rv"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="acard-t">'+esc(c.title)+'</div><div class="acard-d">'+esc(c.desc)+'</div></div>'});
-        document.getElementById('aboutGrid').innerHTML=gh;
-    },
-
-    renderOffer:function(){
-        var d=this.data;
-        document.getElementById('offerTitle').textContent=d.offerTitle;
-        document.getElementById('offerSub').textContent=d.offerSub;
-        var gh='';
-        d.offerCards.forEach(function(c){
-            gh+='<div class="ocard rv'+(c.span?' f1':'')+'"><div class="ocard-glow"></div>'+(c.purp?'<div class="ocard-pglow"></div>':'')+'<div class="acard-ic'+(c.purp?' purp':'')+'"><i data-lucide="'+esc(c.icon)+'"></i></div><div class="ocard-t">'+esc(c.title)+'</div><div class="ocard-d">'+esc(c.desc)+'</div></div>';
-        });
-        document.getElementById('offerGrid').innerHTML=gh;
-    },
-
-    renderModes:function(){
-        var d=this.data;
-        document.getElementById('modesSub').textContent=d.modesSub;
-        var mh='';
-        d.modes.forEach(function(m){
-            var bgStyle=m.bgImage?'background-image:url(\''+esc(m.bgImage)+'\');background-size:cover;background-position:center;':'';
-            var showIcon=!m.bgImage;
-            mh+='<div class="mode rv"><div class="mode-vis" style="'+bgStyle+'">'+(showIcon?'<i data-lucide="'+esc(m.icon||'gamepad-2')+'"></i>'+esc(m.name||'TRYB GRY'):'')+'<div class="mode-vis-glow"></div></div><div>';
-            if(m.tag)mh+='<span class="mode-tag">'+esc(m.tag)+'</span>';
-            mh+='<h3 class="mode-name">'+esc(m.name)+'</h3><p class="mode-desc">'+esc(m.desc)+'</p><div class="mode-meta">';
-            if(m.status==='active')mh+='<span class="mode-meta-status active">Aktywny</span>';
-            else mh+='<span class="mode-meta-status" style="color:var(--text-t);background:var(--bg-card);border:1px solid var(--border)">Offline</span>';
-            (m.meta||[]).forEach(function(mt){mh+='<span class="mode-meta-item">'+esc(mt)+'</span>'});
-            mh+='</div><div class="mode-feats">';
-            (m.feats||[]).forEach(function(f){mh+='<span class="mode-feat">'+esc(f)+'</span>'});
-            mh+='</div></div></div>';
-        });
-        document.getElementById('modesList').innerHTML=mh;
-    },
-
-    renderTeamPerson:function(m,avClass,showSocials){
-        var h='<div class="'+avClass+'"'+(m.photo?' style="background-image:url(\''+esc(m.photo)+'\')"':'')+'>'+(!m.photo?esc(m.initials):'')+'</div>';
-        h+='<div class="'+avClass.replace('av','role')+'">'+esc(m.role)+'</div>';
-        h+='<div class="'+avClass.replace('av','name')+'">'+esc(m.name)+'</div>';
-        if(m.description)h+='<div class="'+avClass.replace('av','desc')+'">'+esc(m.description)+'</div>';
-        if(m.details&&m.details.length){
-            var rowsClass=avClass.replace('av','rows');
-            h+='<div class="'+rowsClass+'"><div class="td-rows">';
-            m.details.forEach(function(d){h+='<div class="td-row"><i data-lucide="'+esc(d.icon)+'"></i>'+esc(d.text)+'</div>'});
-            h+='</div></div>';
-        }
-        if(showSocials){
-            var socClass=avClass.replace('av','socials');
-            var hasAny=(m.youtube&&m.youtube!=='#')||(m.tiktok&&m.tiktok!=='#')||(m.discord&&m.discord!=='#');
-            if(hasAny){
-                h+='<div class="'+socClass+'"><div class="ow-socials">';
-                if(m.youtube&&m.youtube!=='#')h+='<a href="'+esc(m.youtube)+'" target="_blank" rel="noopener" class="ow-soc"><i data-lucide="youtube"></i>YouTube</a>';
-                if(m.tiktok&&m.tiktok!=='#')h+='<a href="'+esc(m.tiktok)+'" target="_blank" rel="noopener" class="ow-soc tk"><i data-lucide="music-2"></i>TikTok</a>';
-                if(m.discord&&m.discord!=='#')h+='<a href="'+esc(m.discord)+'" target="_blank" rel="noopener" class="ow-soc"><i data-lucide="message-circle"></i>Discord</a>';
-                h+='</div></div>';
+        /* ===== TRYBY GRY — TUTAJ EDYTUJ =====
+           Kazdy tryb ma: nazwe, opis, tag, status, meta tagi, cechy.
+           meta i cechy oddzielaj przecinkami (w panelu) lub jako tablice (w kodzie). */
+        trybyGry: [
+            {
+                nazwa: "Survival",
+                opis: "Klasyczny survival Minecraft z dodatkami, ktore go uatrakcyjniaja. System ekonomii, handel miedzy graczami, klany i wojny. Wszystko na dedykowanym swiecie z wlaczonym PvP w wyznaczonych strefach.",
+                tag: "Tryb glowny",
+                status: "Aktywny",
+                meta: ["1.21.4", "PvP Areny", "Ekonomia", "Klany"],
+                cechy: ["Handel graczy", "Custom enchanty", "Ranking PvP", "Wypadki"]
+            },
+            {
+                nazwa: "Survival + Dzialki",
+                opis: "Wszystko co w Survival, ale z systemem dzialek ochronnych. Idealny dla graczy, ktorzy chca budowac w spokoju bez obawy o zniszczenie. Prosty system claimowania, zaprzyjaznieni i zarzadzanie terenem.",
+                tag: "Tryb glowny",
+                status: "Aktywny",
+                meta: ["1.21.4", "Dzialki", "Bezpieczne budowanie", "Grupy"],
+                cechy: ["Claimowanie terenu", "Zaprzyjaznieni", "Brak griefingu", "Proste zasady"]
             }
-        }
-        return h;
-    },
+        ],
 
-    renderTeam:function(){
-        var d=this.data;
-        document.getElementById('teamSub').textContent=d.teamSub;
-        var m=d.teamMain;
-        var mh='<div class="team-main rv"><div class="tm-glow"></div>';
-        mh+=this.renderTeamPerson(m,'tm-av',true);
-        mh+='</div>';
-        document.getElementById('teamMain').innerHTML=mh;
-        var oh='';
-        d.teamOwners.forEach(function(o){
-            oh+='<div class="to-card rv"><div class="to-glow"></div>';
-            oh+=App.renderTeamPerson(o,'to-av',true);
-            oh+='</div>';
-        });
-        document.getElementById('teamOwners').innerHTML=oh;
-        var th='';
-        d.teamMembers.forEach(function(m){
-            th+='<div class="tc-card rv"><div class="tc-glow"></div>';
-            th+=App.renderTeamPerson(m,'tc-av',true);
-            th+='</div>';
-        });
-        document.getElementById('teamGrid').innerHTML=th;
-    },
+        /* ===== ZESPOL — TUTAJ EDYTUJ =====
+           Hierarchia: 1 glowny wlasciciel -> 2 wspolwlascicieli -> 6 czlonkow.
+           Lacznie 9 osob.
+           szczegoly: tablica { ikona: "nazwa-z-lucide", tekst: "opis" }
+           social: tablica { platforma: "Nazwa", link: "URL", ikona: "nazwa-z-lucide" }
+           "tk":true w klasie ow-soc zamienia kolor na fioletowy (TikTok). */
 
-    renderRanks:function(){
-        var self=this;
-        var d=this.data.ranks;
-        var ph='';
-        d.periods.forEach(function(p,i){ph+='<button class="ptab'+(i===self.currentPeriod?' on':'')+'" data-pi="'+i+'">'+esc(p)+'</button>'});
-        document.getElementById('periodToggle').innerHTML=ph;
-        document.querySelectorAll('.ptab').forEach(function(btn){
-            btn.addEventListener('click',function(){
-                var pi=parseInt(btn.dataset.pi);
-                if(pi===self.currentPeriod)return;
-                document.querySelectorAll('.rcard-price,.rcard-dur').forEach(function(el){el.classList.add('switching')});
-                setTimeout(function(){
-                    self.currentPeriod=pi;
-                    document.querySelectorAll('.ptab').forEach(function(b){b.classList.toggle('on',parseInt(b.dataset.pi)===pi)});
-                    self.updateRankPrices();
-                    document.querySelectorAll('.rcard-price,.rcard-dur').forEach(function(el){el.classList.remove('switching')});
-                },200);
-            });
-        });
-        var rh='';
-        d.items.forEach(function(r,i){
-            rh+='<div class="rcard rv"><div class="rcard-glow"></div><div class="rcard-name">'+esc(r.name)+'</div>';
-            rh+='<div class="rcard-dur" data-ri="'+i+'">'+esc(r.durs[self.currentPeriod]||'')+'</div>';
-            rh+='<div class="rcard-price" data-ri="'+i+'">'+esc(r.prices[self.currentPeriod]||'')+'</div>';
-            rh+='<ul class="rcard-bens">';
-            (r.benefits||[]).forEach(function(b){rh+='<li><i data-lucide="check"></i>'+esc(b)+'</li>'});
-            rh+='</ul><a href="'+esc(self.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bp">Kup teraz</a></div>';
-        });
-        document.getElementById('ranksGrid').innerHTML=rh;
-    },
+        /* --- GLOWNY WLASCICIEL (1 osoba) --- */
+        glowny: {
+            imie: "Wlasciciel",
+            rola: "Glowny wlasciciel",
+            opis: "Koordynuje caly projekt od A do Z.",
+            inicjaly: "W",
+            szczegoly: [
+                { ikona: "calendar", tekst: "Na serwerze od: 2025" },
+                { ikona: "map-pin", tekst: "Polska" }
+            ],
+            social: [
+                { platforma: "Discord", link: "#", ikona: "message-circle" }
+            ]
+        },
 
-    updateRankPrices:function(){
-        var d=this.data.ranks;
-        document.querySelectorAll('.rcard-price[data-ri]').forEach(function(el){
-            var i=parseInt(el.dataset.ri);
-            if(d.items[i])el.textContent=d.items[i].prices[App.currentPeriod]||'';
-        });
-        document.querySelectorAll('.rcard-dur[data-ri]').forEach(function(el){
-            var i=parseInt(el.dataset.ri);
-            if(d.items[i])el.textContent=d.items[i].durs[App.currentPeriod]||'';
-        });
-    },
+        /* --- WSPOLWLASCICIELE (2 osoby) --- */
+        wlasciciele: [
+            {
+                imie: "Wspolwlasciciel 1",
+                rola: "Wspolwlasciciel",
+                opis: "Prawa reka wlasciciela, zarzada techniczna strona projektu.",
+                inicjaly: "W1",
+                szczegoly: [
+                    { ikona: "calendar", tekst: "Na serwerze od: 2025" },
+                    { ikona: "map-pin", tekst: "Polska" }
+                ],
+                social: []
+            },
+            {
+                imie: "Wspolwlasciciel 2",
+                rola: "Wspolwlasciciel",
+                opis: "Zarzada spolecznoscia i eventami na serwerze.",
+                inicjaly: "W2",
+                szczegoly: [
+                    { ikona: "calendar", tekst: "Na serwerze od: 2025" },
+                    { ikona: "map-pin", tekst: "Polska" }
+                ],
+                social: []
+            }
+        ],
 
-    renderKeys:function(){
-        var self=this;
-        var kh='';
-        this.data.keys.forEach(function(k){
-            kh+='<div class="kcard rv"><div class="kcard-glow"></div><div class="kcard-name">'+esc(k.name)+'</div>';
-            kh+='<div class="kcard-desc">'+esc(k.desc)+'</div><div class="kcard-price">'+esc(k.price)+' <small></small></div>';
-            kh+='<a href="'+esc(self.data.server.shop)+'" target="_blank" rel="noopener" class="btn btn-sm bpur">Kup teraz</a></div>';
-        });
-        document.getElementById('keysGrid').innerHTML=kh;
-    },
+        /* --- CZLONKOWIE (6 osob) --- */
+        czlonkowie: [
+            {
+                imie: "Admin",
+                rola: "Administrator",
+                opis: "Zarzadza serwerem i pomaga graczom.",
+                inicjaly: "A",
+                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
+                social: []
+            },
+            {
+                imie: "Moderator",
+                rola: "Moderator",
+                opis: "Utrzymuje porzadek na serwerze i Discordzie.",
+                inicjaly: "M",
+                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
+                social: []
+            },
+            {
+                imie: "Builder",
+                rola: "Builder",
+                opis: "Tworzy mapy i budowle na serwerze.",
+                inicjaly: "B",
+                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
+                social: []
+            },
+            {
+                imie: "Helper",
+                rola: "Helper",
+                opis: "Pomoca dla nowych graczy, odpowiada na pytania.",
+                inicjaly: "H",
+                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
+                social: []
+            },
+            {
+                imie: "Developer",
+                rola: "Developer",
+                opis: "Pisze pluginy i rozwiazuje problemy techniczne.",
+                inicjaly: "D",
+                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
+                social: []
+            },
+            {
+                imie: "Grafik",
+                rola: "Grafik",
+                opis: "Tworzy grafiki, logo i materialy promocyjne.",
+                inicjaly: "G",
+                szczegoly: [{ ikona: "calendar", tekst: "Na serwerze od: 2025" }],
+                social: []
+            }
+        ],
 
-    renderFAQ:function(){
-        var fh='';
-        this.data.faq.forEach(function(f,i){
-            fh+='<div class="fitem" data-fi="'+i+'"><button class="fq"><span>'+esc(f.q)+'</span><span class="ft"></span></button>';
-            fh+='<div class="fa"><div class="fa-in">'+esc(f.a)+'</div></div></div>';
-        });
-        document.getElementById('faqList').innerHTML=fh;
-    },
+        /* ===== RANGI — TUTAJ EDYTUJ =====
+           5 rang. Kazda ma nazwe, 3 ceny (okresy) i liste benefitow.
+           Okresy sa przełączane przyciskami na stronie (7 dni / 30 dni / 3 miesiace). */
+        rangi: [
+            {
+                nazwa: "VIP",
+                cena7d: "4.99",      /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
+                cena30d: "14.99",     /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
+                cena3m: "39.99",      /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
+                benefity: ["Kolorowy nick", "Kit VIP co 24h", "/fly na spawnie", "2x home", "Priorytet wejscia"]
+            },
+            {
+                nazwa: "SVIP",
+                cena7d: "9.99",
+                cena30d: "29.99",
+                cena3m: "79.99",
+                benefity: ["Wszystko z VIP", "Kit SVIP co 24h", "/heal co 30min", "5x home", "Efekty czasteczkowe"]
+            },
+            {
+                nazwa: "MVP",
+                cena7d: "19.99",
+                cena30d: "54.99",
+                cena3m: "149.99",
+                benefity: ["Wszystko z SVIP", "Kit MVP co 24h", "/enderchest", "10x home", "Wlasna particle"]
+            },
+            {
+                nazwa: "MVP+",
+                cena7d: "29.99",
+                cena30d: "79.99",
+                cena3m: "199.99",
+                benefity: ["Wszystko z MVP", "Kit MVP+ co 12h", "/nick", "20x home", "Tag na Discordzie"]
+            },
+            {
+                nazwa: "MVP++",
+                cena7d: "49.99",
+                cena30d: "129.99",
+                cena3m: "349.99",
+                benefity: ["Wszystko z MVP+", "Kit MVP++ co 6h", "/ptime", "Nieskonczone home", "Prywatny kanal"]
+            }
+        ],
 
-    renderFooter:function(){
-        document.getElementById('footerDesc').textContent=this.data.footerDesc;
-        var l1='';
-        this.data.footerLinks1.forEach(function(l){l1+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
-        document.getElementById('footerLinks1').innerHTML=l1;
-        var l2='';
-        this.data.footerLinks2.forEach(function(l){l2+='<li><a href="'+esc(l.href)+'">'+esc(l.text)+'</a></li>'});
-        document.getElementById('footerLinks2').innerHTML=l2;
-    },
+        /* ===== OKRESY RANG — TUTAJ EDYTUJ =====
+           Etykiety przyciskow wyboru okresu (nie zmieniaj kluczy: 7d, 30d, 3m). */
+        okresyRang: { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" },
 
-    updateLinks:function(){
-        var dc=this.data.server.discord;
-        var sh=this.data.server.shop;
-        var setH=function(id,href){var el=document.getElementById(id);if(el)el.href=href};
-        setH('heroDCLink',dc);
-        setH('shopLink',sh);
-        setH('shopDCLink',dc);
-        setH('creatorsDCLink',dc);
-        setH('discordLink',dc);
-    },
+        /* ===== KLUCZE — TUTAJ EDYTUJ =====
+           5 kluczy lootboxow z nazwa, opisem i cena. */
+        klucze: [
+            { nazwa: "Klucz zwykly", opis: "Otwiera zwykly lootbox z losowymi przedmiotami.", cena: "2.99" },
+            { nazwa: "Klucz rzadki", opis: "Szansa na lepsze przedmioty niz w zwyklym.", cena: "4.99" },
+            { nazwa: "Klucz epicki", opis: "Gwarantowane epickie przedmioty w kazdym otwarciu.", cena: "9.99" },
+            { nazwa: "Klucz legendarny", opis: "Najlepsze przedmioty, rzadkie dropy i unikaty.", cena: "19.99" },
+            { nazwa: "Klucz mityczny", opis: "Ekstremalnie rzadki klucz z ekskluzywna zawartoscia.", cena: "39.99" }
+        ],
 
-    initCanvas:function(){
-        var c=document.getElementById('hcv');
-        if(!c)return;
-        var ctx=c.getContext('2d');
-        var w,h,particles=[];
-        var self=this;
-        var resize=function(){w=c.width=c.offsetWidth;h=c.height=c.offsetHeight};
-        resize();
-        window.addEventListener('resize',resize);
-        var count=Math.min(60,Math.floor(w*h/18000));
-        for(var i=0;i<count;i++){
-            particles.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,r:Math.random()*1.5+.5,o:Math.random()*.4+.1});
-        }
-        var draw=function(){
-            ctx.clearRect(0,0,w,h);
-            particles.forEach(function(p){
-                p.x+=p.vx;p.y+=p.vy;
-                if(p.x<0)p.x=w;if(p.x>w)p.x=0;
-                if(p.y<0)p.y=h;if(p.y>h)p.y=0;
-                ctx.beginPath();ctx.arc(p.x,p.y,Math.max(.5,p.r),0,Math.PI*2);
-                ctx.fillStyle='rgba(59,158,255,'+p.o+')';ctx.fill();
-            });
-            for(var i=0;i<particles.length;i++){
-                for(var j=i+1;j<particles.length;j++){
-                    var dx=particles[i].x-particles[j].x,dy=particles[i].y-particles[j].y;
-                    var dist=Math.sqrt(dx*dx+dy*dy);
-                    if(dist<120){
-                        ctx.beginPath();ctx.moveTo(particles[i].x,particles[i].y);ctx.lineTo(particles[j].x,particles[j].y);
-                        ctx.strokeStyle='rgba(59,158,255,'+((.12)*(1-dist/120))+')';ctx.lineWidth=.5;ctx.stroke();
-                    }
+        /* ===== FAQ — TUTAJ EDYTUJ =====
+           Dodawaj/usuwaj pytania i odpowiedzi. Pojawiaja sie w sekcji FAQ. */
+        faq: [
+            { pytanie: "Jak dolaczyc do serwera?", odpowiedz: "Wpisz IP pakoplay.pl w Minecraft Java Edition (wersja 1.21.4) i dolacz. Pamietaj o wlaczeniu wersji zgodnej z serwerem." },
+            { pytanie: "Czy serwer jest darmowy?", odpowiedz: "Tak, serwer jest calkowicie darmowy. Sklep zawiera opcjonalne kosmetyki i udogodnienia — zadnego pay-to-win." },
+            { pytanie: "Na jakiej wersji dziala serwer?", odpowiedz: "Serwer dziala na wersji 1.21.4 Minecraft Java Edition." },
+            { pytanie: "Jak zglosic problem lub gracza?", odpowiedz: "Najlepiej przez nasz Discord w kanale #zgloszenia. Administracja odpowiada najszybciej tam." },
+            { pytanie: "Czy moge zaprosic znajomych?", odpowiedz: "Oczywiscie! Im wiecej graczy, tym lepsza spolecznosc. Podaj im IP: pakoplay.pl" },
+            { pytanie: "Jak dzialaja dzialki?", odpowiedz: "W trybie Survival + Dzialki mozesz claimowac teren komenda /claim. Nikt poza toba i twoimi zaprzyjaznionymi nie moze tam budowac." }
+        ]
+    };
+}
+
+/* Wczytaj zapisane zmiany lub uzyj domyslnych */
+var CONFIG = getDefaultConfig();
+try {
+    var saved = localStorage.getItem('pakoplay_config');
+    if (saved) {
+        var parsed = JSON.parse(saved);
+        function deepMerge(target, source) {
+            for (var key in source) {
+                if (source[key] && typeof source[key] === 'object' && !Array.isArray(source[key]) && target[key]) {
+                    deepMerge(target[key], source[key]);
+                } else {
+                    target[key] = source[key];
                 }
             }
-            self.canvasAnim=requestAnimationFrame(draw);
-        };
-        draw();
-    },
+            return target;
+        }
+        CONFIG = deepMerge(getDefaultConfig(), parsed);
+    }
+} catch(e) {}
 
-    initNav:function(){
-        window.addEventListener('scroll',function(){
-            document.getElementById('nav').classList.toggle('sc',window.scrollY>60);
-        },{passive:true});
-    },
+/* ================================================================
+   FUNKCJE POMOCNICZE
+   ================================================================ */
+var App = {};
 
-    initScrollReveal:function(){
-        var obs=new IntersectionObserver(function(entries){
-            entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
-        },{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-        document.querySelectorAll('.rv:not(.vis)').forEach(function(el){obs.observe(el)});
-    },
+App.showToast = function(msg) {
+    var t = document.getElementById('toast');
+    var m = document.getElementById('toastMsg');
+    if (!t || !m) return;
+    m.textContent = msg || 'Skopiowano!';
+    t.classList.add('show');
+    clearTimeout(App._toastTimer);
+    App._toastTimer = setTimeout(function() { t.classList.remove('show'); }, 2500);
+};
 
-    initMobileMenu:function(){
-        var menu=document.getElementById('mmenu');
-        document.getElementById('navTog').addEventListener('click',function(){menu.classList.add('open')});
-        document.getElementById('mcl').addEventListener('click',function(){menu.classList.remove('open')});
-        menu.querySelectorAll('.mlink').forEach(function(a){
-            a.addEventListener('click',function(){menu.classList.remove('open')});
+App.copyIP = function() {
+    var ip = CONFIG.ip || 'pakoplay.pl';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(ip).then(function() {
+            App.showToast('Skopiowano IP: ' + ip);
+            var w = document.getElementById('ipWidget');
+            if (w) { w.classList.add('ip-widget-copied'); setTimeout(function(){ w.classList.remove('ip-widget-copied'); }, 1500); }
+        }).catch(function() { App._fallbackCopy(ip); });
+    } else {
+        App._fallbackCopy(ip);
+    }
+};
+
+App._fallbackCopy = function(ip) {
+    var ta = document.createElement('textarea');
+    ta.value = ip; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); App.showToast('Skopiowano IP: ' + ip); } catch(e) { App.showToast('Nie udalo sie skopiowac'); }
+    document.body.removeChild(ta);
+};
+
+function esc(str) {
+    if (str === null || str === undefined) return '';
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+/* ================================================================
+   RENDEROWANIE SEKCJI
+   ================================================================ */
+
+function renderStats() {
+    var el = document.getElementById('aboutStats');
+    if (!el) return;
+    var html = '';
+    CONFIG.statystyki.forEach(function(s) {
+        html += '<div class="as"><div class="as-n">' + esc(s.liczba) + '</div><div class="as-l">' + esc(s.etykieta) + '</div></div>';
+    });
+    el.innerHTML = html;
+}
+
+function renderAbout() {
+    var el = document.getElementById('aboutGrid');
+    if (!el) return;
+    var html = '';
+    CONFIG.oSerwerze.forEach(function(c, i) {
+        html += '<div class="acard rv d' + (i+1) + '"><div class="acard-glow"></div><div class="acard-ic"><i data-lucide="' + esc(c.ikona) + '"></i></div><div class="acard-t">' + esc(c.tytul) + '</div><div class="acard-d">' + esc(c.opis) + '</div></div>';
+    });
+    el.innerHTML = html;
+}
+
+function renderOffer() {
+    var el = document.getElementById('offerGrid');
+    if (!el) return;
+    var html = '';
+    CONFIG.oferta.forEach(function(c, i) {
+        var cls = 'ocard rv d' + (i+1);
+        if (c.duzy) cls += ' f1';
+        var icCls = 'ocard-ic';
+        if (c.purp) icCls += ' purp';
+        var glow = c.purp ? '<div class="ocard-pglow"></div>' : '<div class="ocard-glow"></div>';
+        html += '<div class="' + cls + '">' + glow + '<div class="' + icCls + '"><i data-lucide="' + esc(c.ikona) + '"></i></div><div class="ocard-t">' + esc(c.tytul) + '</div><div class="ocard-d">' + esc(c.opis) + '</div></div>';
+    });
+    el.innerHTML = html;
+}
+
+function renderModes() {
+    var el = document.getElementById('modesList');
+    if (!el) return;
+    var imgs = CONFIG.zdjecia;
+    var html = '';
+    CONFIG.trybyGry.forEach(function(m, i) {
+        var bgStyle = '';
+        var imgKey = i === 0 ? 'survival' : 'survivalDzialki';
+        if (imgs[imgKey]) bgStyle = ' style="background-image:url(' + esc(imgs[imgKey]) + ')"';
+        var metaHtml = '<span class="mode-meta-status active">' + esc(m.status) + '</span>';
+        m.meta.forEach(function(t) { metaHtml += '<span class="mode-meta-item">' + esc(t) + '</span>'; });
+        var featsHtml = '';
+        m.cechy.forEach(function(f) { featsHtml += '<span class="mode-feat">' + esc(f) + '</span>'; });
+        html += '<div class="mode rv"><div class="mode-vis"' + bgStyle + '><div class="mode-vis-glow"></div>' + (!imgs[imgKey] ? '<i data-lucide="image"></i>ZDJECIE TRYBU' : '') + '</div><div><span class="mode-tag">' + esc(m.tag) + '</span><h3 class="mode-name">' + esc(m.nazwa) + '</h3><p class="mode-desc">' + esc(m.opis) + '</p><div class="mode-meta">' + metaHtml + '</div><div class="mode-feats">' + featsHtml + '</div></div></div>';
+    });
+    el.innerHTML = html;
+}
+
+/* ===== ZESPOL — TUTAJ EDYTUJ (w CONFIG powyzej) ===== */
+function renderTeam() {
+    var imgs = CONFIG.zdjecia;
+
+    /* Glowny wlasciciel (1 karta na srodku) */
+    var mainEl = document.getElementById('teamMain');
+    if (mainEl && CONFIG.glowny) {
+        var g = CONFIG.glowny;
+        var gAvStyle = imgs.zespolGlowny ? ' style="background-image:url(' + esc(imgs.zespolGlowny) + ')"' : '';
+        var gAvContent = imgs.zespolGlowny ? '' : esc(g.inicjaly);
+        var gRows = '';
+        g.szczegoly.forEach(function(d) { gRows += '<div class="td-row"><i data-lucide="' + esc(d.ikona) + '"></i>' + esc(d.tekst) + '</div>'; });
+        var gSocial = '';
+        g.social.forEach(function(s) { gSocial += '<a href="' + esc(s.link) + '" class="ow-soc"><i data-lucide="' + esc(s.ikona) + '"></i>' + esc(s.platforma) + '</a>'; });
+        mainEl.innerHTML = '<div class="team-main rv"><div class="tm-glow"></div><div class="tm-av"' + gAvStyle + '>' + gAvContent + '</div><div class="tm-role">' + esc(g.rola) + '</div><div class="tm-name">' + esc(g.imie) + '</div><div class="tm-desc">' + esc(g.opis) + '</div><div class="tm-rows"><div class="td-rows">' + gRows + '</div></div><div class="tm-socials"><div class="ow-socials">' + gSocial + '</div></div></div>';
+    }
+
+    /* Wspolwlasciciele (2 karty obok siebie) */
+    var ownEl = document.getElementById('teamOwners');
+    if (ownEl) {
+        var html = '';
+        CONFIG.wlasciciele.forEach(function(o, i) {
+            var oKey = 'zespolWlasciciel' + (i+1);
+            var oAvStyle = imgs[oKey] ? ' style="background-image:url(' + esc(imgs[oKey]) + ')"' : '';
+            var oAvContent = imgs[oKey] ? '' : esc(o.inicjaly);
+            var oRows = '';
+            o.szczegoly.forEach(function(d) { oRows += '<div class="td-row"><i data-lucide="' + esc(d.ikona) + '"></i>' + esc(d.tekst) + '</div>'; });
+            var oSocial = '';
+            o.social.forEach(function(s) { oSocial += '<a href="' + esc(s.link) + '" class="ow-soc"><i data-lucide="' + esc(s.ikona) + '"></i>' + esc(s.platforma) + '</a>'; });
+            html += '<div class="to-card rv d' + (i+1) + '"><div class="to-glow"></div><div class="to-av"' + oAvStyle + '>' + oAvContent + '</div><div class="to-role">' + esc(o.rola) + '</div><div class="to-name">' + esc(o.imie) + '</div><div class="to-desc">' + esc(o.opis) + '</div><div class="to-rows"><div class="td-rows">' + oRows + '</div></div><div class="to-socials"><div class="ow-socials">' + oSocial + '</div></div></div>';
         });
-    },
+        ownEl.innerHTML = html;
+    }
 
-    initFAQ:function(){
-        document.getElementById('faqList').addEventListener('click',function(e){
-            var btn=e.target.closest('.fq');
-            if(!btn)return;
-            var item=btn.parentElement;
-            var fa=item.querySelector('.fa');
-            var isOpen=item.classList.contains('on');
-            document.querySelectorAll('.fitem.on').forEach(function(fi){
-                fi.classList.remove('on');
-                fi.querySelector('.fa').style.maxHeight='0';
-            });
-            if(!isOpen){
-                item.classList.add('on');
-                fa.style.maxHeight=fa.scrollHeight+'px';
+    /* Czlonkowie (6 kart, 3 kolumny = 2 rzedy) */
+    var gridEl = document.getElementById('teamGrid');
+    if (gridEl) {
+        var html = '';
+        CONFIG.czlonkowie.forEach(function(c, i) {
+            var cKey = 'zespolCzlonek' + (i+1);
+            var cAvStyle = imgs[cKey] ? ' style="background-image:url(' + esc(imgs[cKey]) + ')"' : '';
+            var cAvContent = imgs[cKey] ? '' : esc(c.inicjaly);
+            var cRows = '';
+            c.szczegoly.forEach(function(d) { cRows += '<div class="td-row"><i data-lucide="' + esc(d.ikona) + '"></i>' + esc(d.tekst) + '</div>'; });
+            html += '<div class="tc-card rv d' + ((i%3)+1) + '"><div class="tc-glow"></div><div class="tc-av"' + cAvStyle + '>' + cAvContent + '</div><div class="tc-role">' + esc(c.rola) + '</div><div class="tc-name">' + esc(c.imie) + '</div><div class="tc-desc">' + esc(c.opis) + '</div><div class="tc-rows"><div class="td-rows">' + cRows + '</div></div></div>';
+        });
+        gridEl.innerHTML = html;
+    }
+}
+
+/* ===== RANGI — TUTAJ EDYTUJ (w CONFIG powyzej) ===== */
+var currentPeriod = '30d';
+var periodPriceKeys = { '7d': 'cena7d', '30d': 'cena30d', '3m': 'cena3m' };
+
+function renderPeriodToggle() {
+    var el = document.getElementById('periodToggle');
+    if (!el) return;
+    var labels = CONFIG.okresyRang || { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" };
+    var html = '';
+    ['7d','30d','3m'].forEach(function(p) {
+        html += '<button class="ptab' + (p === currentPeriod ? ' on' : '') + '" data-period="' + p + '">' + (labels[p] || p) + '</button>';
+    });
+    el.innerHTML = html;
+    el.querySelectorAll('.ptab').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            currentPeriod = this.getAttribute('data-period');
+            el.querySelectorAll('.ptab').forEach(function(b) { b.classList.remove('on'); });
+            this.classList.add('on');
+            updateRankPrices();
+        });
+    });
+}
+
+function renderRanks() {
+    var el = document.getElementById('ranksGrid');
+    if (!el) return;
+    var labels = CONFIG.okresyRang || { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" };
+    var html = '';
+    CONFIG.rangi.forEach(function(r) {
+        var priceKey = periodPriceKeys[currentPeriod];
+        var benHtml = '';
+        r.benefity.forEach(function(b) { benHtml += '<li><i data-lucide="check"></i>' + esc(b) + '</li>'; });
+        html += '<div class="rcard"><div class="rcard-glow"></div><div class="rcard-name">' + esc(r.nazwa) + '</div><div class="rcard-dur">' + esc(labels[currentPeriod] || currentPeriod) + '</div><div class="rcard-price" data-rank="' + esc(r.nazwa) + '">' + esc(r[priceKey]) + ' <small>PLN</small></div><ul class="rcard-bens">' + benHtml + '</ul><a href="' + esc(CONFIG.linkSklep) + '" class="btn btn-sm bp">Kup teraz</a></div>';
+    });
+    el.innerHTML = html;
+}
+
+function updateRankPrices() {
+    var labels = CONFIG.okresyRang || { "7d": "7 dni", "30d": "30 dni", "3m": "3 miesiace" };
+    var priceKey = periodPriceKeys[currentPeriod];
+    document.querySelectorAll('.rcard-price').forEach(function(el) {
+        var rankName = el.getAttribute('data-rank');
+        var rank = CONFIG.rangi.find(function(r) { return r.nazwa === rankName; });
+        if (rank) {
+            el.classList.add('switching');
+            setTimeout(function() {
+                el.innerHTML = esc(rank[priceKey]) + ' <small>PLN</small>';
+                el.classList.remove('switching');
+            }, 200);
+        }
+    });
+    document.querySelectorAll('.rcard-dur').forEach(function(el) {
+        el.textContent = labels[currentPeriod] || currentPeriod;
+    });
+}
+
+function renderKeys() {
+    var el = document.getElementById('keysGrid');
+    if (!el) return;
+    var html = '';
+    CONFIG.klucze.forEach(function(k) {
+        html += '<div class="kcard"><div class="kcard-glow"></div><div class="kcard-name">' + esc(k.nazwa) + '</div><div class="kcard-desc">' + esc(k.opis) + '</div><div class="kcard-price">' + esc(k.cena) + ' <small>PLN</small></div><a href="' + esc(CONFIG.linkSklep) + '" class="btn btn-sm bpur">Kup teraz</a></div>';
+    });
+    el.innerHTML = html;
+}
+
+/* ===== FAQ — TUTAJ EDYTUJ (w CONFIG powyzej) ===== */
+function renderFAQ() {
+    var el = document.getElementById('faqList');
+    if (!el) return;
+    var html = '';
+    CONFIG.faq.forEach(function(f, i) {
+        html += '<div class="fitem" data-faq="' + i + '"><button class="fq"><span>' + esc(f.pytanie) + '</span><span class="ft"></span></button><div class="fa"><div class="fa-in">' + esc(f.odpowiedz) + '</div></div></div>';
+    });
+    el.innerHTML = html;
+}
+
+/* ===== LINKI — aktualizowane automatycznie z CONFIG ===== */
+function updateStaticElements() {
+    var setTxt = function(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; };
+    var setHref = function(id, val) { var el = document.getElementById(id); if (el) el.href = val; };
+
+    setTxt('heroBadgeText', CONFIG.badgeTekst);
+    setTxt('heroSlog', CONFIG.slogan);
+    setTxt('heroDesc', CONFIG.opis);
+    setTxt('heroIP', CONFIG.ip);
+    setTxt('ipWidgetText', CONFIG.ip);
+    setTxt('aboutTitle', CONFIG.aboutTytul);
+    setTxt('offerTitle', CONFIG.offerTytul);
+    setTxt('offerSub', CONFIG.offerPodtytul);
+    setTxt('modesSub', CONFIG.modesPodtytul);
+    setTxt('teamSub', CONFIG.teamPodtytul);
+    setTxt('shopBannerTitle', CONFIG.shopTytul);
+    setTxt('shopBannerDesc', CONFIG.shopOpis);
+    setTxt('footerDesc', CONFIG.footerOpis);
+
+    var ht = document.getElementById('heroTitle');
+    if (ht) ht.innerHTML = esc(CONFIG.naglowek) + '<span class="dot">.PL</span>';
+
+    setHref('heroDCLink', CONFIG.linkDiscord);
+    setHref('shopLink', CONFIG.linkSklep);
+    setHref('shopDCLink', CONFIG.linkDiscord);
+    setHref('creatorsDCLink', CONFIG.linkDiscord);
+    setHref('socialDCLink', CONFIG.linkDiscord);
+    setHref('footerDC', CONFIG.linkDiscord);
+    setHref('footerYT', CONFIG.linkYoutube);
+    setHref('footerTT', CONFIG.linkTiktok);
+
+    var cv = document.getElementById('creatorsVis');
+    if (cv && CONFIG.zdjecia['twórcy']) {
+        cv.style.backgroundImage = 'url(' + esc(CONFIG.zdjecia['twórcy']) + ')';
+    }
+
+    document.title = CONFIG.nazwaStrony + ' — Twoj Serwer.';
+}
+
+function renderAll() {
+    renderStats();
+    renderAbout();
+    renderOffer();
+    renderModes();
+    renderTeam();
+    renderPeriodToggle();
+    renderRanks();
+    renderKeys();
+    renderFAQ();
+    updateStaticElements();
+    if (window.lucide) lucide.createIcons();
+}
+
+/* ================================================================
+   INTERAKCJE (nie edytuj, chyba ze wiesz co robisz)
+   ================================================================ */
+
+function initCanvas() {
+    var canvas = document.getElementById('hcv');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    var particles = [];
+    var count = 50;
+    function resize() {
+        canvas.width = canvas.offsetWidth * (window.devicePixelRatio || 1);
+        canvas.height = canvas.offsetHeight * (window.devicePixelRatio || 1);
+        ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+    }
+    resize();
+    window.addEventListener('resize', function() { ctx.setTransform(1,0,0,1,0,0); resize(); });
+    var w = function() { return canvas.offsetWidth; };
+    var h = function() { return canvas.offsetHeight; };
+    for (var i = 0; i < count; i++) {
+        particles.push({ x: Math.random()*w(), y: Math.random()*h(), vx: (Math.random()-.5)*.25, vy: (Math.random()-.5)*.25, r: Math.random()*1.2+.4, a: Math.random()*.25+.05 });
+    }
+    function draw() {
+        ctx.clearRect(0, 0, w(), h());
+        for (var i = 0; i < particles.length; i++) {
+            var p = particles[i];
+            p.x += p.vx; p.y += p.vy;
+            if (p.x < 0) p.x = w(); if (p.x > w()) p.x = 0;
+            if (p.y < 0) p.y = h(); if (p.y > h()) p.y = 0;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, Math.max(0.1, p.r), 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(59,158,255,' + p.a + ')';
+            ctx.fill();
+            for (var j = i + 1; j < particles.length; j++) {
+                var p2 = particles[j];
+                var dx = p.x - p2.x, dy = p.y - p2.y;
+                var dist = Math.sqrt(dx*dx + dy*dy);
+                if (dist < 100) {
+                    ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(p2.x, p2.y);
+                    ctx.strokeStyle = 'rgba(59,158,255,' + (0.05*(1-dist/100)) + ')';
+                    ctx.lineWidth = 0.5; ctx.stroke();
+                }
+            }
+        }
+        requestAnimationFrame(draw);
+    }
+    draw();
+}
+
+function initScrollReveal() {
+    var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('vis'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.rv').forEach(function(el) { obs.observe(el); });
+}
+
+function initFAQ() {
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('.fq');
+        if (!btn) return;
+        var item = btn.closest('.fitem');
+        if (!item) return;
+        var fa = item.querySelector('.fa');
+        var wasOpen = item.classList.contains('on');
+        document.querySelectorAll('.fitem.on').forEach(function(fi) {
+            fi.classList.remove('on'); var f = fi.querySelector('.fa'); if (f) f.style.maxHeight = '0';
+        });
+        if (!wasOpen && fa) { item.classList.add('on'); fa.style.maxHeight = fa.scrollHeight + 'px'; }
+    });
+}
+
+function initMobileMenu() {
+    var tog = document.getElementById('navTog');
+    var menu = document.getElementById('mmenu');
+    var close = document.getElementById('mcl');
+    if (!tog || !menu) return;
+    function openMenu() { menu.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { menu.classList.remove('open'); document.body.style.overflow = ''; }
+    tog.addEventListener('click', openMenu);
+    if (close) close.addEventListener('click', closeMenu);
+    menu.querySelectorAll('.mlink').forEach(function(a) { a.addEventListener('click', closeMenu); });
+}
+
+function initNavScroll() {
+    var nav = document.getElementById('nav');
+    if (!nav) return;
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) nav.classList.add('sc'); else nav.classList.remove('sc');
+    }, { passive: true });
+}
+
+/* ================================================================
+   PANEL EDYCJI (ADMIN)
+   ================================================================ */
+function initAdminPanel() {
+    var overlay = document.getElementById('admOverlay');
+    var trigger = document.getElementById('admTrigger');
+    var footerTrigger = document.getElementById('adminTriggerFooter');
+    var closeBtn = document.getElementById('admClose');
+    var saveBtn = document.getElementById('admSave');
+    var resetBtn = document.getElementById('admReset');
+    var nav = document.getElementById('admNav');
+    var body = document.getElementById('admBody');
+    var status = document.getElementById('admStatus');
+    if (!overlay || !nav || !body) return;
+
+    var tabs = [
+        { id: 'teksty', label: 'Teksty', ikona: 'type' },
+        { id: 'zdjecia', label: 'Zdjecia', ikona: 'image' },
+        { id: 'linki', label: 'Linki', ikona: 'link' },
+        { id: 'tryby', label: 'Tryby gry', ikona: 'gamepad-2' },
+        { id: 'rangi', label: 'Rangi', ikona: 'crown' },
+        { id: 'zespol', label: 'Zespol', ikona: 'users' },
+        { id: 'ip', label: 'IP serwera', ikona: 'server' }
+    ];
+
+    var navHtml = '';
+    tabs.forEach(function(t, i) {
+        navHtml += '<button class="adm-nav-item' + (i === 0 ? ' active' : '') + '" data-tab="' + t.id + '"><i data-lucide="' + t.ikona + '"></i>' + t.label + '</button>';
+    });
+    nav.innerHTML = navHtml;
+
+    var bodyHtml = '';
+    tabs.forEach(function(t, i) {
+        bodyHtml += '<div class="adm-tab' + (i === 0 ? ' active' : '') + '" data-tab="' + t.id + '">' + getTabContent(t.id) + '</div>';
+    });
+    body.innerHTML = bodyHtml;
+    if (window.lucide) lucide.createIcons();
+
+    nav.addEventListener('click', function(e) {
+        var btn = e.target.closest('.adm-nav-item');
+        if (!btn) return;
+        var tabId = btn.getAttribute('data-tab');
+        nav.querySelectorAll('.adm-nav-item').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        body.querySelectorAll('.adm-tab').forEach(function(t) { t.classList.remove('active'); });
+        var target = body.querySelector('.adm-tab[data-tab="' + tabId + '"]');
+        if (target) target.classList.add('active');
+    });
+
+    function openPanel() { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closePanel() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+    if (trigger) trigger.addEventListener('click', openPanel);
+    if (footerTrigger) footerTrigger.addEventListener('click', openPanel);
+    if (closeBtn) closeBtn.addEventListener('click', closePanel);
+    overlay.addEventListener('click', function(e) { if (e.target === overlay) closePanel(); });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && overlay.classList.contains('open')) closePanel(); });
+
+    if (saveBtn) saveBtn.addEventListener('click', function() {
+        readAllFields();
+        try { localStorage.setItem('pakoplay_config', JSON.stringify(CONFIG)); } catch(e) {}
+        renderAll(); initScrollReveal();
+        if (status) status.textContent = 'Zapisano! ' + new Date().toLocaleTimeString();
+        App.showToast('Zmiany zostaly zapisane');
+    });
+
+    if (resetBtn) resetBtn.addEventListener('click', function() {
+        if (!confirm('Czy na pewno chcesz przywrocic wszystkie domyslne ustawienia?')) return;
+        try { localStorage.removeItem('pakoplay_config'); } catch(e) {}
+        CONFIG = getDefaultConfig();
+        var bh = '';
+        tabs.forEach(function(t, i) {
+            bh += '<div class="adm-tab' + (i === 0 ? ' active' : '') + '" data-tab="' + t.id + '">' + getTabContent(t.id) + '</div>';
+        });
+        body.innerHTML = bh;
+        nav.querySelectorAll('.adm-nav-item').forEach(function(b, i) { b.classList.toggle('active', i === 0); });
+        if (window.lucide) lucide.createIcons();
+        initAdminDynamicEvents();
+        renderAll(); initScrollReveal();
+        if (status) status.textContent = 'Przywrocono domyslne';
+        App.showToast('Przywrocono domyslne ustawienia');
+    });
+
+    initAdminDynamicEvents();
+}
+
+/* ===== POMOCNIK PANELU: pola tekstowe ===== */
+function field(id, label, value, type) {
+    type = type || 'text';
+    if (type === 'textarea') {
+        return '<div class="adm-field"><label class="adm-label" for="adm-' + id + '">' + label + ' — TU EDYTUJ</label><textarea class="adm-textarea" id="adm-' + id + '">' + esc(value || '') + '</textarea></div>';
+    }
+    return '<div class="adm-field"><label class="adm-label" for="adm-' + id + '">' + label + ' — TU EDYTUJ</label><input class="adm-input" type="' + type + '" id="adm-' + id + '" value="' + esc(value || '') + '"></div>';
+}
+
+/* ===== POMOCNIK PANELU: pola zdjec z podgladem ===== */
+function imgField(id, label, value) {
+    var preview = value ? '<img class="adm-img-preview visible" id="adm-prev-' + id + '" src="' + esc(value) + '" alt="preview">' : '<img class="adm-img-preview" id="adm-prev-' + id + '" src="" alt="preview">';
+    return '<div class="adm-field"><label class="adm-label" for="adm-' + id + '">' + label + ' — TU WKLEJ ZDJECIE</label><div class="adm-img-row"><input class="adm-input" type="text" id="adm-' + id + '" value="' + esc(value || '') + '" placeholder="https://example.com/zdjecie.jpg"></div>' + preview + '</div>';
+}
+
+/* ===== TAB: TEKSTY ===== */
+function getTabTeksty() {
+    return '<div class="adm-section-title">TEKSTY</div>' +
+        /* ===== NAZWY I NAGLOWKI — TUTAJ EDYTUJ ===== */
+        field('nazwa', 'Nazwa strony', CONFIG.nazwaStrony) +
+        field('naglowek', 'Naglowek (hero)', CONFIG.naglowek) +
+        field('slogan', 'Slogan (pod naglowkiem)', CONFIG.slogan) +
+        /* ===== OPISY — TUTAJ EDYTUJ ===== */
+        field('opis', 'Opis (pod sloganem)', CONFIG.opis, 'textarea') +
+        field('badge', 'Tekst odznaki (np. Serwer online)', CONFIG.badgeTekst) +
+        '<div class="adm-subsection">Naglowki sekcji</div>' +
+        field('aboutTytul', 'Tytul "O serwerze"', CONFIG.aboutTytul) +
+        field('offerTytul', 'Tytul "Dlaczego my"', CONFIG.offerTytul) +
+        field('offerPodtytul', 'Podtytul "Dlaczego my"', CONFIG.offerPodtytul, 'textarea') +
+        field('modesPodtytul', 'Podtytul "Tryby gry"', CONFIG.modesPodtytul, 'textarea') +
+        field('teamPodtytul', 'Podtytul "Zespol"', CONFIG.teamPodtytul, 'textarea') +
+        field('shopTytul', 'Tytul baneru sklepu', CONFIG.shopTytul) +
+        field('shopOpis', 'Opis baneru sklepu', CONFIG.shopOpis, 'textarea') +
+        field('footerOpis', 'Opis w footerze', CONFIG.footerOpis, 'textarea');
+}
+
+/* ===== TAB: ZDJECIA ===== */
+function getTabZdjecia() {
+    var z = CONFIG.zdjecia;
+    return '<div class="adm-section-title">ZDJECIA</div>' +
+        '<div class="adm-subsection">Zespol — Glowny wlasciciel</div>' +
+        imgField('img-zespolGlowny', 'Zdjecie glownego wlasciciela', z.zespolGlowny) +
+        '<div class="adm-subsection">Zespol — Wspolwlasciciele</div>' +
+        imgField('img-zespolWlasciciel1', 'Zdjecie wspolwlasciciela 1', z.zespolWlasciciel1) +
+        imgField('img-zespolWlasciciel2', 'Zdjecie wspolwlasciciela 2', z.zespolWlasciciel2) +
+        '<div class="adm-subsection">Zespol — Pozostali czlonkowie</div>' +
+        imgField('img-zespolCzlonek1', 'Zdjecie czlonka 1', z.zespolCzlonek1) +
+        imgField('img-zespolCzlonek2', 'Zdjecie czlonka 2', z.zespolCzlonek2) +
+        imgField('img-zespolCzlonek3', 'Zdjecie czlonka 3', z.zespolCzlonek3) +
+        imgField('img-zespolCzlonek4', 'Zdjecie czlonka 4', z.zespolCzlonek4) +
+        imgField('img-zespolCzlonek5', 'Zdjecie czlonka 5', z.zespolCzlonek5) +
+        imgField('img-zespolCzlonek6', 'Zdjecie czlonka 6', z.zespolCzlonek6) +
+        '<div class="adm-subsection">Tryby gry</div>' +
+        imgField('img-survival', 'Survival — Zdjecie', z.survival) +
+        imgField('img-survivalDzialki', 'Survival + Dzialki — Zdjecie', z.survivalDzialki) +
+        '<div class="adm-subsection">Pozostale zdjecia</div>' +
+        imgField('img-twórcy', 'Program tworcow — Zdjecie', z['twórcy']) +
+        '<p class="adm-hint">Wklej pelny URL obrazka (np. https://i.imgur.com/xxx.png). Podglad pojawi sie automatycznie.</p>';
+}
+
+/* ===== TAB: LINKI ===== */
+function getTabLinki() {
+    return '<div class="adm-section-title">LINKI</div>' +
+        field('linkDiscord', 'Discord — TU WKLEJ LINK', CONFIG.linkDiscord) +
+        field('linkYoutube', 'YouTube — TU WKLEJ LINK', CONFIG.linkYoutube) +
+        field('linkTiktok', 'TikTok — TU WKLEJ LINK', CONFIG.linkTiktok) +
+        field('linkSklep', 'Sklep — TU WKLEJ LINK', CONFIG.linkSklep) +
+        field('linkInne', 'Inne linki — TU WKLEJ LINK', CONFIG.linkInne) +
+        '<p class="adm-hint">Wklej pelny URL (np. https://discord.gg/xxxx). Linki sa uzywane w przyciskach na calej stronie.</p>';
+}
+
+/* ===== TAB: TRYBY GRY ===== */
+function getTabTryby() {
+    var html = '<div class="adm-section-title">TRYBY GRY</div>';
+    CONFIG.trybyGry.forEach(function(m, i) {
+        html += '<div class="adm-subsection">Tryb ' + (i+1) + ' — TU EDYTUJ</div>';
+        html += field('tryb-' + i + '-nazwa', 'Nazwa trybu', m.nazwa);
+        html += field('tryb-' + i + '-opis', 'Opis trybu', m.opis, 'textarea');
+        html += field('tryb-' + i + '-tag', 'Tag (np. Tryb glowny)', m.tag);
+        html += field('tryb-' + i + '-status', 'Status (np. Aktywny)', m.status);
+        html += field('tryb-' + i + '-meta', 'Meta tagi (przecinkami)', m.meta.join(', '));
+        html += field('tryb-' + i + '-cechy', 'Cechy (przecinkami)', m.cechy.join(', '));
+    });
+    return html;
+}
+
+/* ===== TAB: RANGI ===== */
+function getTabRangi() {
+    var html = '<div class="adm-section-title">RANGI</div>';
+    CONFIG.rangi.forEach(function(r, i) {
+        html += '<div class="adm-list-item" data-rank-item="' + i + '">';
+        html += '<div class="adm-list-head"><span class="adm-list-name">' + esc(r.nazwa || 'Ranga ' + (i+1)) + '</span><i data-lucide="chevron-down" class="adm-list-arrow"></i></div>';
+        html += '<div class="adm-list-body">';
+        /* ===== NAZWA RANGI — TUTAJ EDYTUJ ===== */
+        html += field('rank-' + i + '-nazwa', 'Nazwa rangi — TU EDYTUJ', r.nazwa);
+        /* ===== CENY RANG — TUTAJ EDYTUJ ===== */
+        html += '<div class="adm-row-3">';
+        html += '<div class="adm-field"><label class="adm-label" for="adm-rank-' + i + '-c7d">Cena 7 dni — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-' + i + '-c7d" value="' + esc(r.cena7d) + '"></div>';
+        html += '<div class="adm-field"><label class="adm-label" for="adm-rank-' + i + '-c30d">Cena 30 dni — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-' + i + '-c30d" value="' + esc(r.cena30d) + '"></div>';
+        html += '<div class="adm-field"><label class="adm-label" for="adm-rank-' + i + '-c3m">Cena 3 miesiace — TU EDYTUJ</label><input class="adm-input" type="text" id="adm-rank-' + i + '-c3m" value="' + esc(r.cena3m) + '"></div>';
+        html += '</div>';
+        html += '<div class="adm-field"><label class="adm-label">Benefity rangi</label>';
+        r.benefity.forEach(function(b, j) {
+            html += '<div class="adm-ben-row"><input class="adm-input" type="text" id="adm-rank-' + i + '-ben-' + j + '" value="' + esc(b) + '"><button class="adm-ben-del" data-del-ben="' + i + '-' + j + '"><i data-lucide="x"></i></button></div>';
+        });
+        html += '<button class="adm-ben-add" data-add-ben="' + i + '"><i data-lucide="plus"></i>Dodaj benefit</button>';
+        html += '</div></div></div>';
+    });
+    return html;
+}
+
+/* ===== TAB: ZESPOL ===== */
+function getTabZespol() {
+    var html = '<div class="adm-section-title">ZESPOL (1 glowny + 2 wspolwlascicieli + 6 czlonkow)</div>';
+
+    /* ===== OSOBY W ZESPOLIE — TUTAJ EDYTUJ ===== */
+    /* --- Glowny wlasciciel --- */
+    html += '<div class="adm-subsection">Glowny wlasciciel — TU EDYTUJ</div>';
+    html += field('team-g-imie', 'Imie / Nick', CONFIG.glowny.imie);
+    html += field('team-g-rola', 'Stanowisko / Rola', CONFIG.glowny.rola);
+    html += field('team-g-opis', 'Opis', CONFIG.glowny.opis, 'textarea');
+    html += field('team-g-inicjaly', 'Inicjaly (na awatarze)', CONFIG.glowny.inicjaly);
+
+    /* --- Wspolwlasciciele --- */
+    CONFIG.wlasciciele.forEach(function(o, i) {
+        html += '<div class="adm-subsection">Wspolwlasciciel ' + (i+1) + ' — TU EDYTUJ</div>';
+        html += field('team-w' + i + '-imie', 'Imie / Nick', o.imie);
+        html += field('team-w' + i + '-rola', 'Stanowisko / Rola', o.rola);
+        html += field('team-w' + i + '-opis', 'Opis', o.opis, 'textarea');
+        html += field('team-w' + i + '-inicjaly', 'Inicjaly', o.inicjaly);
+    });
+
+    /* --- Czlonkowie --- */
+    CONFIG.czlonkowie.forEach(function(c, i) {
+        html += '<div class="adm-subsection">Czlonek ' + (i+1) + ' — TU EDYTUJ</div>';
+        html += field('team-c' + i + '-imie', 'Imie / Nick', c.imie);
+        html += field('team-c' + i + '-rola', 'Stanowisko / Rola', c.rola);
+        html += field('team-c' + i + '-opis', 'Opis', c.opis, 'textarea');
+        html += field('team-c' + i + '-inicjaly', 'Inicjaly', c.inicjaly);
+    });
+
+    return html;
+}
+
+/* ===== TAB: IP SERWERA ===== */
+function getTabIP() {
+    return '<div class="adm-section-title">IP SERWERA</div>' +
+        field('ip', 'IP serwera — TU WKLEJ IP', CONFIG.ip) +
+        '<p class="adm-hint">To IP bedzie wyswietlane na stronie i kopiowane po kliknieciu przycisku "Graj teraz" lub widgetu IP w rogu ekranu.</p>';
+}
+
+/* ===== CZYTANIE POL Z PANELU DO CONFIG ===== */
+function readAllFields() {
+    var gval = function(id) { var el = document.getElementById('adm-' + id); return el ? el.value : ''; };
+
+    /* Teksty */
+    CONFIG.nazwaStrony = gval('nazwa');
+    CONFIG.naglowek = gval('naglowek');
+    CONFIG.slogan = gval('slogan');
+    CONFIG.opis = gval('opis');
+    CONFIG.badgeTekst = gval('badge');
+    CONFIG.aboutTytul = gval('aboutTytul');
+    CONFIG.offerTytul = gval('offerTytul');
+    CONFIG.offerPodtytul = gval('offerPodtytul');
+    CONFIG.modesPodtytul = gval('modesPodtytul');
+    CONFIG.teamPodtytul = gval('teamPodtytul');
+    CONFIG.shopTytul = gval('shopTytul');
+    CONFIG.shopOpis = gval('shopOpis');
+    CONFIG.footerOpis = gval('footerOpis');
+
+    /* Zdjecia */
+    CONFIG.zdjecia.zespolGlowny = gval('img-zespolGlowny');
+    CONFIG.zdjecia.zespolWlasciciel1 = gval('img-zespolWlasciciel1');
+    CONFIG.zdjecia.zespolWlasciciel2 = gval('img-zespolWlasciciel2');
+    CONFIG.zdjecia.zespolCzlonek1 = gval('img-zespolCzlonek1');
+    CONFIG.zdjecia.zespolCzlonek2 = gval('img-zespolCzlonek2');
+    CONFIG.zdjecia.zespolCzlonek3 = gval('img-zespolCzlonek3');
+    CONFIG.zdjecia.zespolCzlonek4 = gval('img-zespolCzlonek4');
+    CONFIG.zdjecia.zespolCzlonek5 = gval('img-zespolCzlonek5');
+    CONFIG.zdjecia.zespolCzlonek6 = gval('img-zespolCzlonek6');
+    CONFIG.zdjecia.survival = gval('img-survival');
+    CONFIG.zdjecia.survivalDzialki = gval('img-survivalDzialki');
+    CONFIG.zdjecia['twórcy'] = gval('img-twórcy');
+
+    /* Linki */
+    CONFIG.linkDiscord = gval('linkDiscord');
+    CONFIG.linkYoutube = gval('linkYoutube');
+    CONFIG.linkTiktok = gval('linkTiktok');
+    CONFIG.linkSklep = gval('linkSklep');
+    CONFIG.linkInne = gval('linkInne');
+
+    /* Tryby */
+    CONFIG.trybyGry.forEach(function(m, i) {
+        m.nazwa = gval('tryb-' + i + '-nazwa');
+        m.opis = gval('tryb-' + i + '-opis');
+        m.tag = gval('tryb-' + i + '-tag');
+        m.status = gval('tryb-' + i + '-status');
+        var metaRaw = gval('tryb-' + i + '-meta');
+        m.meta = metaRaw ? metaRaw.split(',').map(function(s){return s.trim();}).filter(Boolean) : [];
+        var cechyRaw = gval('tryb-' + i + '-cechy');
+        m.cechy = cechyRaw ? cechyRaw.split(',').map(function(s){return s.trim();}).filter(Boolean) : [];
+    });
+
+    /* Rangi */
+    CONFIG.rangi.forEach(function(r, i) {
+        r.nazwa = gval('rank-' + i + '-nazwa');
+        r.cena7d = gval('rank-' + i + '-c7d');
+        r.cena30d = gval('rank-' + i + '-c30d');
+        r.cena3m = gval('rank-' + i + '-c3m');
+        var newBens = [];
+        var j = 0;
+        while (true) {
+            var bEl = document.getElementById('adm-rank-' + i + '-ben-' + j);
+            if (!bEl) break;
+            if (bEl.value.trim()) newBens.push(bEl.value.trim());
+            j++;
+        }
+        r.benefity = newBens;
+    });
+
+    /* Zespol */
+    CONFIG.glowny.imie = gval('team-g-imie');
+    CONFIG.glowny.rola = gval('team-g-rola');
+    CONFIG.glowny.opis = gval('team-g-opis');
+    CONFIG.glowny.inicjaly = gval('team-g-inicjaly');
+    CONFIG.wlasciciele.forEach(function(o, i) {
+        o.imie = gval('team-w' + i + '-imie');
+        o.rola = gval('team-w' + i + '-rola');
+        o.opis = gval('team-w' + i + '-opis');
+        o.inicjaly = gval('team-w' + i + '-inicjaly');
+    });
+    CONFIG.czlonkowie.forEach(function(c, i) {
+        c.imie = gval('team-c' + i + '-imie');
+        c.rola = gval('team-c' + i + '-rola');
+        c.opis = gval('team-c' + i + '-opis');
+        c.inicjaly = gval('team-c' + i + '-inicjaly');
+    });
+
+    /* IP */
+    CONFIG.ip = gval('ip');
+}
+
+/* Dynamiczne eventy panelu */
+function initAdminDynamicEvents() {
+    var body = document.getElementById('admBody');
+    if (!body) return;
+
+    body.querySelectorAll('.adm-list-head').forEach(function(head) {
+        head.addEventListener('click', function() {
+            var item = this.closest('.adm-list-item');
+            if (item) item.classList.toggle('open');
+        });
+    });
+
+    body.querySelectorAll('input[id^="adm-img-"]').forEach(function(input) {
+        input.addEventListener('input', function() {
+            var id = this.id.replace('adm-', '');
+            var prev = document.getElementById('adm-prev-' + id);
+            if (!prev) return;
+            if (this.value.trim()) {
+                prev.src = this.value.trim();
+                prev.classList.add('visible');
+                prev.onerror = function() { this.classList.remove('visible'); };
+            } else {
+                prev.classList.remove('visible');
             }
         });
-    },
-
-    initPeriodToggle:function(){},
-
-    copyIP:function(){
-        var ip=this.data.server.ip;
-        var self=this;
-        if(navigator.clipboard&&navigator.clipboard.writeText){
-            navigator.clipboard.writeText(ip).then(function(){self.showCopyFeedback()}).catch(function(){self.fallbackCopy(ip)});
-        }else{this.fallbackCopy(ip)}
-    },
-
-    fallbackCopy:function(ip){
-        var ta=document.createElement('textarea');ta.value=ip;ta.style.position='fixed';ta.style.left='-9999px';
-        document.body.appendChild(ta);ta.select();
-        try{document.execCommand('copy');this.showCopyFeedback()}catch(e){}
-        document.body.removeChild(ta);
-    },
-
-    showCopyFeedback:function(){
-        this.toast('Skopiowano IP: '+this.data.server.ip);
-        var w=document.getElementById('ipWidget');
-        w.classList.add('ip-widget-copied');
-        var self=this;
-        setTimeout(function(){w.classList.remove('ip-widget-copied')},1500);
-    },
-
-    toast:function(msg){
-        var t=document.getElementById('toast');
-        document.getElementById('toastText').textContent=msg;
-        t.classList.add('show');
-        clearTimeout(this.toastTimer);
-        var self=this;
-        this.toastTimer=setTimeout(function(){t.classList.remove('show')},2500);
-    },
-
-    /* ===== ADMIN PANEL ===== */
-    admSections:[
-        {id:'texts',label:'Teksty',icon:'type'},
-        {id:'images',label:'Zdjecia',icon:'image'},
-        {id:'links',label:'Linki',icon:'link'},
-        {id:'stats',label:'Statystyki',icon:'bar-chart-2'},
-        {id:'about',label:'O serwerze',icon:'info'},
-        {id:'offer',label:'Co oferujemy',icon:'star'},
-        {id:'modes',label:'Tryby gry',icon:'gamepad-2'},
-        {id:'team',label:'Zespol',icon:'users'},
-        {id:'ranks',label:'Rangi',icon:'crown'},
-        {id:'keys',label:'Klucze',icon:'key'},
-        {id:'ip',label:'IP serwera',icon:'server'},
-        {id:'faq',label:'FAQ',icon:'help-circle'}
-    ],
-
-    initAdmin:function(){
-        var self=this;
-        /* Brak przycisku na stronie — panel dostepny tylko przez skrot klawiszowy */
-        document.getElementById('admOverlay').addEventListener('click',function(e){if(e.target===e.currentTarget)self.closeAdmin()});
-        document.addEventListener('keydown',function(e){
-            if(e.key==='Escape'&&document.getElementById('admOverlay').style.display==='flex')self.closeAdmin();
-        });
-        var nh='';
-        this.admSections.forEach(function(s){nh+='<button class="adm-nav-item'+(s.id===self.admSection?' active':'')+'" data-sec="'+s.id+'"><i data-lucide="'+s.icon+'"></i>'+s.label+'</button>'});
-        document.getElementById('admNav').innerHTML=nh;
-        document.getElementById('admNav').addEventListener('click',function(e){
-            var btn=e.target.closest('.adm-nav-item');
-            if(!btn)return;
-            self.admSection=btn.dataset.sec;
-            document.querySelectorAll('.adm-nav-item').forEach(function(b){b.classList.toggle('active',b.dataset.sec===self.admSection)});
-            self.showAdminSection(self.admSection);
-        });
-        document.getElementById('admBody').addEventListener('input',function(){self.dirty=true;self.updateStatus()});
-        this.showAdminSection(this.admSection);
-    },
-
-    openAdmin:function(){
-        /* Blokada — dziala tylko po odblokowaniu przez skrot klawiszowy */
-        if(!_admGate.check())return;
-        var o=document.getElementById('admOverlay');
-        o.style.display='flex';
-        var self=this;
-        requestAnimationFrame(function(){requestAnimationFrame(function(){o.classList.add('open')})});
-        this.showAdminSection(this.admSection);
-        if(typeof lucide!=='undefined')lucide.createIcons();
-    },
-
-    closeAdmin:function(){
-        var o=document.getElementById('admOverlay');
-        o.classList.remove('open');
-        setTimeout(function(){o.style.display='none'},300);
-    },
-
-    showAdminSection:function(sec){
-        var body=document.getElementById('admBody');
-        var fn={
-            texts:function(){return App.admTexts()},
-            images:function(){return App.admImages()},
-            links:function(){return App.admLinks()},
-            stats:function(){return App.admStats()},
-            about:function(){return App.admAbout()},
-            offer:function(){return App.admOffer()},
-            modes:function(){return App.admModes()},
-            team:function(){return App.admTeam()},
-            ranks:function(){return App.admRanks()},
-            keys:function(){return App.admKeys()},
-            ip:function(){return App.admIP()},
-            faq:function(){return App.admFAQ()}
-        };
-        body.innerHTML=(fn[sec]||fn.texts)();
-        if(typeof lucide!=='undefined')lucide.createIcons();
-    },
-
-    field:function(label,path,type,placeholder){
-        type=type||'text';placeholder=placeholder||'';
-        return '<div class="adm-field"><label class="adm-label">'+label+'</label><input class="adm-input" type="'+type+'" data-path="'+path+'" placeholder="'+esc(placeholder)+'" value="'+esc(this.getVal(path))+'"></div>';
-    },
-
-    areaField:function(label,path,placeholder){
-        return '<div class="adm-field"><label class="adm-label">'+label+'</label><textarea class="adm-textarea" data-path="'+path+'" placeholder="'+esc(placeholder||'')+'">'+esc(this.getVal(path))+'</textarea></div>';
-    },
-
-    imgField:function(label,path){
-        var v=this.getVal(path);
-        var uid='imgf-'+path.replace(/\./g,'-');
-        var h='<div class="adm-field"><label class="adm-label">'+label+'</label>';
-        h+='<div class="adm-img-row"><input class="adm-input" type="text" data-path="'+path+'" placeholder="URL zdjecia lub wgraj ponizej" value="'+esc(v)+'">';
-        h+='<button type="button" class="adm-btn" onclick="App.triggerImgUpload(\''+uid+'\')">Wgraj</button>';
-        h+='<input type="file" id="'+uid+'" accept="image/*" style="display:none" onchange="App.handleImgUpload(\''+path+'\',this)"></div>';
-        if(v)h+='<img src="'+esc(v)+'" class="adm-img-preview visible" onerror="this.classList.remove(\'visible\')">';
-        else h+='<img src="" class="adm-img-preview" onerror="this.classList.remove(\'visible\')">';
-        h+='</div>';
-        return h;
-    },
-
-    triggerImgUpload:function(uid){document.getElementById(uid).click()},
-
-    handleImgUpload:function(path,input){
-        var file=input.files[0];
-        if(!file)return;
-        if(file.size>500000){this.toast('Zdjecie zbyt duze (max 500KB)');return}
-        var self=this;
-        var r=new FileReader();
-        r.onload=function(e){
-            self.setVal(path,e.target.result);
-            var ti=document.querySelector('[data-path="'+path+'"]');
-            if(ti)ti.value=e.target.result;
-            var prev=input.parentElement.parentElement.querySelector('.adm-img-preview');
-            if(prev){prev.src=e.target.result;prev.classList.add('visible')}
-            self.dirty=true;self.updateStatus();
-        };
-        r.readAsDataURL(file);
-    },
-
-    admTexts:function(){
-        var h='<div class="adm-section-title">Teksty — Hero</div>';
-        h+=this.field('Badge (status)','hero.badge');
-        h+=this.field('Slogan','hero.slogan');
-        h+=this.areaField('Opis','hero.desc');
-        h+='<div class="adm-section-title" style="margin-top:28px">Teksty — Sekcje</div>';
-        h+=this.field('Tytul "O serwerze"','aboutTitle');
-        h+=this.field('Tytul "Dlaczego my"','offerTitle');
-        h+=this.field('Podtytul "Dlaczego my"','offerSub');
-        h+=this.field('Podtytul "Tryby gry"','modesSub');
-        h+=this.field('Podtytul "Zespol"','teamSub');
-        h+=this.field('Tytul sklepu','shopBannerTitle');
-        h+=this.field('Opis sklepu','shopBannerDesc');
-        h+='<div class="adm-section-title" style="margin-top:28px">Teksty — Footer</div>';
-        h+=this.areaField('Opis w footerze','footerDesc');
-        return h;
-    },
-
-    admImages:function(){
-        var h='<div class="adm-section-title">Zdjecia tla — Tryby gry</div>';
-        var self=this;
-        this.data.modes.forEach(function(m,i){
-            h+='<div class="adm-subsection">Tryb: '+esc(m.name)+'</div>';
-            h+=self.imgField('Zdjecie tla trybu','modes.'+i+'.bgImage');
-        });
-        h+='<div class="adm-section-title" style="margin-top:28px">Zdjecia — Wlasciciel</div>';
-        h+=this.imgField('Zdjecie wlasciciela','teamMain.photo');
-        h+='<div class="adm-section-title" style="margin-top:28px">Zdjecia — Co-Ownerzy</div>';
-        this.data.teamOwners.forEach(function(o,i){
-            h+='<div class="adm-subsection">Co-Owner: '+esc(o.name)+'</div>';
-            h+=self.imgField('Zdjecie','teamOwners.'+i+'.photo');
-        });
-        h+='<div class="adm-section-title" style="margin-top:28px">Zdjecia — Pozostala ekipa</div>';
-        this.data.teamMembers.forEach(function(m,i){
-            h+='<div class="adm-subsection'+(i%2===1?' purp':'')+'">'+esc(m.role)+': '+esc(m.name)+'</div>';
-            h+=self.imgField('Zdjecie','teamMembers.'+i+'.photo');
-        });
-        return h;
-    },
-
-    admLinks:function(){
-        var h='<div class="adm-section-title">Linki — Serwer</div>';
-        h+=this.field('Discord serwera','server.discord');
-        h+=this.field('Sklep','server.shop');
-        h+='<div class="adm-section-title" style="margin-top:28px">Linki — Wlasciciel ('+esc(this.data.teamMain.name)+')</div>';
-        h+=this.field('YouTube','teamMain.youtube');
-        h+=this.field('TikTok','teamMain.tiktok');
-        h+=this.field('Discord','teamMain.discord');
-        var self=this;
-        this.data.teamOwners.forEach(function(o,i){
-            h+='<div class="adm-section-title" style="margin-top:28px">Linki — Co-Owner: '+esc(o.name)+'</div>';
-            h+=self.field('YouTube','teamOwners.'+i+'.youtube');
-            h+=self.field('TikTok','teamOwners.'+i+'.tiktok');
-            h+=self.field('Discord','teamOwners.'+i+'.discord');
-        });
-        this.data.teamMembers.forEach(function(m,i){
-            h+='<div class="adm-section-title" style="margin-top:28px">Linki — '+esc(m.role)+': '+esc(m.name)+'</div>';
-            h+=self.field('YouTube','teamMembers.'+i+'.youtube');
-            h+=self.field('TikTok','teamMembers.'+i+'.tiktok');
-            h+=self.field('Discord','teamMembers.'+i+'.discord');
-        });
-        h+='<div class="adm-section-title" style="margin-top:28px">Linki — Footer: Nawigacja</div><div class="adm-list">';
-        this.data.footerLinks1.forEach(function(l,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks1\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body"><div class="adm-row">'+self.field('Tekst','footerLinks1.'+i+'.text')+self.field('Link (href)','footerLinks1.'+i+'.href')+'</div></div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks1\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
-        h+='<div class="adm-section-title" style="margin-top:28px">Linki — Footer: Przydatne</div><div class="adm-list">';
-        this.data.footerLinks2.forEach(function(l,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(l.text)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'footerLinks2\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body"><div class="adm-row">'+self.field('Tekst','footerLinks2.'+i+'.text')+self.field('Link (href)','footerLinks2.'+i+'.href')+'</div></div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'footerLinks2\',{text:\'Nowy\',href:\'#\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj link</button>';
-        return h;
-    },
-
-    admStats:function(){
-        var h='<div class="adm-section-title">Statystyki (O serwerze)</div><div class="adm-list">';
-        var self=this;
-        this.data.stats.forEach(function(s,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(s.value)+' — '+esc(s.label)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'stats\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body"><div class="adm-row">'+self.field('Wartosc','stats.'+i+'.value')+self.field('Etykieta','stats.'+i+'.label')+'</div></div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'stats\',{value:\'0\',label:\'Nowe\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj statystyke</button>';
-        return h;
-    },
-
-    admAbout:function(){
-        var h='<div class="adm-section-title">Karty "O serwerze"</div><div class="adm-list">';
-        var self=this;
-        this.data.aboutCards.forEach(function(c,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(c.title)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'aboutCards\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+self.field('Ikona (lucide)','aboutCards.'+i+'.icon')+self.field('Tytul','aboutCards.'+i+'.title')+self.areaField('Opis','aboutCards.'+i+'.desc')+'</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'aboutCards\',{icon:\'star\',title:\'Nowe\',desc:\'Opis...\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj karte</button>';
-        return h;
-    },
-
-    admOffer:function(){
-        var h='<div class="adm-section-title">Karty "Co oferujemy"</div><div class="adm-list">';
-        var self=this;
-        this.data.offerCards.forEach(function(c,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(c.title)+(c.span?' (szeroka)':'')+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'offerCards\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+self.field('Ikona (lucide)','offerCards.'+i+'.icon')+self.field('Tytul','offerCards.'+i+'.title')+self.areaField('Opis','offerCards.'+i+'.desc');
-            h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Rozciagnij na 2 kolumny</label><select class="adm-input" data-path="offerCards.'+i+'.span"><option value="true"'+(c.span?' selected':'')+'>Tak</option><option value="false"'+(!c.span?' selected':'')+'>Nie</option></select></div>';
-            h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Fioletowy styl</label><select class="adm-input" data-path="offerCards.'+i+'.purp"><option value="true"'+(c.purp?' selected':'')+'>Tak</option><option value="false"'+(!c.purp?' selected':'')+'>Nie</option></select></div>';
-            h+='</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'offerCards\',{icon:\'star\',title:\'Nowe\',desc:\'Opis...\',span:false,purp:false})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj karte</button>';
-        return h;
-    },
-
-    admModes:function(){
-        var h='<div class="adm-section-title">Tryby gry</div><div class="adm-hint" style="margin-bottom:20px">Zdjecia tla trybow edytuj w sekcji <strong>Zdjecia</strong>.</div><div class="adm-list">';
-        var self=this;
-        this.data.modes.forEach(function(m,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'modes\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">';
-            h+=self.field('Nazwa','modes.'+i+'.name');
-            h+=self.areaField('Opis','modes.'+i+'.desc');
-            h+=self.field('Tag','modes.'+i+'.tag');
-            h+=self.field('Ikona (lucide, gdy brak zdjecia tla)','modes.'+i+'.icon');
-            h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Status</label><select class="adm-input" data-path="modes.'+i+'.status"><option value="active"'+(m.status==='active'?' selected':'')+'>Aktywny</option><option value="offline"'+(m.status!=='active'?' selected':'')+'>Offline</option></select></div>';
-            h+='<div class="adm-field"><label class="adm-label">Meta (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.meta" value="'+esc((m.meta||[]).join(','))+'" placeholder="1.20+, Dzialki, Ekonomia"><div class="adm-hint">Wartosci oddzielone przecinkami</div></div>';
-            h+='<div class="adm-field"><label class="adm-label">Cechy (po przecinku)</label><input class="adm-input" data-path="modes.'+i+'.feats" value="'+esc((m.feats||[]).join(','))+'" placeholder="Ranking, Aukcje, Eventy"><div class="adm-hint">Wartosci oddzielone przecinkami</div></div>';
-            h+='</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'modes\',{name:\'Nowy tryb\',desc:\'Opis trybu...\',tag:\'Nowy\',status:\'offline\',meta:[],feats:[],icon:\'gamepad-2\',bgImage:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj tryb</button>';
-        return h;
-    },
-
-    admTeamPersonFields:function(prefix){
-        var h=this.field('Imie / Nick',prefix+'.name');
-        h+=this.field('Ranga / Stanowisko',prefix+'.role');
-        h+=this.field('Inicjaly (gdy brak zdjecia)',prefix+'.initials');
-        h+=this.areaField('Opis',prefix+'.description');
-        return h;
-    },
-
-    admTeam:function(){
-        var self=this;
-        var h='<div class="adm-section-title">Wlasciciel glowny</div><div class="adm-hint" style="margin-bottom:20px">Zdjecie edytuj w sekcji <strong>Zdjecia</strong>, linki w sekcji <strong>Linki</strong>.</div><div class="adm-list">';
-        h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(this.data.teamMain.name)+' (Wlasciciel)</span><div class="adm-list-actions"><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-        h+='<div class="adm-list-body">'+this.admTeamPersonFields('teamMain')+'</div></div>';
-        h+='</div>';
-        h+='<div class="adm-section-title" style="margin-top:28px">Co-Ownerzy</div><div class="adm-hint" style="margin-bottom:20px">Zdjecia edytuj w sekcji <strong>Zdjecia</strong>, linki w sekcji <strong>Linki</strong>.</div><div class="adm-list">';
-        this.data.teamOwners.forEach(function(o,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(o.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'teamOwners\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+self.admTeamPersonFields('teamOwners.'+i)+'</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamOwners\',{name:\'Nowy\',role:\'Co-Owner\',initials:\'?\',description:\'\',details:[{icon:\'map-pin\',text:\'Polska\'}],youtube:\'#\',tiktok:\'#\',discord:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj co-ownera</button>';
-        h+='<div class="adm-section-title" style="margin-top:28px">Pozostala ekipa</div><div class="adm-hint" style="margin-bottom:20px">Zdjecia edytuj w sekcji <strong>Zdjecia</strong>, linki w sekcji <strong>Linki</strong>.</div><div class="adm-list">';
-        this.data.teamMembers.forEach(function(m,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(m.role)+': '+esc(m.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'teamMembers\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+self.admTeamPersonFields('teamMembers.'+i)+'</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'teamMembers\',{name:\'Nowy\',role:\'Rola\',initials:\'?\',description:\'\',details:[{icon:\'map-pin\',text:\'Polska\'}],youtube:\'#\',tiktok:\'#\',discord:\'#\',photo:\'\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj czlonka ekipy</button>';
-        return h;
-    },
-
-    /* --- RANGI z 3 okresami --- */
-    admRanks:function(){
-        var self=this;
-        var p=this.data.ranks.periods;
-        var h='<div class="adm-section-title">Okresy dostepnosci</div>';
-        h+='<div class="adm-row-3">';
-        h+=this.field('Okres 1','ranks.periods.0');
-        h+=this.field('Okres 2','ranks.periods.1');
-        h+=this.field('Okres 3','ranks.periods.2');
-        h+='</div>';
-
-        h+='<div class="adm-section-title" style="margin-top:28px">Rangi</div><div class="adm-list">';
-        this.data.ranks.items.forEach(function(r,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(r.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'ranks.items\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">';
-            h+=self.field('Nazwa rangi','ranks.items.'+i+'.name');
-            h+='<div class="adm-field"><label class="adm-label">Ceny (wg okresow: '+esc(p[0]||'1')+', '+esc(p[1]||'2')+', '+esc(p[2]||'3')+')</label><div class="adm-row-3">';
-            h+=self.field('Cena — '+esc(p[0]||'Okres 1'),'ranks.items.'+i+'.prices.0');
-            h+=self.field('Cena — '+esc(p[1]||'Okres 2'),'ranks.items.'+i+'.prices.1');
-            h+=self.field('Cena — '+esc(p[2]||'Okres 3'),'ranks.items.'+i+'.prices.2');
-            h+='</div></div>';
-            h+='<div class="adm-field"><label class="adm-label">Opisy czasow (wg okresow)</label><div class="adm-row-3">';
-            h+=self.field('Czas — Okres 1','ranks.items.'+i+'.durs.0');
-            h+=self.field('Czas — Okres 2','ranks.items.'+i+'.durs.1');
-            h+=self.field('Czas — Okres 3','ranks.items.'+i+'.durs.2');
-            h+='</div></div>';
-            h+='<div class="adm-field"><label class="adm-label">Benefity</label>';
-            (r.benefits||[]).forEach(function(b,j){
-                h+='<div class="adm-ben-row"><input class="adm-input" data-path="ranks.items.'+i+'.benefits.'+j+'" value="'+esc(b)+'"><button class="adm-ben-del" onclick="App.removeBenefit(\'ranks.items.'+i+'.benefits\','+j+')"><i data-lucide="trash-2"></i></button></div>';
-            });
-            h+='<button class="adm-ben-add" onclick="App.addBenefit(\'ranks.items.'+i+'.benefits\')"><i data-lucide="plus"></i> Dodaj benefit</button>';
-            h+='</div></div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addRank()" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj range</button>';
-        return h;
-    },
-
-    addRank:function(){
-        this.collectAllData();
-        var pCount=this.data.ranks.periods.length;
-        var prices=[];var durs=[];
-        for(var i=0;i<pCount;i++){prices.push('0 PLN');durs.push('')}
-        this.data.ranks.items.push({name:'Nowa ranga',prices:prices,durs:durs,benefits:[]});
-        this.dirty=true;this.updateStatus();
-        this.showAdminSection(this.admSection);
-    },
-
-    admKeys:function(){
-        var h='<div class="adm-section-title">Klucze</div><div class="adm-list">';
-        var self=this;
-        this.data.keys.forEach(function(k,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(k.name)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'keys\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+self.field('Nazwa','keys.'+i+'.name')+self.areaField('Opis','keys.'+i+'.desc')+self.field('Cena','keys.'+i+'.price')+'</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'keys\',{name:\'Nowy klucz\',desc:\'Opis...\',price:\'0 PLN\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj klucz</button>';
-        return h;
-    },
-
-    admIP:function(){
-        var h='<div class="adm-section-title">IP serwera</div>';
-        h+=this.field('IP serwera','server.ip');
-        h+='<div class="adm-row"><label class="adm-label" style="margin-bottom:0;padding-top:6px">Status serwera</label><select class="adm-input" data-path="server.online"><option value="true"'+(this.data.server.online?' selected':'')+'>Online</option><option value="false"'+(!this.data.server.online?' selected':'')+'>Offline</option></select></div>';
-        h+='<div class="adm-hint">Zmiana statusu aktualizuje badge w sekcji hero po zapisaniu.</div>';
-        return h;
-    },
-
-    admFAQ:function(){
-        var h='<div class="adm-section-title">FAQ — Najczestsze pytania</div><div class="adm-list">';
-        var self=this;
-        this.data.faq.forEach(function(f,i){
-            h+='<div class="adm-list-item"><div class="adm-list-head" onclick="App.toggleListItem(this)"><span class="adm-list-name">'+esc(f.q)+'</span><div class="adm-list-actions"><button class="adm-list-btn del" onclick="event.stopPropagation();App.removeItem(\'faq\','+i+')"><i data-lucide="trash-2"></i></button><button class="adm-list-btn"><i data-lucide="chevron-down"></i></button></div></div>';
-            h+='<div class="adm-list-body">'+self.field('Pytanie','faq.'+i+'.q')+self.areaField('Odpowiedz','faq.'+i+'.a')+'</div></div>';
-        });
-        h+='</div><button class="adm-add-btn" onclick="App.addItem(\'faq\',{q:\'Nowe pytanie?\',a:\'Odpowiedz...\'})" style="margin-top:12px"><i data-lucide="plus"></i> Dodaj pytanie</button>';
-        return h;
-    },
-
-    toggleListItem:function(head){head.parentElement.classList.toggle('open')},
-
-    addItem:function(arr,defaultItem){
-        this.collectAllData();
-        this.data[arr].push(JSON.parse(JSON.stringify(defaultItem)));
-        this.dirty=true;this.updateStatus();
-        this.showAdminSection(this.admSection);
-    },
-
-    removeItem:function(arr,idx){
-        this.collectAllData();
-        this.data[arr].splice(idx,1);
-        this.dirty=true;this.updateStatus();
-        this.showAdminSection(this.admSection);
-    },
-
-    addBenefit:function(path){
-        this.collectAllData();
-        var arr=path.split('.').reduce(function(o,k){return o[k]},this.data);
-        if(arr)arr.push('Nowy benefit');
-        this.dirty=true;this.updateStatus();
-        this.showAdminSection(this.admSection);
-    },
-
-    removeBenefit:function(path,idx){
-        this.collectAllData();
-        var arr=path.split('.').reduce(function(o,k){return o[k]},this.data);
-        if(arr)arr.splice(idx,1);
-        this.dirty=true;this.updateStatus();
-        this.showAdminSection(this.admSection);
-    },
-
-    updateStatus:function(){
-        var el=document.getElementById('admStatus');
-        if(!el)return;
-        el.textContent=this.dirty?'Masz niezapisane zmiany':'Wszystko zapisane';
-        el.style.color=this.dirty?'var(--accent)':'var(--text-t)';
-    }
-};
-
-/* Parse comma-separated strings back to arrays on save */
-var _origCollect=App.collectAllData.bind(App);
-App.collectAllData=function(){
-    _origCollect();
-    var d=this.data;
-    (d.modes||[]).forEach(function(m){
-        if(typeof m.meta==='string')m.meta=m.meta.split(',').map(function(s){return s.trim()}).filter(Boolean);
-        if(typeof m.feats==='string')m.feats=m.feats.split(',').map(function(s){return s.trim()}).filter(Boolean);
-        if(!Array.isArray(m.meta))m.meta=[];
-        if(!Array.isArray(m.feats))m.feats=[];
     });
-    (d.offerCards||[]).forEach(function(c){
-        if(c.span==='true')c.span=true;else if(c.span==='false')c.span=false;
-        if(c.purp==='true')c.purp=true;else if(c.purp==='false')c.purp=false;
-    });
-    if(d.server.online==='true')d.server.online=true;else if(d.server.online==='false')d.server.online=false;
-};
 
-/* Skrot klawiszowy do otwarcia panelu — tylko dla administratora */
-document.addEventListener('keydown',function(e){
-    if(e.ctrlKey&&e.shiftKey&&e.key==='P'){
-        e.preventDefault();
-        _admGate.unlock();
-        App.openAdmin();
-    }
+    body.querySelectorAll('.adm-ben-add').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var rankIdx = this.getAttribute('data-add-ben');
+            var container = this.parentElement;
+            var existing = container.querySelectorAll('.adm-ben-row');
+            var newIdx = existing.length;
+            var row = document.createElement('div');
+            row.className = 'adm-ben-row';
+            row.innerHTML = '<input class="adm-input" type="text" id="adm-rank-' + rankIdx + '-ben-' + newIdx + '" value="" placeholder="Nowy benefit"><button class="adm-ben-del" data-del-ben="' + rankIdx + '-' + newIdx + '"><i data-lucide="x"></i></button>';
+            container.insertBefore(row, this);
+            if (window.lucide) lucide.createIcons();
+            row.querySelector('.adm-ben-del').addEventListener('click', handleBenDel);
+        });
+    });
+
+    body.querySelectorAll('.adm-ben-del').forEach(function(btn) {
+        btn.addEventListener('click', handleBenDel);
+    });
+}
+
+function handleBenDel() {
+    var row = this.closest('.adm-ben-row');
+    if (row) row.remove();
+}
+
+/* ================================================================
+   START
+   ================================================================ */
+document.addEventListener('DOMContentLoaded', function() {
+    renderAll();
+    initCanvas();
+    initScrollReveal();
+    initFAQ();
+    initMobileMenu();
+    initNavScroll();
+    initAdminPanel();
 });
-
-document.addEventListener('DOMContentLoaded',function(){App.init()});
 </script>
 </body>
 </html>
