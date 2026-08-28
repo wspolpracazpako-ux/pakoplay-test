@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PakoPlay.PL  Twój Serwer</title>
+    <title>PakoPlay.PL - Twój Serwer</title>
     <meta name="description" content="PakoPlay.PL to serwer Minecraft z unikalnym Survival, systemem działek, sklepem i aktywną społecznością. Dołącz teraz.">
     <link rel="icon" href="https://i.postimg.cc/7Z2myWpt/Logo-Serwera-Pako-Play-PL-png.png,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233b9eff'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='16' fill='%23060a14'>PP</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -763,7 +763,7 @@ function updateStaticElements(){
     hr('creatorsDCLink',CONFIG.linkDiscord);hr('socialDCLink',CONFIG.linkDiscord);
     hr('footerDC',CONFIG.linkDiscord);hr('footerYT',CONFIG.linkYoutube);hr('footerTT',CONFIG.linkTiktok);
     var cv=document.getElementById('creatorsVis');if(cv){var tu=CONFIG.zdjecia.tworcy||'';if(tu){cv.style.backgroundImage='url(\u0022'+tu+'\u0022)';cv.style.color='transparent';cv.setAttribute('data-bg-url',tu);}else{cv.style.backgroundImage='';cv.style.color='';cv.removeAttribute('data-bg-url');}}
-    document.title=CONFIG.nazwaStrony+' — Twoj Serwer';
+    document.title=CONFIG.nazwaStrony+'- Twoj Serwer';
 }
 function renderAll(){renderStats();renderAbout();renderOffer();renderModes();renderTeam();renderPeriodToggle();renderRanks();renderKeys();renderFAQ();updateStaticElements();if(window.lucide)lucide.createIcons();validatePageImages();}
 
